@@ -1,0 +1,722 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 1
+
+
+   1               		.file	"buffer.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.h",130,0,0,0
+  31               		.stabs	"struct_cBuffer:T(1,1)=s8dataptr:(1,2)=*(0,11),0,16;size:(0,9),16,16;datalength:(0,9),32,16
+  32               		.stabs	"cBuffer:t(1,3)=(1,1)",128,0,47,0
+  33               		.stabn	162,0,0,0
+  34               		.stabs	"./global.h",130,0,0,0
+  35               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  36               		.stabs	"u08:t(3,1)=(0,11)",128,0,32,0
+  37               		.stabs	"s08:t(3,2)=(0,10)",128,0,33,0
+  38               		.stabs	"u16:t(3,3)=(0,9)",128,0,34,0
+  39               		.stabs	"s16:t(3,4)=(0,8)",128,0,35,0
+  40               		.stabs	"u32:t(3,5)=(0,5)",128,0,36,0
+  41               		.stabs	"s32:t(3,6)=(0,3)",128,0,37,0
+  42               		.stabs	"u64:t(3,7)=(0,7)",128,0,38,0
+  43               		.stabs	"s64:t(3,8)=(0,6)",128,0,39,0
+  44               		.stabs	"BOOL:t(3,9)=(0,11)",128,0,69,0
+  45               		.stabs	"BYTE:t(3,10)=(0,11)",128,0,70,0
+  46               		.stabs	"WORD:t(3,11)=(0,4)",128,0,71,0
+  47               		.stabs	"DWORD:t(3,12)=(0,5)",128,0,72,0
+  48               		.stabs	"UCHAR:t(3,13)=(0,11)",128,0,74,0
+  49               		.stabs	"UINT:t(3,14)=(0,4)",128,0,75,0
+  50               		.stabs	"USHORT:t(3,15)=(0,9)",128,0,76,0
+  51               		.stabs	"ULONG:t(3,16)=(0,5)",128,0,77,0
+  52               		.stabs	"CHAR:t(3,17)=(0,2)",128,0,79,0
+  53               		.stabs	"INT:t(3,18)=(0,1)",128,0,80,0
+  54               		.stabs	"LONG:t(3,19)=(0,3)",128,0,81,0
+  55               		.stabn	162,0,0,0
+  56               		.stabn	162,0,0,0
+  57               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 2
+
+
+  58               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  59               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  60               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  61               		.stabs	"int8_t:t(7,1)=(0,10)",128,0,116,0
+  62               		.stabs	"uint8_t:t(7,2)=(0,11)",128,0,117,0
+  63               		.stabs	"int16_t:t(7,3)=(0,1)",128,0,118,0
+  64               		.stabs	"uint16_t:t(7,4)=(0,4)",128,0,119,0
+  65               		.stabs	"int32_t:t(7,5)=(0,3)",128,0,120,0
+  66               		.stabs	"uint32_t:t(7,6)=(0,5)",128,0,121,0
+  67               		.stabs	"int64_t:t(7,7)=(0,6)",128,0,122,0
+  68               		.stabs	"uint64_t:t(7,8)=(0,7)",128,0,123,0
+  69               		.stabs	"intptr_t:t(7,9)=(7,3)",128,0,135,0
+  70               		.stabs	"uintptr_t:t(7,10)=(7,4)",128,0,140,0
+  71               		.stabs	"int_least8_t:t(7,11)=(7,1)",128,0,152,0
+  72               		.stabs	"uint_least8_t:t(7,12)=(7,2)",128,0,157,0
+  73               		.stabs	"int_least16_t:t(7,13)=(7,3)",128,0,162,0
+  74               		.stabs	"uint_least16_t:t(7,14)=(7,4)",128,0,167,0
+  75               		.stabs	"int_least32_t:t(7,15)=(7,5)",128,0,172,0
+  76               		.stabs	"uint_least32_t:t(7,16)=(7,6)",128,0,177,0
+  77               		.stabs	"int_least64_t:t(7,17)=(7,7)",128,0,182,0
+  78               		.stabs	"uint_least64_t:t(7,18)=(7,8)",128,0,187,0
+  79               		.stabs	"int_fast8_t:t(7,19)=(7,1)",128,0,200,0
+  80               		.stabs	"uint_fast8_t:t(7,20)=(7,2)",128,0,205,0
+  81               		.stabs	"int_fast16_t:t(7,21)=(7,3)",128,0,210,0
+  82               		.stabs	"uint_fast16_t:t(7,22)=(7,4)",128,0,215,0
+  83               		.stabs	"int_fast32_t:t(7,23)=(7,5)",128,0,220,0
+  84               		.stabs	"uint_fast32_t:t(7,24)=(7,6)",128,0,225,0
+  85               		.stabs	"int_fast64_t:t(7,25)=(7,7)",128,0,230,0
+  86               		.stabs	"uint_fast64_t:t(7,26)=(7,8)",128,0,235,0
+  87               		.stabs	"intmax_t:t(7,27)=(7,7)",128,0,249,0
+  88               		.stabs	"uintmax_t:t(7,28)=(7,8)",128,0,254,0
+  89               		.stabn	162,0,0,0
+  90               		.stabs	"int_farptr_t:t(6,1)=(7,5)",128,0,76,0
+  91               		.stabs	"uint_farptr_t:t(6,2)=(7,6)",128,0,80,0
+  92               		.stabn	162,0,0,0
+  93               		.stabn	162,0,0,0
+  94               		.stabn	162,0,0,0
+  95               		.stabs	"bufferInit:F(0,15)",36,0,32,bufferInit
+  96               		.stabs	"buffer:P(0,16)=*(1,3)",64,0,31,30
+  97               		.stabs	"start:P(1,2)",64,0,31,22
+  98               		.stabs	"size:P(0,9)",64,0,31,20
+  99               	.global	bufferInit
+ 100               		.type	bufferInit, @function
+ 101               	bufferInit:
+ 102               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** /*! \file buffer.c \brief Multipurpose byte buffer structure and methods. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // File Name	: 'buffer.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Title		: Multipurpose byte buffer structure and methods
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Author		: Pascal Stang - Copyright (C) 2001-2002
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Created		: 9/23/2001
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Revised		: 9/23/2001
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Version		: 1.0
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Target MCU	: any
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 3
+
+
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // This code is distributed under the GNU Public License
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** //*****************************************************************************
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #include "buffer.h"
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #include "global.h"
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #include "avr/io.h"
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #ifndef CRITICAL_SECTION_START
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #define CRITICAL_SECTION_START	unsigned char _sreg = SREG; cli()
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #define CRITICAL_SECTION_END	SREG = _sreg
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** #endif
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // global variables
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // initialization
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** void bufferInit(cBuffer* buffer, unsigned char *start, unsigned short size)
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 103               		.stabn	68,0,32,.LM0-bufferInit
+ 104               	.LM0:
+ 105               	/* prologue: frame size=0 */
+ 106               	/* prologue end (size=0) */
+ 107 0000 FC01      		movw r30,r24
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 108               		.stabn	68,0,34,.LM1-bufferInit
+ 109               	.LM1:
+ 110 0002 8FB7      		in r24,95-0x20
+ 111               	/* #APP */
+ 112 0004 F894      		cli
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// set start pointer of the buffer
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	buffer->dataptr = start;
+ 113               		.stabn	68,0,36,.LM2-bufferInit
+ 114               	.LM2:
+ 115               	/* #NOAPP */
+ 116 0006 7183      		std Z+1,r23
+ 117 0008 6083      		st Z,r22
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	buffer->size = size;
+ 118               		.stabn	68,0,37,.LM3-bufferInit
+ 119               	.LM3:
+ 120 000a 5383      		std Z+3,r21
+ 121 000c 4283      		std Z+2,r20
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// initialize index and length
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	buffer->dataindex = 0;
+ 122               		.stabn	68,0,39,.LM4-bufferInit
+ 123               	.LM4:
+ 124 000e 1782      		std Z+7,__zero_reg__
+ 125 0010 1682      		std Z+6,__zero_reg__
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	buffer->datalength = 0;
+ 126               		.stabn	68,0,40,.LM5-bufferInit
+ 127               	.LM5:
+ 128 0012 1582      		std Z+5,__zero_reg__
+ 129 0014 1482      		std Z+4,__zero_reg__
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 4
+
+
+ 130               		.stabn	68,0,42,.LM6-bufferInit
+ 131               	.LM6:
+ 132 0016 8FBF      		out 95-0x20,r24
+ 133               	/* epilogue: frame size=0 */
+ 134 0018 0895      		ret
+ 135               	/* epilogue end (size=1) */
+ 136               	/* function bufferInit size 14 (13) */
+ 137               		.size	bufferInit, .-bufferInit
+ 138               		.stabs	"_sreg:r(0,11)",64,0,34,24
+ 139               		.stabn	192,0,0,bufferInit-bufferInit
+ 140               		.stabn	224,0,0,.Lscope0-bufferInit
+ 141               	.Lscope0:
+ 142               		.stabs	"",36,0,0,.Lscope0-bufferInit
+ 143               		.stabd	78,0,0
+ 144               		.stabs	"bufferGetFromFront:F(0,11)",36,0,47,bufferGetFromFront
+ 145               		.stabs	"buffer:P(0,16)",64,0,46,26
+ 146               	.global	bufferGetFromFront
+ 147               		.type	bufferGetFromFront, @function
+ 148               	bufferGetFromFront:
+ 149               		.stabd	46,0,0
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** // access routines
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** unsigned char  bufferGetFromFront(cBuffer* buffer)
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 150               		.stabn	68,0,47,.LM7-bufferGetFromFront
+ 151               	.LM7:
+ 152               	/* prologue: frame size=0 */
+ 153 001a CF93      		push r28
+ 154 001c DF93      		push r29
+ 155               	/* prologue end (size=2) */
+ 156 001e DC01      		movw r26,r24
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	unsigned char data = 0;
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 157               		.stabn	68,0,50,.LM8-bufferGetFromFront
+ 158               	.LM8:
+ 159 0020 4FB7      		in r20,95-0x20
+ 160               	/* #APP */
+ 161 0022 F894      		cli
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// check to see if there's data in the buffer
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	if(buffer->datalength)
+ 162               		.stabn	68,0,52,.LM9-bufferGetFromFront
+ 163               	.LM9:
+ 164               	/* #NOAPP */
+ 165 0024 EC01      		movw r28,r24
+ 166 0026 8C81      		ldd r24,Y+4
+ 167 0028 9D81      		ldd r25,Y+5
+ 168 002a 892B      		or r24,r25
+ 169 002c 01F4      		brne .L4
+ 170               		.stabn	68,0,52,.LM10-bufferGetFromFront
+ 171               	.LM10:
+ 172 002e E0E0      		ldi r30,lo8(0)
+ 173 0030 00C0      		rjmp .L6
+ 174               	.L4:
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	{
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// get the first character from buffer
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 5
+
+
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		data = buffer->dataptr[buffer->dataindex];
+ 175               		.stabn	68,0,55,.LM11-bufferGetFromFront
+ 176               	.LM11:
+ 177 0032 FD01      		movw r30,r26
+ 178 0034 8681      		ldd r24,Z+6
+ 179 0036 9781      		ldd r25,Z+7
+ 180 0038 ED91      		ld r30,X+
+ 181 003a FC91      		ld r31,X
+ 182 003c 1197      		sbiw r26,1
+ 183 003e E80F      		add r30,r24
+ 184 0040 F91F      		adc r31,r25
+ 185 0042 E081      		ld r30,Z
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// move index down and decrement length
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->dataindex++;
+ 186               		.stabn	68,0,57,.LM12-bufferGetFromFront
+ 187               	.LM12:
+ 188 0044 0196      		adiw r24,1
+ 189 0046 ED01      		movw r28,r26
+ 190 0048 9F83      		std Y+7,r25
+ 191 004a 8E83      		std Y+6,r24
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		if(buffer->dataindex >= buffer->size)
+ 192               		.stabn	68,0,58,.LM13-bufferGetFromFront
+ 193               	.LM13:
+ 194 004c 2A81      		ldd r18,Y+2
+ 195 004e 3B81      		ldd r19,Y+3
+ 196 0050 8217      		cp r24,r18
+ 197 0052 9307      		cpc r25,r19
+ 198 0054 00F0      		brlo .L7
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		{
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 			buffer->dataindex -= buffer->size;
+ 199               		.stabn	68,0,60,.LM14-bufferGetFromFront
+ 200               	.LM14:
+ 201 0056 821B      		sub r24,r18
+ 202 0058 930B      		sbc r25,r19
+ 203 005a 9F83      		std Y+7,r25
+ 204 005c 8E83      		std Y+6,r24
+ 205               	.L7:
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		}
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->datalength--;
+ 206               		.stabn	68,0,62,.LM15-bufferGetFromFront
+ 207               	.LM15:
+ 208 005e ED01      		movw r28,r26
+ 209 0060 8C81      		ldd r24,Y+4
+ 210 0062 9D81      		ldd r25,Y+5
+ 211 0064 0197      		sbiw r24,1
+ 212 0066 9D83      		std Y+5,r25
+ 213 0068 8C83      		std Y+4,r24
+ 214               	.L6:
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	}
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 215               		.stabn	68,0,65,.LM16-bufferGetFromFront
+ 216               	.LM16:
+ 217 006a 4FBF      		out 95-0x20,r20
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// return
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	return data;
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 6
+
+
+ 218               		.stabn	68,0,68,.LM17-bufferGetFromFront
+ 219               	.LM17:
+ 220 006c 8E2F      		mov r24,r30
+ 221 006e 9927      		clr r25
+ 222               	/* epilogue: frame size=0 */
+ 223 0070 DF91      		pop r29
+ 224 0072 CF91      		pop r28
+ 225 0074 0895      		ret
+ 226               	/* epilogue end (size=3) */
+ 227               	/* function bufferGetFromFront size 47 (42) */
+ 228               		.size	bufferGetFromFront, .-bufferGetFromFront
+ 229               		.stabs	"data:r(0,11)",64,0,48,30
+ 230               		.stabs	"_sreg:r(0,11)",64,0,50,20
+ 231               		.stabn	192,0,0,bufferGetFromFront-bufferGetFromFront
+ 232               		.stabn	224,0,0,.Lscope1-bufferGetFromFront
+ 233               	.Lscope1:
+ 234               		.stabs	"",36,0,0,.Lscope1-bufferGetFromFront
+ 235               		.stabd	78,0,0
+ 236               		.stabs	"bufferDumpFromFront:F(0,15)",36,0,71,bufferDumpFromFront
+ 237               		.stabs	"buffer:P(0,16)",64,0,70,30
+ 238               		.stabs	"numbytes:P(0,9)",64,0,70,22
+ 239               	.global	bufferDumpFromFront
+ 240               		.type	bufferDumpFromFront, @function
+ 241               	bufferDumpFromFront:
+ 242               		.stabd	46,0,0
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** void bufferDumpFromFront(cBuffer* buffer, unsigned short numbytes)
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 243               		.stabn	68,0,71,.LM18-bufferDumpFromFront
+ 244               	.LM18:
+ 245               	/* prologue: frame size=0 */
+ 246               	/* prologue end (size=0) */
+ 247 0076 FC01      		movw r30,r24
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 248               		.stabn	68,0,73,.LM19-bufferDumpFromFront
+ 249               	.LM19:
+ 250 0078 4FB7      		in r20,95-0x20
+ 251               	/* #APP */
+ 252 007a F894      		cli
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// dump numbytes from the front of the buffer
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// are we dumping less than the entire buffer?
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	if(numbytes < buffer->datalength)
+ 253               		.stabn	68,0,76,.LM20-bufferDumpFromFront
+ 254               	.LM20:
+ 255               	/* #NOAPP */
+ 256 007c 8481      		ldd r24,Z+4
+ 257 007e 9581      		ldd r25,Z+5
+ 258 0080 6817      		cp r22,r24
+ 259 0082 7907      		cpc r23,r25
+ 260 0084 00F4      		brsh .L11
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	{
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// move index down by numbytes and decrement length by numbytes
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->dataindex += numbytes;
+ 261               		.stabn	68,0,79,.LM21-bufferDumpFromFront
+ 262               	.LM21:
+ 263 0086 8681      		ldd r24,Z+6
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 7
+
+
+ 264 0088 9781      		ldd r25,Z+7
+ 265 008a 860F      		add r24,r22
+ 266 008c 971F      		adc r25,r23
+ 267 008e 9783      		std Z+7,r25
+ 268 0090 8683      		std Z+6,r24
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		if(buffer->dataindex >= buffer->size)
+ 269               		.stabn	68,0,80,.LM22-bufferDumpFromFront
+ 270               	.LM22:
+ 271 0092 2281      		ldd r18,Z+2
+ 272 0094 3381      		ldd r19,Z+3
+ 273 0096 8217      		cp r24,r18
+ 274 0098 9307      		cpc r25,r19
+ 275 009a 00F0      		brlo .L13
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		{
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 			buffer->dataindex -= buffer->size;
+ 276               		.stabn	68,0,82,.LM23-bufferDumpFromFront
+ 277               	.LM23:
+ 278 009c 821B      		sub r24,r18
+ 279 009e 930B      		sbc r25,r19
+ 280 00a0 9783      		std Z+7,r25
+ 281 00a2 8683      		std Z+6,r24
+ 282               	.L13:
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		}
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->datalength -= numbytes;
+ 283               		.stabn	68,0,84,.LM24-bufferDumpFromFront
+ 284               	.LM24:
+ 285 00a4 8481      		ldd r24,Z+4
+ 286 00a6 9581      		ldd r25,Z+5
+ 287 00a8 861B      		sub r24,r22
+ 288 00aa 970B      		sbc r25,r23
+ 289 00ac 9583      		std Z+5,r25
+ 290 00ae 8483      		std Z+4,r24
+ 291 00b0 00C0      		rjmp .L15
+ 292               	.L11:
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	}
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	else
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	{
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// flush the whole buffer
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->datalength = 0;
+ 293               		.stabn	68,0,89,.LM25-bufferDumpFromFront
+ 294               	.LM25:
+ 295 00b2 1582      		std Z+5,__zero_reg__
+ 296 00b4 1482      		std Z+4,__zero_reg__
+ 297               	.L15:
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	}
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 298               		.stabn	68,0,92,.LM26-bufferDumpFromFront
+ 299               	.LM26:
+ 300 00b6 4FBF      		out 95-0x20,r20
+ 301               	/* epilogue: frame size=0 */
+ 302 00b8 0895      		ret
+ 303               	/* epilogue end (size=1) */
+ 304               	/* function bufferDumpFromFront size 35 (34) */
+ 305               		.size	bufferDumpFromFront, .-bufferDumpFromFront
+ 306               		.stabs	"_sreg:r(0,11)",64,0,73,20
+ 307               		.stabn	192,0,0,bufferDumpFromFront-bufferDumpFromFront
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 8
+
+
+ 308               		.stabn	224,0,0,.Lscope2-bufferDumpFromFront
+ 309               	.Lscope2:
+ 310               		.stabs	"",36,0,0,.Lscope2-bufferDumpFromFront
+ 311               		.stabd	78,0,0
+ 312               		.stabs	"bufferGetAtIndex:F(0,11)",36,0,96,bufferGetAtIndex
+ 313               		.stabs	"buffer:P(0,16)",64,0,95,30
+ 314               		.stabs	"index:P(0,9)",64,0,95,24
+ 315               	.global	bufferGetAtIndex
+ 316               		.type	bufferGetAtIndex, @function
+ 317               	bufferGetAtIndex:
+ 318               		.stabd	46,0,0
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** unsigned char bufferGetAtIndex(cBuffer* buffer, unsigned short index)
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 319               		.stabn	68,0,96,.LM27-bufferGetAtIndex
+ 320               	.LM27:
+ 321               	/* prologue: frame size=0 */
+ 322               	/* prologue end (size=0) */
+ 323 00ba FC01      		movw r30,r24
+ 324 00bc CB01      		movw r24,r22
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 325               		.stabn	68,0,98,.LM28-bufferGetAtIndex
+ 326               	.LM28:
+ 327 00be 4FB7      		in r20,95-0x20
+ 328               	/* #APP */
+ 329 00c0 F894      		cli
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// return character at index in buffer
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	unsigned char data = buffer->dataptr[(buffer->dataindex+index)%(buffer->size)];
+ 330               		.stabn	68,0,100,.LM29-bufferGetAtIndex
+ 331               	.LM29:
+ 332               	/* #NOAPP */
+ 333 00c2 2681      		ldd r18,Z+6
+ 334 00c4 3781      		ldd r19,Z+7
+ 335 00c6 6281      		ldd r22,Z+2
+ 336 00c8 7381      		ldd r23,Z+3
+ 337 00ca 820F      		add r24,r18
+ 338 00cc 931F      		adc r25,r19
+ 339 00ce 0E94 0000 		call __udivmodhi4
+ 340 00d2 0190      		ld __tmp_reg__,Z+
+ 341 00d4 F081      		ld r31,Z
+ 342 00d6 E02D      		mov r30,__tmp_reg__
+ 343 00d8 E80F      		add r30,r24
+ 344 00da F91F      		adc r31,r25
+ 345 00dc 8081      		ld r24,Z
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 346               		.stabn	68,0,102,.LM30-bufferGetAtIndex
+ 347               	.LM30:
+ 348 00de 4FBF      		out 95-0x20,r20
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	return data;
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+ 349               		.stabn	68,0,104,.LM31-bufferGetAtIndex
+ 350               	.LM31:
+ 351 00e0 9927      		clr r25
+ 352               	/* epilogue: frame size=0 */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 9
+
+
+ 353 00e2 0895      		ret
+ 354               	/* epilogue end (size=1) */
+ 355               	/* function bufferGetAtIndex size 22 (21) */
+ 356               		.size	bufferGetAtIndex, .-bufferGetAtIndex
+ 357               		.stabs	"_sreg:r(0,11)",64,0,98,20
+ 358               		.stabs	"data:r(0,11)",64,0,100,24
+ 359               		.stabn	192,0,0,bufferGetAtIndex-bufferGetAtIndex
+ 360               		.stabn	224,0,0,.Lscope3-bufferGetAtIndex
+ 361               	.Lscope3:
+ 362               		.stabs	"",36,0,0,.Lscope3-bufferGetAtIndex
+ 363               		.stabd	78,0,0
+ 364               		.stabs	"bufferAddToEnd:F(0,11)",36,0,107,bufferAddToEnd
+ 365               		.stabs	"buffer:P(0,16)",64,0,106,28
+ 366               		.stabs	"data:P(0,11)",64,0,106,17
+ 367               	.global	bufferAddToEnd
+ 368               		.type	bufferAddToEnd, @function
+ 369               	bufferAddToEnd:
+ 370               		.stabd	46,0,0
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** unsigned char bufferAddToEnd(cBuffer* buffer, unsigned char data)
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 371               		.stabn	68,0,107,.LM32-bufferAddToEnd
+ 372               	.LM32:
+ 373               	/* prologue: frame size=0 */
+ 374 00e4 1F93      		push r17
+ 375 00e6 CF93      		push r28
+ 376 00e8 DF93      		push r29
+ 377               	/* prologue end (size=3) */
+ 378 00ea EC01      		movw r28,r24
+ 379 00ec 162F      		mov r17,r22
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 380               		.stabn	68,0,109,.LM33-bufferAddToEnd
+ 381               	.LM33:
+ 382 00ee 4FB7      		in r20,95-0x20
+ 383               	/* #APP */
+ 384 00f0 F894      		cli
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// make sure the buffer has room
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	if(buffer->datalength < buffer->size)
+ 385               		.stabn	68,0,111,.LM34-bufferAddToEnd
+ 386               	.LM34:
+ 387               	/* #NOAPP */
+ 388 00f2 2C81      		ldd r18,Y+4
+ 389 00f4 3D81      		ldd r19,Y+5
+ 390 00f6 6A81      		ldd r22,Y+2
+ 391 00f8 7B81      		ldd r23,Y+3
+ 392 00fa 2617      		cp r18,r22
+ 393 00fc 3707      		cpc r19,r23
+ 394 00fe 00F4      		brsh .L20
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	{
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// save data byte at end of buffer
+ 114:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->dataptr[(buffer->dataindex + buffer->datalength) % buffer->size] = data;
+ 395               		.stabn	68,0,114,.LM35-bufferAddToEnd
+ 396               	.LM35:
+ 397 0100 8E81      		ldd r24,Y+6
+ 398 0102 9F81      		ldd r25,Y+7
+ 399 0104 820F      		add r24,r18
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 10
+
+
+ 400 0106 931F      		adc r25,r19
+ 401 0108 0E94 0000 		call __udivmodhi4
+ 402 010c E881      		ld r30,Y
+ 403 010e F981      		ldd r31,Y+1
+ 404 0110 E80F      		add r30,r24
+ 405 0112 F91F      		adc r31,r25
+ 406 0114 1083      		st Z,r17
+ 115:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// increment the length
+ 116:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		buffer->datalength++;
+ 407               		.stabn	68,0,116,.LM36-bufferAddToEnd
+ 408               	.LM36:
+ 409 0116 8C81      		ldd r24,Y+4
+ 410 0118 9D81      		ldd r25,Y+5
+ 411 011a 0196      		adiw r24,1
+ 412 011c 9D83      		std Y+5,r25
+ 413 011e 8C83      		std Y+4,r24
+ 117:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// end critical section
+ 118:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		CRITICAL_SECTION_END;
+ 414               		.stabn	68,0,118,.LM37-bufferAddToEnd
+ 415               	.LM37:
+ 416 0120 4FBF      		out 95-0x20,r20
+ 417 0122 8FEF      		ldi r24,lo8(255)
+ 418 0124 90E0      		ldi r25,hi8(255)
+ 419 0126 00C0      		rjmp .L22
+ 420               	.L20:
+ 119:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		// return success
+ 120:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 		return -1;
+ 121:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	}
+ 122:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+ 123:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 421               		.stabn	68,0,123,.LM38-bufferAddToEnd
+ 422               	.LM38:
+ 423 0128 4FBF      		out 95-0x20,r20
+ 424 012a 80E0      		ldi r24,lo8(0)
+ 425 012c 90E0      		ldi r25,hi8(0)
+ 426               	.L22:
+ 427               	/* epilogue: frame size=0 */
+ 428 012e DF91      		pop r29
+ 429 0130 CF91      		pop r28
+ 430 0132 1F91      		pop r17
+ 431 0134 0895      		ret
+ 432               	/* epilogue end (size=4) */
+ 433               	/* function bufferAddToEnd size 42 (35) */
+ 434               		.size	bufferAddToEnd, .-bufferAddToEnd
+ 435               		.stabs	"_sreg:r(0,11)",64,0,109,20
+ 436               		.stabn	192,0,0,bufferAddToEnd-bufferAddToEnd
+ 437               		.stabn	224,0,0,.Lscope4-bufferAddToEnd
+ 438               	.Lscope4:
+ 439               		.stabs	"",36,0,0,.Lscope4-bufferAddToEnd
+ 440               		.stabd	78,0,0
+ 441               		.stabs	"bufferIsNotFull:F(0,9)",36,0,129,bufferIsNotFull
+ 442               		.stabs	"buffer:P(0,16)",64,0,128,30
+ 443               	.global	bufferIsNotFull
+ 444               		.type	bufferIsNotFull, @function
+ 445               	bufferIsNotFull:
+ 446               		.stabd	46,0,0
+ 124:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// return failure
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 11
+
+
+ 125:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	return 0;
+ 126:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+ 127:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+ 128:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** unsigned short bufferIsNotFull(cBuffer* buffer)
+ 129:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 447               		.stabn	68,0,129,.LM39-bufferIsNotFull
+ 448               	.LM39:
+ 449               	/* prologue: frame size=0 */
+ 450               	/* prologue end (size=0) */
+ 451 0136 FC01      		movw r30,r24
+ 130:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+ 131:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 452               		.stabn	68,0,131,.LM40-bufferIsNotFull
+ 453               	.LM40:
+ 454 0138 8FB7      		in r24,95-0x20
+ 455               	/* #APP */
+ 456 013a F894      		cli
+ 132:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// check to see if the buffer has room
+ 133:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// return true if there is room
+ 134:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	unsigned short bytesleft = (buffer->size - buffer->datalength);
+ 135:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+ 136:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 457               		.stabn	68,0,136,.LM41-bufferIsNotFull
+ 458               	.LM41:
+ 459               	/* #NOAPP */
+ 460 013c 8FBF      		out 95-0x20,r24
+ 461 013e 8281      		ldd r24,Z+2
+ 462 0140 9381      		ldd r25,Z+3
+ 463 0142 2481      		ldd r18,Z+4
+ 464 0144 3581      		ldd r19,Z+5
+ 137:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	return bytesleft;
+ 138:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** }
+ 465               		.stabn	68,0,138,.LM42-bufferIsNotFull
+ 466               	.LM42:
+ 467 0146 821B      		sub r24,r18
+ 468 0148 930B      		sbc r25,r19
+ 469               	/* epilogue: frame size=0 */
+ 470 014a 0895      		ret
+ 471               	/* epilogue end (size=1) */
+ 472               	/* function bufferIsNotFull size 12 (11) */
+ 473               		.size	bufferIsNotFull, .-bufferIsNotFull
+ 474               		.stabs	"_sreg:r(0,11)",64,0,131,24
+ 475               		.stabn	192,0,0,bufferIsNotFull-bufferIsNotFull
+ 476               		.stabn	224,0,0,.Lscope5-bufferIsNotFull
+ 477               	.Lscope5:
+ 478               		.stabs	"",36,0,0,.Lscope5-bufferIsNotFull
+ 479               		.stabd	78,0,0
+ 480               		.stabs	"bufferFlush:F(0,15)",36,0,141,bufferFlush
+ 481               		.stabs	"buffer:P(0,16)",64,0,140,30
+ 482               	.global	bufferFlush
+ 483               		.type	bufferFlush, @function
+ 484               	bufferFlush:
+ 485               		.stabd	46,0,0
+ 139:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 
+ 140:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** void bufferFlush(cBuffer* buffer)
+ 141:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** {
+ 486               		.stabn	68,0,141,.LM43-bufferFlush
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 12
+
+
+ 487               	.LM43:
+ 488               	/* prologue: frame size=0 */
+ 489               	/* prologue end (size=0) */
+ 490 014c FC01      		movw r30,r24
+ 142:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// begin critical section
+ 143:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_START;
+ 491               		.stabn	68,0,143,.LM44-bufferFlush
+ 492               	.LM44:
+ 493 014e 8FB7      		in r24,95-0x20
+ 494               	/* #APP */
+ 495 0150 F894      		cli
+ 144:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// flush contents of the buffer
+ 145:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	buffer->datalength = 0;
+ 496               		.stabn	68,0,145,.LM45-bufferFlush
+ 497               	.LM45:
+ 498               	/* #NOAPP */
+ 499 0152 1582      		std Z+5,__zero_reg__
+ 500 0154 1482      		std Z+4,__zero_reg__
+ 146:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	// end critical section
+ 147:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c **** 	CRITICAL_SECTION_END;
+ 501               		.stabn	68,0,147,.LM46-bufferFlush
+ 502               	.LM46:
+ 503 0156 8FBF      		out 95-0x20,r24
+ 504               	/* epilogue: frame size=0 */
+ 505 0158 0895      		ret
+ 506               	/* epilogue end (size=1) */
+ 507               	/* function bufferFlush size 8 (7) */
+ 508               		.size	bufferFlush, .-bufferFlush
+ 509               		.stabs	"_sreg:r(0,11)",64,0,143,24
+ 510               		.stabn	192,0,0,bufferFlush-bufferFlush
+ 511               		.stabn	224,0,0,.Lscope6-bufferFlush
+ 512               	.Lscope6:
+ 513               		.stabs	"",36,0,0,.Lscope6-bufferFlush
+ 514               		.stabd	78,0,0
+ 515               		.stabs	"",100,0,0,.Letext0
+ 516               	.Letext0:
+ 517               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.c": code  180 = 0x00
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 buffer.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:101    .text:00000000 bufferInit
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:148    .text:0000001a bufferGetFromFront
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:241    .text:00000076 bufferDumpFromFront
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:317    .text:000000ba bufferGetAtIndex
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:369    .text:000000e4 bufferAddToEnd
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:445    .text:00000136 bufferIsNotFull
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccDYw8j0.s:484    .text:0000014c bufferFlush
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__udivmodhi4

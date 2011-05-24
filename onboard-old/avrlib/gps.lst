@@ -1,0 +1,269 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 1
+
+
+   1               		.file	"gps.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/pgmspace.h",130,0,0,0
+  69               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  70               		.stabs	"size_t:t(6,1)=(0,4)",128,0,214,0
+  71               		.stabn	162,0,0,0
+  72               		.stabs	"prog_void:t(5,1)=(5,2)=(5,2)",128,0,203,0
+  73               		.stabs	"prog_char:t(5,3)=(5,4)=@s8;r(5,4);-128;127;",128,0,204,0
+  74               		.stabs	"prog_uchar:t(5,5)=(5,6)=@s8;r(5,6);0;255;",128,0,205,0
+  75               		.stabs	"prog_int8_t:t(5,7)=(5,4)",128,0,207,0
+  76               		.stabs	"prog_uint8_t:t(5,8)=(5,6)",128,0,208,0
+  77               		.stabs	"prog_int16_t:t(5,9)=(5,10)=(0,1)",128,0,209,0
+  78               		.stabs	"prog_uint16_t:t(5,11)=(5,12)=(0,4)",128,0,210,0
+  79               		.stabs	"prog_int32_t:t(5,13)=(5,14)=(0,3)",128,0,211,0
+  80               		.stabs	"prog_uint32_t:t(5,15)=(5,16)=(0,5)",128,0,212,0
+  81               		.stabs	"prog_int64_t:t(5,17)=(5,18)=(0,6)",128,0,213,0
+  82               		.stabs	"prog_uint64_t:t(5,19)=(5,20)=(0,7)",128,0,214,0
+  83               		.stabn	162,0,0,0
+  84               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdlib.h",130,0,0,0
+  85               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  86               		.stabs	"wchar_t:t(8,1)=(0,1)",128,0,326,0
+  87               		.stabn	162,0,0,0
+  88               		.stabs	"div_t:t(7,1)=(7,2)=s4quot:(0,1),0,16;rem:(0,1),16,16;;",128,0,69,0
+  89               		.stabs	"ldiv_t:t(7,3)=(7,4)=s8quot:(0,3),0,32;rem:(0,3),32,32;;",128,0,75,0
+  90               		.stabs	"__compar_fn_t:t(7,5)=(7,6)=*(7,7)=f(0,1)",128,0,78,0
+  91               		.stabn	162,0,0,0
+  92               		.stabs	"./global.h",130,0,0,0
+  93               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  94               		.stabs	"u08:t(10,1)=(0,11)",128,0,32,0
+  95               		.stabs	"s08:t(10,2)=(0,10)",128,0,33,0
+  96               		.stabs	"u16:t(10,3)=(0,9)",128,0,34,0
+  97               		.stabs	"s16:t(10,4)=(0,8)",128,0,35,0
+  98               		.stabs	"u32:t(10,5)=(0,5)",128,0,36,0
+  99               		.stabs	"s32:t(10,6)=(0,3)",128,0,37,0
+ 100               		.stabs	"u64:t(10,7)=(0,7)",128,0,38,0
+ 101               		.stabs	"s64:t(10,8)=(0,6)",128,0,39,0
+ 102               		.stabs	"BOOL:t(10,9)=(0,11)",128,0,69,0
+ 103               		.stabs	"BYTE:t(10,10)=(0,11)",128,0,70,0
+ 104               		.stabs	"WORD:t(10,11)=(0,4)",128,0,71,0
+ 105               		.stabs	"DWORD:t(10,12)=(0,5)",128,0,72,0
+ 106               		.stabs	"UCHAR:t(10,13)=(0,11)",128,0,74,0
+ 107               		.stabs	"UINT:t(10,14)=(0,4)",128,0,75,0
+ 108               		.stabs	"USHORT:t(10,15)=(0,9)",128,0,76,0
+ 109               		.stabs	"ULONG:t(10,16)=(0,5)",128,0,77,0
+ 110               		.stabs	"CHAR:t(10,17)=(0,2)",128,0,79,0
+ 111               		.stabs	"INT:t(10,18)=(0,1)",128,0,80,0
+ 112               		.stabs	"LONG:t(10,19)=(0,3)",128,0,81,0
+ 113               		.stabn	162,0,0,0
+ 114               		.stabn	162,0,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 3
+
+
+ 115               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.h",130,0,0,0
+ 116               		.stabs	"union_float_u32:T(11,1)=u4f:(0,12),0,32;i:(0,5),0,32;b:(11,2)=ar(11,3)=r(11,3);0;0177777;;
+ 117               		.stabs	"float_u32:t(11,4)=(11,1)",128,0,46,0
+ 118               		.stabs	"union_double_u64:T(11,5)=u8f:(0,13),0,32;i:(0,7),0,64;b:(11,6)=ar(11,3);0;7;(0,11),0,64;;"
+ 119               		.stabs	"double_u64:t(11,7)=(11,5)",128,0,53,0
+ 120               		.stabs	"PositionLLA:T(11,8)=s18lat:(11,4),0,32;lon:(11,4),32,32;alt:(11,4),64,32;TimeOfFix:(11,4),
+ 121               		.stabs	"VelocityENU:T(11,9)=s18east:(11,4),0,32;north:(11,4),32,32;up:(11,4),64,32;TimeOfFix:(11,4
+ 122               		.stabs	"VelocityHS:T(11,10)=s14heading:(11,4),0,32;speed:(11,4),32,32;TimeOfFix:(11,4),64,32;updat
+ 123               		.stabs	"PositionECEF:T(11,11)=s18x:(11,4),0,32;y:(11,4),32,32;z:(11,4),64,32;TimeOfFix:(11,4),96,3
+ 124               		.stabs	"VelocityECEF:T(11,12)=s18x:(11,4),0,32;y:(11,4),32,32;z:(11,4),64,32;TimeOfFix:(11,4),96,3
+ 125               		.stabs	"struct_GpsInfo:T(11,13)=s97TimeOfWeek:(11,4),0,32;WeekNum:(10,3),32,16;UtcOffset:(11,4),48
+ 126               		.stabs	"GpsInfoType:t(11,14)=(11,13)",128,0,112,0
+ 127               		.stabn	162,0,0,0
+ 128               		.stabs	"gpsInit:F(0,15)",36,0,39,gpsInit
+ 129               	.global	gpsInit
+ 130               		.type	gpsInit, @function
+ 131               	gpsInit:
+ 132               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** /*! \file gps.c \brief GPS position storage and processing library. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // File Name	: 'gps.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Title		: GPS position storage and processing function library
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Author		: Pascal Stang - Copyright (C) 2002-2005
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Created		: 2005.01.14
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Revised		: 2002.07.17
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Version		: 0.1
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Target MCU	: Atmel AVR Series
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // NOTE: This code is currently below version 1.0, and therefore is considered
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // to be lacking in some functionality or documentation, or may not be fully
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // tested.  Nonetheless, you can expect most functions to work.
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // This code is distributed under the GNU Public License
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** //*****************************************************************************
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** #ifndef WIN32
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	#include <avr/io.h>
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	#include <avr/interrupt.h>
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	#include <avr/pgmspace.h>
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	#include <math.h>
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	#include <stdlib.h>
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** #endif
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** #include "global.h"
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** #include "rprintf.h"
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** #include "gps.h"
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Global variables
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** GpsInfoType GpsInfo;
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** // Functions
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** void gpsInit(void)
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** {
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 4
+
+
+ 133               		.stabn	68,0,39,.LM0-gpsInit
+ 134               	.LM0:
+ 135               	/* prologue: frame size=0 */
+ 136               	/* prologue end (size=0) */
+ 137               	/* epilogue: frame size=0 */
+ 138 0000 0895      		ret
+ 139               	/* epilogue end (size=1) */
+ 140               	/* function gpsInit size 1 (0) */
+ 141               		.size	gpsInit, .-gpsInit
+ 142               	.Lscope0:
+ 143               		.stabs	"",36,0,0,.Lscope0-gpsInit
+ 144               		.stabd	78,0,0
+ 145               		.stabs	"gpsGetInfo:F(0,16)=*(11,14)",36,0,44,gpsGetInfo
+ 146               	.global	gpsGetInfo
+ 147               		.type	gpsGetInfo, @function
+ 148               	gpsGetInfo:
+ 149               		.stabd	46,0,0
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** }
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** GpsInfoType* gpsGetInfo(void)
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** {
+ 150               		.stabn	68,0,44,.LM1-gpsGetInfo
+ 151               	.LM1:
+ 152               	/* prologue: frame size=0 */
+ 153               	/* prologue end (size=0) */
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 	return &GpsInfo;
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** }
+ 154               		.stabn	68,0,46,.LM2-gpsGetInfo
+ 155               	.LM2:
+ 156 0002 80E0      		ldi r24,lo8(GpsInfo)
+ 157 0004 90E0      		ldi r25,hi8(GpsInfo)
+ 158               	/* epilogue: frame size=0 */
+ 159 0006 0895      		ret
+ 160               	/* epilogue end (size=1) */
+ 161               	/* function gpsGetInfo size 3 (2) */
+ 162               		.size	gpsGetInfo, .-gpsGetInfo
+ 163               	.Lscope1:
+ 164               		.stabs	"",36,0,0,.Lscope1-gpsGetInfo
+ 165               		.stabd	78,0,0
+ 166               		.stabs	"gpsInfoPrint:F(0,15)",36,0,49,gpsInfoPrint
+ 167               	.global	gpsInfoPrint
+ 168               		.type	gpsInfoPrint, @function
+ 169               	gpsInfoPrint:
+ 170               		.stabd	46,0,0
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** 
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** void gpsInfoPrint(void)
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c **** {
+ 171               		.stabn	68,0,49,.LM3-gpsInfoPrint
+ 172               	.LM3:
+ 173               	/* prologue: frame size=0 */
+ 174               	/* prologue end (size=0) */
+ 175               	/* epilogue: frame size=0 */
+ 176 0008 0895      		ret
+ 177               	/* epilogue end (size=1) */
+ 178               	/* function gpsInfoPrint size 1 (0) */
+ 179               		.size	gpsInfoPrint, .-gpsInfoPrint
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 5
+
+
+ 180               	.Lscope2:
+ 181               		.stabs	"",36,0,0,.Lscope2-gpsInfoPrint
+ 182               		.stabd	78,0,0
+ 183               		.comm GpsInfo,97,1
+ 184               		.stabs	"GpsInfo:G(11,14)",32,0,35,0
+ 185               		.stabs	"",100,0,0,.Letext0
+ 186               	.Letext0:
+ 187               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.c": code    5 = 0x0005 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 gps.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:131    .text:00000000 gpsInit
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:148    .text:00000002 gpsGetInfo
+                            *COM*:00000061 GpsInfo
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccncJ261.s:169    .text:00000008 gpsInfoPrint
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss

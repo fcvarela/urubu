@@ -1,0 +1,2141 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 1
+
+
+   1               		.file	"i2c.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.h",130,0,0,0
+  69               		.stabs	"./global.h",130,0,0,0
+  70               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  71               		.stabs	"u08:t(7,1)=(0,11)",128,0,32,0
+  72               		.stabs	"s08:t(7,2)=(0,10)",128,0,33,0
+  73               		.stabs	"u16:t(7,3)=(0,9)",128,0,34,0
+  74               		.stabs	"s16:t(7,4)=(0,8)",128,0,35,0
+  75               		.stabs	"u32:t(7,5)=(0,5)",128,0,36,0
+  76               		.stabs	"s32:t(7,6)=(0,3)",128,0,37,0
+  77               		.stabs	"u64:t(7,7)=(0,7)",128,0,38,0
+  78               		.stabs	"s64:t(7,8)=(0,6)",128,0,39,0
+  79               		.stabs	"BOOL:t(7,9)=(0,11)",128,0,69,0
+  80               		.stabs	"BYTE:t(7,10)=(0,11)",128,0,70,0
+  81               		.stabs	"WORD:t(7,11)=(0,4)",128,0,71,0
+  82               		.stabs	"DWORD:t(7,12)=(0,5)",128,0,72,0
+  83               		.stabs	"UCHAR:t(7,13)=(0,11)",128,0,74,0
+  84               		.stabs	"UINT:t(7,14)=(0,4)",128,0,75,0
+  85               		.stabs	"USHORT:t(7,15)=(0,9)",128,0,76,0
+  86               		.stabs	"ULONG:t(7,16)=(0,5)",128,0,77,0
+  87               		.stabs	"CHAR:t(7,17)=(0,2)",128,0,79,0
+  88               		.stabs	"INT:t(7,18)=(0,1)",128,0,80,0
+  89               		.stabs	"LONG:t(7,19)=(0,3)",128,0,81,0
+  90               		.stabn	162,0,0,0
+  91               		.stabn	162,0,0,0
+  92               		.stabs	" :T(5,1)=eI2C_IDLE:0,I2C_BUSY:1,I2C_MASTER_TX:2,I2C_MASTER_RX:3,I2C_SLAVE_TX:4,I2C_SLAVE_R
+  93               		.stabs	"eI2cStateType:t(5,2)=(5,1)",128,0,124,0
+  94               		.stabn	162,0,0,0
+  95               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.h",130,0,0,0
+  96               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/pgmspace.h",130,0,0,0
+  97               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  98               		.stabs	"size_t:t(10,1)=(0,4)",128,0,214,0
+  99               		.stabn	162,0,0,0
+ 100               		.stabs	"prog_void:t(9,1)=(9,2)=(9,2)",128,0,203,0
+ 101               		.stabs	"prog_char:t(9,3)=(9,4)=@s8;r(9,4);-128;127;",128,0,204,0
+ 102               		.stabs	"prog_uchar:t(9,5)=(9,6)=@s8;r(9,6);0;255;",128,0,205,0
+ 103               		.stabs	"prog_int8_t:t(9,7)=(9,4)",128,0,207,0
+ 104               		.stabs	"prog_uint8_t:t(9,8)=(9,6)",128,0,208,0
+ 105               		.stabs	"prog_int16_t:t(9,9)=(9,10)=(0,1)",128,0,209,0
+ 106               		.stabs	"prog_uint16_t:t(9,11)=(9,12)=(0,4)",128,0,210,0
+ 107               		.stabs	"prog_int32_t:t(9,13)=(9,14)=(0,3)",128,0,211,0
+ 108               		.stabs	"prog_uint32_t:t(9,15)=(9,16)=(0,5)",128,0,212,0
+ 109               		.stabs	"prog_int64_t:t(9,17)=(9,18)=(0,6)",128,0,213,0
+ 110               		.stabs	"prog_uint64_t:t(9,19)=(9,20)=(0,7)",128,0,214,0
+ 111               		.stabn	162,0,0,0
+ 112               		.stabn	162,0,0,0
+ 113               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.h",130,0,0,0
+ 114               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.h",130,0,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 3
+
+
+ 115               		.stabs	"struct_cBuffer:T(12,1)=s8dataptr:(12,2)=*(0,11),0,16;size:(0,9),16,16;datalength:(0,9),32,
+ 116               		.stabs	"cBuffer:t(12,3)=(12,1)",128,0,47,0
+ 117               		.stabn	162,0,0,0
+ 118               		.stabn	162,0,0,0
+ 119               		.stabs	"i2cSetBitrate:F(0,15)",36,0,80,i2cSetBitrate
+ 120               		.stabs	"bitrateKHz:P(7,3)",64,0,79,24
+ 121               	.global	i2cSetBitrate
+ 122               		.type	i2cSetBitrate, @function
+ 123               	i2cSetBitrate:
+ 124               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** /*! \file i2c.c \brief I2C interface using AVR Two-Wire Interface (TWI) hardware. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // File Name	: 'i2c.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Title		: I2C interface using AVR Two-Wire Interface (TWI) hardware
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Author		: Pascal Stang - Copyright (C) 2002-2003
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Created		: 2002.06.25
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Revised		: 2003.03.02
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Version		: 0.9
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Target MCU	: Atmel AVR series
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // This code is distributed under the GNU Public License
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //*****************************************************************************
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** #include <avr/io.h>
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** #include <avr/interrupt.h>
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** #include "i2c.h"
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** #include "rprintf.h"	// include printf function library
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** #include "uart2.h"
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // Standard I2C bit rates are:
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // 100KHz for slow speed
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // 400KHz for high speed
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //#define I2C_DEBUG
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // I2C state and address variables
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static volatile eI2cStateType I2cState;
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cDeviceAddrRW;
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // send/transmit buffer (outgoing data)
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cSendData[I2C_SEND_DATA_BUFFER_SIZE];
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cSendDataIndex;
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cSendDataLength;
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // receive buffer (incoming data)
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cReceiveData[I2C_RECEIVE_DATA_BUFFER_SIZE];
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cReceiveDataIndex;
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 I2cReceiveDataLength;
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // function pointer to i2c receive routine
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //! I2cSlaveReceive is called when this processor
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // is addressed as a slave for writing
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static void (*i2cSlaveReceive)(u08 receiveDataLength, u08* recieveData);
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 4
+
+
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //! I2cSlaveTransmit is called when this processor
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // is addressed as a slave for reading
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** static u08 (*i2cSlaveTransmit)(u08 transmitDataLengthMax, u08* transmitData);
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** // functions
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cInit(void)
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set pull-up resistors on I2C bus pins
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// TODO: should #ifdef these
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(PORTC, 0);	// i2c SCL on ATmega163,323,16,32,etc
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(PORTC, 1);	// i2c SDA on ATmega163,323,16,32,etc
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(PORTD, 0);	// i2c SCL on ATmega128,64
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(PORTD, 1);	// i2c SDA on ATmega128,64
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// clear SlaveReceive and SlaveTransmit handler to null
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSlaveReceive = 0;
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSlaveTransmit = 0;
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set i2c bit rate to 100KHz
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSetBitrate(100);
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable TWI (two-wire interface)
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWEN);
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set state
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cState = I2C_IDLE;
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable TWI interrupt and slave address ACK
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWIE);
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWEA);
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable interrupts
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sei();
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cSetBitrate(u16 bitrateKHz)
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 125               		.stabn	68,0,80,.LM0-i2cSetBitrate
+ 126               	.LM0:
+ 127               	/* prologue: frame size=0 */
+ 128               	/* prologue end (size=0) */
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 bitrate_div;
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set i2c bitrate
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// SCL freq = F_CPU/(16+2*TWBR))
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	#ifdef TWPS0
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// for processors with additional bitrate division (mega128)
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// SCL freq = F_CPU/(16+2*TWBR*4^TWPS)
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set TWPS to zero
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		cbi(TWSR, TWPS0);
+ 129               		.stabn	68,0,88,.LM1-i2cSetBitrate
+ 130               	.LM1:
+ 131 0000 2091 7100 		lds r18,113
+ 132 0004 2E7F      		andi r18,lo8(-2)
+ 133 0006 2093 7100 		sts 113,r18
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		cbi(TWSR, TWPS1);
+ 134               		.stabn	68,0,89,.LM2-i2cSetBitrate
+ 135               	.LM2:
+ 136 000a 2091 7100 		lds r18,113
+ 137 000e 2D7F      		andi r18,lo8(-3)
+ 138 0010 2093 7100 		sts 113,r18
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	#endif
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 5
+
+
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// calculate bitrate division	
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	bitrate_div = ((F_CPU/1000l)/bitrateKHz);
+ 139               		.stabn	68,0,92,.LM3-i2cSetBitrate
+ 140               	.LM3:
+ 141 0014 9C01      		movw r18,r24
+ 142 0016 4427      		clr r20
+ 143 0018 5527      		clr r21
+ 144 001a 60E8      		ldi r22,lo8(16000)
+ 145 001c 7EE3      		ldi r23,hi8(16000)
+ 146 001e 80E0      		ldi r24,hlo8(16000)
+ 147 0020 90E0      		ldi r25,hhi8(16000)
+ 148 0022 0E94 0000 		call __divmodsi4
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if(bitrate_div >= 16)
+ 149               		.stabn	68,0,93,.LM4-i2cSetBitrate
+ 150               	.LM4:
+ 151 0026 2031      		cpi r18,lo8(16)
+ 152 0028 00F0      		brlo .L2
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		bitrate_div = (bitrate_div-16)/2;
+ 153               		.stabn	68,0,94,.LM5-i2cSetBitrate
+ 154               	.LM5:
+ 155 002a 822F      		mov r24,r18
+ 156 002c 9927      		clr r25
+ 157 002e 4097      		sbiw r24,16
+ 158 0030 62E0      		ldi r22,lo8(2)
+ 159 0032 70E0      		ldi r23,hi8(2)
+ 160 0034 0E94 0000 		call __divmodhi4
+ 161 0038 262F      		mov r18,r22
+ 162               	.L2:
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWBR, bitrate_div);
+ 163               		.stabn	68,0,95,.LM6-i2cSetBitrate
+ 164               	.LM6:
+ 165 003a 2093 7000 		sts 112,r18
+ 166               	/* epilogue: frame size=0 */
+ 167 003e 0895      		ret
+ 168               	/* epilogue end (size=1) */
+ 169               	/* function i2cSetBitrate size 32 (31) */
+ 170               		.size	i2cSetBitrate, .-i2cSetBitrate
+ 171               		.stabs	"bitrate_div:r(7,1)",64,0,81,18
+ 172               		.stabn	192,0,0,i2cSetBitrate-i2cSetBitrate
+ 173               		.stabn	224,0,0,.Lscope0-i2cSetBitrate
+ 174               	.Lscope0:
+ 175               		.stabs	"",36,0,0,.Lscope0-i2cSetBitrate
+ 176               		.stabd	78,0,0
+ 177               		.stabs	"i2cInit:F(0,15)",36,0,54,i2cInit
+ 178               	.global	i2cInit
+ 179               		.type	i2cInit, @function
+ 180               	i2cInit:
+ 181               		.stabd	46,0,0
+ 182               		.stabn	68,0,54,.LM7-i2cInit
+ 183               	.LM7:
+ 184               	/* prologue: frame size=0 */
+ 185               	/* prologue end (size=0) */
+ 186               		.stabn	68,0,57,.LM8-i2cInit
+ 187               	.LM8:
+ 188 0040 A89A      		sbi 53-0x20,0
+ 189               		.stabn	68,0,58,.LM9-i2cInit
+ 190               	.LM9:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 6
+
+
+ 191 0042 A99A      		sbi 53-0x20,1
+ 192               		.stabn	68,0,59,.LM10-i2cInit
+ 193               	.LM10:
+ 194 0044 909A      		sbi 50-0x20,0
+ 195               		.stabn	68,0,60,.LM11-i2cInit
+ 196               	.LM11:
+ 197 0046 919A      		sbi 50-0x20,1
+ 198               		.stabn	68,0,63,.LM12-i2cInit
+ 199               	.LM12:
+ 200 0048 1092 0000 		sts (i2cSlaveReceive)+1,__zero_reg__
+ 201 004c 1092 0000 		sts i2cSlaveReceive,__zero_reg__
+ 202               		.stabn	68,0,64,.LM13-i2cInit
+ 203               	.LM13:
+ 204 0050 1092 0000 		sts (i2cSlaveTransmit)+1,__zero_reg__
+ 205 0054 1092 0000 		sts i2cSlaveTransmit,__zero_reg__
+ 206               		.stabn	68,0,66,.LM14-i2cInit
+ 207               	.LM14:
+ 208 0058 84E6      		ldi r24,lo8(100)
+ 209 005a 90E0      		ldi r25,hi8(100)
+ 210 005c 0E94 0000 		call i2cSetBitrate
+ 211               		.stabn	68,0,68,.LM15-i2cInit
+ 212               	.LM15:
+ 213 0060 E4E7      		ldi r30,lo8(116)
+ 214 0062 F0E0      		ldi r31,hi8(116)
+ 215 0064 8081      		ld r24,Z
+ 216 0066 8460      		ori r24,lo8(4)
+ 217 0068 8083      		st Z,r24
+ 218               		.stabn	68,0,70,.LM16-i2cInit
+ 219               	.LM16:
+ 220 006a 1092 0000 		sts (I2cState)+1,__zero_reg__
+ 221 006e 1092 0000 		sts I2cState,__zero_reg__
+ 222               		.stabn	68,0,72,.LM17-i2cInit
+ 223               	.LM17:
+ 224 0072 8081      		ld r24,Z
+ 225 0074 8160      		ori r24,lo8(1)
+ 226 0076 8083      		st Z,r24
+ 227               		.stabn	68,0,73,.LM18-i2cInit
+ 228               	.LM18:
+ 229 0078 8081      		ld r24,Z
+ 230 007a 8064      		ori r24,lo8(64)
+ 231 007c 8083      		st Z,r24
+ 232               		.stabn	68,0,76,.LM19-i2cInit
+ 233               	.LM19:
+ 234               	/* #APP */
+ 235 007e 7894      		sei
+ 236               	/* #NOAPP */
+ 237               	/* epilogue: frame size=0 */
+ 238 0080 0895      		ret
+ 239               	/* epilogue end (size=1) */
+ 240               	/* function i2cInit size 34 (33) */
+ 241               		.size	i2cInit, .-i2cInit
+ 242               	.Lscope1:
+ 243               		.stabs	"",36,0,0,.Lscope1-i2cInit
+ 244               		.stabd	78,0,0
+ 245               		.stabs	"i2cSetLocalDeviceAddr:F(0,15)",36,0,99,i2cSetLocalDeviceAddr
+ 246               		.stabs	"deviceAddr:P(7,1)",64,0,98,24
+ 247               		.stabs	"genCallEn:P(7,1)",64,0,98,22
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 7
+
+
+ 248               	.global	i2cSetLocalDeviceAddr
+ 249               		.type	i2cSetLocalDeviceAddr, @function
+ 250               	i2cSetLocalDeviceAddr:
+ 251               		.stabd	46,0,0
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cSetLocalDeviceAddr(u08 deviceAddr, u08 genCallEn)
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 252               		.stabn	68,0,99,.LM20-i2cSetLocalDeviceAddr
+ 253               	.LM20:
+ 254               	/* prologue: frame size=0 */
+ 255               	/* prologue end (size=0) */
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set local device address (used in slave mode only)
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWAR, ((deviceAddr&0xFE) | (genCallEn?1:0)) );
+ 256               		.stabn	68,0,101,.LM21-i2cSetLocalDeviceAddr
+ 257               	.LM21:
+ 258 0082 8E7F      		andi r24,lo8(-2)
+ 259 0084 90E0      		ldi r25,lo8(0)
+ 260 0086 6111      		cpse r22,__zero_reg__
+ 261               		.stabn	68,0,101,.LM22-i2cSetLocalDeviceAddr
+ 262               	.LM22:
+ 263 0088 91E0      		ldi r25,lo8(1)
+ 264               	.L8:
+ 265 008a 892B      		or r24,r25
+ 266 008c 8093 7200 		sts 114,r24
+ 267               	/* epilogue: frame size=0 */
+ 268 0090 0895      		ret
+ 269               	/* epilogue end (size=1) */
+ 270               	/* function i2cSetLocalDeviceAddr size 9 (8) */
+ 271               		.size	i2cSetLocalDeviceAddr, .-i2cSetLocalDeviceAddr
+ 272               	.Lscope2:
+ 273               		.stabs	"",36,0,0,.Lscope2-i2cSetLocalDeviceAddr
+ 274               		.stabd	78,0,0
+ 275               		.stabs	"i2cSetSlaveReceiveHandler:F(0,15)",36,0,105,i2cSetSlaveReceiveHandler
+ 276               		.stabs	"i2cSlaveRx_func:P(0,16)=*(0,17)=f(0,15)",64,0,104,24
+ 277               	.global	i2cSetSlaveReceiveHandler
+ 278               		.type	i2cSetSlaveReceiveHandler, @function
+ 279               	i2cSetSlaveReceiveHandler:
+ 280               		.stabd	46,0,0
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cSetSlaveReceiveHandler(void (*i2cSlaveRx_func)(u08 receiveDataLength, u08* recieveData))
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 281               		.stabn	68,0,105,.LM23-i2cSetSlaveReceiveHandler
+ 282               	.LM23:
+ 283               	/* prologue: frame size=0 */
+ 284               	/* prologue end (size=0) */
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSlaveReceive = i2cSlaveRx_func;
+ 285               		.stabn	68,0,106,.LM24-i2cSetSlaveReceiveHandler
+ 286               	.LM24:
+ 287 0092 9093 0000 		sts (i2cSlaveReceive)+1,r25
+ 288 0096 8093 0000 		sts i2cSlaveReceive,r24
+ 289               	/* epilogue: frame size=0 */
+ 290 009a 0895      		ret
+ 291               	/* epilogue end (size=1) */
+ 292               	/* function i2cSetSlaveReceiveHandler size 5 (4) */
+ 293               		.size	i2cSetSlaveReceiveHandler, .-i2cSetSlaveReceiveHandler
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 8
+
+
+ 294               	.Lscope3:
+ 295               		.stabs	"",36,0,0,.Lscope3-i2cSetSlaveReceiveHandler
+ 296               		.stabd	78,0,0
+ 297               		.stabs	"i2cSetSlaveTransmitHandler:F(0,15)",36,0,110,i2cSetSlaveTransmitHandler
+ 298               		.stabs	"i2cSlaveTx_func:P(0,18)=*(0,19)=f(7,1)",64,0,109,24
+ 299               	.global	i2cSetSlaveTransmitHandler
+ 300               		.type	i2cSetSlaveTransmitHandler, @function
+ 301               	i2cSetSlaveTransmitHandler:
+ 302               		.stabd	46,0,0
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cSetSlaveTransmitHandler(u08 (*i2cSlaveTx_func)(u08 transmitDataLengthMax, u08* transmitData
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 303               		.stabn	68,0,110,.LM25-i2cSetSlaveTransmitHandler
+ 304               	.LM25:
+ 305               	/* prologue: frame size=0 */
+ 306               	/* prologue end (size=0) */
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSlaveTransmit = i2cSlaveTx_func;
+ 307               		.stabn	68,0,111,.LM26-i2cSetSlaveTransmitHandler
+ 308               	.LM26:
+ 309 009c 9093 0000 		sts (i2cSlaveTransmit)+1,r25
+ 310 00a0 8093 0000 		sts i2cSlaveTransmit,r24
+ 311               	/* epilogue: frame size=0 */
+ 312 00a4 0895      		ret
+ 313               	/* epilogue end (size=1) */
+ 314               	/* function i2cSetSlaveTransmitHandler size 5 (4) */
+ 315               		.size	i2cSetSlaveTransmitHandler, .-i2cSetSlaveTransmitHandler
+ 316               	.Lscope4:
+ 317               		.stabs	"",36,0,0,.Lscope4-i2cSetSlaveTransmitHandler
+ 318               		.stabd	78,0,0
+ 319               		.stabs	"i2cSendStart:F(0,15)",36,0,115,i2cSendStart
+ 320               	.global	i2cSendStart
+ 321               		.type	i2cSendStart, @function
+ 322               	i2cSendStart:
+ 323               		.stabd	46,0,0
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 114:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline void i2cSendStart(void)
+ 115:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 324               		.stabn	68,0,115,.LM27-i2cSendStart
+ 325               	.LM27:
+ 326               	/* prologue: frame size=0 */
+ 327               	/* prologue end (size=0) */
+ 116:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 117:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
+ 328               		.stabn	68,0,117,.LM28-i2cSendStart
+ 329               	.LM28:
+ 330 00a6 E4E7      		ldi r30,lo8(116)
+ 331 00a8 F0E0      		ldi r31,hi8(116)
+ 332 00aa 8081      		ld r24,Z
+ 333 00ac 8F70      		andi r24,lo8(15)
+ 334 00ae 806A      		ori r24,lo8(-96)
+ 335 00b0 8083      		st Z,r24
+ 336               	/* epilogue: frame size=0 */
+ 337 00b2 0895      		ret
+ 338               	/* epilogue end (size=1) */
+ 339               	/* function i2cSendStart size 7 (6) */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 9
+
+
+ 340               		.size	i2cSendStart, .-i2cSendStart
+ 341               	.Lscope5:
+ 342               		.stabs	"",36,0,0,.Lscope5-i2cSendStart
+ 343               		.stabd	78,0,0
+ 344               		.stabs	"i2cSendStop:F(0,15)",36,0,121,i2cSendStop
+ 345               	.global	i2cSendStop
+ 346               		.type	i2cSendStop, @function
+ 347               	i2cSendStop:
+ 348               		.stabd	46,0,0
+ 118:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 119:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 120:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline void i2cSendStop(void)
+ 121:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 349               		.stabn	68,0,121,.LM29-i2cSendStop
+ 350               	.LM29:
+ 351               	/* prologue: frame size=0 */
+ 352               	/* prologue end (size=0) */
+ 122:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// transmit stop condition
+ 123:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// leave with TWEA on for slave receiving
+ 124:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
+ 353               		.stabn	68,0,124,.LM30-i2cSendStop
+ 354               	.LM30:
+ 355 00b4 E4E7      		ldi r30,lo8(116)
+ 356 00b6 F0E0      		ldi r31,hi8(116)
+ 357 00b8 8081      		ld r24,Z
+ 358 00ba 8F70      		andi r24,lo8(15)
+ 359 00bc 806D      		ori r24,lo8(-48)
+ 360 00be 8083      		st Z,r24
+ 361               	/* epilogue: frame size=0 */
+ 362 00c0 0895      		ret
+ 363               	/* epilogue end (size=1) */
+ 364               	/* function i2cSendStop size 7 (6) */
+ 365               		.size	i2cSendStop, .-i2cSendStop
+ 366               	.Lscope6:
+ 367               		.stabs	"",36,0,0,.Lscope6-i2cSendStop
+ 368               		.stabd	78,0,0
+ 369               		.stabs	"i2cWaitForComplete:F(0,15)",36,0,128,i2cWaitForComplete
+ 370               	.global	i2cWaitForComplete
+ 371               		.type	i2cWaitForComplete, @function
+ 372               	i2cWaitForComplete:
+ 373               		.stabd	46,0,0
+ 125:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 126:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 127:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline void i2cWaitForComplete(void)
+ 128:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 374               		.stabn	68,0,128,.LM31-i2cWaitForComplete
+ 375               	.LM31:
+ 376               	/* prologue: frame size=0 */
+ 377               	/* prologue end (size=0) */
+ 378               	.L20:
+ 129:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// wait for i2c interface to complete operation
+ 130:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while( !(inb(TWCR) & BV(TWINT)) );
+ 379               		.stabn	68,0,130,.LM32-i2cWaitForComplete
+ 380               	.LM32:
+ 381 00c2 8091 7400 		lds r24,116
+ 382 00c6 87FF      		sbrs r24,7
+ 383 00c8 00C0      		rjmp .L20
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 10
+
+
+ 384               	/* epilogue: frame size=0 */
+ 385 00ca 0895      		ret
+ 386               	/* epilogue end (size=1) */
+ 387               	/* function i2cWaitForComplete size 5 (4) */
+ 388               		.size	i2cWaitForComplete, .-i2cWaitForComplete
+ 389               	.Lscope7:
+ 390               		.stabs	"",36,0,0,.Lscope7-i2cWaitForComplete
+ 391               		.stabd	78,0,0
+ 392               		.stabs	"i2cSendByte:F(0,15)",36,0,134,i2cSendByte
+ 393               		.stabs	"data:P(7,1)",64,0,133,24
+ 394               	.global	i2cSendByte
+ 395               		.type	i2cSendByte, @function
+ 396               	i2cSendByte:
+ 397               		.stabd	46,0,0
+ 131:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 132:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 133:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline void i2cSendByte(u08 data)
+ 134:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 398               		.stabn	68,0,134,.LM33-i2cSendByte
+ 399               	.LM33:
+ 400               	/* prologue: frame size=0 */
+ 401               	/* prologue end (size=0) */
+ 135:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// save data to the TWDR
+ 136:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWDR, data);
+ 402               		.stabn	68,0,136,.LM34-i2cSendByte
+ 403               	.LM34:
+ 404 00cc 8093 7300 		sts 115,r24
+ 137:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// begin send
+ 138:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 405               		.stabn	68,0,138,.LM35-i2cSendByte
+ 406               	.LM35:
+ 407 00d0 E4E7      		ldi r30,lo8(116)
+ 408 00d2 F0E0      		ldi r31,hi8(116)
+ 409 00d4 8081      		ld r24,Z
+ 410 00d6 8F70      		andi r24,lo8(15)
+ 411 00d8 8068      		ori r24,lo8(-128)
+ 412 00da 8083      		st Z,r24
+ 413               	/* epilogue: frame size=0 */
+ 414 00dc 0895      		ret
+ 415               	/* epilogue end (size=1) */
+ 416               	/* function i2cSendByte size 9 (8) */
+ 417               		.size	i2cSendByte, .-i2cSendByte
+ 418               	.Lscope8:
+ 419               		.stabs	"",36,0,0,.Lscope8-i2cSendByte
+ 420               		.stabd	78,0,0
+ 421               		.stabs	"i2cReceiveByte:F(0,15)",36,0,142,i2cReceiveByte
+ 422               		.stabs	"ackFlag:P(7,1)",64,0,141,24
+ 423               	.global	i2cReceiveByte
+ 424               		.type	i2cReceiveByte, @function
+ 425               	i2cReceiveByte:
+ 426               		.stabd	46,0,0
+ 139:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 140:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 141:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline void i2cReceiveByte(u08 ackFlag)
+ 142:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 427               		.stabn	68,0,142,.LM36-i2cReceiveByte
+ 428               	.LM36:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 11
+
+
+ 429               	/* prologue: frame size=0 */
+ 430               	/* prologue end (size=0) */
+ 143:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// begin receive over i2c
+ 144:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if( ackFlag )
+ 431               		.stabn	68,0,144,.LM37-i2cReceiveByte
+ 432               	.LM37:
+ 433 00de 8823      		tst r24
+ 434 00e0 01F0      		breq .L28
+ 145:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 146:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// ackFlag = TRUE: ACK the recevied data
+ 147:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 435               		.stabn	68,0,147,.LM38-i2cReceiveByte
+ 436               	.LM38:
+ 437 00e2 8091 7400 		lds r24,116
+ 438 00e6 8F70      		andi r24,lo8(15)
+ 439 00e8 806C      		ori r24,lo8(-64)
+ 440 00ea 00C0      		rjmp .L32
+ 441               	.L28:
+ 148:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 149:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	else
+ 150:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 151:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// ackFlag = FALSE: NACK the recevied data
+ 152:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 442               		.stabn	68,0,152,.LM39-i2cReceiveByte
+ 443               	.LM39:
+ 444 00ec 8091 7400 		lds r24,116
+ 445 00f0 8F70      		andi r24,lo8(15)
+ 446 00f2 8068      		ori r24,lo8(-128)
+ 447               	.L32:
+ 448 00f4 8093 7400 		sts 116,r24
+ 449 00f8 0895      		ret
+ 450               	/* epilogue: frame size=0 */
+ 451               	/* epilogue: noreturn */
+ 452               	/* epilogue end (size=0) */
+ 453               	/* function i2cReceiveByte size 14 (14) */
+ 454               		.size	i2cReceiveByte, .-i2cReceiveByte
+ 455               	.Lscope9:
+ 456               		.stabs	"",36,0,0,.Lscope9-i2cReceiveByte
+ 457               		.stabd	78,0,0
+ 458               		.stabs	"i2cGetReceivedByte:F(7,1)",36,0,157,i2cGetReceivedByte
+ 459               	.global	i2cGetReceivedByte
+ 460               		.type	i2cGetReceivedByte, @function
+ 461               	i2cGetReceivedByte:
+ 462               		.stabd	46,0,0
+ 153:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 154:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 155:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 156:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline u08 i2cGetReceivedByte(void)
+ 157:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 463               		.stabn	68,0,157,.LM40-i2cGetReceivedByte
+ 464               	.LM40:
+ 465               	/* prologue: frame size=0 */
+ 466               	/* prologue end (size=0) */
+ 158:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// retieve received data byte from i2c TWDR
+ 159:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	return( inb(TWDR) );
+ 467               		.stabn	68,0,159,.LM41-i2cGetReceivedByte
+ 468               	.LM41:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 12
+
+
+ 469 00fa 8091 7300 		lds r24,115
+ 160:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 470               		.stabn	68,0,160,.LM42-i2cGetReceivedByte
+ 471               	.LM42:
+ 472 00fe 9927      		clr r25
+ 473               	/* epilogue: frame size=0 */
+ 474 0100 0895      		ret
+ 475               	/* epilogue end (size=1) */
+ 476               	/* function i2cGetReceivedByte size 4 (3) */
+ 477               		.size	i2cGetReceivedByte, .-i2cGetReceivedByte
+ 478               	.Lscope10:
+ 479               		.stabs	"",36,0,0,.Lscope10-i2cGetReceivedByte
+ 480               		.stabd	78,0,0
+ 481               		.stabs	"i2cGetStatus:F(7,1)",36,0,163,i2cGetStatus
+ 482               	.global	i2cGetStatus
+ 483               		.type	i2cGetStatus, @function
+ 484               	i2cGetStatus:
+ 485               		.stabd	46,0,0
+ 161:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 162:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** inline u08 i2cGetStatus(void)
+ 163:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 486               		.stabn	68,0,163,.LM43-i2cGetStatus
+ 487               	.LM43:
+ 488               	/* prologue: frame size=0 */
+ 489               	/* prologue end (size=0) */
+ 164:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// retieve current i2c status from i2c TWSR
+ 165:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	return( inb(TWSR) );
+ 490               		.stabn	68,0,165,.LM44-i2cGetStatus
+ 491               	.LM44:
+ 492 0102 8091 7100 		lds r24,113
+ 166:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 493               		.stabn	68,0,166,.LM45-i2cGetStatus
+ 494               	.LM45:
+ 495 0106 9927      		clr r25
+ 496               	/* epilogue: frame size=0 */
+ 497 0108 0895      		ret
+ 498               	/* epilogue end (size=1) */
+ 499               	/* function i2cGetStatus size 4 (3) */
+ 500               		.size	i2cGetStatus, .-i2cGetStatus
+ 501               	.Lscope11:
+ 502               		.stabs	"",36,0,0,.Lscope11-i2cGetStatus
+ 503               		.stabd	78,0,0
+ 504               		.stabs	"i2cGetState:F(5,2)",36,0,598,i2cGetState
+ 505               	.global	i2cGetState
+ 506               		.type	i2cGetState, @function
+ 507               	i2cGetState:
+ 508               		.stabd	46,0,0
+ 167:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 168:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cMasterSend(u08 deviceAddr, u08 length, u08* data)
+ 169:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 170:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 i;
+ 171:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// wait for interface to be ready
+ 172:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while(I2cState);
+ 173:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set state
+ 174:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cState = I2C_MASTER_TX;
+ 175:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// save data
+ 176:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cDeviceAddrRW = (deviceAddr & 0xFE);	// RW cleared: write operation
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 13
+
+
+ 177:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	for(i=0; i<length; i++)
+ 178:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cSendData[i] = *data++;
+ 179:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cSendDataIndex = 0;
+ 180:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cSendDataLength = length;
+ 181:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 182:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStart();
+ 183:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 184:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 185:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cMasterReceive(u08 deviceAddr, u08 length, u08* data)
+ 186:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 187:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 i;
+ 188:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// wait for interface to be ready
+ 189:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while(I2cState);
+ 190:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// set state
+ 191:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cState = I2C_MASTER_RX;
+ 192:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// save data
+ 193:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cDeviceAddrRW = (deviceAddr|0x01);	// RW set: read operation
+ 194:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cReceiveDataIndex = 0;
+ 195:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	I2cReceiveDataLength = length;
+ 196:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 197:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStart();
+ 198:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// wait for data
+ 199:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while(I2cState);
+ 200:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// return data
+ 201:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	for(i=0; i<length; i++)
+ 202:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		*data++ = I2cReceiveData[i];
+ 203:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 204:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 205:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** u08 i2cMasterSendNI(u08 deviceAddr, u08 length, u08* data)
+ 206:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 207:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 retval = I2C_OK;
+ 208:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 209:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// disable TWI interrupt
+ 210:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	cbi(TWCR, TWIE);
+ 211:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 212:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 213:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStart();
+ 214:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cWaitForComplete();
+ 215:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 216:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send device address with write
+ 217:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendByte( deviceAddr & 0xFE );
+ 218:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cWaitForComplete();
+ 219:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 220:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// check if device is present and live
+ 221:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if( inb(TWSR) == TW_MT_SLA_ACK)
+ 222:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 223:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send data
+ 224:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		while(length)
+ 225:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 226:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cSendByte( *data++ );
+ 227:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cWaitForComplete();
+ 228:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			length--;
+ 229:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 230:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 231:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	else
+ 232:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 233:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// device did not ACK it's address,
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 14
+
+
+ 234:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// data will not be transferred
+ 235:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// return error
+ 236:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		retval = I2C_ERROR_NODEV;
+ 237:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 238:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 239:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// transmit stop condition
+ 240:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// leave with TWEA on for slave receiving
+ 241:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStop();
+ 242:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while( !(inb(TWCR) & BV(TWSTO)) );
+ 243:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 244:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable TWI interrupt
+ 245:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWIE);
+ 246:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 247:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	return retval;
+ 248:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 249:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 250:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** u08 i2cMasterReceiveNI(u08 deviceAddr, u08 length, u08 *data)
+ 251:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 252:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 retval = I2C_OK;
+ 253:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 254:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// disable TWI interrupt
+ 255:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	cbi(TWCR, TWIE);
+ 256:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 257:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 258:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStart();
+ 259:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cWaitForComplete();
+ 260:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 261:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send device address with read
+ 262:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendByte( deviceAddr | 0x01 );
+ 263:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cWaitForComplete();
+ 264:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 265:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// check if device is present and live
+ 266:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if( inb(TWSR) == TW_MR_SLA_ACK)
+ 267:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 268:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// accept receive data and ack it
+ 269:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		while(length > 1)
+ 270:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 271:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(TRUE);
+ 272:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cWaitForComplete();
+ 273:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			*data++ = i2cGetReceivedByte();
+ 274:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// decrement length
+ 275:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			length--;
+ 276:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 277:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 278:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// accept receive data and nack it (last-byte signal)
+ 279:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cReceiveByte(FALSE);
+ 280:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cWaitForComplete();
+ 281:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		*data++ = i2cGetReceivedByte();
+ 282:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 283:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	else
+ 284:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 285:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// device did not ACK it's address,
+ 286:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// data will not be transferred
+ 287:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// return error
+ 288:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		retval = I2C_ERROR_NODEV;
+ 289:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 290:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 15
+
+
+ 291:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// transmit stop condition
+ 292:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// leave with TWEA on for slave receiving
+ 293:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStop();
+ 294:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 295:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable TWI interrupt
+ 296:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWIE);
+ 297:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 298:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	return retval;
+ 299:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 300:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** /*
+ 301:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** void i2cMasterTransferNI(u08 deviceAddr, u08 sendlength, u08* senddata, u08 receivelength, u08* rec
+ 302:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 303:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// disable TWI interrupt
+ 304:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	cbi(TWCR, TWIE);
+ 305:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 306:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// send start condition
+ 307:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStart();
+ 308:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cWaitForComplete();
+ 309:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 310:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// if there's data to be sent, do it
+ 311:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if(sendlength)
+ 312:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 313:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send device address with write
+ 314:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cSendByte( deviceAddr & 0xFE );
+ 315:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cWaitForComplete();
+ 316:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		
+ 317:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send data
+ 318:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		while(sendlength)
+ 319:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 320:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cSendByte( *senddata++ );
+ 321:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cWaitForComplete();
+ 322:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			sendlength--;
+ 323:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 324:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 325:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 326:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// if there's data to be received, do it
+ 327:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	if(receivelength)
+ 328:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 329:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send repeated start condition
+ 330:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cSendStart();
+ 331:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cWaitForComplete();
+ 332:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 333:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send device address with read
+ 334:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cSendByte( deviceAddr | 0x01 );
+ 335:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cWaitForComplete();
+ 336:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 337:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// accept receive data and ack it
+ 338:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		while(receivelength > 1)
+ 339:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 340:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(TRUE);
+ 341:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cWaitForComplete();
+ 342:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			*receivedata++ = i2cGetReceivedByte();
+ 343:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// decrement length
+ 344:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			receivelength--;
+ 345:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 346:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 347:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// accept receive data and nack it (last-byte signal)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 16
+
+
+ 348:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cReceiveByte(TRUE);
+ 349:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cWaitForComplete();
+ 350:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		*receivedata++ = i2cGetReceivedByte();
+ 351:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 352:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	
+ 353:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// transmit stop condition
+ 354:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// leave with TWEA on for slave receiving
+ 355:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	i2cSendStop();
+ 356:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	while( !(inb(TWCR) & BV(TWSTO)) );
+ 357:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 358:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// enable TWI interrupt
+ 359:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	sbi(TWCR, TWIE);
+ 360:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 361:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** */
+ 362:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 363:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** //! I2C (TWI) interrupt service routine
+ 364:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** SIGNAL(SIG_2WIRE_SERIAL)
+ 365:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 366:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// read status bits
+ 367:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	u08 status = inb(TWSR) & TWSR_STATUS_MASK;
+ 368:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 369:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	switch(status)
+ 370:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	{
+ 371:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// Master General
+ 372:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_START:						// 0x08: Sent start condition
+ 373:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_REP_START:					// 0x10: Sent repeated start condition
+ 374:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 375:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 376:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: M->START\r\n");
+ 377:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 378:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 379:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// send device address
+ 380:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cSendByte(I2cDeviceAddrRW);
+ 381:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 382:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	
+ 383:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// Master Transmitter & Receiver status codes
+ 384:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MT_SLA_ACK:					// 0x18: Slave address acknowledged
+ 385:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MT_DATA_ACK:				// 0x28: Data acknowledged
+ 386:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 387:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 388:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MT->SLA_ACK or DATA_ACK\r\n");
+ 389:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 390:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 391:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(I2cSendDataIndex < I2cSendDataLength)
+ 392:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 393:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// send data
+ 394:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cSendByte( I2cSendData[I2cSendDataIndex++] );
+ 395:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 396:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		else
+ 397:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 398:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// transmit stop condition, enable SLA ACK
+ 399:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cSendStop();
+ 400:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// set state
+ 401:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			I2cState = I2C_IDLE;
+ 402:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 403:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 404:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MR_DATA_NACK:				// 0x58: Data received, NACK reply issued
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 17
+
+
+ 405:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 406:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 407:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MR->DATA_NACK\r\n");
+ 408:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 409:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 410:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// store final received data byte
+ 411:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
+ 412:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// continue to transmit STOP condition
+ 413:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MR_SLA_NACK:				// 0x48: Slave address not acknowledged
+ 414:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MT_SLA_NACK:				// 0x20: Slave address not acknowledged
+ 415:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MT_DATA_NACK:				// 0x30: Data not acknowledged
+ 416:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 417:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 418:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MTR->SLA_NACK or MT->DATA_NACK\r\n");
+ 419:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 420:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 421:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// transmit stop condition, enable SLA ACK
+ 422:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cSendStop();
+ 423:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 424:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_IDLE;
+ 425:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 426:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MT_ARB_LOST:				// 0x38: Bus arbitration lost
+ 427:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	//case TW_MR_ARB_LOST:				// 0x38: Bus arbitration lost
+ 428:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 429:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 430:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MT->ARB_LOST\r\n");
+ 431:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 432:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 433:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// release bus
+ 434:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 435:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 436:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_IDLE;
+ 437:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// release bus and transmit start when bus is free
+ 438:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
+ 439:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 440:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MR_DATA_ACK:				// 0x50: Data acknowledged
+ 441:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 442:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 443:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MR->DATA_ACK\r\n");
+ 444:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 445:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 446:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// store received data byte
+ 447:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
+ 448:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// fall-through to see if more bytes will be received
+ 449:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_MR_SLA_ACK:					// 0x40: Slave address acknowledged
+ 450:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 451:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 452:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: MR->SLA_ACK\r\n");
+ 453:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 454:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 455:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(I2cReceiveDataIndex < (I2cReceiveDataLength-1))
+ 456:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// data byte will be received, reply with ACK (more bytes in transfer)
+ 457:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(TRUE);
+ 458:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		else
+ 459:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// data byte will be received, reply with NACK (final byte in transfer)
+ 460:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(FALSE);
+ 461:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 18
+
+
+ 462:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 463:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// Slave Receiver status codes
+ 464:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_SLA_ACK:					// 0x60: own SLA+W has been received, ACK has been returned
+ 465:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_ARB_LOST_SLA_ACK:		// 0x68: own SLA+W has been received, ACK has been returned
+ 466:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_GCALL_ACK:				// 0x70:     GCA+W has been received, ACK has been returned
+ 467:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_ARB_LOST_GCALL_ACK:		// 0x78:     GCA+W has been received, ACK has been returned
+ 468:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 469:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 470:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: SR->SLA_ACK\r\n");
+ 471:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 472:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 473:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// we are being addressed as slave for writing (data will be received from master)
+ 474:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 475:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_SLAVE_RX;
+ 476:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// prepare buffer
+ 477:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cReceiveDataIndex = 0;
+ 478:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// receive data byte and return ACK
+ 479:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 480:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 481:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_DATA_ACK:				// 0x80: data byte has been received, ACK has been returned
+ 482:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_GCALL_DATA_ACK:			// 0x90: data byte has been received, ACK has been returned
+ 483:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 484:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 485:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: SR->DATA_ACK\r\n");
+ 486:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 487:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 488:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// get previously received data byte
+ 489:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
+ 490:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// check receive buffer status
+ 491:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(I2cReceiveDataIndex < I2C_RECEIVE_DATA_BUFFER_SIZE)
+ 492:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 493:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// receive data byte and return ACK
+ 494:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(TRUE);
+ 495:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 496:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 497:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		else
+ 498:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		{
+ 499:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// receive data byte and return NACK
+ 500:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			i2cReceiveByte(FALSE);
+ 501:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 502:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		}
+ 503:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 504:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_DATA_NACK:				// 0x88: data byte has been received, NACK has been returned
+ 505:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_GCALL_DATA_NACK:			// 0x98: data byte has been received, NACK has been returned
+ 506:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 507:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 508:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: SR->DATA_NACK\r\n");
+ 509:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 510:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 511:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// receive data byte and return NACK
+ 512:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		i2cReceiveByte(FALSE);
+ 513:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 514:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 515:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_SR_STOP:					// 0xA0: STOP or REPEATED START has been received while addressed as slave
+ 516:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 517:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 518:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: SR->SR_STOP\r\n");
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 19
+
+
+ 519:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 520:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 521:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// switch to SR mode with SLA ACK
+ 522:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 523:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// i2c receive is complete, call i2cSlaveReceive
+ 524:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(i2cSlaveReceive) i2cSlaveReceive(I2cReceiveDataIndex, I2cReceiveData);
+ 525:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 526:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_IDLE;
+ 527:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 528:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 529:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// Slave Transmitter
+ 530:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_ST_SLA_ACK:					// 0xA8: own SLA+R has been received, ACK has been returned
+ 531:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_ST_ARB_LOST_SLA_ACK:		// 0xB0:     GCA+R has been received, ACK has been returned
+ 532:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 533:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 534:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: ST->SLA_ACK\r\n");
+ 535:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 536:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 537:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// we are being addressed as slave for reading (data must be transmitted back to master)
+ 538:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 539:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_SLAVE_TX;
+ 540:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// request data from application
+ 541:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(i2cSlaveTransmit) I2cSendDataLength = i2cSlaveTransmit(I2C_SEND_DATA_BUFFER_SIZE, I2cSendData)
+ 542:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// reset data index
+ 543:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cSendDataIndex = 0;
+ 544:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// fall-through to transmit first data byte
+ 545:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_ST_DATA_ACK:				// 0xB8: data byte has been transmitted, ACK has been received
+ 546:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 547:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 548:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: ST->DATA_ACK\r\n");
+ 549:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 550:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 551:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// transmit data byte
+ 552:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWDR, I2cSendData[I2cSendDataIndex++]);
+ 553:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		if(I2cSendDataIndex < I2cSendDataLength)
+ 554:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// expect ACK to data byte
+ 555:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 556:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		else
+ 557:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			// expect NACK to data byte
+ 558:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 			outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 559:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 560:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_ST_DATA_NACK:				// 0xC0: data byte has been transmitted, NACK has been received
+ 561:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_ST_LAST_DATA:				// 0xC8:
+ 562:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 563:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 564:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: ST->DATA_NACK or LAST_DATA\r\n");
+ 565:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 566:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 567:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// all done
+ 568:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// switch to open slave
+ 569:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+ 570:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 571:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_IDLE;
+ 572:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 573:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 574:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	// Misc
+ 575:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_NO_INFO:					// 0xF8: No relevant state information
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 20
+
+
+ 576:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// do nothing
+ 577:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 578:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 579:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: NO_INFO\r\n");
+ 580:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 581:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 582:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 583:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	case TW_BUS_ERROR:					// 0x00: Bus error due to illegal start or stop condition
+ 584:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#ifdef I2C_DEBUG
+ 585:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1AddToTxBuffer);
+ 586:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintf("I2C: BUS_ERROR\r\n");
+ 587:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		rprintfInit(uart1SendByte);
+ 588:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		#endif
+ 589:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// reset internal hardware and release bus
+ 590:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTO)|BV(TWEA));
+ 591:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		// set state
+ 592:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		I2cState = I2C_IDLE;
+ 593:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 		break;
+ 594:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	}
+ 595:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** }
+ 596:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 
+ 597:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** eI2cStateType i2cGetState(void)
+ 598:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** {
+ 509               		.stabn	68,0,598,.LM46-i2cGetState
+ 510               	.LM46:
+ 511               	/* prologue: frame size=0 */
+ 512               	/* prologue end (size=0) */
+ 599:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c **** 	return I2cState;
+ 513               		.stabn	68,0,599,.LM47-i2cGetState
+ 514               	.LM47:
+ 515 010a 8091 0000 		lds r24,I2cState
+ 516 010e 9091 0000 		lds r25,(I2cState)+1
+ 517               	/* epilogue: frame size=0 */
+ 518 0112 0895      		ret
+ 519               	/* epilogue end (size=1) */
+ 520               	/* function i2cGetState size 5 (4) */
+ 521               		.size	i2cGetState, .-i2cGetState
+ 522               	.Lscope12:
+ 523               		.stabs	"",36,0,0,.Lscope12-i2cGetState
+ 524               		.stabd	78,0,0
+ 525               		.stabs	"i2cMasterSendNI:F(7,1)",36,0,206,i2cMasterSendNI
+ 526               		.stabs	"deviceAddr:P(7,1)",64,0,205,25
+ 527               		.stabs	"length:P(7,1)",64,0,205,22
+ 528               		.stabs	"data:P(0,20)=*(7,1)",64,0,205,30
+ 529               	.global	i2cMasterSendNI
+ 530               		.type	i2cMasterSendNI, @function
+ 531               	i2cMasterSendNI:
+ 532               		.stabd	46,0,0
+ 533               		.stabn	68,0,206,.LM48-i2cMasterSendNI
+ 534               	.LM48:
+ 535               	/* prologue: frame size=0 */
+ 536               	/* prologue end (size=0) */
+ 537 0114 982F      		mov r25,r24
+ 538 0116 FA01      		movw r30,r20
+ 539               		.stabn	68,0,210,.LM49-i2cMasterSendNI
+ 540               	.LM49:
+ 541 0118 8091 7400 		lds r24,116
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 21
+
+
+ 542 011c 8E7F      		andi r24,lo8(-2)
+ 543 011e 8093 7400 		sts 116,r24
+ 544               	.LBB16:
+ 545               	.LBB17:
+ 546               		.stabn	68,0,117,.LM50-i2cMasterSendNI
+ 547               	.LM50:
+ 548 0122 8091 7400 		lds r24,116
+ 549 0126 8F70      		andi r24,lo8(15)
+ 550 0128 806A      		ori r24,lo8(-96)
+ 551 012a 8093 7400 		sts 116,r24
+ 552               	.L40:
+ 553               	.LBE17:
+ 554               	.LBE16:
+ 555               	.LBB18:
+ 556               	.LBB19:
+ 557               		.stabn	68,0,130,.LM51-i2cMasterSendNI
+ 558               	.LM51:
+ 559 012e 8091 7400 		lds r24,116
+ 560 0132 87FF      		sbrs r24,7
+ 561 0134 00C0      		rjmp .L40
+ 562               	.LBE19:
+ 563               	.LBE18:
+ 564               		.stabn	68,0,217,.LM52-i2cMasterSendNI
+ 565               	.LM52:
+ 566 0136 9E7F      		andi r25,lo8(-2)
+ 567               	.LBB20:
+ 568               	.LBB21:
+ 569               		.stabn	68,0,136,.LM53-i2cMasterSendNI
+ 570               	.LM53:
+ 571 0138 9093 7300 		sts 115,r25
+ 572               		.stabn	68,0,138,.LM54-i2cMasterSendNI
+ 573               	.LM54:
+ 574 013c 8091 7400 		lds r24,116
+ 575 0140 8F70      		andi r24,lo8(15)
+ 576 0142 8068      		ori r24,lo8(-128)
+ 577 0144 8093 7400 		sts 116,r24
+ 578               	.L42:
+ 579               	.LBE21:
+ 580               	.LBE20:
+ 581               	.LBB22:
+ 582               	.LBB23:
+ 583               		.stabn	68,0,130,.LM55-i2cMasterSendNI
+ 584               	.LM55:
+ 585 0148 8091 7400 		lds r24,116
+ 586 014c 87FF      		sbrs r24,7
+ 587 014e 00C0      		rjmp .L42
+ 588               	.LBE23:
+ 589               	.LBE22:
+ 590               		.stabn	68,0,221,.LM56-i2cMasterSendNI
+ 591               	.LM56:
+ 592 0150 8091 7100 		lds r24,113
+ 593 0154 8831      		cpi r24,lo8(24)
+ 594 0156 01F0      		breq .L61
+ 595 0158 91E0      		ldi r25,lo8(1)
+ 596 015a 00C0      		rjmp .L46
+ 597               	.L47:
+ 598               		.stabn	68,0,226,.LM57-i2cMasterSendNI
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 22
+
+
+ 599               	.LM57:
+ 600 015c 8081      		ld r24,Z
+ 601               	.LBB24:
+ 602               	.LBB25:
+ 603               		.stabn	68,0,136,.LM58-i2cMasterSendNI
+ 604               	.LM58:
+ 605 015e 8093 7300 		sts 115,r24
+ 606               		.stabn	68,0,138,.LM59-i2cMasterSendNI
+ 607               	.LM59:
+ 608 0162 8091 7400 		lds r24,116
+ 609 0166 8F70      		andi r24,lo8(15)
+ 610 0168 8068      		ori r24,lo8(-128)
+ 611 016a 8093 7400 		sts 116,r24
+ 612               	.L48:
+ 613               	.LBE25:
+ 614               	.LBE24:
+ 615               	.LBB26:
+ 616               	.LBB27:
+ 617               		.stabn	68,0,130,.LM60-i2cMasterSendNI
+ 618               	.LM60:
+ 619 016e 8091 7400 		lds r24,116
+ 620 0172 87FF      		sbrs r24,7
+ 621 0174 00C0      		rjmp .L48
+ 622               	.LBE27:
+ 623               	.LBE26:
+ 624               		.stabn	68,0,226,.LM61-i2cMasterSendNI
+ 625               	.LM61:
+ 626 0176 3196      		adiw r30,1
+ 627               		.stabn	68,0,228,.LM62-i2cMasterSendNI
+ 628               	.LM62:
+ 629 0178 6150      		subi r22,lo8(-(-1))
+ 630               	.L61:
+ 631               		.stabn	68,0,224,.LM63-i2cMasterSendNI
+ 632               	.LM63:
+ 633 017a 6623      		tst r22
+ 634 017c 01F4      		brne .L47
+ 635 017e 90E0      		ldi r25,lo8(0)
+ 636               	.L46:
+ 637               	.LBB28:
+ 638               	.LBB29:
+ 639               		.stabn	68,0,124,.LM64-i2cMasterSendNI
+ 640               	.LM64:
+ 641 0180 8091 7400 		lds r24,116
+ 642 0184 8F70      		andi r24,lo8(15)
+ 643 0186 806D      		ori r24,lo8(-48)
+ 644 0188 8093 7400 		sts 116,r24
+ 645               	.L51:
+ 646               	.LBE29:
+ 647               	.LBE28:
+ 648               		.stabn	68,0,242,.LM65-i2cMasterSendNI
+ 649               	.LM65:
+ 650 018c 8091 7400 		lds r24,116
+ 651 0190 84FF      		sbrs r24,4
+ 652 0192 00C0      		rjmp .L51
+ 653               		.stabn	68,0,245,.LM66-i2cMasterSendNI
+ 654               	.LM66:
+ 655 0194 8091 7400 		lds r24,116
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 23
+
+
+ 656 0198 8160      		ori r24,lo8(1)
+ 657 019a 8093 7400 		sts 116,r24
+ 658               		.stabn	68,0,248,.LM67-i2cMasterSendNI
+ 659               	.LM67:
+ 660 019e 892F      		mov r24,r25
+ 661 01a0 9927      		clr r25
+ 662               	/* epilogue: frame size=0 */
+ 663 01a2 0895      		ret
+ 664               	/* epilogue end (size=1) */
+ 665               	/* function i2cMasterSendNI size 72 (71) */
+ 666               		.size	i2cMasterSendNI, .-i2cMasterSendNI
+ 667               		.stabs	"retval:r(7,1)",64,0,207,25
+ 668               		.stabn	192,0,0,i2cMasterSendNI-i2cMasterSendNI
+ 669               		.stabn	224,0,0,.Lscope13-i2cMasterSendNI
+ 670               	.Lscope13:
+ 671               		.stabs	"",36,0,0,.Lscope13-i2cMasterSendNI
+ 672               		.stabd	78,0,0
+ 673               		.stabs	"i2cMasterReceive:F(0,15)",36,0,186,i2cMasterReceive
+ 674               		.stabs	"deviceAddr:P(7,1)",64,0,185,18
+ 675               		.stabs	"length:P(7,1)",64,0,185,22
+ 676               		.stabs	"data:P(0,20)",64,0,185,26
+ 677               	.global	i2cMasterReceive
+ 678               		.type	i2cMasterReceive, @function
+ 679               	i2cMasterReceive:
+ 680               		.stabd	46,0,0
+ 681               		.stabn	68,0,186,.LM68-i2cMasterReceive
+ 682               	.LM68:
+ 683               	/* prologue: frame size=0 */
+ 684               	/* prologue end (size=0) */
+ 685 01a4 282F      		mov r18,r24
+ 686 01a6 DA01      		movw r26,r20
+ 687               	.L65:
+ 688               		.stabn	68,0,189,.LM69-i2cMasterReceive
+ 689               	.LM69:
+ 690 01a8 8091 0000 		lds r24,I2cState
+ 691 01ac 9091 0000 		lds r25,(I2cState)+1
+ 692 01b0 892B      		or r24,r25
+ 693 01b2 01F4      		brne .L65
+ 694               		.stabn	68,0,191,.LM70-i2cMasterReceive
+ 695               	.LM70:
+ 696 01b4 83E0      		ldi r24,lo8(3)
+ 697 01b6 90E0      		ldi r25,hi8(3)
+ 698 01b8 9093 0000 		sts (I2cState)+1,r25
+ 699 01bc 8093 0000 		sts I2cState,r24
+ 700               		.stabn	68,0,193,.LM71-i2cMasterReceive
+ 701               	.LM71:
+ 702 01c0 2160      		ori r18,lo8(1)
+ 703 01c2 2093 0000 		sts I2cDeviceAddrRW,r18
+ 704               		.stabn	68,0,194,.LM72-i2cMasterReceive
+ 705               	.LM72:
+ 706 01c6 1092 0000 		sts I2cReceiveDataIndex,__zero_reg__
+ 707               		.stabn	68,0,195,.LM73-i2cMasterReceive
+ 708               	.LM73:
+ 709 01ca 6093 0000 		sts I2cReceiveDataLength,r22
+ 710               	.LBB32:
+ 711               	.LBB33:
+ 712               		.stabn	68,0,117,.LM74-i2cMasterReceive
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 24
+
+
+ 713               	.LM74:
+ 714 01ce 8091 7400 		lds r24,116
+ 715 01d2 8F70      		andi r24,lo8(15)
+ 716 01d4 806A      		ori r24,lo8(-96)
+ 717 01d6 8093 7400 		sts 116,r24
+ 718               	.L67:
+ 719               	.LBE33:
+ 720               	.LBE32:
+ 721               		.stabn	68,0,199,.LM75-i2cMasterReceive
+ 722               	.LM75:
+ 723 01da 8091 0000 		lds r24,I2cState
+ 724 01de 9091 0000 		lds r25,(I2cState)+1
+ 725 01e2 892B      		or r24,r25
+ 726 01e4 01F4      		brne .L67
+ 727 01e6 90E0      		ldi r25,lo8(0)
+ 728 01e8 00C0      		rjmp .L69
+ 729               	.L70:
+ 730               		.stabn	68,0,202,.LM76-i2cMasterReceive
+ 731               	.LM76:
+ 732 01ea E92F      		mov r30,r25
+ 733 01ec FF27      		clr r31
+ 734 01ee E050      		subi r30,lo8(-(I2cReceiveData))
+ 735 01f0 F040      		sbci r31,hi8(-(I2cReceiveData))
+ 736 01f2 8081      		ld r24,Z
+ 737 01f4 8D93      		st X+,r24
+ 738               		.stabn	68,0,201,.LM77-i2cMasterReceive
+ 739               	.LM77:
+ 740 01f6 9F5F      		subi r25,lo8(-(1))
+ 741               	.L69:
+ 742 01f8 9617      		cp r25,r22
+ 743 01fa 01F4      		brne .L70
+ 744               	/* epilogue: frame size=0 */
+ 745 01fc 0895      		ret
+ 746               	/* epilogue end (size=1) */
+ 747               	/* function i2cMasterReceive size 45 (44) */
+ 748               		.size	i2cMasterReceive, .-i2cMasterReceive
+ 749               		.stabs	"i:r(7,1)",64,0,187,25
+ 750               		.stabn	192,0,0,i2cMasterReceive-i2cMasterReceive
+ 751               		.stabn	224,0,0,.Lscope14-i2cMasterReceive
+ 752               	.Lscope14:
+ 753               		.stabs	"",36,0,0,.Lscope14-i2cMasterReceive
+ 754               		.stabd	78,0,0
+ 755               		.stabs	"i2cMasterSend:F(0,15)",36,0,169,i2cMasterSend
+ 756               		.stabs	"deviceAddr:P(7,1)",64,0,168,18
+ 757               		.stabs	"length:P(7,1)",64,0,168,22
+ 758               		.stabs	"data:P(0,20)",64,0,168,26
+ 759               	.global	i2cMasterSend
+ 760               		.type	i2cMasterSend, @function
+ 761               	i2cMasterSend:
+ 762               		.stabd	46,0,0
+ 763               		.stabn	68,0,169,.LM78-i2cMasterSend
+ 764               	.LM78:
+ 765               	/* prologue: frame size=0 */
+ 766               	/* prologue end (size=0) */
+ 767 01fe 282F      		mov r18,r24
+ 768 0200 DA01      		movw r26,r20
+ 769               	.L79:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 25
+
+
+ 770               		.stabn	68,0,172,.LM79-i2cMasterSend
+ 771               	.LM79:
+ 772 0202 8091 0000 		lds r24,I2cState
+ 773 0206 9091 0000 		lds r25,(I2cState)+1
+ 774 020a 892B      		or r24,r25
+ 775 020c 01F4      		brne .L79
+ 776               		.stabn	68,0,174,.LM80-i2cMasterSend
+ 777               	.LM80:
+ 778 020e 82E0      		ldi r24,lo8(2)
+ 779 0210 90E0      		ldi r25,hi8(2)
+ 780 0212 9093 0000 		sts (I2cState)+1,r25
+ 781 0216 8093 0000 		sts I2cState,r24
+ 782               		.stabn	68,0,176,.LM81-i2cMasterSend
+ 783               	.LM81:
+ 784 021a 2E7F      		andi r18,lo8(-2)
+ 785 021c 2093 0000 		sts I2cDeviceAddrRW,r18
+ 786 0220 90E0      		ldi r25,lo8(0)
+ 787 0222 00C0      		rjmp .L81
+ 788               	.L82:
+ 789               		.stabn	68,0,178,.LM82-i2cMasterSend
+ 790               	.LM82:
+ 791 0224 8D91      		ld r24,X+
+ 792 0226 E92F      		mov r30,r25
+ 793 0228 FF27      		clr r31
+ 794 022a E050      		subi r30,lo8(-(I2cSendData))
+ 795 022c F040      		sbci r31,hi8(-(I2cSendData))
+ 796 022e 8083      		st Z,r24
+ 797               		.stabn	68,0,177,.LM83-i2cMasterSend
+ 798               	.LM83:
+ 799 0230 9F5F      		subi r25,lo8(-(1))
+ 800               	.L81:
+ 801 0232 9617      		cp r25,r22
+ 802 0234 01F4      		brne .L82
+ 803               		.stabn	68,0,179,.LM84-i2cMasterSend
+ 804               	.LM84:
+ 805 0236 1092 0000 		sts I2cSendDataIndex,__zero_reg__
+ 806               		.stabn	68,0,180,.LM85-i2cMasterSend
+ 807               	.LM85:
+ 808 023a 6093 0000 		sts I2cSendDataLength,r22
+ 809               	.LBB36:
+ 810               	.LBB37:
+ 811               		.stabn	68,0,117,.LM86-i2cMasterSend
+ 812               	.LM86:
+ 813 023e 8091 7400 		lds r24,116
+ 814 0242 8F70      		andi r24,lo8(15)
+ 815 0244 806A      		ori r24,lo8(-96)
+ 816 0246 8093 7400 		sts 116,r24
+ 817               	.LBE37:
+ 818               	.LBE36:
+ 819               	/* epilogue: frame size=0 */
+ 820 024a 0895      		ret
+ 821               	/* epilogue end (size=1) */
+ 822               	/* function i2cMasterSend size 39 (38) */
+ 823               		.size	i2cMasterSend, .-i2cMasterSend
+ 824               		.stabs	"i:r(7,1)",64,0,170,25
+ 825               		.stabn	192,0,0,i2cMasterSend-i2cMasterSend
+ 826               		.stabn	224,0,0,.Lscope15-i2cMasterSend
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 26
+
+
+ 827               	.Lscope15:
+ 828               		.stabs	"",36,0,0,.Lscope15-i2cMasterSend
+ 829               		.stabd	78,0,0
+ 830               		.stabs	"__vector_33:F(0,15)",36,0,365,__vector_33
+ 831               	.global	__vector_33
+ 832               		.type	__vector_33, @function
+ 833               	__vector_33:
+ 834               		.stabd	46,0,0
+ 835               		.stabn	68,0,365,.LM87-__vector_33
+ 836               	.LM87:
+ 837               	/* prologue: frame size=0 */
+ 838 024c 1F92      		push __zero_reg__
+ 839 024e 0F92      		push __tmp_reg__
+ 840 0250 0FB6      		in __tmp_reg__,__SREG__
+ 841 0252 0F92      		push __tmp_reg__
+ 842 0254 1124      		clr __zero_reg__
+ 843 0256 2F93      		push r18
+ 844 0258 3F93      		push r19
+ 845 025a 4F93      		push r20
+ 846 025c 5F93      		push r21
+ 847 025e 6F93      		push r22
+ 848 0260 7F93      		push r23
+ 849 0262 8F93      		push r24
+ 850 0264 9F93      		push r25
+ 851 0266 AF93      		push r26
+ 852 0268 BF93      		push r27
+ 853 026a EF93      		push r30
+ 854 026c FF93      		push r31
+ 855               	/* prologue end (size=17) */
+ 856               		.stabn	68,0,367,.LM88-__vector_33
+ 857               	.LM88:
+ 858 026e 8091 7100 		lds r24,113
+ 859               		.stabn	68,0,369,.LM89-__vector_33
+ 860               	.LM89:
+ 861 0272 887F      		andi r24,lo8(-8)
+ 862 0274 8036      		cpi r24,lo8(96)
+ 863 0276 01F4      		brne .+2
+ 864 0278 00C0      		rjmp .L97
+ 865               		.stabn	68,0,369,.LM90-__vector_33
+ 866               	.LM90:
+ 867 027a 8136      		cpi r24,lo8(97)
+ 868 027c 00F4      		brsh .L104
+ 869 027e 8832      		cpi r24,lo8(40)
+ 870 0280 01F4      		brne .+2
+ 871 0282 00C0      		rjmp .L91
+ 872 0284 8932      		cpi r24,lo8(41)
+ 873 0286 00F4      		brsh .L105
+ 874 0288 8031      		cpi r24,lo8(16)
+ 875 028a 01F4      		brne .+2
+ 876 028c 00C0      		rjmp .L90
+ 877 028e 8131      		cpi r24,lo8(17)
+ 878 0290 00F4      		brsh .L106
+ 879 0292 8823      		tst r24
+ 880 0294 01F4      		brne .+2
+ 881 0296 00C0      		rjmp .L89
+ 882 0298 8830      		cpi r24,lo8(8)
+ 883 029a 01F0      		breq .+2
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 27
+
+
+ 884 029c 00C0      		rjmp .L123
+ 885 029e 00C0      		rjmp .L90
+ 886               	.L106:
+ 887 02a0 8831      		cpi r24,lo8(24)
+ 888 02a2 01F4      		brne .+2
+ 889 02a4 00C0      		rjmp .L91
+ 890 02a6 8032      		cpi r24,lo8(32)
+ 891 02a8 01F0      		breq .+2
+ 892 02aa 00C0      		rjmp .L123
+ 893 02ac 00C0      		rjmp .L89
+ 894               	.L105:
+ 895 02ae 8034      		cpi r24,lo8(64)
+ 896 02b0 01F4      		brne .+2
+ 897 02b2 00C0      		rjmp .L94
+ 898 02b4 8134      		cpi r24,lo8(65)
+ 899 02b6 00F4      		brsh .L107
+ 900 02b8 8033      		cpi r24,lo8(48)
+ 901 02ba 01F4      		brne .+2
+ 902 02bc 00C0      		rjmp .L89
+ 903 02be 8833      		cpi r24,lo8(56)
+ 904 02c0 01F0      		breq .+2
+ 905 02c2 00C0      		rjmp .L123
+ 906 02c4 00C0      		rjmp .L93
+ 907               	.L107:
+ 908 02c6 8035      		cpi r24,lo8(80)
+ 909 02c8 01F4      		brne .+2
+ 910 02ca 00C0      		rjmp .L95
+ 911 02cc 8835      		cpi r24,lo8(88)
+ 912 02ce 01F4      		brne .+2
+ 913 02d0 00C0      		rjmp .L96
+ 914 02d2 8834      		cpi r24,lo8(72)
+ 915 02d4 01F0      		breq .+2
+ 916 02d6 00C0      		rjmp .L123
+ 917 02d8 00C0      		rjmp .L89
+ 918               	.L104:
+ 919 02da 8839      		cpi r24,lo8(-104)
+ 920 02dc 01F4      		brne .+2
+ 921 02de 00C0      		rjmp .L99
+ 922 02e0 8939      		cpi r24,lo8(-103)
+ 923 02e2 00F4      		brsh .L108
+ 924 02e4 8837      		cpi r24,lo8(120)
+ 925 02e6 01F4      		brne .+2
+ 926 02e8 00C0      		rjmp .L97
+ 927 02ea 8937      		cpi r24,lo8(121)
+ 928 02ec 00F4      		brsh .L109
+ 929 02ee 8836      		cpi r24,lo8(104)
+ 930 02f0 01F4      		brne .+2
+ 931 02f2 00C0      		rjmp .L97
+ 932 02f4 8037      		cpi r24,lo8(112)
+ 933 02f6 01F0      		breq .+2
+ 934 02f8 00C0      		rjmp .L123
+ 935 02fa 00C0      		rjmp .L97
+ 936               	.L109:
+ 937 02fc 8838      		cpi r24,lo8(-120)
+ 938 02fe 01F4      		brne .+2
+ 939 0300 00C0      		rjmp .L99
+ 940 0302 8039      		cpi r24,lo8(-112)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 28
+
+
+ 941 0304 01F4      		brne .+2
+ 942 0306 00C0      		rjmp .L98
+ 943 0308 8038      		cpi r24,lo8(-128)
+ 944 030a 01F0      		breq .+2
+ 945 030c 00C0      		rjmp .L123
+ 946 030e 00C0      		rjmp .L98
+ 947               	.L108:
+ 948 0310 803B      		cpi r24,lo8(-80)
+ 949 0312 01F4      		brne .+2
+ 950 0314 00C0      		rjmp .L101
+ 951 0316 813B      		cpi r24,lo8(-79)
+ 952 0318 00F4      		brsh .L110
+ 953 031a 803A      		cpi r24,lo8(-96)
+ 954 031c 01F4      		brne .+2
+ 955 031e 00C0      		rjmp .L100
+ 956 0320 883A      		cpi r24,lo8(-88)
+ 957 0322 01F0      		breq .+2
+ 958 0324 00C0      		rjmp .L123
+ 959 0326 00C0      		rjmp .L101
+ 960               	.L110:
+ 961 0328 803C      		cpi r24,lo8(-64)
+ 962 032a 01F4      		brne .+2
+ 963 032c 00C0      		rjmp .L103
+ 964 032e 883C      		cpi r24,lo8(-56)
+ 965 0330 01F4      		brne .+2
+ 966 0332 00C0      		rjmp .L103
+ 967 0334 883B      		cpi r24,lo8(-72)
+ 968 0336 01F0      		breq .+2
+ 969 0338 00C0      		rjmp .L123
+ 970 033a 00C0      		rjmp .L102
+ 971               	.L90:
+ 972               		.stabn	68,0,380,.LM91-__vector_33
+ 973               	.LM91:
+ 974 033c 8091 0000 		lds r24,I2cDeviceAddrRW
+ 975 0340 00C0      		rjmp .L124
+ 976               	.L91:
+ 977               		.stabn	68,0,391,.LM92-__vector_33
+ 978               	.LM92:
+ 979 0342 9091 0000 		lds r25,I2cSendDataIndex
+ 980 0346 8091 0000 		lds r24,I2cSendDataLength
+ 981 034a 9817      		cp r25,r24
+ 982 034c 00F0      		brlo .+2
+ 983 034e 00C0      		rjmp .L89
+ 984               		.stabn	68,0,394,.LM93-__vector_33
+ 985               	.LM93:
+ 986 0350 E92F      		mov r30,r25
+ 987 0352 FF27      		clr r31
+ 988 0354 E050      		subi r30,lo8(-(I2cSendData))
+ 989 0356 F040      		sbci r31,hi8(-(I2cSendData))
+ 990 0358 8081      		ld r24,Z
+ 991 035a 9F5F      		subi r25,lo8(-(1))
+ 992 035c 9093 0000 		sts I2cSendDataIndex,r25
+ 993               	.L124:
+ 994               	.LBB46:
+ 995               	.LBB47:
+ 996               		.stabn	68,0,136,.LM94-__vector_33
+ 997               	.LM94:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 29
+
+
+ 998 0360 8093 7300 		sts 115,r24
+ 999               	.L126:
+ 1000               		.stabn	68,0,138,.LM95-__vector_33
+ 1001               	.LM95:
+ 1002 0364 8091 7400 		lds r24,116
+ 1003 0368 8F70      		andi r24,lo8(15)
+ 1004 036a 8068      		ori r24,lo8(-128)
+ 1005               	.L127:
+ 1006 036c 8093 7400 		sts 116,r24
+ 1007 0370 00C0      		rjmp .L123
+ 1008               	.L96:
+ 1009               	.LBE47:
+ 1010               	.LBE46:
+ 1011               		.stabn	68,0,411,.LM96-__vector_33
+ 1012               	.LM96:
+ 1013 0372 8091 0000 		lds r24,I2cReceiveDataIndex
+ 1014 0376 9091 7300 		lds r25,115
+ 1015 037a E82F      		mov r30,r24
+ 1016 037c FF27      		clr r31
+ 1017 037e E050      		subi r30,lo8(-(I2cReceiveData))
+ 1018 0380 F040      		sbci r31,hi8(-(I2cReceiveData))
+ 1019 0382 9083      		st Z,r25
+ 1020 0384 8F5F      		subi r24,lo8(-(1))
+ 1021 0386 8093 0000 		sts I2cReceiveDataIndex,r24
+ 1022 038a 00C0      		rjmp .L89
+ 1023               	.L93:
+ 1024               		.stabn	68,0,434,.LM97-__vector_33
+ 1025               	.LM97:
+ 1026 038c 8091 7400 		lds r24,116
+ 1027 0390 8F70      		andi r24,lo8(15)
+ 1028 0392 8068      		ori r24,lo8(-128)
+ 1029 0394 00C0      		rjmp .L125
+ 1030               	.L95:
+ 1031               		.stabn	68,0,447,.LM98-__vector_33
+ 1032               	.LM98:
+ 1033 0396 8091 0000 		lds r24,I2cReceiveDataIndex
+ 1034 039a 9091 7300 		lds r25,115
+ 1035 039e E82F      		mov r30,r24
+ 1036 03a0 FF27      		clr r31
+ 1037 03a2 E050      		subi r30,lo8(-(I2cReceiveData))
+ 1038 03a4 F040      		sbci r31,hi8(-(I2cReceiveData))
+ 1039 03a6 9083      		st Z,r25
+ 1040 03a8 8F5F      		subi r24,lo8(-(1))
+ 1041 03aa 8093 0000 		sts I2cReceiveDataIndex,r24
+ 1042               	.L94:
+ 1043               		.stabn	68,0,455,.LM99-__vector_33
+ 1044               	.LM99:
+ 1045 03ae 2091 0000 		lds r18,I2cReceiveDataIndex
+ 1046 03b2 3327      		clr r19
+ 1047 03b4 8091 0000 		lds r24,I2cReceiveDataLength
+ 1048 03b8 9927      		clr r25
+ 1049 03ba 0197      		sbiw r24,1
+ 1050 03bc 2817      		cp r18,r24
+ 1051 03be 3907      		cpc r19,r25
+ 1052 03c0 04F0      		brlt .L131
+ 1053 03c2 00C0      		rjmp .L99
+ 1054               	.L97:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 30
+
+
+ 1055               		.stabn	68,0,475,.LM100-__vector_33
+ 1056               	.LM100:
+ 1057 03c4 85E0      		ldi r24,lo8(5)
+ 1058 03c6 90E0      		ldi r25,hi8(5)
+ 1059 03c8 9093 0000 		sts (I2cState)+1,r25
+ 1060 03cc 8093 0000 		sts I2cState,r24
+ 1061               		.stabn	68,0,477,.LM101-__vector_33
+ 1062               	.LM101:
+ 1063 03d0 1092 0000 		sts I2cReceiveDataIndex,__zero_reg__
+ 1064 03d4 00C0      		rjmp .L130
+ 1065               	.L98:
+ 1066               		.stabn	68,0,489,.LM102-__vector_33
+ 1067               	.LM102:
+ 1068 03d6 8091 0000 		lds r24,I2cReceiveDataIndex
+ 1069 03da 9091 7300 		lds r25,115
+ 1070 03de E82F      		mov r30,r24
+ 1071 03e0 FF27      		clr r31
+ 1072 03e2 E050      		subi r30,lo8(-(I2cReceiveData))
+ 1073 03e4 F040      		sbci r31,hi8(-(I2cReceiveData))
+ 1074 03e6 9083      		st Z,r25
+ 1075 03e8 8F5F      		subi r24,lo8(-(1))
+ 1076 03ea 8093 0000 		sts I2cReceiveDataIndex,r24
+ 1077               		.stabn	68,0,491,.LM103-__vector_33
+ 1078               	.LM103:
+ 1079 03ee 8032      		cpi r24,lo8(32)
+ 1080 03f0 00F4      		brsh .L99
+ 1081               	.L131:
+ 1082               		.stabn	68,0,494,.LM104-__vector_33
+ 1083               	.LM104:
+ 1084 03f2 8FEF      		ldi r24,lo8(-1)
+ 1085 03f4 00C0      		rjmp .L129
+ 1086               	.L99:
+ 1087               		.stabn	68,0,512,.LM105-__vector_33
+ 1088               	.LM105:
+ 1089 03f6 80E0      		ldi r24,lo8(0)
+ 1090               	.L129:
+ 1091 03f8 0E94 0000 		call i2cReceiveByte
+ 1092 03fc 00C0      		rjmp .L123
+ 1093               	.L100:
+ 1094               		.stabn	68,0,522,.LM106-__vector_33
+ 1095               	.LM106:
+ 1096 03fe 8091 7400 		lds r24,116
+ 1097 0402 8F70      		andi r24,lo8(15)
+ 1098 0404 806C      		ori r24,lo8(-64)
+ 1099 0406 8093 7400 		sts 116,r24
+ 1100               		.stabn	68,0,524,.LM107-__vector_33
+ 1101               	.LM107:
+ 1102 040a E091 0000 		lds r30,i2cSlaveReceive
+ 1103 040e F091 0000 		lds r31,(i2cSlaveReceive)+1
+ 1104 0412 3097      		sbiw r30,0
+ 1105 0414 01F0      		breq .L128
+ 1106 0416 60E0      		ldi r22,lo8(I2cReceiveData)
+ 1107 0418 70E0      		ldi r23,hi8(I2cReceiveData)
+ 1108 041a 8091 0000 		lds r24,I2cReceiveDataIndex
+ 1109 041e 0995      		icall
+ 1110 0420 00C0      		rjmp .L128
+ 1111               	.L101:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 31
+
+
+ 1112               		.stabn	68,0,539,.LM108-__vector_33
+ 1113               	.LM108:
+ 1114 0422 84E0      		ldi r24,lo8(4)
+ 1115 0424 90E0      		ldi r25,hi8(4)
+ 1116 0426 9093 0000 		sts (I2cState)+1,r25
+ 1117 042a 8093 0000 		sts I2cState,r24
+ 1118               		.stabn	68,0,541,.LM109-__vector_33
+ 1119               	.LM109:
+ 1120 042e E091 0000 		lds r30,i2cSlaveTransmit
+ 1121 0432 F091 0000 		lds r31,(i2cSlaveTransmit)+1
+ 1122 0436 3097      		sbiw r30,0
+ 1123 0438 01F0      		breq .L119
+ 1124 043a 60E0      		ldi r22,lo8(I2cSendData)
+ 1125 043c 70E0      		ldi r23,hi8(I2cSendData)
+ 1126 043e 80E2      		ldi r24,lo8(32)
+ 1127 0440 0995      		icall
+ 1128 0442 8093 0000 		sts I2cSendDataLength,r24
+ 1129               	.L119:
+ 1130               		.stabn	68,0,543,.LM110-__vector_33
+ 1131               	.LM110:
+ 1132 0446 1092 0000 		sts I2cSendDataIndex,__zero_reg__
+ 1133               	.L102:
+ 1134               		.stabn	68,0,552,.LM111-__vector_33
+ 1135               	.LM111:
+ 1136 044a 9091 0000 		lds r25,I2cSendDataIndex
+ 1137 044e E92F      		mov r30,r25
+ 1138 0450 FF27      		clr r31
+ 1139 0452 E050      		subi r30,lo8(-(I2cSendData))
+ 1140 0454 F040      		sbci r31,hi8(-(I2cSendData))
+ 1141 0456 8081      		ld r24,Z
+ 1142 0458 8093 7300 		sts 115,r24
+ 1143 045c 9F5F      		subi r25,lo8(-(1))
+ 1144 045e 9093 0000 		sts I2cSendDataIndex,r25
+ 1145               		.stabn	68,0,553,.LM112-__vector_33
+ 1146               	.LM112:
+ 1147 0462 8091 0000 		lds r24,I2cSendDataLength
+ 1148 0466 9817      		cp r25,r24
+ 1149 0468 00F0      		brlo .+2
+ 1150 046a 00C0      		rjmp .L126
+ 1151               	.L130:
+ 1152               		.stabn	68,0,555,.LM113-__vector_33
+ 1153               	.LM113:
+ 1154 046c 8091 7400 		lds r24,116
+ 1155 0470 8F70      		andi r24,lo8(15)
+ 1156 0472 806C      		ori r24,lo8(-64)
+ 1157 0474 00C0      		rjmp .L127
+ 1158               	.L103:
+ 1159               		.stabn	68,0,569,.LM114-__vector_33
+ 1160               	.LM114:
+ 1161 0476 8091 7400 		lds r24,116
+ 1162 047a 8F70      		andi r24,lo8(15)
+ 1163 047c 806C      		ori r24,lo8(-64)
+ 1164 047e 00C0      		rjmp .L125
+ 1165               	.L89:
+ 1166               		.stabn	68,0,590,.LM115-__vector_33
+ 1167               	.LM115:
+ 1168 0480 8091 7400 		lds r24,116
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 32
+
+
+ 1169 0484 8F70      		andi r24,lo8(15)
+ 1170 0486 806D      		ori r24,lo8(-48)
+ 1171               	.L125:
+ 1172 0488 8093 7400 		sts 116,r24
+ 1173               	.L128:
+ 1174               		.stabn	68,0,592,.LM116-__vector_33
+ 1175               	.LM116:
+ 1176 048c 1092 0000 		sts (I2cState)+1,__zero_reg__
+ 1177 0490 1092 0000 		sts I2cState,__zero_reg__
+ 1178               	.L123:
+ 1179               	/* epilogue: frame size=0 */
+ 1180 0494 FF91      		pop r31
+ 1181 0496 EF91      		pop r30
+ 1182 0498 BF91      		pop r27
+ 1183 049a AF91      		pop r26
+ 1184 049c 9F91      		pop r25
+ 1185 049e 8F91      		pop r24
+ 1186 04a0 7F91      		pop r23
+ 1187 04a2 6F91      		pop r22
+ 1188 04a4 5F91      		pop r21
+ 1189 04a6 4F91      		pop r20
+ 1190 04a8 3F91      		pop r19
+ 1191 04aa 2F91      		pop r18
+ 1192 04ac 0F90      		pop __tmp_reg__
+ 1193 04ae 0FBE      		out __SREG__,__tmp_reg__
+ 1194 04b0 0F90      		pop __tmp_reg__
+ 1195 04b2 1F90      		pop __zero_reg__
+ 1196 04b4 1895      		reti
+ 1197               	/* epilogue end (size=17) */
+ 1198               	/* function __vector_33 size 309 (275) */
+ 1199               		.size	__vector_33, .-__vector_33
+ 1200               	.Lscope16:
+ 1201               		.stabs	"",36,0,0,.Lscope16-__vector_33
+ 1202               		.stabd	78,0,0
+ 1203               		.stabs	"i2cMasterReceiveNI:F(7,1)",36,0,251,i2cMasterReceiveNI
+ 1204               		.stabs	"deviceAddr:P(7,1)",64,0,250,25
+ 1205               		.stabs	"length:P(7,1)",64,0,250,17
+ 1206               		.stabs	"data:P(0,20)",64,0,250,28
+ 1207               	.global	i2cMasterReceiveNI
+ 1208               		.type	i2cMasterReceiveNI, @function
+ 1209               	i2cMasterReceiveNI:
+ 1210               		.stabd	46,0,0
+ 1211               		.stabn	68,0,251,.LM117-i2cMasterReceiveNI
+ 1212               	.LM117:
+ 1213               	/* prologue: frame size=0 */
+ 1214 04b6 1F93      		push r17
+ 1215 04b8 CF93      		push r28
+ 1216 04ba DF93      		push r29
+ 1217               	/* prologue end (size=3) */
+ 1218 04bc 982F      		mov r25,r24
+ 1219 04be 162F      		mov r17,r22
+ 1220 04c0 EA01      		movw r28,r20
+ 1221               		.stabn	68,0,255,.LM118-i2cMasterReceiveNI
+ 1222               	.LM118:
+ 1223 04c2 8091 7400 		lds r24,116
+ 1224 04c6 8E7F      		andi r24,lo8(-2)
+ 1225 04c8 8093 7400 		sts 116,r24
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 33
+
+
+ 1226               	.LBB66:
+ 1227               	.LBB67:
+ 1228               		.stabn	68,0,117,.LM119-i2cMasterReceiveNI
+ 1229               	.LM119:
+ 1230 04cc 8091 7400 		lds r24,116
+ 1231 04d0 8F70      		andi r24,lo8(15)
+ 1232 04d2 806A      		ori r24,lo8(-96)
+ 1233 04d4 8093 7400 		sts 116,r24
+ 1234               	.L133:
+ 1235               	.LBE67:
+ 1236               	.LBE66:
+ 1237               	.LBB68:
+ 1238               	.LBB69:
+ 1239               		.stabn	68,0,130,.LM120-i2cMasterReceiveNI
+ 1240               	.LM120:
+ 1241 04d8 8091 7400 		lds r24,116
+ 1242 04dc 87FF      		sbrs r24,7
+ 1243 04de 00C0      		rjmp .L133
+ 1244               	.LBE69:
+ 1245               	.LBE68:
+ 1246               		.stabn	68,0,262,.LM121-i2cMasterReceiveNI
+ 1247               	.LM121:
+ 1248 04e0 9160      		ori r25,lo8(1)
+ 1249               	.LBB70:
+ 1250               	.LBB71:
+ 1251               		.stabn	68,0,136,.LM122-i2cMasterReceiveNI
+ 1252               	.LM122:
+ 1253 04e2 9093 7300 		sts 115,r25
+ 1254               		.stabn	68,0,138,.LM123-i2cMasterReceiveNI
+ 1255               	.LM123:
+ 1256 04e6 8091 7400 		lds r24,116
+ 1257 04ea 8F70      		andi r24,lo8(15)
+ 1258 04ec 8068      		ori r24,lo8(-128)
+ 1259 04ee 8093 7400 		sts 116,r24
+ 1260               	.L135:
+ 1261               	.LBE71:
+ 1262               	.LBE70:
+ 1263               	.LBB72:
+ 1264               	.LBB73:
+ 1265               		.stabn	68,0,130,.LM124-i2cMasterReceiveNI
+ 1266               	.LM124:
+ 1267 04f2 8091 7400 		lds r24,116
+ 1268 04f6 87FF      		sbrs r24,7
+ 1269 04f8 00C0      		rjmp .L135
+ 1270               	.LBE73:
+ 1271               	.LBE72:
+ 1272               		.stabn	68,0,266,.LM125-i2cMasterReceiveNI
+ 1273               	.LM125:
+ 1274 04fa 8091 7100 		lds r24,113
+ 1275 04fe 8034      		cpi r24,lo8(64)
+ 1276 0500 01F0      		breq .L154
+ 1277 0502 91E0      		ldi r25,lo8(1)
+ 1278 0504 00C0      		rjmp .L139
+ 1279               	.L140:
+ 1280               		.stabn	68,0,271,.LM126-i2cMasterReceiveNI
+ 1281               	.LM126:
+ 1282 0506 8FEF      		ldi r24,lo8(-1)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 34
+
+
+ 1283 0508 0E94 0000 		call i2cReceiveByte
+ 1284               	.L141:
+ 1285               	.LBB74:
+ 1286               	.LBB75:
+ 1287               		.stabn	68,0,130,.LM127-i2cMasterReceiveNI
+ 1288               	.LM127:
+ 1289 050c 8091 7400 		lds r24,116
+ 1290 0510 87FF      		sbrs r24,7
+ 1291 0512 00C0      		rjmp .L141
+ 1292               	.LBE75:
+ 1293               	.LBE74:
+ 1294               	.LBB76:
+ 1295               	.LBB77:
+ 1296               		.stabn	68,0,159,.LM128-i2cMasterReceiveNI
+ 1297               	.LM128:
+ 1298 0514 8091 7300 		lds r24,115
+ 1299               	.LBE77:
+ 1300               	.LBE76:
+ 1301               		.stabn	68,0,273,.LM129-i2cMasterReceiveNI
+ 1302               	.LM129:
+ 1303 0518 8993      		st Y+,r24
+ 1304               		.stabn	68,0,275,.LM130-i2cMasterReceiveNI
+ 1305               	.LM130:
+ 1306 051a 1150      		subi r17,lo8(-(-1))
+ 1307               	.L154:
+ 1308               		.stabn	68,0,269,.LM131-i2cMasterReceiveNI
+ 1309               	.LM131:
+ 1310 051c 1230      		cpi r17,lo8(2)
+ 1311 051e 00F4      		brsh .L140
+ 1312               		.stabn	68,0,279,.LM132-i2cMasterReceiveNI
+ 1313               	.LM132:
+ 1314 0520 80E0      		ldi r24,lo8(0)
+ 1315 0522 0E94 0000 		call i2cReceiveByte
+ 1316               	.L144:
+ 1317               	.LBB78:
+ 1318               	.LBB79:
+ 1319               		.stabn	68,0,130,.LM133-i2cMasterReceiveNI
+ 1320               	.LM133:
+ 1321 0526 8091 7400 		lds r24,116
+ 1322 052a 87FF      		sbrs r24,7
+ 1323 052c 00C0      		rjmp .L144
+ 1324               	.LBE79:
+ 1325               	.LBE78:
+ 1326               	.LBB80:
+ 1327               	.LBB81:
+ 1328               		.stabn	68,0,159,.LM134-i2cMasterReceiveNI
+ 1329               	.LM134:
+ 1330 052e 8091 7300 		lds r24,115
+ 1331               	.LBE81:
+ 1332               	.LBE80:
+ 1333               		.stabn	68,0,281,.LM135-i2cMasterReceiveNI
+ 1334               	.LM135:
+ 1335 0532 8883      		st Y,r24
+ 1336 0534 90E0      		ldi r25,lo8(0)
+ 1337               	.L139:
+ 1338               	.LBB82:
+ 1339               	.LBB83:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 35
+
+
+ 1340               		.stabn	68,0,124,.LM136-i2cMasterReceiveNI
+ 1341               	.LM136:
+ 1342 0536 8091 7400 		lds r24,116
+ 1343 053a 8F70      		andi r24,lo8(15)
+ 1344 053c 806D      		ori r24,lo8(-48)
+ 1345 053e 8093 7400 		sts 116,r24
+ 1346               	.LBE83:
+ 1347               	.LBE82:
+ 1348               		.stabn	68,0,296,.LM137-i2cMasterReceiveNI
+ 1349               	.LM137:
+ 1350 0542 8091 7400 		lds r24,116
+ 1351 0546 8160      		ori r24,lo8(1)
+ 1352 0548 8093 7400 		sts 116,r24
+ 1353               		.stabn	68,0,299,.LM138-i2cMasterReceiveNI
+ 1354               	.LM138:
+ 1355 054c 892F      		mov r24,r25
+ 1356 054e 9927      		clr r25
+ 1357               	/* epilogue: frame size=0 */
+ 1358 0550 DF91      		pop r29
+ 1359 0552 CF91      		pop r28
+ 1360 0554 1F91      		pop r17
+ 1361 0556 0895      		ret
+ 1362               	/* epilogue end (size=4) */
+ 1363               	/* function i2cMasterReceiveNI size 81 (74) */
+ 1364               		.size	i2cMasterReceiveNI, .-i2cMasterReceiveNI
+ 1365               		.stabs	"retval:r(7,1)",64,0,252,25
+ 1366               		.stabn	192,0,0,i2cMasterReceiveNI-i2cMasterReceiveNI
+ 1367               		.stabn	224,0,0,.Lscope17-i2cMasterReceiveNI
+ 1368               	.Lscope17:
+ 1369               		.stabs	"",36,0,0,.Lscope17-i2cMasterReceiveNI
+ 1370               		.stabd	78,0,0
+ 1371               		.lcomm I2cState,2
+ 1372               		.lcomm I2cDeviceAddrRW,1
+ 1373               		.lcomm I2cSendData,32
+ 1374               		.lcomm I2cSendDataIndex,1
+ 1375               		.lcomm I2cSendDataLength,1
+ 1376               		.lcomm I2cReceiveData,32
+ 1377               		.lcomm I2cReceiveDataIndex,1
+ 1378               		.lcomm I2cReceiveDataLength,1
+ 1379               		.lcomm i2cSlaveReceive,2
+ 1380               		.lcomm i2cSlaveTransmit,2
+ 1381               		.stabs	"I2cState:S(0,21)=B(5,2)",40,0,33,I2cState
+ 1382               		.stabs	"I2cDeviceAddrRW:S(7,1)",40,0,34,I2cDeviceAddrRW
+ 1383               		.stabs	"I2cSendData:S(0,22)=ar(0,23)=r(0,23);0;0177777;;0;31;(7,1)",40,0,36,I2cSendData
+ 1384               		.stabs	"I2cSendDataIndex:S(7,1)",40,0,37,I2cSendDataIndex
+ 1385               		.stabs	"I2cSendDataLength:S(7,1)",40,0,38,I2cSendDataLength
+ 1386               		.stabs	"I2cReceiveData:S(0,22)",40,0,40,I2cReceiveData
+ 1387               		.stabs	"I2cReceiveDataIndex:S(7,1)",40,0,41,I2cReceiveDataIndex
+ 1388               		.stabs	"I2cReceiveDataLength:S(7,1)",40,0,42,I2cReceiveDataLength
+ 1389               		.stabs	"i2cSlaveReceive:S(0,16)",40,0,47,i2cSlaveReceive
+ 1390               		.stabs	"i2cSlaveTransmit:S(0,18)",40,0,50,i2cSlaveTransmit
+ 1391               		.stabs	"",100,0,0,.Letext0
+ 1392               	.Letext0:
+ 1393               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.c": code  686 = 0x02ae 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s 			page 36
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 i2c.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:123    .text:00000000 i2cSetBitrate
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:180    .text:00000040 i2cInit
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1378   .bss:00000047 i2cSlaveReceive
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1379   .bss:00000049 i2cSlaveTransmit
+                             .bss:00000000 I2cState
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:250    .text:00000082 i2cSetLocalDeviceAddr
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:279    .text:00000092 i2cSetSlaveReceiveHandler
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:301    .text:0000009c i2cSetSlaveTransmitHandler
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:322    .text:000000a6 i2cSendStart
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:347    .text:000000b4 i2cSendStop
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:372    .text:000000c2 i2cWaitForComplete
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:396    .text:000000cc i2cSendByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:425    .text:000000de i2cReceiveByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:461    .text:000000fa i2cGetReceivedByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:484    .text:00000102 i2cGetStatus
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:507    .text:0000010a i2cGetState
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:531    .text:00000114 i2cMasterSendNI
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:679    .text:000001a4 i2cMasterReceive
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1371   .bss:00000002 I2cDeviceAddrRW
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1376   .bss:00000045 I2cReceiveDataIndex
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1377   .bss:00000046 I2cReceiveDataLength
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1375   .bss:00000025 I2cReceiveData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:761    .text:000001fe i2cMasterSend
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1372   .bss:00000003 I2cSendData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1373   .bss:00000023 I2cSendDataIndex
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1374   .bss:00000024 I2cSendDataLength
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:833    .text:0000024c __vector_33
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccOUImEQ.s:1209   .text:000004b6 i2cMasterReceiveNI
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__divmodsi4
+__divmodhi4

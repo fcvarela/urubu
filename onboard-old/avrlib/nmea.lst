@@ -1,0 +1,1324 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 1
+
+
+   1               		.file	"nmea.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/pgmspace.h",130,0,0,0
+  69               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  70               		.stabs	"size_t:t(6,1)=(0,4)",128,0,214,0
+  71               		.stabn	162,0,0,0
+  72               		.stabs	"prog_void:t(5,1)=(5,2)=(5,2)",128,0,203,0
+  73               		.stabs	"prog_char:t(5,3)=(5,4)=@s8;r(5,4);-128;127;",128,0,204,0
+  74               		.stabs	"prog_uchar:t(5,5)=(5,6)=@s8;r(5,6);0;255;",128,0,205,0
+  75               		.stabs	"prog_int8_t:t(5,7)=(5,4)",128,0,207,0
+  76               		.stabs	"prog_uint8_t:t(5,8)=(5,6)",128,0,208,0
+  77               		.stabs	"prog_int16_t:t(5,9)=(5,10)=(0,1)",128,0,209,0
+  78               		.stabs	"prog_uint16_t:t(5,11)=(5,12)=(0,4)",128,0,210,0
+  79               		.stabs	"prog_int32_t:t(5,13)=(5,14)=(0,3)",128,0,211,0
+  80               		.stabs	"prog_uint32_t:t(5,15)=(5,16)=(0,5)",128,0,212,0
+  81               		.stabs	"prog_int64_t:t(5,17)=(5,18)=(0,6)",128,0,213,0
+  82               		.stabs	"prog_uint64_t:t(5,19)=(5,20)=(0,7)",128,0,214,0
+  83               		.stabn	162,0,0,0
+  84               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdlib.h",130,0,0,0
+  85               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  86               		.stabs	"wchar_t:t(8,1)=(0,1)",128,0,326,0
+  87               		.stabn	162,0,0,0
+  88               		.stabs	"div_t:t(7,1)=(7,2)=s4quot:(0,1),0,16;rem:(0,1),16,16;;",128,0,69,0
+  89               		.stabs	"ldiv_t:t(7,3)=(7,4)=s8quot:(0,3),0,32;rem:(0,3),32,32;;",128,0,75,0
+  90               		.stabs	"__compar_fn_t:t(7,5)=(7,6)=*(7,7)=f(0,1)",128,0,78,0
+  91               		.stabn	162,0,0,0
+  92               		.stabs	"./global.h",130,0,0,0
+  93               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  94               		.stabs	"u08:t(10,1)=(0,11)",128,0,32,0
+  95               		.stabs	"s08:t(10,2)=(0,10)",128,0,33,0
+  96               		.stabs	"u16:t(10,3)=(0,9)",128,0,34,0
+  97               		.stabs	"s16:t(10,4)=(0,8)",128,0,35,0
+  98               		.stabs	"u32:t(10,5)=(0,5)",128,0,36,0
+  99               		.stabs	"s32:t(10,6)=(0,3)",128,0,37,0
+ 100               		.stabs	"u64:t(10,7)=(0,7)",128,0,38,0
+ 101               		.stabs	"s64:t(10,8)=(0,6)",128,0,39,0
+ 102               		.stabs	"BOOL:t(10,9)=(0,11)",128,0,69,0
+ 103               		.stabs	"BYTE:t(10,10)=(0,11)",128,0,70,0
+ 104               		.stabs	"WORD:t(10,11)=(0,4)",128,0,71,0
+ 105               		.stabs	"DWORD:t(10,12)=(0,5)",128,0,72,0
+ 106               		.stabs	"UCHAR:t(10,13)=(0,11)",128,0,74,0
+ 107               		.stabs	"UINT:t(10,14)=(0,4)",128,0,75,0
+ 108               		.stabs	"USHORT:t(10,15)=(0,9)",128,0,76,0
+ 109               		.stabs	"ULONG:t(10,16)=(0,5)",128,0,77,0
+ 110               		.stabs	"CHAR:t(10,17)=(0,2)",128,0,79,0
+ 111               		.stabs	"INT:t(10,18)=(0,1)",128,0,80,0
+ 112               		.stabs	"LONG:t(10,19)=(0,3)",128,0,81,0
+ 113               		.stabn	162,0,0,0
+ 114               		.stabn	162,0,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 3
+
+
+ 115               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.h",130,0,0,0
+ 116               		.stabs	"struct_cBuffer:T(11,1)=s8dataptr:(11,2)=*(0,11),0,16;size:(0,9),16,16;datalength:(0,9),32,
+ 117               		.stabs	"cBuffer:t(11,3)=(11,1)",128,0,47,0
+ 118               		.stabn	162,0,0,0
+ 119               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.h",130,0,0,0
+ 120               		.stabs	"union_float_u32:T(12,1)=u4f:(0,12),0,32;i:(0,5),0,32;b:(12,2)=ar(12,3)=r(12,3);0;0177777;;
+ 121               		.stabs	"float_u32:t(12,4)=(12,1)",128,0,46,0
+ 122               		.stabs	"union_double_u64:T(12,5)=u8f:(0,13),0,32;i:(0,7),0,64;b:(12,6)=ar(12,3);0;7;(0,11),0,64;;"
+ 123               		.stabs	"double_u64:t(12,7)=(12,5)",128,0,53,0
+ 124               		.stabs	"PositionLLA:T(12,8)=s18lat:(12,4),0,32;lon:(12,4),32,32;alt:(12,4),64,32;TimeOfFix:(12,4),
+ 125               		.stabs	"VelocityENU:T(12,9)=s18east:(12,4),0,32;north:(12,4),32,32;up:(12,4),64,32;TimeOfFix:(12,4
+ 126               		.stabs	"VelocityHS:T(12,10)=s14heading:(12,4),0,32;speed:(12,4),32,32;TimeOfFix:(12,4),64,32;updat
+ 127               		.stabs	"PositionECEF:T(12,11)=s18x:(12,4),0,32;y:(12,4),32,32;z:(12,4),64,32;TimeOfFix:(12,4),96,3
+ 128               		.stabs	"VelocityECEF:T(12,12)=s18x:(12,4),0,32;y:(12,4),32,32;z:(12,4),64,32;TimeOfFix:(12,4),96,3
+ 129               		.stabs	"struct_GpsInfo:T(12,13)=s97TimeOfWeek:(12,4),0,32;WeekNum:(10,3),32,16;UtcOffset:(12,4),48
+ 130               		.stabs	"GpsInfoType:t(12,14)=(12,13)",128,0,112,0
+ 131               		.stabn	162,0,0,0
+ 132               		.stabs	"nmeaInit:F(0,15)",36,0,45,nmeaInit
+ 133               	.global	nmeaInit
+ 134               		.type	nmeaInit, @function
+ 135               	nmeaInit:
+ 136               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** /*! \file nmea.c \brief NMEA protocol function library. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // File Name	: 'nmea.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Title		: NMEA protocol function library
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Author		: Pascal Stang - Copyright (C) 2002
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Created		: 2002.08.27
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Revised		: 2002.08.27
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Version		: 0.1
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Target MCU	: Atmel AVR Series
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // NOTE: This code is currently below version 1.0, and therefore is considered
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // to be lacking in some functionality or documentation, or may not be fully
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // tested.  Nonetheless, you can expect most functions to work.
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // This code is distributed under the GNU Public License
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** //*****************************************************************************
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #ifndef WIN32
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#include <avr/io.h>
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#include <avr/interrupt.h>
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#include <avr/pgmspace.h>
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #endif
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include <string.h>
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include <stdlib.h>
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include <math.h>
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include "global.h"
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include "buffer.h"
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include "rprintf.h"
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include "gps.h"
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 4
+
+
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** #include "nmea.h"
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Program ROM constants
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** // Global variables
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** extern GpsInfoType GpsInfo;
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** u08 NmeaPacket[NMEA_BUFFERSIZE];
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** void nmeaInit(void)
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** {
+ 137               		.stabn	68,0,45,.LM0-nmeaInit
+ 138               	.LM0:
+ 139               	/* prologue: frame size=0 */
+ 140               	/* prologue end (size=0) */
+ 141               	/* epilogue: frame size=0 */
+ 142 0000 0895      		ret
+ 143               	/* epilogue end (size=1) */
+ 144               	/* function nmeaInit size 1 (0) */
+ 145               		.size	nmeaInit, .-nmeaInit
+ 146               	.Lscope0:
+ 147               		.stabs	"",36,0,0,.Lscope0-nmeaInit
+ 148               		.stabd	78,0,0
+ 149               		.stabs	"nmeaGetPacketBuffer:F(0,16)=*(10,1)",36,0,49,nmeaGetPacketBuffer
+ 150               	.global	nmeaGetPacketBuffer
+ 151               		.type	nmeaGetPacketBuffer, @function
+ 152               	nmeaGetPacketBuffer:
+ 153               		.stabd	46,0,0
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** }
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** u08* nmeaGetPacketBuffer(void)
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** {
+ 154               		.stabn	68,0,49,.LM1-nmeaGetPacketBuffer
+ 155               	.LM1:
+ 156               	/* prologue: frame size=0 */
+ 157               	/* prologue end (size=0) */
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	return NmeaPacket;
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** }
+ 158               		.stabn	68,0,51,.LM2-nmeaGetPacketBuffer
+ 159               	.LM2:
+ 160 0002 80E0      		ldi r24,lo8(NmeaPacket)
+ 161 0004 90E0      		ldi r25,hi8(NmeaPacket)
+ 162               	/* epilogue: frame size=0 */
+ 163 0006 0895      		ret
+ 164               	/* epilogue end (size=1) */
+ 165               	/* function nmeaGetPacketBuffer size 3 (2) */
+ 166               		.size	nmeaGetPacketBuffer, .-nmeaGetPacketBuffer
+ 167               	.Lscope1:
+ 168               		.stabs	"",36,0,0,.Lscope1-nmeaGetPacketBuffer
+ 169               		.stabd	78,0,0
+ 170               		.stabs	"nmeaProcessGPVTG:F(0,15)",36,0,221,nmeaProcessGPVTG
+ 171               		.stabs	"packet:P(0,16)",64,0,220,16
+ 172               	.global	nmeaProcessGPVTG
+ 173               		.type	nmeaProcessGPVTG, @function
+ 174               	nmeaProcessGPVTG:
+ 175               		.stabd	46,0,0
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** u08 nmeaProcess(cBuffer* rxBuffer)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 5
+
+
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** {
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	u08 foundpacket = NMEA_NODATA;
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	u08 startFlag = FALSE;
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	//u08 data;
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	u16 i,j;
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// process the receive buffer
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// go through buffer looking for packets
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(rxBuffer->datalength)
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	{
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		// look for a start of NMEA packet
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		if(bufferGetAtIndex(rxBuffer,0) == '$')
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		{
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// found start
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			startFlag = TRUE;
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// when start is found, we leave it intact in the receive buffer
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// in case the full NMEA string is not completely received.  The
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// start will be detected in the next nmeaProcess iteration.
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// done looking for start
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			break;
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		}
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		else
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			bufferGetFromFront(rxBuffer);
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	}
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// if we detected a start, look for end of packet
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(startFlag)
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	{
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		for(i=1; i<(rxBuffer->datalength)-1; i++)
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		{
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// check for end of NMEA packet <CR><LF>
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			if((bufferGetAtIndex(rxBuffer,i) == '\r') && (bufferGetAtIndex(rxBuffer,i+1) == '\n'))
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			{
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// have a packet end
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// dump initial '$'
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				bufferGetFromFront(rxBuffer);
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// copy packet to NmeaPacket
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				for(j=0; j<(i-1); j++)
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				{
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 					// although NMEA strings should be 80 characters or less,
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 					// receive buffer errors can generate erroneous packets.
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 					// Protect against packet buffer overflow
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 					if(j<(NMEA_BUFFERSIZE-1))
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 						NmeaPacket[j] = bufferGetFromFront(rxBuffer);
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 					else
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 						bufferGetFromFront(rxBuffer);
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				}
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// null terminate it
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				NmeaPacket[j] = 0;
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// dump <CR><LF> from rxBuffer
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				bufferGetFromFront(rxBuffer);
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				bufferGetFromFront(rxBuffer);
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				#ifdef NMEA_DEBUG_PKT
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				rprintf("Rx NMEA packet type: ");
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				rprintfStrLen(NmeaPacket, 0, 5);
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 6
+
+
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				rprintfStrLen(NmeaPacket, 5, (i-1)-5);
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				rprintfCRLF();
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				#endif
+ 114:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// found a packet
+ 115:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				// done with this processing session
+ 116:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				foundpacket = NMEA_UNKNOWN;
+ 117:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 				break;
+ 118:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			}
+ 119:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		}
+ 120:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	}
+ 121:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 122:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(foundpacket)
+ 123:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	{
+ 124:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		// check message type and process appropriately
+ 125:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		if(!strncmp(NmeaPacket, "GPGGA", 5))
+ 126:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		{
+ 127:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// process packet of this type
+ 128:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			nmeaProcessGPGGA(NmeaPacket);
+ 129:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// report packet type
+ 130:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			foundpacket = NMEA_GPGGA;
+ 131:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		}
+ 132:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		else if(!strncmp(NmeaPacket, "GPVTG", 5))
+ 133:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		{
+ 134:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// process packet of this type
+ 135:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			nmeaProcessGPVTG(NmeaPacket);
+ 136:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			// report packet type
+ 137:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 			foundpacket = NMEA_GPVTG;
+ 138:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		}
+ 139:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	}
+ 140:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	else if(rxBuffer->datalength >= rxBuffer->size)
+ 141:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	{
+ 142:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		// if we found no packet, and the buffer is full
+ 143:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		// we're logjammed, flush entire buffer
+ 144:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		bufferFlush(rxBuffer);
+ 145:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	}
+ 146:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	return foundpacket;
+ 147:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** }
+ 148:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 149:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** void nmeaProcessGPGGA(u08* packet)
+ 150:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** {
+ 151:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	u08 i;
+ 152:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	char* endptr;
+ 153:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	double degrees, minutesfrac;
+ 154:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 155:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#ifdef NMEA_DEBUG_GGA
+ 156:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintf("NMEA: ");
+ 157:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintfStr(packet);
+ 158:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintfCRLF();
+ 159:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#endif
+ 160:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 161:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// start parsing just after "GPGGA,"
+ 162:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	i = 6;
+ 163:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// attempt to reject empty packets right away
+ 164:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(packet[i]==',' && packet[i+1]==',')
+ 165:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		return;
+ 166:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 167:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get UTC time [hhmmss.sss]
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 7
+
+
+ 168:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.TimeOfFix.f = strtod(&packet[i], &endptr);
+ 169:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: latitude
+ 170:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+ 171:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get latitude [ddmm.mmmmm]
+ 172:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lat.f = strtod(&packet[i], &endptr);
+ 173:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// convert to pure degrees [dd.dddd] format
+ 174:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	minutesfrac = modf(GpsInfo.PosLLA.lat.f/100, &degrees);
+ 175:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lat.f = degrees + (minutesfrac*100)/60;
+ 176:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// convert to radians
+ 177:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lat.f *= (M_PI/180);
+ 178:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: N/S indicator
+ 179:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+ 180:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// correct latitute for N/S
+ 181:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(packet[i] == 'S') GpsInfo.PosLLA.lat.f = -GpsInfo.PosLLA.lat.f;
+ 182:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: longitude
+ 183:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+ 184:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get longitude [ddmm.mmmmm]
+ 185:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lon.f = strtod(&packet[i], &endptr);
+ 186:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// convert to pure degrees [dd.dddd] format
+ 187:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	minutesfrac = modf(GpsInfo.PosLLA.lon.f/100, &degrees);
+ 188:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lon.f = degrees + (minutesfrac*100)/60;
+ 189:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// convert to radians
+ 190:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.lon.f *= (M_PI/180);
+ 191:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: E/W indicator
+ 192:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 193:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// correct latitute for E/W
+ 194:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(packet[i] == 'W') GpsInfo.PosLLA.lon.f = -GpsInfo.PosLLA.lon.f;
+ 195:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: position fix status
+ 196:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 197:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// position fix status
+ 198:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// 0 = Invalid, 1 = Valid SPS, 2 = Valid DGPS, 3 = Valid PPS
+ 199:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// check for good position fix
+ 200:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if( (packet[i] != '0') && (packet[i] != ',') )
+ 201:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		GpsInfo.PosLLA.updates++;
+ 202:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: satellites used
+ 203:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+ 204:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get number of satellites used in GPS solution
+ 205:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.numSVs = atoi(&packet[i]);
+ 206:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: HDOP (horizontal dilution of precision)
+ 207:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: altitude
+ 208:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	
+ 209:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get altitude (in meters)
+ 210:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.PosLLA.alt.f = strtod(&packet[i], &endptr);
+ 211:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 212:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: altitude units, always 'M'
+ 213:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: geoid seperation
+ 214:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: seperation units
+ 215:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: DGPS age
+ 216:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: DGPS station ID
+ 217:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != '*');				// next field: checksum
+ 218:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** }
+ 219:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 220:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** void nmeaProcessGPVTG(u08* packet)
+ 221:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** {
+ 176               		.stabn	68,0,221,.LM3-nmeaProcessGPVTG
+ 177               	.LM3:
+ 178               	/* prologue: frame size=2 */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 8
+
+
+ 179 0008 FF92      		push r15
+ 180 000a 0F93      		push r16
+ 181 000c 1F93      		push r17
+ 182 000e CF93      		push r28
+ 183 0010 DF93      		push r29
+ 184 0012 CDB7      		in r28,__SP_L__
+ 185 0014 DEB7      		in r29,__SP_H__
+ 186 0016 2297      		sbiw r28,2
+ 187 0018 0FB6      		in __tmp_reg__,__SREG__
+ 188 001a F894      		cli
+ 189 001c DEBF      		out __SP_H__,r29
+ 190 001e 0FBE      		out __SREG__,__tmp_reg__
+ 191 0020 CDBF      		out __SP_L__,r28
+ 192               	/* prologue end (size=13) */
+ 193 0022 8C01      		movw r16,r24
+ 222:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	u08 i;
+ 223:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	char* endptr;
+ 224:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 225:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#ifdef NMEA_DEBUG_VTG
+ 226:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintf("NMEA: ");
+ 227:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintfStr(packet);
+ 228:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	rprintfCRLF();
+ 229:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	#endif
+ 230:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 231:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// start parsing just after "GPVTG,"
+ 232:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	i = 6;
+ 233:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// attempt to reject empty packets right away
+ 234:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	if(packet[i]==',' && packet[i+1]==',')
+ 194               		.stabn	68,0,234,.LM4-nmeaProcessGPVTG
+ 195               	.LM4:
+ 196 0024 DC01      		movw r26,r24
+ 197 0026 1696      		adiw r26,6
+ 198 0028 FC01      		movw r30,r24
+ 199 002a 8681      		ldd r24,Z+6
+ 200 002c 8C32      		cpi r24,lo8(44)
+ 201 002e 01F4      		brne .L6
+ 202               		.stabn	68,0,234,.LM5-nmeaProcessGPVTG
+ 203               	.LM5:
+ 204 0030 FD01      		movw r30,r26
+ 205 0032 8181      		ldd r24,Z+1
+ 206 0034 8C32      		cpi r24,lo8(44)
+ 207 0036 01F4      		brne .+2
+ 208 0038 00C0      		rjmp .L19
+ 209               	.L6:
+ 235:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 		return;
+ 236:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 237:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get course (true north ref) in degrees [ddd.dd]
+ 238:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.VelHS.heading.f = strtod(&packet[i], &endptr);
+ 210               		.stabn	68,0,238,.LM6-nmeaProcessGPVTG
+ 211               	.LM6:
+ 212 003a BE01      		movw r22,r28
+ 213 003c 6F5F      		subi r22,lo8(-(1))
+ 214 003e 7F4F      		sbci r23,hi8(-(1))
+ 215 0040 CD01      		movw r24,r26
+ 216 0042 0E94 0000 		call strtod
+ 217 0046 6093 0000 		sts GpsInfo+83,r22
+ 218 004a 7093 0000 		sts (GpsInfo+83)+1,r23
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 9
+
+
+ 219 004e 8093 0000 		sts (GpsInfo+83)+2,r24
+ 220 0052 9093 0000 		sts (GpsInfo+83)+3,r25
+ 221 0056 86E0      		ldi r24,lo8(6)
+ 222 0058 F82E      		mov r15,r24
+ 223               	.L9:
+ 239:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: 'T'
+ 224               		.stabn	68,0,239,.LM7-nmeaProcessGPVTG
+ 225               	.LM7:
+ 226 005a F801      		movw r30,r16
+ 227 005c EF0D      		add r30,r15
+ 228 005e F11D      		adc r31,__zero_reg__
+ 229 0060 8081      		ld r24,Z
+ 230 0062 F394      		inc r15
+ 231 0064 8C32      		cpi r24,lo8(44)
+ 232 0066 01F4      		brne .L9
+ 233               	.L20:
+ 240:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: course (magnetic north)
+ 234               		.stabn	68,0,240,.LM8-nmeaProcessGPVTG
+ 235               	.LM8:
+ 236 0068 F801      		movw r30,r16
+ 237 006a EF0D      		add r30,r15
+ 238 006c F11D      		adc r31,__zero_reg__
+ 239 006e 8081      		ld r24,Z
+ 240 0070 F394      		inc r15
+ 241 0072 8C32      		cpi r24,lo8(44)
+ 242 0074 01F4      		brne .L20
+ 243               	.L21:
+ 241:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 242:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get course (magnetic north ref) in degrees [ddd.dd]
+ 243:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	//GpsInfo.VelHS.heading.f = strtod(&packet[i], &endptr);
+ 244:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: 'M'
+ 244               		.stabn	68,0,244,.LM9-nmeaProcessGPVTG
+ 245               	.LM9:
+ 246 0076 F801      		movw r30,r16
+ 247 0078 EF0D      		add r30,r15
+ 248 007a F11D      		adc r31,__zero_reg__
+ 249 007c 8081      		ld r24,Z
+ 250 007e F394      		inc r15
+ 251 0080 8C32      		cpi r24,lo8(44)
+ 252 0082 01F4      		brne .L21
+ 253               	.L22:
+ 245:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: speed (knots)
+ 254               		.stabn	68,0,245,.LM10-nmeaProcessGPVTG
+ 255               	.LM10:
+ 256 0084 F801      		movw r30,r16
+ 257 0086 EF0D      		add r30,r15
+ 258 0088 F11D      		adc r31,__zero_reg__
+ 259 008a 8081      		ld r24,Z
+ 260 008c F394      		inc r15
+ 261 008e 8C32      		cpi r24,lo8(44)
+ 262 0090 01F4      		brne .L22
+ 263               	.L23:
+ 246:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 247:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get speed in knots
+ 248:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	//GpsInfo.VelHS.speed.f = strtod(&packet[i], &endptr);
+ 249:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: 'N'
+ 264               		.stabn	68,0,249,.LM11-nmeaProcessGPVTG
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 10
+
+
+ 265               	.LM11:
+ 266 0092 F801      		movw r30,r16
+ 267 0094 EF0D      		add r30,r15
+ 268 0096 F11D      		adc r31,__zero_reg__
+ 269 0098 8081      		ld r24,Z
+ 270 009a F394      		inc r15
+ 271 009c 8C32      		cpi r24,lo8(44)
+ 272 009e 01F4      		brne .L23
+ 273               	.L24:
+ 250:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: speed (km/h)
+ 274               		.stabn	68,0,250,.LM12-nmeaProcessGPVTG
+ 275               	.LM12:
+ 276 00a0 F801      		movw r30,r16
+ 277 00a2 EF0D      		add r30,r15
+ 278 00a4 F11D      		adc r31,__zero_reg__
+ 279 00a6 8081      		ld r24,Z
+ 280 00a8 F394      		inc r15
+ 281 00aa 8C32      		cpi r24,lo8(44)
+ 282 00ac 01F4      		brne .L24
+ 251:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 252:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	// get speed in km/h
+ 253:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.VelHS.speed.f = strtod(&packet[i], &endptr);
+ 283               		.stabn	68,0,253,.LM13-nmeaProcessGPVTG
+ 284               	.LM13:
+ 285 00ae BE01      		movw r22,r28
+ 286 00b0 6F5F      		subi r22,lo8(-(1))
+ 287 00b2 7F4F      		sbci r23,hi8(-(1))
+ 288 00b4 C801      		movw r24,r16
+ 289 00b6 8F0D      		add r24,r15
+ 290 00b8 911D      		adc r25,__zero_reg__
+ 291 00ba 0E94 0000 		call strtod
+ 292 00be 6093 0000 		sts GpsInfo+87,r22
+ 293 00c2 7093 0000 		sts (GpsInfo+87)+1,r23
+ 294 00c6 8093 0000 		sts (GpsInfo+87)+2,r24
+ 295 00ca 9093 0000 		sts (GpsInfo+87)+3,r25
+ 296               	.L16:
+ 254:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != ',');				// next field: 'K'
+ 297               		.stabn	68,0,254,.LM14-nmeaProcessGPVTG
+ 298               	.LM14:
+ 299 00ce F801      		movw r30,r16
+ 300 00d0 EF0D      		add r30,r15
+ 301 00d2 F11D      		adc r31,__zero_reg__
+ 302 00d4 8081      		ld r24,Z
+ 303 00d6 F394      		inc r15
+ 304 00d8 8C32      		cpi r24,lo8(44)
+ 305 00da 01F4      		brne .L16
+ 306               	.L25:
+ 255:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	while(packet[i++] != '*');				// next field: checksum
+ 307               		.stabn	68,0,255,.LM15-nmeaProcessGPVTG
+ 308               	.LM15:
+ 309 00dc F801      		movw r30,r16
+ 310 00de EF0D      		add r30,r15
+ 311 00e0 F11D      		adc r31,__zero_reg__
+ 312 00e2 8081      		ld r24,Z
+ 313 00e4 F394      		inc r15
+ 314 00e6 8A32      		cpi r24,lo8(42)
+ 315 00e8 01F4      		brne .L25
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 11
+
+
+ 256:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 
+ 257:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c **** 	GpsInfo.VelHS.updates++;
+ 316               		.stabn	68,0,257,.LM16-nmeaProcessGPVTG
+ 317               	.LM16:
+ 318 00ea 8091 0000 		lds r24,GpsInfo+95
+ 319 00ee 9091 0000 		lds r25,(GpsInfo+95)+1
+ 320 00f2 0196      		adiw r24,1
+ 321 00f4 9093 0000 		sts (GpsInfo+95)+1,r25
+ 322 00f8 8093 0000 		sts GpsInfo+95,r24
+ 323               	.L19:
+ 324               	/* epilogue: frame size=2 */
+ 325 00fc 2296      		adiw r28,2
+ 326 00fe 0FB6      		in __tmp_reg__,__SREG__
+ 327 0100 F894      		cli
+ 328 0102 DEBF      		out __SP_H__,r29
+ 329 0104 0FBE      		out __SREG__,__tmp_reg__
+ 330 0106 CDBF      		out __SP_L__,r28
+ 331 0108 DF91      		pop r29
+ 332 010a CF91      		pop r28
+ 333 010c 1F91      		pop r17
+ 334 010e 0F91      		pop r16
+ 335 0110 FF90      		pop r15
+ 336 0112 0895      		ret
+ 337               	/* epilogue end (size=12) */
+ 338               	/* function nmeaProcessGPVTG size 134 (109) */
+ 339               		.size	nmeaProcessGPVTG, .-nmeaProcessGPVTG
+ 340               		.stabs	"i:r(10,1)",64,0,222,15
+ 341               		.stabs	"endptr:(0,17)=*(0,2)",128,0,223,1
+ 342               		.stabn	192,0,0,nmeaProcessGPVTG-nmeaProcessGPVTG
+ 343               		.stabn	224,0,0,.Lscope2-nmeaProcessGPVTG
+ 344               	.Lscope2:
+ 345               		.stabs	"",36,0,0,.Lscope2-nmeaProcessGPVTG
+ 346               		.stabd	78,0,0
+ 347               		.stabs	"nmeaProcessGPGGA:F(0,15)",36,0,150,nmeaProcessGPGGA
+ 348               		.stabs	"packet:P(0,16)",64,0,149,16
+ 349               	.global	nmeaProcessGPGGA
+ 350               		.type	nmeaProcessGPGGA, @function
+ 351               	nmeaProcessGPGGA:
+ 352               		.stabd	46,0,0
+ 353               		.stabn	68,0,150,.LM17-nmeaProcessGPGGA
+ 354               	.LM17:
+ 355               	/* prologue: frame size=6 */
+ 356 0114 FF92      		push r15
+ 357 0116 0F93      		push r16
+ 358 0118 1F93      		push r17
+ 359 011a CF93      		push r28
+ 360 011c DF93      		push r29
+ 361 011e CDB7      		in r28,__SP_L__
+ 362 0120 DEB7      		in r29,__SP_H__
+ 363 0122 2697      		sbiw r28,6
+ 364 0124 0FB6      		in __tmp_reg__,__SREG__
+ 365 0126 F894      		cli
+ 366 0128 DEBF      		out __SP_H__,r29
+ 367 012a 0FBE      		out __SREG__,__tmp_reg__
+ 368 012c CDBF      		out __SP_L__,r28
+ 369               	/* prologue end (size=13) */
+ 370 012e 8C01      		movw r16,r24
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 12
+
+
+ 371               		.stabn	68,0,164,.LM18-nmeaProcessGPGGA
+ 372               	.LM18:
+ 373 0130 DC01      		movw r26,r24
+ 374 0132 1696      		adiw r26,6
+ 375 0134 FC01      		movw r30,r24
+ 376 0136 8681      		ldd r24,Z+6
+ 377 0138 8C32      		cpi r24,lo8(44)
+ 378 013a 01F4      		brne .L37
+ 379               		.stabn	68,0,164,.LM19-nmeaProcessGPGGA
+ 380               	.LM19:
+ 381 013c FD01      		movw r30,r26
+ 382 013e 8181      		ldd r24,Z+1
+ 383 0140 8C32      		cpi r24,lo8(44)
+ 384 0142 01F4      		brne .+2
+ 385 0144 00C0      		rjmp .L65
+ 386               	.L37:
+ 387               		.stabn	68,0,168,.LM20-nmeaProcessGPGGA
+ 388               	.LM20:
+ 389 0146 BE01      		movw r22,r28
+ 390 0148 6F5F      		subi r22,lo8(-(1))
+ 391 014a 7F4F      		sbci r23,hi8(-(1))
+ 392 014c CD01      		movw r24,r26
+ 393 014e 0E94 0000 		call strtod
+ 394 0152 6093 0000 		sts GpsInfo+23,r22
+ 395 0156 7093 0000 		sts (GpsInfo+23)+1,r23
+ 396 015a 8093 0000 		sts (GpsInfo+23)+2,r24
+ 397 015e 9093 0000 		sts (GpsInfo+23)+3,r25
+ 398 0162 96E0      		ldi r25,lo8(6)
+ 399 0164 F92E      		mov r15,r25
+ 400               	.L40:
+ 401               		.stabn	68,0,169,.LM21-nmeaProcessGPGGA
+ 402               	.LM21:
+ 403 0166 F801      		movw r30,r16
+ 404 0168 EF0D      		add r30,r15
+ 405 016a F11D      		adc r31,__zero_reg__
+ 406 016c 8081      		ld r24,Z
+ 407 016e F394      		inc r15
+ 408 0170 8C32      		cpi r24,lo8(44)
+ 409 0172 01F4      		brne .L40
+ 410               		.stabn	68,0,172,.LM22-nmeaProcessGPGGA
+ 411               	.LM22:
+ 412 0174 BE01      		movw r22,r28
+ 413 0176 6F5F      		subi r22,lo8(-(1))
+ 414 0178 7F4F      		sbci r23,hi8(-(1))
+ 415 017a C801      		movw r24,r16
+ 416 017c 8F0D      		add r24,r15
+ 417 017e 911D      		adc r25,__zero_reg__
+ 418 0180 0E94 0000 		call strtod
+ 419 0184 6093 0000 		sts GpsInfo+11,r22
+ 420 0188 7093 0000 		sts (GpsInfo+11)+1,r23
+ 421 018c 8093 0000 		sts (GpsInfo+11)+2,r24
+ 422 0190 9093 0000 		sts (GpsInfo+11)+3,r25
+ 423               		.stabn	68,0,174,.LM23-nmeaProcessGPGGA
+ 424               	.LM23:
+ 425 0194 20E0      		ldi r18,lo8(0x42c80000)
+ 426 0196 30E0      		ldi r19,hi8(0x42c80000)
+ 427 0198 48EC      		ldi r20,hlo8(0x42c80000)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 13
+
+
+ 428 019a 52E4      		ldi r21,hhi8(0x42c80000)
+ 429 019c 0E94 0000 		call __divsf3
+ 430 01a0 AE01      		movw r20,r28
+ 431 01a2 4D5F      		subi r20,lo8(-(3))
+ 432 01a4 5F4F      		sbci r21,hi8(-(3))
+ 433 01a6 0E94 0000 		call modf
+ 434               		.stabn	68,0,177,.LM24-nmeaProcessGPGGA
+ 435               	.LM24:
+ 436 01aa 20E0      		ldi r18,lo8(0x42c80000)
+ 437 01ac 30E0      		ldi r19,hi8(0x42c80000)
+ 438 01ae 48EC      		ldi r20,hlo8(0x42c80000)
+ 439 01b0 52E4      		ldi r21,hhi8(0x42c80000)
+ 440 01b2 0E94 0000 		call __mulsf3
+ 441 01b6 20E0      		ldi r18,lo8(0x42700000)
+ 442 01b8 30E0      		ldi r19,hi8(0x42700000)
+ 443 01ba 40E7      		ldi r20,hlo8(0x42700000)
+ 444 01bc 52E4      		ldi r21,hhi8(0x42700000)
+ 445 01be 0E94 0000 		call __divsf3
+ 446 01c2 2B81      		ldd r18,Y+3
+ 447 01c4 3C81      		ldd r19,Y+4
+ 448 01c6 4D81      		ldd r20,Y+5
+ 449 01c8 5E81      		ldd r21,Y+6
+ 450 01ca 0E94 0000 		call __addsf3
+ 451 01ce 25E3      		ldi r18,lo8(0x3c8efa35)
+ 452 01d0 3AEF      		ldi r19,hi8(0x3c8efa35)
+ 453 01d2 4EE8      		ldi r20,hlo8(0x3c8efa35)
+ 454 01d4 5CE3      		ldi r21,hhi8(0x3c8efa35)
+ 455 01d6 0E94 0000 		call __mulsf3
+ 456 01da 9B01      		movw r18,r22
+ 457 01dc AC01      		movw r20,r24
+ 458 01de 6093 0000 		sts GpsInfo+11,r22
+ 459 01e2 7093 0000 		sts (GpsInfo+11)+1,r23
+ 460 01e6 8093 0000 		sts (GpsInfo+11)+2,r24
+ 461 01ea 9093 0000 		sts (GpsInfo+11)+3,r25
+ 462               	.L42:
+ 463               		.stabn	68,0,178,.LM25-nmeaProcessGPGGA
+ 464               	.LM25:
+ 465 01ee F801      		movw r30,r16
+ 466 01f0 EF0D      		add r30,r15
+ 467 01f2 F11D      		adc r31,__zero_reg__
+ 468 01f4 8081      		ld r24,Z
+ 469 01f6 F394      		inc r15
+ 470 01f8 8C32      		cpi r24,lo8(44)
+ 471 01fa 01F4      		brne .L42
+ 472               		.stabn	68,0,181,.LM26-nmeaProcessGPGGA
+ 473               	.LM26:
+ 474 01fc F801      		movw r30,r16
+ 475 01fe EF0D      		add r30,r15
+ 476 0200 F11D      		adc r31,__zero_reg__
+ 477 0202 8081      		ld r24,Z
+ 478 0204 8335      		cpi r24,lo8(83)
+ 479 0206 01F4      		brne .L66
+ 480 0208 DA01      		movw r26,r20
+ 481 020a C901      		movw r24,r18
+ 482 020c B058      		subi r27,0x80
+ 483 020e 8093 0000 		sts GpsInfo+11,r24
+ 484 0212 9093 0000 		sts (GpsInfo+11)+1,r25
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 14
+
+
+ 485 0216 A093 0000 		sts (GpsInfo+11)+2,r26
+ 486 021a B093 0000 		sts (GpsInfo+11)+3,r27
+ 487               	.L66:
+ 488               		.stabn	68,0,182,.LM27-nmeaProcessGPGGA
+ 489               	.LM27:
+ 490 021e F801      		movw r30,r16
+ 491 0220 EF0D      		add r30,r15
+ 492 0222 F11D      		adc r31,__zero_reg__
+ 493 0224 8081      		ld r24,Z
+ 494 0226 F394      		inc r15
+ 495 0228 8C32      		cpi r24,lo8(44)
+ 496 022a 01F4      		brne .L66
+ 497               		.stabn	68,0,185,.LM28-nmeaProcessGPGGA
+ 498               	.LM28:
+ 499 022c BE01      		movw r22,r28
+ 500 022e 6F5F      		subi r22,lo8(-(1))
+ 501 0230 7F4F      		sbci r23,hi8(-(1))
+ 502 0232 C801      		movw r24,r16
+ 503 0234 8F0D      		add r24,r15
+ 504 0236 911D      		adc r25,__zero_reg__
+ 505 0238 0E94 0000 		call strtod
+ 506 023c 6093 0000 		sts GpsInfo+15,r22
+ 507 0240 7093 0000 		sts (GpsInfo+15)+1,r23
+ 508 0244 8093 0000 		sts (GpsInfo+15)+2,r24
+ 509 0248 9093 0000 		sts (GpsInfo+15)+3,r25
+ 510               		.stabn	68,0,187,.LM29-nmeaProcessGPGGA
+ 511               	.LM29:
+ 512 024c 20E0      		ldi r18,lo8(0x42c80000)
+ 513 024e 30E0      		ldi r19,hi8(0x42c80000)
+ 514 0250 48EC      		ldi r20,hlo8(0x42c80000)
+ 515 0252 52E4      		ldi r21,hhi8(0x42c80000)
+ 516 0254 0E94 0000 		call __divsf3
+ 517 0258 AE01      		movw r20,r28
+ 518 025a 4D5F      		subi r20,lo8(-(3))
+ 519 025c 5F4F      		sbci r21,hi8(-(3))
+ 520 025e 0E94 0000 		call modf
+ 521               		.stabn	68,0,190,.LM30-nmeaProcessGPGGA
+ 522               	.LM30:
+ 523 0262 20E0      		ldi r18,lo8(0x42c80000)
+ 524 0264 30E0      		ldi r19,hi8(0x42c80000)
+ 525 0266 48EC      		ldi r20,hlo8(0x42c80000)
+ 526 0268 52E4      		ldi r21,hhi8(0x42c80000)
+ 527 026a 0E94 0000 		call __mulsf3
+ 528 026e 20E0      		ldi r18,lo8(0x42700000)
+ 529 0270 30E0      		ldi r19,hi8(0x42700000)
+ 530 0272 40E7      		ldi r20,hlo8(0x42700000)
+ 531 0274 52E4      		ldi r21,hhi8(0x42700000)
+ 532 0276 0E94 0000 		call __divsf3
+ 533 027a 2B81      		ldd r18,Y+3
+ 534 027c 3C81      		ldd r19,Y+4
+ 535 027e 4D81      		ldd r20,Y+5
+ 536 0280 5E81      		ldd r21,Y+6
+ 537 0282 0E94 0000 		call __addsf3
+ 538 0286 25E3      		ldi r18,lo8(0x3c8efa35)
+ 539 0288 3AEF      		ldi r19,hi8(0x3c8efa35)
+ 540 028a 4EE8      		ldi r20,hlo8(0x3c8efa35)
+ 541 028c 5CE3      		ldi r21,hhi8(0x3c8efa35)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 15
+
+
+ 542 028e 0E94 0000 		call __mulsf3
+ 543 0292 9B01      		movw r18,r22
+ 544 0294 AC01      		movw r20,r24
+ 545 0296 6093 0000 		sts GpsInfo+15,r22
+ 546 029a 7093 0000 		sts (GpsInfo+15)+1,r23
+ 547 029e 8093 0000 		sts (GpsInfo+15)+2,r24
+ 548 02a2 9093 0000 		sts (GpsInfo+15)+3,r25
+ 549               	.L47:
+ 550               		.stabn	68,0,191,.LM31-nmeaProcessGPGGA
+ 551               	.LM31:
+ 552 02a6 F801      		movw r30,r16
+ 553 02a8 EF0D      		add r30,r15
+ 554 02aa F11D      		adc r31,__zero_reg__
+ 555 02ac 8081      		ld r24,Z
+ 556 02ae F394      		inc r15
+ 557 02b0 8C32      		cpi r24,lo8(44)
+ 558 02b2 01F4      		brne .L47
+ 559               		.stabn	68,0,194,.LM32-nmeaProcessGPGGA
+ 560               	.LM32:
+ 561 02b4 F801      		movw r30,r16
+ 562 02b6 EF0D      		add r30,r15
+ 563 02b8 F11D      		adc r31,__zero_reg__
+ 564 02ba 8081      		ld r24,Z
+ 565 02bc 8735      		cpi r24,lo8(87)
+ 566 02be 01F4      		brne .L67
+ 567 02c0 DA01      		movw r26,r20
+ 568 02c2 C901      		movw r24,r18
+ 569 02c4 B058      		subi r27,0x80
+ 570 02c6 8093 0000 		sts GpsInfo+15,r24
+ 571 02ca 9093 0000 		sts (GpsInfo+15)+1,r25
+ 572 02ce A093 0000 		sts (GpsInfo+15)+2,r26
+ 573 02d2 B093 0000 		sts (GpsInfo+15)+3,r27
+ 574               	.L67:
+ 575               		.stabn	68,0,195,.LM33-nmeaProcessGPGGA
+ 576               	.LM33:
+ 577 02d6 F801      		movw r30,r16
+ 578 02d8 EF0D      		add r30,r15
+ 579 02da F11D      		adc r31,__zero_reg__
+ 580 02dc 8081      		ld r24,Z
+ 581 02de F394      		inc r15
+ 582 02e0 8C32      		cpi r24,lo8(44)
+ 583 02e2 01F4      		brne .L67
+ 584               		.stabn	68,0,200,.LM34-nmeaProcessGPGGA
+ 585               	.LM34:
+ 586 02e4 F801      		movw r30,r16
+ 587 02e6 EF0D      		add r30,r15
+ 588 02e8 F11D      		adc r31,__zero_reg__
+ 589 02ea E081      		ld r30,Z
+ 590 02ec E033      		cpi r30,lo8(48)
+ 591 02ee 01F0      		breq .L68
+ 592 02f0 EC32      		cpi r30,lo8(44)
+ 593 02f2 01F0      		breq .L68
+ 594               		.stabn	68,0,201,.LM35-nmeaProcessGPGGA
+ 595               	.LM35:
+ 596 02f4 8091 0000 		lds r24,GpsInfo+27
+ 597 02f8 9091 0000 		lds r25,(GpsInfo+27)+1
+ 598 02fc 0196      		adiw r24,1
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 16
+
+
+ 599 02fe 9093 0000 		sts (GpsInfo+27)+1,r25
+ 600 0302 8093 0000 		sts GpsInfo+27,r24
+ 601               	.L68:
+ 602               		.stabn	68,0,202,.LM36-nmeaProcessGPGGA
+ 603               	.LM36:
+ 604 0306 F801      		movw r30,r16
+ 605 0308 EF0D      		add r30,r15
+ 606 030a F11D      		adc r31,__zero_reg__
+ 607 030c 8081      		ld r24,Z
+ 608 030e F394      		inc r15
+ 609 0310 8C32      		cpi r24,lo8(44)
+ 610 0312 01F4      		brne .L68
+ 611               		.stabn	68,0,205,.LM37-nmeaProcessGPGGA
+ 612               	.LM37:
+ 613 0314 C801      		movw r24,r16
+ 614 0316 8F0D      		add r24,r15
+ 615 0318 911D      		adc r25,__zero_reg__
+ 616 031a 0E94 0000 		call atoi
+ 617 031e 8093 0000 		sts GpsInfo+10,r24
+ 618               	.L56:
+ 619               		.stabn	68,0,206,.LM38-nmeaProcessGPGGA
+ 620               	.LM38:
+ 621 0322 F801      		movw r30,r16
+ 622 0324 EF0D      		add r30,r15
+ 623 0326 F11D      		adc r31,__zero_reg__
+ 624 0328 8081      		ld r24,Z
+ 625 032a F394      		inc r15
+ 626 032c 8C32      		cpi r24,lo8(44)
+ 627 032e 01F4      		brne .L56
+ 628               	.L69:
+ 629               		.stabn	68,0,207,.LM39-nmeaProcessGPGGA
+ 630               	.LM39:
+ 631 0330 F801      		movw r30,r16
+ 632 0332 EF0D      		add r30,r15
+ 633 0334 F11D      		adc r31,__zero_reg__
+ 634 0336 8081      		ld r24,Z
+ 635 0338 F394      		inc r15
+ 636 033a 8C32      		cpi r24,lo8(44)
+ 637 033c 01F4      		brne .L69
+ 638               		.stabn	68,0,210,.LM40-nmeaProcessGPGGA
+ 639               	.LM40:
+ 640 033e BE01      		movw r22,r28
+ 641 0340 6F5F      		subi r22,lo8(-(1))
+ 642 0342 7F4F      		sbci r23,hi8(-(1))
+ 643 0344 C801      		movw r24,r16
+ 644 0346 8F0D      		add r24,r15
+ 645 0348 911D      		adc r25,__zero_reg__
+ 646 034a 0E94 0000 		call strtod
+ 647 034e 6093 0000 		sts GpsInfo+19,r22
+ 648 0352 7093 0000 		sts (GpsInfo+19)+1,r23
+ 649 0356 8093 0000 		sts (GpsInfo+19)+2,r24
+ 650 035a 9093 0000 		sts (GpsInfo+19)+3,r25
+ 651               	.L59:
+ 652               		.stabn	68,0,212,.LM41-nmeaProcessGPGGA
+ 653               	.LM41:
+ 654 035e F801      		movw r30,r16
+ 655 0360 EF0D      		add r30,r15
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 17
+
+
+ 656 0362 F11D      		adc r31,__zero_reg__
+ 657 0364 8081      		ld r24,Z
+ 658 0366 F394      		inc r15
+ 659 0368 8C32      		cpi r24,lo8(44)
+ 660 036a 01F4      		brne .L59
+ 661               	.L70:
+ 662               		.stabn	68,0,213,.LM42-nmeaProcessGPGGA
+ 663               	.LM42:
+ 664 036c F801      		movw r30,r16
+ 665 036e EF0D      		add r30,r15
+ 666 0370 F11D      		adc r31,__zero_reg__
+ 667 0372 8081      		ld r24,Z
+ 668 0374 F394      		inc r15
+ 669 0376 8C32      		cpi r24,lo8(44)
+ 670 0378 01F4      		brne .L70
+ 671               	.L71:
+ 672               		.stabn	68,0,214,.LM43-nmeaProcessGPGGA
+ 673               	.LM43:
+ 674 037a F801      		movw r30,r16
+ 675 037c EF0D      		add r30,r15
+ 676 037e F11D      		adc r31,__zero_reg__
+ 677 0380 8081      		ld r24,Z
+ 678 0382 F394      		inc r15
+ 679 0384 8C32      		cpi r24,lo8(44)
+ 680 0386 01F4      		brne .L71
+ 681               	.L72:
+ 682               		.stabn	68,0,215,.LM44-nmeaProcessGPGGA
+ 683               	.LM44:
+ 684 0388 F801      		movw r30,r16
+ 685 038a EF0D      		add r30,r15
+ 686 038c F11D      		adc r31,__zero_reg__
+ 687 038e 8081      		ld r24,Z
+ 688 0390 F394      		inc r15
+ 689 0392 8C32      		cpi r24,lo8(44)
+ 690 0394 01F4      		brne .L72
+ 691               	.L73:
+ 692               		.stabn	68,0,216,.LM45-nmeaProcessGPGGA
+ 693               	.LM45:
+ 694 0396 F801      		movw r30,r16
+ 695 0398 EF0D      		add r30,r15
+ 696 039a F11D      		adc r31,__zero_reg__
+ 697 039c 8081      		ld r24,Z
+ 698 039e F394      		inc r15
+ 699 03a0 8C32      		cpi r24,lo8(44)
+ 700 03a2 01F4      		brne .L73
+ 701               	.L74:
+ 702               		.stabn	68,0,217,.LM46-nmeaProcessGPGGA
+ 703               	.LM46:
+ 704 03a4 F801      		movw r30,r16
+ 705 03a6 EF0D      		add r30,r15
+ 706 03a8 F11D      		adc r31,__zero_reg__
+ 707 03aa 8081      		ld r24,Z
+ 708 03ac F394      		inc r15
+ 709 03ae 8A32      		cpi r24,lo8(42)
+ 710 03b0 01F4      		brne .L74
+ 711               	.L65:
+ 712               	/* epilogue: frame size=6 */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 18
+
+
+ 713 03b2 2696      		adiw r28,6
+ 714 03b4 0FB6      		in __tmp_reg__,__SREG__
+ 715 03b6 F894      		cli
+ 716 03b8 DEBF      		out __SP_H__,r29
+ 717 03ba 0FBE      		out __SREG__,__tmp_reg__
+ 718 03bc CDBF      		out __SP_L__,r28
+ 719 03be DF91      		pop r29
+ 720 03c0 CF91      		pop r28
+ 721 03c2 1F91      		pop r17
+ 722 03c4 0F91      		pop r16
+ 723 03c6 FF90      		pop r15
+ 724 03c8 0895      		ret
+ 725               	/* epilogue end (size=12) */
+ 726               	/* function nmeaProcessGPGGA size 347 (322) */
+ 727               		.size	nmeaProcessGPGGA, .-nmeaProcessGPGGA
+ 728               		.stabs	"i:r(10,1)",64,0,151,15
+ 729               		.stabs	"endptr:(0,17)",128,0,152,1
+ 730               		.stabs	"degrees:(0,13)",128,0,153,3
+ 731               		.stabs	"minutesfrac:r(0,13)",64,0,153,22
+ 732               		.stabn	192,0,0,nmeaProcessGPGGA-nmeaProcessGPGGA
+ 733               		.stabn	224,0,0,.Lscope3-nmeaProcessGPGGA
+ 734               	.Lscope3:
+ 735               		.stabs	"",36,0,0,.Lscope3-nmeaProcessGPGGA
+ 736               		.stabd	78,0,0
+ 737               		.data
+ 738               	.LC0:
+ 739 0000 4750 4747 		.string	"GPGGA"
+ 739      4100 
+ 740               	.LC1:
+ 741 0006 4750 5654 		.string	"GPVTG"
+ 741      4700 
+ 742               		.text
+ 743               		.stabs	"nmeaProcess:F(10,1)",36,0,54,nmeaProcess
+ 744               		.stabs	"rxBuffer:P(0,18)=*(11,3)",64,0,53,16
+ 745               	.global	nmeaProcess
+ 746               		.type	nmeaProcess, @function
+ 747               	nmeaProcess:
+ 748               		.stabd	46,0,0
+ 749               		.stabn	68,0,54,.LM47-nmeaProcess
+ 750               	.LM47:
+ 751               	/* prologue: frame size=0 */
+ 752 03ca CF92      		push r12
+ 753 03cc DF92      		push r13
+ 754 03ce EF92      		push r14
+ 755 03d0 FF92      		push r15
+ 756 03d2 0F93      		push r16
+ 757 03d4 1F93      		push r17
+ 758 03d6 CF93      		push r28
+ 759 03d8 DF93      		push r29
+ 760               	/* prologue end (size=8) */
+ 761 03da 8C01      		movw r16,r24
+ 762 03dc 00C0      		rjmp .L98
+ 763               	.L99:
+ 764               		.stabn	68,0,65,.LM48-nmeaProcess
+ 765               	.LM48:
+ 766 03de 60E0      		ldi r22,lo8(0)
+ 767 03e0 70E0      		ldi r23,hi8(0)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 19
+
+
+ 768 03e2 C801      		movw r24,r16
+ 769 03e4 0E94 0000 		call bufferGetAtIndex
+ 770 03e8 8432      		cpi r24,lo8(36)
+ 771 03ea 01F4      		brne .+2
+ 772 03ec 00C0      		rjmp .L122
+ 773               		.stabn	68,0,77,.LM49-nmeaProcess
+ 774               	.LM49:
+ 775 03ee C801      		movw r24,r16
+ 776 03f0 0E94 0000 		call bufferGetFromFront
+ 777               	.L98:
+ 778               		.stabn	68,0,62,.LM50-nmeaProcess
+ 779               	.LM50:
+ 780 03f4 F801      		movw r30,r16
+ 781 03f6 8481      		ldd r24,Z+4
+ 782 03f8 9581      		ldd r25,Z+5
+ 783 03fa 892B      		or r24,r25
+ 784 03fc 01F4      		brne .L99
+ 785 03fe 00C0      		rjmp .L103
+ 786               	.L104:
+ 787               		.stabn	68,0,86,.LM51-nmeaProcess
+ 788               	.LM51:
+ 789 0400 BE01      		movw r22,r28
+ 790 0402 C801      		movw r24,r16
+ 791 0404 0E94 0000 		call bufferGetAtIndex
+ 792 0408 8D30      		cpi r24,lo8(13)
+ 793 040a 01F0      		breq .+2
+ 794 040c 00C0      		rjmp .L105
+ 795 040e BE01      		movw r22,r28
+ 796 0410 6F5F      		subi r22,lo8(-(1))
+ 797 0412 7F4F      		sbci r23,hi8(-(1))
+ 798 0414 C801      		movw r24,r16
+ 799 0416 0E94 0000 		call bufferGetAtIndex
+ 800 041a 8A30      		cpi r24,lo8(10)
+ 801 041c 01F4      		brne .L105
+ 802               		.stabn	68,0,90,.LM52-nmeaProcess
+ 803               	.LM52:
+ 804 041e C801      		movw r24,r16
+ 805 0420 0E94 0000 		call bufferGetFromFront
+ 806 0424 EE24      		clr r14
+ 807 0426 FF24      		clr r15
+ 808 0428 20E0      		ldi r18,lo8(NmeaPacket)
+ 809 042a C22E      		mov r12,r18
+ 810 042c 20E0      		ldi r18,hi8(NmeaPacket)
+ 811 042e D22E      		mov r13,r18
+ 812 0430 00C0      		rjmp .L108
+ 813               	.L109:
+ 814               		.stabn	68,0,97,.LM53-nmeaProcess
+ 815               	.LM53:
+ 816 0432 FFE4      		ldi r31,lo8(79)
+ 817 0434 EF16      		cp r14,r31
+ 818 0436 F104      		cpc r15,__zero_reg__
+ 819 0438 00F4      		brsh .L110
+ 820               		.stabn	68,0,98,.LM54-nmeaProcess
+ 821               	.LM54:
+ 822 043a C801      		movw r24,r16
+ 823 043c 0E94 0000 		call bufferGetFromFront
+ 824 0440 F601      		movw r30,r12
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 20
+
+
+ 825 0442 8083      		st Z,r24
+ 826 0444 00C0      		rjmp .L112
+ 827               	.L110:
+ 828               		.stabn	68,0,100,.LM55-nmeaProcess
+ 829               	.LM55:
+ 830 0446 C801      		movw r24,r16
+ 831 0448 0E94 0000 		call bufferGetFromFront
+ 832               	.L112:
+ 833               		.stabn	68,0,92,.LM56-nmeaProcess
+ 834               	.LM56:
+ 835 044c 0894      		sec
+ 836 044e E11C      		adc r14,__zero_reg__
+ 837 0450 F11C      		adc r15,__zero_reg__
+ 838 0452 0894      		sec
+ 839 0454 C11C      		adc r12,__zero_reg__
+ 840 0456 D11C      		adc r13,__zero_reg__
+ 841               	.L108:
+ 842 0458 CE01      		movw r24,r28
+ 843 045a 0197      		sbiw r24,1
+ 844 045c E816      		cp r14,r24
+ 845 045e F906      		cpc r15,r25
+ 846 0460 01F4      		brne .L109
+ 847               		.stabn	68,0,103,.LM57-nmeaProcess
+ 848               	.LM57:
+ 849 0462 C050      		subi r28,lo8(-(NmeaPacket-1))
+ 850 0464 D040      		sbci r29,hi8(-(NmeaPacket-1))
+ 851 0466 1882      		st Y,__zero_reg__
+ 852               		.stabn	68,0,105,.LM58-nmeaProcess
+ 853               	.LM58:
+ 854 0468 C801      		movw r24,r16
+ 855 046a 0E94 0000 		call bufferGetFromFront
+ 856               		.stabn	68,0,106,.LM59-nmeaProcess
+ 857               	.LM59:
+ 858 046e C801      		movw r24,r16
+ 859 0470 0E94 0000 		call bufferGetFromFront
+ 860               		.stabn	68,0,125,.LM60-nmeaProcess
+ 861               	.LM60:
+ 862 0474 45E0      		ldi r20,lo8(5)
+ 863 0476 50E0      		ldi r21,hi8(5)
+ 864 0478 60E0      		ldi r22,lo8(.LC0)
+ 865 047a 70E0      		ldi r23,hi8(.LC0)
+ 866 047c 80E0      		ldi r24,lo8(NmeaPacket)
+ 867 047e 90E0      		ldi r25,hi8(NmeaPacket)
+ 868 0480 0E94 0000 		call strncmp
+ 869 0484 892B      		or r24,r25
+ 870 0486 01F0      		breq .L114
+ 871 0488 00C0      		rjmp .L123
+ 872               	.L122:
+ 873               		.stabn	68,0,65,.LM61-nmeaProcess
+ 874               	.LM61:
+ 875 048a C1E0      		ldi r28,lo8(1)
+ 876 048c D0E0      		ldi r29,hi8(1)
+ 877 048e 00C0      		rjmp .L102
+ 878               	.L105:
+ 879               		.stabn	68,0,83,.LM62-nmeaProcess
+ 880               	.LM62:
+ 881 0490 2196      		adiw r28,1
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 21
+
+
+ 882               	.L102:
+ 883 0492 F801      		movw r30,r16
+ 884 0494 8481      		ldd r24,Z+4
+ 885 0496 9581      		ldd r25,Z+5
+ 886 0498 0197      		sbiw r24,1
+ 887 049a C817      		cp r28,r24
+ 888 049c D907      		cpc r29,r25
+ 889 049e 00F4      		brsh .+2
+ 890 04a0 00C0      		rjmp .L104
+ 891 04a2 00C0      		rjmp .L103
+ 892               	.L114:
+ 893               		.stabn	68,0,128,.LM63-nmeaProcess
+ 894               	.LM63:
+ 895 04a4 80E0      		ldi r24,lo8(NmeaPacket)
+ 896 04a6 90E0      		ldi r25,hi8(NmeaPacket)
+ 897 04a8 0E94 0000 		call nmeaProcessGPGGA
+ 898 04ac 81E0      		ldi r24,lo8(1)
+ 899 04ae 00C0      		rjmp .L116
+ 900               	.L123:
+ 901               		.stabn	68,0,132,.LM64-nmeaProcess
+ 902               	.LM64:
+ 903 04b0 45E0      		ldi r20,lo8(5)
+ 904 04b2 50E0      		ldi r21,hi8(5)
+ 905 04b4 60E0      		ldi r22,lo8(.LC1)
+ 906 04b6 70E0      		ldi r23,hi8(.LC1)
+ 907 04b8 80E0      		ldi r24,lo8(NmeaPacket)
+ 908 04ba 90E0      		ldi r25,hi8(NmeaPacket)
+ 909 04bc 0E94 0000 		call strncmp
+ 910 04c0 892B      		or r24,r25
+ 911 04c2 01F0      		breq .L117
+ 912 04c4 8FEF      		ldi r24,lo8(-1)
+ 913 04c6 00C0      		rjmp .L116
+ 914               	.L117:
+ 915               		.stabn	68,0,135,.LM65-nmeaProcess
+ 916               	.LM65:
+ 917 04c8 80E0      		ldi r24,lo8(NmeaPacket)
+ 918 04ca 90E0      		ldi r25,hi8(NmeaPacket)
+ 919 04cc 0E94 0000 		call nmeaProcessGPVTG
+ 920 04d0 82E0      		ldi r24,lo8(2)
+ 921 04d2 00C0      		rjmp .L116
+ 922               	.L103:
+ 923               		.stabn	68,0,140,.LM66-nmeaProcess
+ 924               	.LM66:
+ 925 04d4 F801      		movw r30,r16
+ 926 04d6 2481      		ldd r18,Z+4
+ 927 04d8 3581      		ldd r19,Z+5
+ 928 04da 8281      		ldd r24,Z+2
+ 929 04dc 9381      		ldd r25,Z+3
+ 930 04de 2817      		cp r18,r24
+ 931 04e0 3907      		cpc r19,r25
+ 932 04e2 00F0      		brlo .L124
+ 933               		.stabn	68,0,144,.LM67-nmeaProcess
+ 934               	.LM67:
+ 935 04e4 C801      		movw r24,r16
+ 936 04e6 0E94 0000 		call bufferFlush
+ 937               	.L124:
+ 938 04ea 80E0      		ldi r24,lo8(0)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 22
+
+
+ 939               	.L116:
+ 940               		.stabn	68,0,147,.LM68-nmeaProcess
+ 941               	.LM68:
+ 942 04ec 9927      		clr r25
+ 943               	/* epilogue: frame size=0 */
+ 944 04ee DF91      		pop r29
+ 945 04f0 CF91      		pop r28
+ 946 04f2 1F91      		pop r17
+ 947 04f4 0F91      		pop r16
+ 948 04f6 FF90      		pop r15
+ 949 04f8 EF90      		pop r14
+ 950 04fa DF90      		pop r13
+ 951 04fc CF90      		pop r12
+ 952 04fe 0895      		ret
+ 953               	/* epilogue end (size=9) */
+ 954               	/* function nmeaProcess size 155 (138) */
+ 955               		.size	nmeaProcess, .-nmeaProcess
+ 956               		.stabs	"foundpacket:r(10,1)",64,0,55,24
+ 957               		.stabs	"i:r(10,3)",64,0,58,28
+ 958               		.stabs	"j:r(10,3)",64,0,58,14
+ 959               		.stabn	192,0,0,nmeaProcess-nmeaProcess
+ 960               		.stabn	224,0,0,.Lscope4-nmeaProcess
+ 961               	.Lscope4:
+ 962               		.stabs	"",36,0,0,.Lscope4-nmeaProcess
+ 963               		.stabd	78,0,0
+ 964               		.comm NmeaPacket,80,1
+ 965               		.stabs	"NmeaPacket:G(0,19)=ar(12,3);0;79;(10,1)",32,0,42,0
+ 966               		.stabs	"",100,0,0,.Letext0
+ 967               	.Letext0:
+ 968               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.c": code  640 = 0x0280
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s 			page 23
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 nmea.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:135    .text:00000000 nmeaInit
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:152    .text:00000002 nmeaGetPacketBuffer
+                            *COM*:00000050 NmeaPacket
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:174    .text:00000008 nmeaProcessGPVTG
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:351    .text:00000114 nmeaProcessGPGGA
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccm69kLW.s:747    .text:000003ca nmeaProcess
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+strtod
+GpsInfo
+__divsf3
+modf
+__mulsf3
+__addsf3
+atoi
+bufferGetAtIndex
+bufferGetFromFront
+strncmp
+bufferFlush

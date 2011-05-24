@@ -1,0 +1,1513 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 1
+
+
+   1               		.file	"rprintf.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/pgmspace.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  33               		.stabs	"int8_t:t(3,1)=(0,10)",128,0,116,0
+  34               		.stabs	"uint8_t:t(3,2)=(0,11)",128,0,117,0
+  35               		.stabs	"int16_t:t(3,3)=(0,1)",128,0,118,0
+  36               		.stabs	"uint16_t:t(3,4)=(0,4)",128,0,119,0
+  37               		.stabs	"int32_t:t(3,5)=(0,3)",128,0,120,0
+  38               		.stabs	"uint32_t:t(3,6)=(0,5)",128,0,121,0
+  39               		.stabs	"int64_t:t(3,7)=(0,6)",128,0,122,0
+  40               		.stabs	"uint64_t:t(3,8)=(0,7)",128,0,123,0
+  41               		.stabs	"intptr_t:t(3,9)=(3,3)",128,0,135,0
+  42               		.stabs	"uintptr_t:t(3,10)=(3,4)",128,0,140,0
+  43               		.stabs	"int_least8_t:t(3,11)=(3,1)",128,0,152,0
+  44               		.stabs	"uint_least8_t:t(3,12)=(3,2)",128,0,157,0
+  45               		.stabs	"int_least16_t:t(3,13)=(3,3)",128,0,162,0
+  46               		.stabs	"uint_least16_t:t(3,14)=(3,4)",128,0,167,0
+  47               		.stabs	"int_least32_t:t(3,15)=(3,5)",128,0,172,0
+  48               		.stabs	"uint_least32_t:t(3,16)=(3,6)",128,0,177,0
+  49               		.stabs	"int_least64_t:t(3,17)=(3,7)",128,0,182,0
+  50               		.stabs	"uint_least64_t:t(3,18)=(3,8)",128,0,187,0
+  51               		.stabs	"int_fast8_t:t(3,19)=(3,1)",128,0,200,0
+  52               		.stabs	"uint_fast8_t:t(3,20)=(3,2)",128,0,205,0
+  53               		.stabs	"int_fast16_t:t(3,21)=(3,3)",128,0,210,0
+  54               		.stabs	"uint_fast16_t:t(3,22)=(3,4)",128,0,215,0
+  55               		.stabs	"int_fast32_t:t(3,23)=(3,5)",128,0,220,0
+  56               		.stabs	"uint_fast32_t:t(3,24)=(3,6)",128,0,225,0
+  57               		.stabs	"int_fast64_t:t(3,25)=(3,7)",128,0,230,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 2
+
+
+  58               		.stabs	"uint_fast64_t:t(3,26)=(3,8)",128,0,235,0
+  59               		.stabs	"intmax_t:t(3,27)=(3,7)",128,0,249,0
+  60               		.stabs	"uintmax_t:t(3,28)=(3,8)",128,0,254,0
+  61               		.stabn	162,0,0,0
+  62               		.stabs	"int_farptr_t:t(2,1)=(3,5)",128,0,76,0
+  63               		.stabs	"uint_farptr_t:t(2,2)=(3,6)",128,0,80,0
+  64               		.stabn	162,0,0,0
+  65               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  66               		.stabs	"size_t:t(4,1)=(0,4)",128,0,214,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"prog_void:t(1,1)=(1,2)=(1,2)",128,0,203,0
+  69               		.stabs	"prog_char:t(1,3)=(1,4)=@s8;r(1,4);-128;127;",128,0,204,0
+  70               		.stabs	"prog_uchar:t(1,5)=(1,6)=@s8;r(1,6);0;255;",128,0,205,0
+  71               		.stabs	"prog_int8_t:t(1,7)=(1,4)",128,0,207,0
+  72               		.stabs	"prog_uint8_t:t(1,8)=(1,6)",128,0,208,0
+  73               		.stabs	"prog_int16_t:t(1,9)=(1,10)=(0,1)",128,0,209,0
+  74               		.stabs	"prog_uint16_t:t(1,11)=(1,12)=(0,4)",128,0,210,0
+  75               		.stabs	"prog_int32_t:t(1,13)=(1,14)=(0,3)",128,0,211,0
+  76               		.stabs	"prog_uint32_t:t(1,15)=(1,16)=(0,5)",128,0,212,0
+  77               		.stabs	"prog_int64_t:t(1,17)=(1,18)=(0,6)",128,0,213,0
+  78               		.stabs	"prog_uint64_t:t(1,19)=(1,20)=(0,7)",128,0,214,0
+  79               		.stabn	162,0,0,0
+  80               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stdarg.h",130,0,0,0
+  81               		.stabs	"__gnuc_va_list:t(5,1)=(5,2)=*(0,15)",128,0,43,0
+  82               		.stabs	"va_list:t(5,3)=(5,1)",128,0,105,0
+  83               		.stabn	162,0,0,0
+  84               		.stabs	"./global.h",130,0,0,0
+  85               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  86               		.stabs	"u08:t(7,1)=(0,11)",128,0,32,0
+  87               		.stabs	"s08:t(7,2)=(0,10)",128,0,33,0
+  88               		.stabs	"u16:t(7,3)=(0,9)",128,0,34,0
+  89               		.stabs	"s16:t(7,4)=(0,8)",128,0,35,0
+  90               		.stabs	"u32:t(7,5)=(0,5)",128,0,36,0
+  91               		.stabs	"s32:t(7,6)=(0,3)",128,0,37,0
+  92               		.stabs	"u64:t(7,7)=(0,7)",128,0,38,0
+  93               		.stabs	"s64:t(7,8)=(0,6)",128,0,39,0
+  94               		.stabs	"BOOL:t(7,9)=(0,11)",128,0,69,0
+  95               		.stabs	"BYTE:t(7,10)=(0,11)",128,0,70,0
+  96               		.stabs	"WORD:t(7,11)=(0,4)",128,0,71,0
+  97               		.stabs	"DWORD:t(7,12)=(0,5)",128,0,72,0
+  98               		.stabs	"UCHAR:t(7,13)=(0,11)",128,0,74,0
+  99               		.stabs	"UINT:t(7,14)=(0,4)",128,0,75,0
+ 100               		.stabs	"USHORT:t(7,15)=(0,9)",128,0,76,0
+ 101               		.stabs	"ULONG:t(7,16)=(0,5)",128,0,77,0
+ 102               		.stabs	"CHAR:t(7,17)=(0,2)",128,0,79,0
+ 103               		.stabs	"INT:t(7,18)=(0,1)",128,0,80,0
+ 104               		.stabs	"LONG:t(7,19)=(0,3)",128,0,81,0
+ 105               		.stabn	162,0,0,0
+ 106               		.stabn	162,0,0,0
+ 107               		.stabs	"rprintfInit:F(0,15)",36,0,57,rprintfInit
+ 108               		.stabs	"putchar_func:P(0,16)=*(0,17)=f(0,15)",64,0,56,24
+ 109               	.global	rprintfInit
+ 110               		.type	rprintfInit, @function
+ 111               	rprintfInit:
+ 112               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** /*! \file rprintf.c \brief printf routine and associated routines. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //*****************************************************************************
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 3
+
+
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // File Name	: 'rprintf.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Title		: printf routine and associated routines
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Author		: Pascal Stang - Copyright (C) 2000-2002
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Created		: 2000.12.26
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Revised		: 2003.5.1
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Version		: 1.0
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Target MCU	: Atmel AVR series and other targets
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // NOTE: This code is currently below version 1.0, and therefore is considered
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // to be lacking in some functionality or documentation, or may not be fully
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // tested.  Nonetheless, you can expect most functions to work.
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // This code is distributed under the GNU Public License
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //*****************************************************************************
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #include <avr/pgmspace.h>
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //#include <string-avr.h>
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //#include <stdlib.h>
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #include <stdarg.h>
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #include "global.h"
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #include "rprintf.h"
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #ifndef TRUE
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	#define TRUE	-1
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	#define FALSE	0
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #endif
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #define INF     32766	// maximum field size to print
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #define READMEMBYTE(a,char_ptr)	((a)?(pgm_read_byte(char_ptr)):(*char_ptr))
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #ifdef RPRINTF_COMPLEX
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	static unsigned char buf[128];
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #endif
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // use this to store hex conversion in RAM
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //static char HexChars[] = "0123456789ABCDEF";
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // use this to store hex conversion in program memory
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //static prog_char HexChars[] = "0123456789ABCDEF";
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** static char __attribute__ ((progmem)) HexChars[] = "0123456789ABCDEF";
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #define hexchar(x)	pgm_read_byte( HexChars+((x)&0x0f) )
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //#define hexchar(x)	((((x)&0x0F)>9)?((x)+'A'-10):((x)+'0'))
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // function pointer to single character output routine
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** static void (*rputchar)(unsigned char c);
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintf initialization ***
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // you must call this function once and supply the character output
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // routine before using other functions in this library
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfInit(void (*putchar_func)(unsigned char c))
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 113               		.stabn	68,0,57,.LM0-rprintfInit
+ 114               	.LM0:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 4
+
+
+ 115               	/* prologue: frame size=0 */
+ 116               	/* prologue end (size=0) */
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rputchar = putchar_func;
+ 117               		.stabn	68,0,58,.LM1-rprintfInit
+ 118               	.LM1:
+ 119 0000 9093 0000 		sts (rputchar)+1,r25
+ 120 0004 8093 0000 		sts rputchar,r24
+ 121               	/* epilogue: frame size=0 */
+ 122 0008 0895      		ret
+ 123               	/* epilogue end (size=1) */
+ 124               	/* function rprintfInit size 5 (4) */
+ 125               		.size	rprintfInit, .-rprintfInit
+ 126               	.Lscope0:
+ 127               		.stabs	"",36,0,0,.Lscope0-rprintfInit
+ 128               		.stabd	78,0,0
+ 129               		.stabs	"rprintfChar:F(0,15)",36,0,64,rprintfChar
+ 130               		.stabs	"c:P(0,11)",64,0,63,17
+ 131               	.global	rprintfChar
+ 132               		.type	rprintfChar, @function
+ 133               	rprintfChar:
+ 134               		.stabd	46,0,0
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfChar ***
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // send a character/byte to the current output device
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfChar(unsigned char c)
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 135               		.stabn	68,0,64,.LM2-rprintfChar
+ 136               	.LM2:
+ 137               	/* prologue: frame size=0 */
+ 138 000a 1F93      		push r17
+ 139               	/* prologue end (size=1) */
+ 140 000c 182F      		mov r17,r24
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// do LF -> CR/LF translation
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if(c == '\n')
+ 141               		.stabn	68,0,66,.LM3-rprintfChar
+ 142               	.LM3:
+ 143 000e 8A30      		cpi r24,lo8(10)
+ 144 0010 01F4      		brne .L4
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rputchar('\r');
+ 145               		.stabn	68,0,67,.LM4-rprintfChar
+ 146               	.LM4:
+ 147 0012 E091 0000 		lds r30,rputchar
+ 148 0016 F091 0000 		lds r31,(rputchar)+1
+ 149 001a 8DE0      		ldi r24,lo8(13)
+ 150 001c 0995      		icall
+ 151               	.L4:
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// send character
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rputchar(c);
+ 152               		.stabn	68,0,69,.LM5-rprintfChar
+ 153               	.LM5:
+ 154 001e E091 0000 		lds r30,rputchar
+ 155 0022 F091 0000 		lds r31,(rputchar)+1
+ 156 0026 812F      		mov r24,r17
+ 157 0028 0995      		icall
+ 158               	/* epilogue: frame size=0 */
+ 159 002a 1F91      		pop r17
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 5
+
+
+ 160 002c 0895      		ret
+ 161               	/* epilogue end (size=2) */
+ 162               	/* function rprintfChar size 18 (15) */
+ 163               		.size	rprintfChar, .-rprintfChar
+ 164               	.Lscope1:
+ 165               		.stabs	"",36,0,0,.Lscope1-rprintfChar
+ 166               		.stabd	78,0,0
+ 167               		.stabs	"rprintfStr:F(0,15)",36,0,75,rprintfStr
+ 168               		.stabs	"str:P(0,18)=*(0,2)",64,0,74,28
+ 169               	.global	rprintfStr
+ 170               		.type	rprintfStr, @function
+ 171               	rprintfStr:
+ 172               		.stabd	46,0,0
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfStr ***
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints a null-terminated string stored in RAM
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfStr(char str[])
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 173               		.stabn	68,0,75,.LM6-rprintfStr
+ 174               	.LM6:
+ 175               	/* prologue: frame size=0 */
+ 176 002e CF93      		push r28
+ 177 0030 DF93      		push r29
+ 178               	/* prologue end (size=2) */
+ 179 0032 EC01      		movw r28,r24
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// send a string stored in RAM
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// check to make sure we have a good pointer
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if (!str) return;
+ 180               		.stabn	68,0,78,.LM7-rprintfStr
+ 181               	.LM7:
+ 182 0034 892B      		or r24,r25
+ 183 0036 01F4      		brne .L12
+ 184 0038 00C0      		rjmp .L11
+ 185               	.L10:
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print the string until a null-terminator
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	while (*str)
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rprintfChar(*str++);
+ 186               		.stabn	68,0,82,.LM8-rprintfStr
+ 187               	.LM8:
+ 188 003a 2196      		adiw r28,1
+ 189 003c 0E94 0000 		call rprintfChar
+ 190               	.L12:
+ 191               		.stabn	68,0,81,.LM9-rprintfStr
+ 192               	.LM9:
+ 193 0040 8881      		ld r24,Y
+ 194 0042 8823      		tst r24
+ 195 0044 01F4      		brne .L10
+ 196               	.L11:
+ 197               	/* epilogue: frame size=0 */
+ 198 0046 DF91      		pop r29
+ 199 0048 CF91      		pop r28
+ 200 004a 0895      		ret
+ 201               	/* epilogue end (size=3) */
+ 202               	/* function rprintfStr size 15 (10) */
+ 203               		.size	rprintfStr, .-rprintfStr
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 6
+
+
+ 204               	.Lscope2:
+ 205               		.stabs	"",36,0,0,.Lscope2-rprintfStr
+ 206               		.stabd	78,0,0
+ 207               		.stabs	"rprintfStrLen:F(0,15)",36,0,90,rprintfStrLen
+ 208               		.stabs	"str:P(0,18)",64,0,89,24
+ 209               		.stabs	"start:P(0,4)",64,0,89,22
+ 210               		.stabs	"len:P(0,4)",64,0,89,14
+ 211               	.global	rprintfStrLen
+ 212               		.type	rprintfStrLen, @function
+ 213               	rprintfStrLen:
+ 214               		.stabd	46,0,0
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfStrLen ***
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints a section of a string stored in RAM
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // begins printing at position indicated by <start>
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints number of characters indicated by <len>
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfStrLen(char str[], unsigned int start, unsigned int len)
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 215               		.stabn	68,0,90,.LM10-rprintfStrLen
+ 216               	.LM10:
+ 217               	/* prologue: frame size=0 */
+ 218 004c EF92      		push r14
+ 219 004e FF92      		push r15
+ 220 0050 0F93      		push r16
+ 221 0052 1F93      		push r17
+ 222 0054 CF93      		push r28
+ 223 0056 DF93      		push r29
+ 224               	/* prologue end (size=6) */
+ 225 0058 7A01      		movw r14,r20
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	register int i=0;
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// check to make sure we have a good pointer
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if (!str) return;
+ 226               		.stabn	68,0,94,.LM11-rprintfStrLen
+ 227               	.LM11:
+ 228 005a 0097      		sbiw r24,0
+ 229 005c 01F0      		breq .L24
+ 230               		.stabn	68,0,94,.LM12-rprintfStrLen
+ 231               	.LM12:
+ 232 005e EC01      		movw r28,r24
+ 233 0060 680F      		add r22,r24
+ 234 0062 791F      		adc r23,r25
+ 235               	.L16:
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// spin through characters up to requested start
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// keep going as long as there's no null
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	while((i++<start) && (*str++));
+ 236               		.stabn	68,0,97,.LM13-rprintfStrLen
+ 237               	.LM13:
+ 238 0064 C617      		cp r28,r22
+ 239 0066 D707      		cpc r29,r23
+ 240 0068 01F0      		breq .L17
+ 241 006a 8991      		ld r24,Y+
+ 242 006c 8823      		tst r24
+ 243 006e 01F4      		brne .L16
+ 244               	.L17:
+ 245 0070 00E0      		ldi r16,lo8(0)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 7
+
+
+ 246 0072 10E0      		ldi r17,hi8(0)
+ 247 0074 00C0      		rjmp .L19
+ 248               	.L20:
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	for(i=0; i<start; i++)
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	{
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //		// keep steping through string as long as there's no null
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //		if(*str) str++;
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	}
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// then print exactly len characters
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	for(i=0; i<len; i++)
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		// print data out of the string as long as we haven't reached a null yet
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		// at the null, start printing spaces
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if(*str)
+ 249               		.stabn	68,0,109,.LM14-rprintfStrLen
+ 250               	.LM14:
+ 251 0076 8881      		ld r24,Y
+ 252 0078 8823      		tst r24
+ 253 007a 01F0      		breq .L21
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar(*str++);
+ 254               		.stabn	68,0,110,.LM15-rprintfStrLen
+ 255               	.LM15:
+ 256 007c 2196      		adiw r28,1
+ 257 007e 00C0      		rjmp .L26
+ 258               	.L21:
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar(' ');
+ 259               		.stabn	68,0,112,.LM16-rprintfStrLen
+ 260               	.LM16:
+ 261 0080 80E2      		ldi r24,lo8(32)
+ 262               	.L26:
+ 263 0082 0E94 0000 		call rprintfChar
+ 264               		.stabn	68,0,105,.LM17-rprintfStrLen
+ 265               	.LM17:
+ 266 0086 0F5F      		subi r16,lo8(-(1))
+ 267 0088 1F4F      		sbci r17,hi8(-(1))
+ 268               	.L19:
+ 269 008a 0E15      		cp r16,r14
+ 270 008c 1F05      		cpc r17,r15
+ 271 008e 01F4      		brne .L20
+ 272               	.L24:
+ 273               	/* epilogue: frame size=0 */
+ 274 0090 DF91      		pop r29
+ 275 0092 CF91      		pop r28
+ 276 0094 1F91      		pop r17
+ 277 0096 0F91      		pop r16
+ 278 0098 FF90      		pop r15
+ 279 009a EF90      		pop r14
+ 280 009c 0895      		ret
+ 281               	/* epilogue end (size=7) */
+ 282               	/* function rprintfStrLen size 41 (28) */
+ 283               		.size	rprintfStrLen, .-rprintfStrLen
+ 284               		.stabs	"i:r(0,1)",64,0,91,16
+ 285               		.stabn	192,0,0,rprintfStrLen-rprintfStrLen
+ 286               		.stabn	224,0,0,.Lscope3-rprintfStrLen
+ 287               	.Lscope3:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 8
+
+
+ 288               		.stabs	"",36,0,0,.Lscope3-rprintfStrLen
+ 289               		.stabd	78,0,0
+ 290               		.stabs	"rprintfProgStr:F(0,15)",36,0,120,rprintfProgStr
+ 291               		.stabs	"str:P(0,19)=*(0,20)=k(1,3)",64,0,119,28
+ 292               	.global	rprintfProgStr
+ 293               		.type	rprintfProgStr, @function
+ 294               	rprintfProgStr:
+ 295               		.stabd	46,0,0
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 114:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 115:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 116:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 117:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfProgStr ***
+ 118:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints a null-terminated string stored in program ROM
+ 119:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfProgStr(const prog_char str[])
+ 120:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 296               		.stabn	68,0,120,.LM18-rprintfProgStr
+ 297               	.LM18:
+ 298               	/* prologue: frame size=0 */
+ 299 009e CF93      		push r28
+ 300 00a0 DF93      		push r29
+ 301               	/* prologue end (size=2) */
+ 302 00a2 EC01      		movw r28,r24
+ 121:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print a string stored in program memory
+ 122:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	register char c;
+ 123:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 124:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// check to make sure we have a good pointer
+ 125:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if (!str) return;
+ 303               		.stabn	68,0,125,.LM19-rprintfProgStr
+ 304               	.LM19:
+ 305 00a4 892B      		or r24,r25
+ 306 00a6 01F4      		brne .L32
+ 307 00a8 00C0      		rjmp .L31
+ 308               	.L30:
+ 126:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	
+ 127:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print the string until the null-terminator
+ 128:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	while((c = pgm_read_byte(str++)))
+ 129:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rprintfChar(c);
+ 309               		.stabn	68,0,129,.LM20-rprintfProgStr
+ 310               	.LM20:
+ 311 00aa 0E94 0000 		call rprintfChar
+ 312               	.L32:
+ 313 00ae FE01      		movw r30,r28
+ 314               	.LBB2:
+ 315               		.stabn	68,0,128,.LM21-rprintfProgStr
+ 316               	.LM21:
+ 317 00b0 2196      		adiw r28,1
+ 318               	/* #APP */
+ 319 00b2 8491      		lpm r24, Z
+ 320               		
+ 321               	/* #NOAPP */
+ 322               	.LBE2:
+ 323 00b4 8823      		tst r24
+ 324 00b6 01F4      		brne .L30
+ 325               	.L31:
+ 326               	/* epilogue: frame size=0 */
+ 327 00b8 DF91      		pop r29
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 9
+
+
+ 328 00ba CF91      		pop r28
+ 329 00bc 0895      		ret
+ 330               	/* epilogue end (size=3) */
+ 331               	/* function rprintfProgStr size 19 (14) */
+ 332               		.size	rprintfProgStr, .-rprintfProgStr
+ 333               		.stabs	"__addr16:r(3,4)",64,0,128,30
+ 334               		.stabs	"__result:r(3,2)",64,0,128,24
+ 335               		.stabn	192,0,0,.LBB2-rprintfProgStr
+ 336               		.stabn	224,0,0,.LBE2-rprintfProgStr
+ 337               	.Lscope4:
+ 338               		.stabs	"",36,0,0,.Lscope4-rprintfProgStr
+ 339               		.stabd	78,0,0
+ 340               		.stabs	"rprintfCRLF:F(0,15)",36,0,135,rprintfCRLF
+ 341               	.global	rprintfCRLF
+ 342               		.type	rprintfCRLF, @function
+ 343               	rprintfCRLF:
+ 344               		.stabd	46,0,0
+ 130:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 131:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 132:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfCRLF ***
+ 133:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints carriage return and line feed
+ 134:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfCRLF(void)
+ 135:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 345               		.stabn	68,0,135,.LM22-rprintfCRLF
+ 346               	.LM22:
+ 347               	/* prologue: frame size=0 */
+ 348               	/* prologue end (size=0) */
+ 136:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print CR/LF
+ 137:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	//rprintfChar('\r');
+ 138:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// LF -> CR/LF translation built-in to rprintfChar()
+ 139:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfChar('\n');
+ 349               		.stabn	68,0,139,.LM23-rprintfCRLF
+ 350               	.LM23:
+ 351 00be 8AE0      		ldi r24,lo8(10)
+ 352 00c0 0E94 0000 		call rprintfChar
+ 353               	/* epilogue: frame size=0 */
+ 354 00c4 0895      		ret
+ 355               	/* epilogue end (size=1) */
+ 356               	/* function rprintfCRLF size 4 (3) */
+ 357               		.size	rprintfCRLF, .-rprintfCRLF
+ 358               	.Lscope5:
+ 359               		.stabs	"",36,0,0,.Lscope5-rprintfCRLF
+ 360               		.stabd	78,0,0
+ 361               		.stabs	"rprintfu04:F(0,15)",36,0,145,rprintfu04
+ 362               		.stabs	"data:P(0,11)",64,0,144,24
+ 363               	.global	rprintfu04
+ 364               		.type	rprintfu04, @function
+ 365               	rprintfu04:
+ 366               		.stabd	46,0,0
+ 140:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 141:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 142:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfu04 ***
+ 143:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints an unsigned 4-bit number in hex (1 digit)
+ 144:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfu04(unsigned char data)
+ 145:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 367               		.stabn	68,0,145,.LM24-rprintfu04
+ 368               	.LM24:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 10
+
+
+ 369               	/* prologue: frame size=0 */
+ 370               	/* prologue end (size=0) */
+ 371               	.LBB3:
+ 146:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print 4-bit hex value
+ 147:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	char Character = data&0x0f;
+ 148:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	if (Character>9)
+ 149:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //		Character+='A'-10;
+ 150:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	else
+ 151:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //		Character+='0';
+ 152:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfChar(hexchar(data));
+ 372               		.stabn	68,0,152,.LM25-rprintfu04
+ 373               	.LM25:
+ 374 00c6 E82F      		mov r30,r24
+ 375 00c8 FF27      		clr r31
+ 376 00ca EF70      		andi r30,lo8(15)
+ 377 00cc F070      		andi r31,hi8(15)
+ 378 00ce E050      		subi r30,lo8(-(HexChars))
+ 379 00d0 F040      		sbci r31,hi8(-(HexChars))
+ 380               	/* #APP */
+ 381 00d2 E491      		lpm r30, Z
+ 382               		
+ 383               	/* #NOAPP */
+ 384               	.LBE3:
+ 385 00d4 8E2F      		mov r24,r30
+ 386 00d6 0E94 0000 		call rprintfChar
+ 387               	/* epilogue: frame size=0 */
+ 388 00da 0895      		ret
+ 389               	/* epilogue end (size=1) */
+ 390               	/* function rprintfu04 size 14 (13) */
+ 391               		.size	rprintfu04, .-rprintfu04
+ 392               		.stabs	"__result:r(3,2)",64,0,152,30
+ 393               		.stabn	192,0,0,.LBB3-rprintfu04
+ 394               		.stabn	224,0,0,.LBE3-rprintfu04
+ 395               	.Lscope6:
+ 396               		.stabs	"",36,0,0,.Lscope6-rprintfu04
+ 397               		.stabd	78,0,0
+ 398               		.stabs	"rprintfu08:F(0,15)",36,0,158,rprintfu08
+ 399               		.stabs	"data:P(0,11)",64,0,157,17
+ 400               	.global	rprintfu08
+ 401               		.type	rprintfu08, @function
+ 402               	rprintfu08:
+ 403               		.stabd	46,0,0
+ 153:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 154:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 155:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfu08 ***
+ 156:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints an unsigned 8-bit number in hex (2 digits)
+ 157:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfu08(unsigned char data)
+ 158:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 404               		.stabn	68,0,158,.LM26-rprintfu08
+ 405               	.LM26:
+ 406               	/* prologue: frame size=0 */
+ 407 00dc 1F93      		push r17
+ 408               	/* prologue end (size=1) */
+ 409 00de 182F      		mov r17,r24
+ 159:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print 8-bit hex value
+ 160:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu04(data>>4);
+ 410               		.stabn	68,0,160,.LM27-rprintfu08
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 11
+
+
+ 411               	.LM27:
+ 412 00e0 8295      		swap r24
+ 413 00e2 8F70      		andi r24,0x0f
+ 414 00e4 0E94 0000 		call rprintfu04
+ 161:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu04(data);
+ 415               		.stabn	68,0,161,.LM28-rprintfu08
+ 416               	.LM28:
+ 417 00e8 812F      		mov r24,r17
+ 418 00ea 0E94 0000 		call rprintfu04
+ 419               	/* epilogue: frame size=0 */
+ 420 00ee 1F91      		pop r17
+ 421 00f0 0895      		ret
+ 422               	/* epilogue end (size=2) */
+ 423               	/* function rprintfu08 size 11 (8) */
+ 424               		.size	rprintfu08, .-rprintfu08
+ 425               	.Lscope7:
+ 426               		.stabs	"",36,0,0,.Lscope7-rprintfu08
+ 427               		.stabd	78,0,0
+ 428               		.stabs	"rprintfu16:F(0,15)",36,0,167,rprintfu16
+ 429               		.stabs	"data:P(0,9)",64,0,166,16
+ 430               	.global	rprintfu16
+ 431               		.type	rprintfu16, @function
+ 432               	rprintfu16:
+ 433               		.stabd	46,0,0
+ 162:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 163:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 164:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfu16 ***
+ 165:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints an unsigned 16-bit number in hex (4 digits)
+ 166:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfu16(unsigned short data)
+ 167:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 434               		.stabn	68,0,167,.LM29-rprintfu16
+ 435               	.LM29:
+ 436               	/* prologue: frame size=0 */
+ 437 00f2 0F93      		push r16
+ 438 00f4 1F93      		push r17
+ 439               	/* prologue end (size=2) */
+ 440 00f6 8C01      		movw r16,r24
+ 168:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print 16-bit hex value
+ 169:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu08(data>>8);
+ 441               		.stabn	68,0,169,.LM30-rprintfu16
+ 442               	.LM30:
+ 443 00f8 812F      		mov r24,r17
+ 444 00fa 9927      		clr r25
+ 445 00fc 0E94 0000 		call rprintfu08
+ 170:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu08(data);
+ 446               		.stabn	68,0,170,.LM31-rprintfu16
+ 447               	.LM31:
+ 448 0100 802F      		mov r24,r16
+ 449 0102 0E94 0000 		call rprintfu08
+ 450               	/* epilogue: frame size=0 */
+ 451 0106 1F91      		pop r17
+ 452 0108 0F91      		pop r16
+ 453 010a 0895      		ret
+ 454               	/* epilogue end (size=3) */
+ 455               	/* function rprintfu16 size 13 (8) */
+ 456               		.size	rprintfu16, .-rprintfu16
+ 457               	.Lscope8:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 12
+
+
+ 458               		.stabs	"",36,0,0,.Lscope8-rprintfu16
+ 459               		.stabd	78,0,0
+ 460               		.stabs	"rprintfu32:F(0,15)",36,0,176,rprintfu32
+ 461               		.stabs	"data:P(0,5)",64,0,175,14
+ 462               	.global	rprintfu32
+ 463               		.type	rprintfu32, @function
+ 464               	rprintfu32:
+ 465               		.stabd	46,0,0
+ 171:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 172:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 173:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfu32 ***
+ 174:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // prints an unsigned 32-bit number in hex (8 digits)
+ 175:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfu32(unsigned long data)
+ 176:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 466               		.stabn	68,0,176,.LM32-rprintfu32
+ 467               	.LM32:
+ 468               	/* prologue: frame size=0 */
+ 469 010c EF92      		push r14
+ 470 010e FF92      		push r15
+ 471 0110 0F93      		push r16
+ 472 0112 1F93      		push r17
+ 473               	/* prologue end (size=4) */
+ 474 0114 7B01      		movw r14,r22
+ 475 0116 8C01      		movw r16,r24
+ 177:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print 32-bit hex value
+ 178:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu16(data>>16);
+ 476               		.stabn	68,0,178,.LM33-rprintfu32
+ 477               	.LM33:
+ 478 0118 C801      		movw r24,r16
+ 479 011a AA27      		clr r26
+ 480 011c BB27      		clr r27
+ 481 011e 0E94 0000 		call rprintfu16
+ 179:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	rprintfu16(data);
+ 482               		.stabn	68,0,179,.LM34-rprintfu32
+ 483               	.LM34:
+ 484 0122 C701      		movw r24,r14
+ 485 0124 0E94 0000 		call rprintfu16
+ 486               	/* epilogue: frame size=0 */
+ 487 0128 1F91      		pop r17
+ 488 012a 0F91      		pop r16
+ 489 012c FF90      		pop r15
+ 490 012e EF90      		pop r14
+ 491 0130 0895      		ret
+ 492               	/* epilogue end (size=5) */
+ 493               	/* function rprintfu32 size 19 (10) */
+ 494               		.size	rprintfu32, .-rprintfu32
+ 495               	.Lscope9:
+ 496               		.stabs	"",36,0,0,.Lscope9-rprintfu32
+ 497               		.stabd	78,0,0
+ 498               		.stabs	"rprintfNum:F(0,15)",36,0,195,rprintfNum
+ 499               		.stabs	"base:P(0,2)",64,0,194,24
+ 500               		.stabs	"numDigits:P(0,2)",64,0,194,22
+ 501               		.stabs	"isSigned:p(0,2)",160,0,194,33
+ 502               		.stabs	"padchar:p(0,2)",160,0,194,34
+ 503               		.stabs	"n:P(0,3)",64,0,194,4
+ 504               	.global	rprintfNum
+ 505               		.type	rprintfNum, @function
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 13
+
+
+ 506               	rprintfNum:
+ 507               		.stabd	46,0,0
+ 180:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 181:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 182:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfNum ***
+ 183:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // special printf for numbers only
+ 184:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // see formatting information below
+ 185:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	Print the number "n" in the given "base"
+ 186:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	using exactly "numDigits"
+ 187:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	print +/- if signed flag "isSigned" is TRUE
+ 188:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	use the character specified in "padchar" to pad extra characters
+ 189:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //
+ 190:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	Examples:
+ 191:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	uartPrintfNum(10, 6,  TRUE, ' ',   1234);  -->  " +1234"
+ 192:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	uartPrintfNum(10, 6, FALSE, '0',   1234);  -->  "001234"
+ 193:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //	uartPrintfNum(16, 6, FALSE, '.', 0x5AA5);  -->  "..5AA5"
+ 194:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfNum(char base, char numDigits, char isSigned, char padchar, long n)
+ 195:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 508               		.stabn	68,0,195,.LM35-rprintfNum
+ 509               	.LM35:
+ 510               	/* prologue: frame size=34 */
+ 511 0132 2F92      		push r2
+ 512 0134 3F92      		push r3
+ 513 0136 4F92      		push r4
+ 514 0138 5F92      		push r5
+ 515 013a 6F92      		push r6
+ 516 013c 7F92      		push r7
+ 517 013e 8F92      		push r8
+ 518 0140 9F92      		push r9
+ 519 0142 AF92      		push r10
+ 520 0144 BF92      		push r11
+ 521 0146 CF92      		push r12
+ 522 0148 DF92      		push r13
+ 523 014a EF92      		push r14
+ 524 014c FF92      		push r15
+ 525 014e 0F93      		push r16
+ 526 0150 1F93      		push r17
+ 527 0152 CF93      		push r28
+ 528 0154 DF93      		push r29
+ 529 0156 CDB7      		in r28,__SP_L__
+ 530 0158 DEB7      		in r29,__SP_H__
+ 531 015a A297      		sbiw r28,34
+ 532 015c 0FB6      		in __tmp_reg__,__SREG__
+ 533 015e F894      		cli
+ 534 0160 DEBF      		out __SP_H__,r29
+ 535 0162 0FBE      		out __SREG__,__tmp_reg__
+ 536 0164 CDBF      		out __SP_L__,r28
+ 537               	/* prologue end (size=26) */
+ 538 0166 49A3      		std Y+33,r20
+ 539 0168 2AA3      		std Y+34,r18
+ 540 016a 2701      		movw r4,r14
+ 541 016c 3801      		movw r6,r16
+ 196:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// define a global HexChars or use line below
+ 197:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	//static char HexChars[16] = "0123456789ABCDEF";
+ 198:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	char *p, buf[32];
+ 199:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned long x;
+ 200:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned char count;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 14
+
+
+ 201:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 202:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// prepare negative number
+ 203:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if( isSigned && (n < 0) )
+ 542               		.stabn	68,0,203,.LM36-rprintfNum
+ 543               	.LM36:
+ 544 016e 4423      		tst r20
+ 545 0170 01F0      		breq .L44
+ 546               		.stabn	68,0,203,.LM37-rprintfNum
+ 547               	.LM37:
+ 548 0172 17FF      		sbrs r17,7
+ 549 0174 00C0      		rjmp .L44
+ 204:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 205:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		x = -n;
+ 550               		.stabn	68,0,205,.LM38-rprintfNum
+ 551               	.LM38:
+ 552 0176 EE24      		clr r14
+ 553 0178 FF24      		clr r15
+ 554 017a 8701      		movw r16,r14
+ 555 017c E418      		sub r14,r4
+ 556 017e F508      		sbc r15,r5
+ 557 0180 0609      		sbc r16,r6
+ 558 0182 1709      		sbc r17,r7
+ 559 0184 00C0      		rjmp .L47
+ 560               	.L44:
+ 206:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 207:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	else
+ 208:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 209:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	 	x = n;
+ 561               		.stabn	68,0,209,.LM39-rprintfNum
+ 562               	.LM39:
+ 563 0186 8301      		movw r16,r6
+ 564 0188 7201      		movw r14,r4
+ 565               	.L47:
+ 210:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 211:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 212:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// setup little string buffer
+ 213:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	count = (numDigits-1)-(isSigned?1:0);
+ 566               		.stabn	68,0,213,.LM40-rprintfNum
+ 567               	.LM40:
+ 568 018a 262E      		mov r2,r22
+ 569 018c 90E0      		ldi r25,lo8(0)
+ 570 018e 29A1      		ldd r18,Y+33
+ 571 0190 2111      		cpse r18,__zero_reg__
+ 572 0192 91E0      		ldi r25,lo8(1)
+ 573               	.L48:
+ 574 0194 322C      		mov r3,r2
+ 575 0196 391A      		sub r3,r25
+ 576 0198 3A94      		dec r3
+ 214:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c ****   	p = buf + sizeof (buf);
+ 215:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c ****   	*--p = '\0';
+ 577               		.stabn	68,0,215,.LM41-rprintfNum
+ 578               	.LM41:
+ 579 019a 18A2      		std Y+32,__zero_reg__
+ 580               	.LBB4:
+ 216:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	
+ 217:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// force calculation of first digit
+ 218:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// (to prevent zero from not printing at all!!!)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 15
+
+
+ 219:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	*--p = hexchar(x%base); x /= base;
+ 581               		.stabn	68,0,219,.LM42-rprintfNum
+ 582               	.LM42:
+ 583 019c A82E      		mov r10,r24
+ 584 019e BB24      		clr r11
+ 585 01a0 A7FC      		sbrc r10,7
+ 586 01a2 B094      		com r11
+ 587 01a4 CB2C      		mov r12,r11
+ 588 01a6 DB2C      		mov r13,r11
+ 589 01a8 C801      		movw r24,r16
+ 590 01aa B701      		movw r22,r14
+ 591 01ac A601      		movw r20,r12
+ 592 01ae 9501      		movw r18,r10
+ 593 01b0 0E94 0000 		call __udivmodsi4
+ 594 01b4 FB01      		movw r30,r22
+ 595 01b6 EF70      		andi r30,lo8(15)
+ 596 01b8 F070      		andi r31,hi8(15)
+ 597 01ba E050      		subi r30,lo8(-(HexChars))
+ 598 01bc F040      		sbci r31,hi8(-(HexChars))
+ 599               	/* #APP */
+ 600 01be 6491      		lpm r22, Z
+ 601               		
+ 602               	/* #NOAPP */
+ 603               	.LBE4:
+ 604 01c0 6F8F      		std Y+31,r22
+ 605 01c2 C801      		movw r24,r16
+ 606 01c4 B701      		movw r22,r14
+ 607 01c6 A601      		movw r20,r12
+ 608 01c8 9501      		movw r18,r10
+ 609 01ca 0E94 0000 		call __udivmodsi4
+ 610 01ce 7901      		movw r14,r18
+ 611 01d0 8A01      		movw r16,r20
+ 612 01d2 2FE1      		ldi r18,lo8(31)
+ 613 01d4 822E      		mov r8,r18
+ 614 01d6 912C      		mov r9,__zero_reg__
+ 615 01d8 8C0E      		add r8,r28
+ 616 01da 9D1E      		adc r9,r29
+ 617 01dc 00C0      		rjmp .L70
+ 618               	.L50:
+ 619 01de C401      		movw r24,r8
+ 620 01e0 0197      		sbiw r24,1
+ 220:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// calculate remaining digits
+ 221:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	while(count--)
+ 222:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 223:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if(x != 0)
+ 621               		.stabn	68,0,223,.LM43-rprintfNum
+ 622               	.LM43:
+ 623 01e2 E114      		cp r14,__zero_reg__
+ 624 01e4 F104      		cpc r15,__zero_reg__
+ 625 01e6 0105      		cpc r16,__zero_reg__
+ 626 01e8 1105      		cpc r17,__zero_reg__
+ 627 01ea 01F0      		breq .L51
+ 224:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 225:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			// calculate next digit
+ 226:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			*--p = hexchar(x%base); x /= base;
+ 628               		.stabn	68,0,226,.LM44-rprintfNum
+ 629               	.LM44:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 16
+
+
+ 630 01ec 4C01      		movw r8,r24
+ 631               	.LBB5:
+ 632 01ee C801      		movw r24,r16
+ 633 01f0 B701      		movw r22,r14
+ 634 01f2 A601      		movw r20,r12
+ 635 01f4 9501      		movw r18,r10
+ 636 01f6 0E94 0000 		call __udivmodsi4
+ 637 01fa FB01      		movw r30,r22
+ 638 01fc EF70      		andi r30,lo8(15)
+ 639 01fe F070      		andi r31,hi8(15)
+ 640 0200 E050      		subi r30,lo8(-(HexChars))
+ 641 0202 F040      		sbci r31,hi8(-(HexChars))
+ 642               	/* #APP */
+ 643 0204 6491      		lpm r22, Z
+ 644               		
+ 645               	/* #NOAPP */
+ 646               	.LBE5:
+ 647 0206 F401      		movw r30,r8
+ 648 0208 6083      		st Z,r22
+ 649 020a C801      		movw r24,r16
+ 650 020c B701      		movw r22,r14
+ 651 020e A601      		movw r20,r12
+ 652 0210 9501      		movw r18,r10
+ 653 0212 0E94 0000 		call __udivmodsi4
+ 654 0216 7901      		movw r14,r18
+ 655 0218 8A01      		movw r16,r20
+ 656 021a 00C0      		rjmp .L70
+ 657               	.L51:
+ 227:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 228:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else
+ 229:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 230:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			// no more digits left, pad out to desired length
+ 231:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			*--p = padchar;
+ 658               		.stabn	68,0,231,.LM45-rprintfNum
+ 659               	.LM45:
+ 660 021c 4C01      		movw r8,r24
+ 661 021e 2AA1      		ldd r18,Y+34
+ 662 0220 FC01      		movw r30,r24
+ 663 0222 2083      		st Z,r18
+ 664               	.L70:
+ 665               		.stabn	68,0,221,.LM46-rprintfNum
+ 666               	.LM46:
+ 667 0224 3A94      		dec r3
+ 668 0226 8FEF      		ldi r24,lo8(-1)
+ 669 0228 3816      		cp r3,r24
+ 670 022a 01F4      		brne .L50
+ 232:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 233:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 234:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 235:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// apply signed notation if requested
+ 236:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if( isSigned )
+ 671               		.stabn	68,0,236,.LM47-rprintfNum
+ 672               	.LM47:
+ 673 022c 99A1      		ldd r25,Y+33
+ 674 022e 9923      		tst r25
+ 675 0230 01F0      		breq .L67
+ 237:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 17
+
+
+ 238:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if(n < 0)
+ 676               		.stabn	68,0,238,.LM48-rprintfNum
+ 677               	.LM48:
+ 678 0232 77FE      		sbrs r7,7
+ 679 0234 00C0      		rjmp .L56
+ 239:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 240:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c ****    			*--p = '-';
+ 680               		.stabn	68,0,240,.LM49-rprintfNum
+ 681               	.LM49:
+ 682 0236 8DE2      		ldi r24,lo8(45)
+ 683 0238 F401      		movw r30,r8
+ 684 023a 8293      		st -Z,r24
+ 685 023c 4F01      		movw r8,r30
+ 686 023e 00C0      		rjmp .L67
+ 687               	.L56:
+ 688 0240 C401      		movw r24,r8
+ 689 0242 0197      		sbiw r24,1
+ 241:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 242:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else if(n > 0)
+ 690               		.stabn	68,0,242,.LM50-rprintfNum
+ 691               	.LM50:
+ 692 0244 4114      		cp r4,__zero_reg__
+ 693 0246 5104      		cpc r5,__zero_reg__
+ 694 0248 6104      		cpc r6,__zero_reg__
+ 695 024a 7104      		cpc r7,__zero_reg__
+ 696 024c 01F0      		breq .L58
+ 243:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 244:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	   		*--p = '+';
+ 697               		.stabn	68,0,244,.LM51-rprintfNum
+ 698               	.LM51:
+ 699 024e 4C01      		movw r8,r24
+ 700 0250 8BE2      		ldi r24,lo8(43)
+ 701 0252 00C0      		rjmp .L69
+ 702               	.L58:
+ 245:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 246:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else
+ 247:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 248:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	   		*--p = ' ';
+ 703               		.stabn	68,0,248,.LM52-rprintfNum
+ 704               	.LM52:
+ 705 0254 4C01      		movw r8,r24
+ 706 0256 80E2      		ldi r24,lo8(32)
+ 707               	.L69:
+ 708 0258 F401      		movw r30,r8
+ 709 025a 8083      		st Z,r24
+ 710 025c 00C0      		rjmp .L67
+ 711               	.L60:
+ 249:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 250:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 251:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 252:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print the string right-justified
+ 253:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	count = numDigits;
+ 254:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	while(count--)
+ 255:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 256:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rprintfChar(*p++);
+ 712               		.stabn	68,0,256,.LM53-rprintfNum
+ 713               	.LM53:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 18
+
+
+ 714 025e F401      		movw r30,r8
+ 715 0260 8191      		ld r24,Z+
+ 716 0262 4F01      		movw r8,r30
+ 717 0264 0E94 0000 		call rprintfChar
+ 718               	.L67:
+ 719               		.stabn	68,0,254,.LM54-rprintfNum
+ 720               	.LM54:
+ 721 0268 2A94      		dec r2
+ 722 026a FFEF      		ldi r31,lo8(-1)
+ 723 026c 2F16      		cp r2,r31
+ 724 026e 01F4      		brne .L60
+ 725               	/* epilogue: frame size=34 */
+ 726 0270 A296      		adiw r28,34
+ 727 0272 0FB6      		in __tmp_reg__,__SREG__
+ 728 0274 F894      		cli
+ 729 0276 DEBF      		out __SP_H__,r29
+ 730 0278 0FBE      		out __SREG__,__tmp_reg__
+ 731 027a CDBF      		out __SP_L__,r28
+ 732 027c DF91      		pop r29
+ 733 027e CF91      		pop r28
+ 734 0280 1F91      		pop r17
+ 735 0282 0F91      		pop r16
+ 736 0284 FF90      		pop r15
+ 737 0286 EF90      		pop r14
+ 738 0288 DF90      		pop r13
+ 739 028a CF90      		pop r12
+ 740 028c BF90      		pop r11
+ 741 028e AF90      		pop r10
+ 742 0290 9F90      		pop r9
+ 743 0292 8F90      		pop r8
+ 744 0294 7F90      		pop r7
+ 745 0296 6F90      		pop r6
+ 746 0298 5F90      		pop r5
+ 747 029a 4F90      		pop r4
+ 748 029c 3F90      		pop r3
+ 749 029e 2F90      		pop r2
+ 750 02a0 0895      		ret
+ 751               	/* epilogue end (size=25) */
+ 752               	/* function rprintfNum size 191 (140) */
+ 753               		.size	rprintfNum, .-rprintfNum
+ 754               		.stabs	"p:r(0,18)",64,0,198,8
+ 755               		.stabs	"buf:(0,21)=ar(0,22)=r(0,22);0;0177777;;0;31;(0,2)",128,0,198,1
+ 756               		.stabs	"x:r(0,5)",64,0,199,14
+ 757               		.stabs	"count:r(0,11)",64,0,200,3
+ 758               		.stabn	192,0,0,rprintfNum-rprintfNum
+ 759               		.stabs	"__result:r(3,2)",64,0,219,22
+ 760               		.stabn	192,0,0,.LBB4-rprintfNum
+ 761               		.stabn	224,0,0,.LBE4-rprintfNum
+ 762               		.stabs	"__result:r(3,2)",64,0,226,22
+ 763               		.stabn	192,0,0,.LBB5-rprintfNum
+ 764               		.stabn	224,0,0,.LBE5-rprintfNum
+ 765               		.stabn	224,0,0,.Lscope10-rprintfNum
+ 766               	.Lscope10:
+ 767               		.stabs	"",36,0,0,.Lscope10-rprintfNum
+ 768               		.stabd	78,0,0
+ 769               		.stabs	"rprintf1RamRom:F(0,1)",36,0,321,rprintf1RamRom
+ 770               		.stabs	"stringInRom:p(0,11)",160,0,320,16
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 19
+
+
+ 771               		.stabs	"format:p(0,23)=*(0,24)=k(0,2)",160,0,320,17
+ 772               	.global	rprintf1RamRom
+ 773               		.type	rprintf1RamRom, @function
+ 774               	rprintf1RamRom:
+ 775               		.stabd	46,0,0
+ 257:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 258:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 259:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 260:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #ifdef RPRINTF_FLOAT
+ 261:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintfFloat ***
+ 262:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // floating-point print
+ 263:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** void rprintfFloat(char numDigits, double x)
+ 264:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 265:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned char firstplace = FALSE;
+ 266:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned char negative;
+ 267:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned char i, digit;
+ 268:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	double place = 1.0;
+ 269:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	
+ 270:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// save sign
+ 271:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	negative = (x<0);
+ 272:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// convert to absolute value
+ 273:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	x = (x>0)?(x):(-x);
+ 274:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	
+ 275:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// find starting digit place
+ 276:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	for(i=0; i<15; i++)
+ 277:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 278:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if((x/place) < 10.0)
+ 279:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			break;
+ 280:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else
+ 281:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			place *= 10.0;
+ 282:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 283:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print polarity character
+ 284:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	if(negative)
+ 285:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rprintfChar('-');
+ 286:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	else
+ 287:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		rprintfChar('+');
+ 288:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 289:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// print digits
+ 290:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	for(i=0; i<numDigits; i++)
+ 291:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+ 292:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		digit = (x/place);
+ 293:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 294:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if(digit | firstplace | (place == 1.0))
+ 295:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 296:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			firstplace = TRUE;
+ 297:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar(digit+0x30);
+ 298:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 299:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		else
+ 300:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar(' ');
+ 301:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		
+ 302:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		if(place == 1.0)
+ 303:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 304:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar('.');
+ 305:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 306:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		
+ 307:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		x -= (digit*place);
+ 308:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		place /= 10.0;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 20
+
+
+ 309:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 310:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 311:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #endif
+ 312:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 313:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** #ifdef RPRINTF_SIMPLE
+ 314:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // *** rprintf1RamRom ***
+ 315:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // called by rprintf() - does a simple printf (supports %d, %x, %c)
+ 316:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // Supports:
+ 317:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // %d - decimal
+ 318:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // %x - hex
+ 319:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** // %c - character
+ 320:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** int rprintf1RamRom(unsigned char stringInRom, const char *format, ...)
+ 321:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** {
+ 776               		.stabn	68,0,321,.LM55-rprintf1RamRom
+ 777               	.LM55:
+ 778               	/* prologue: frame size=2 */
+ 779 02a2 9F92      		push r9
+ 780 02a4 AF92      		push r10
+ 781 02a6 BF92      		push r11
+ 782 02a8 CF92      		push r12
+ 783 02aa DF92      		push r13
+ 784 02ac EF92      		push r14
+ 785 02ae FF92      		push r15
+ 786 02b0 0F93      		push r16
+ 787 02b2 1F93      		push r17
+ 788 02b4 CF93      		push r28
+ 789 02b6 DF93      		push r29
+ 790 02b8 CDB7      		in r28,__SP_L__
+ 791 02ba DEB7      		in r29,__SP_H__
+ 792 02bc 2297      		sbiw r28,2
+ 793 02be 0FB6      		in __tmp_reg__,__SREG__
+ 794 02c0 F894      		cli
+ 795 02c2 DEBF      		out __SP_H__,r29
+ 796 02c4 0FBE      		out __SREG__,__tmp_reg__
+ 797 02c6 CDBF      		out __SP_L__,r28
+ 798               	/* prologue end (size=19) */
+ 799 02c8 9888      		ldd r9,Y+16
+ 800 02ca C988      		ldd r12,Y+17
+ 801 02cc DA88      		ldd r13,Y+18
+ 322:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// simple printf routine
+ 323:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	// define a global HexChars or use line below
+ 324:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	//static char HexChars[16] = "0123456789ABCDEF";
+ 325:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	char format_flag;
+ 326:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	unsigned int u_val, div_val, base;
+ 327:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	va_list ap;
+ 328:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 329:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	va_start(ap, format);
+ 802               		.stabn	68,0,329,.LM56-rprintf1RamRom
+ 803               	.LM56:
+ 804 02ce CE01      		movw r24,r28
+ 805 02d0 4396      		adiw r24,19
+ 806 02d2 9A83      		std Y+2,r25
+ 807 02d4 8983      		std Y+1,r24
+ 808 02d6 00C0      		rjmp .L103
+ 809               	.L73:
+ 330:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	for (;;)
+ 331:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	{
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 21
+
+
+ 332:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		while ((format_flag = READMEMBYTE(stringInRom,format++) ) != '%')
+ 333:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{	// Until '%' or '\0'
+ 334:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			if (!format_flag)
+ 810               		.stabn	68,0,334,.LM57-rprintf1RamRom
+ 811               	.LM57:
+ 812 02d8 8823      		tst r24
+ 813 02da 01F4      		brne .+2
+ 814 02dc 00C0      		rjmp .L94
+ 815               	.L102:
+ 335:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			{
+ 336:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				va_end(ap);
+ 337:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				return(0);
+ 338:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			}
+ 339:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			rprintfChar(format_flag);
+ 816               		.stabn	68,0,339,.LM58-rprintf1RamRom
+ 817               	.LM58:
+ 818 02de 0E94 0000 		call rprintfChar
+ 819               	.L103:
+ 820 02e2 9601      		movw r18,r12
+ 821 02e4 2F5F      		subi r18,lo8(-(1))
+ 822 02e6 3F4F      		sbci r19,hi8(-(1))
+ 823               		.stabn	68,0,332,.LM59-rprintf1RamRom
+ 824               	.LM59:
+ 825 02e8 9920      		tst r9
+ 826 02ea 01F0      		breq .L76
+ 827               	.LBB6:
+ 828 02ec F601      		movw r30,r12
+ 829 02ee 6901      		movw r12,r18
+ 830               	/* #APP */
+ 831 02f0 8491      		lpm r24, Z
+ 832               		
+ 833               	/* #NOAPP */
+ 834 02f2 00C0      		rjmp .L78
+ 835               	.L76:
+ 836               	.LBE6:
+ 837 02f4 F601      		movw r30,r12
+ 838 02f6 8081      		ld r24,Z
+ 839 02f8 6901      		movw r12,r18
+ 840               	.L78:
+ 841 02fa 8532      		cpi r24,lo8(37)
+ 842 02fc 01F4      		brne .L73
+ 843 02fe 2F5F      		subi r18,lo8(-(1))
+ 844 0300 3F4F      		sbci r19,hi8(-(1))
+ 340:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 341:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 342:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		switch (format_flag = READMEMBYTE(stringInRom,format++) )
+ 845               		.stabn	68,0,342,.LM60-rprintf1RamRom
+ 846               	.LM60:
+ 847 0302 9920      		tst r9
+ 848 0304 01F0      		breq .L80
+ 849               	.LBB7:
+ 850 0306 F601      		movw r30,r12
+ 851 0308 6901      		movw r12,r18
+ 852               	/* #APP */
+ 853 030a 8491      		lpm r24, Z
+ 854               		
+ 855               	/* #NOAPP */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 22
+
+
+ 856 030c 00C0      		rjmp .L82
+ 857               	.L80:
+ 858               	.LBE7:
+ 859 030e F601      		movw r30,r12
+ 860 0310 8081      		ld r24,Z
+ 861 0312 6901      		movw r12,r18
+ 862               	.L82:
+ 863 0314 8436      		cpi r24,lo8(100)
+ 864 0316 01F4      		brne .+2
+ 865 0318 00C0      		rjmp .L85
+ 866 031a 8837      		cpi r24,lo8(120)
+ 867 031c 01F0      		breq .L86
+ 868 031e 8336      		cpi r24,lo8(99)
+ 869 0320 01F4      		brne .L102
+ 343:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		{
+ 344:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			case 'c': format_flag = va_arg(ap,int);
+ 870               		.stabn	68,0,344,.LM61-rprintf1RamRom
+ 871               	.LM61:
+ 872 0322 E981      		ldd r30,Y+1
+ 873 0324 FA81      		ldd r31,Y+2
+ 874 0326 3296      		adiw r30,2
+ 875 0328 FA83      		std Y+2,r31
+ 876 032a E983      		std Y+1,r30
+ 877 032c 3297      		sbiw r30,2
+ 878 032e 8081      		ld r24,Z
+ 879 0330 00C0      		rjmp .L102
+ 880               	.L86:
+ 345:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			default:  rprintfChar(format_flag); continue;
+ 346:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			case 'd': base = 10; div_val = 10000; goto CONVERSION_LOOP;
+ 347:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** //			case 'x': base = 16; div_val = 0x10;
+ 348:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			case 'x': base = 16; div_val = 0x1000;
+ 349:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 
+ 350:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			CONVERSION_LOOP:
+ 351:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			u_val = va_arg(ap,int);
+ 881               		.stabn	68,0,351,.LM62-rprintf1RamRom
+ 882               	.LM62:
+ 883 0332 E981      		ldd r30,Y+1
+ 884 0334 FA81      		ldd r31,Y+2
+ 885 0336 3296      		adiw r30,2
+ 886 0338 FA83      		std Y+2,r31
+ 887 033a E983      		std Y+1,r30
+ 888 033c 1291      		ld r17,-Z
+ 889 033e 0291      		ld r16,-Z
+ 890 0340 E12C      		mov r14,__zero_reg__
+ 891 0342 60E1      		ldi r22,hi8(4096)
+ 892 0344 F62E      		mov r15,r22
+ 893 0346 50E1      		ldi r21,lo8(16)
+ 894 0348 A52E      		mov r10,r21
+ 895 034a B12C      		mov r11,__zero_reg__
+ 896 034c 00C0      		rjmp .L98
+ 897               	.L88:
+ 352:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			if (format_flag == 'd')
+ 353:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			{
+ 354:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				if (((int)u_val) < 0)
+ 355:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				{
+ 356:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 					u_val = - u_val;
+ 898               		.stabn	68,0,356,.LM63-rprintf1RamRom
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 23
+
+
+ 899               	.LM63:
+ 900 034e 1095      		com r17
+ 901 0350 0195      		neg r16
+ 902 0352 1F4F      		sbci r17,lo8(-1)
+ 357:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 					rprintfChar('-');
+ 903               		.stabn	68,0,357,.LM64-rprintf1RamRom
+ 904               	.LM64:
+ 905 0354 8DE2      		ldi r24,lo8(45)
+ 906 0356 0E94 0000 		call rprintfChar
+ 907               	.L89:
+ 908 035a 40E1      		ldi r20,lo8(10000)
+ 909 035c E42E      		mov r14,r20
+ 910 035e 47E2      		ldi r20,hi8(10000)
+ 911 0360 F42E      		mov r15,r20
+ 912 0362 20E0      		ldi r18,lo8(0)
+ 913 0364 30E0      		ldi r19,hi8(0)
+ 914 0366 00C0      		rjmp .L90
+ 915               	.L91:
+ 358:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				}
+ 359:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				while (div_val > 1 && div_val > u_val) div_val /= 10;
+ 916               		.stabn	68,0,359,.LM65-rprintf1RamRom
+ 917               	.LM65:
+ 918 0368 C701      		movw r24,r14
+ 919 036a 6AE0      		ldi r22,lo8(10)
+ 920 036c 70E0      		ldi r23,hi8(10)
+ 921 036e 0E94 0000 		call __udivmodhi4
+ 922 0372 7B01      		movw r14,r22
+ 923 0374 2F5F      		subi r18,lo8(-(1))
+ 924 0376 3F4F      		sbci r19,hi8(-(1))
+ 925 0378 2430      		cpi r18,4
+ 926 037a 3105      		cpc r19,__zero_reg__
+ 927 037c 01F0      		breq .L92
+ 928               	.L90:
+ 929 037e 0E15      		cp r16,r14
+ 930 0380 1F05      		cpc r17,r15
+ 931 0382 00F0      		brlo .L91
+ 932               	.L92:
+ 933 0384 3AE0      		ldi r19,lo8(10)
+ 934 0386 A32E      		mov r10,r19
+ 935 0388 B12C      		mov r11,__zero_reg__
+ 936               	.L98:
+ 360:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			}
+ 361:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			do
+ 362:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			{
+ 363:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				//rprintfChar(pgm_read_byte(HexChars+(u_val/div_val)));
+ 364:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				rprintfu04(u_val/div_val);
+ 937               		.stabn	68,0,364,.LM66-rprintf1RamRom
+ 938               	.LM66:
+ 939 038a C801      		movw r24,r16
+ 940 038c B701      		movw r22,r14
+ 941 038e 0E94 0000 		call __udivmodhi4
+ 942 0392 CB01      		movw r24,r22
+ 943 0394 0E94 0000 		call rprintfu04
+ 365:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				u_val %= div_val;
+ 944               		.stabn	68,0,365,.LM67-rprintf1RamRom
+ 945               	.LM67:
+ 946 0398 C801      		movw r24,r16
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 24
+
+
+ 947 039a B701      		movw r22,r14
+ 948 039c 0E94 0000 		call __udivmodhi4
+ 949 03a0 8C01      		movw r16,r24
+ 366:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 				div_val /= base;
+ 950               		.stabn	68,0,366,.LM68-rprintf1RamRom
+ 951               	.LM68:
+ 952 03a2 C701      		movw r24,r14
+ 953 03a4 B501      		movw r22,r10
+ 954 03a6 0E94 0000 		call __udivmodhi4
+ 955 03aa 7B01      		movw r14,r22
+ 367:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 			} while (div_val);
+ 956               		.stabn	68,0,367,.LM69-rprintf1RamRom
+ 957               	.LM69:
+ 958 03ac 672B      		or r22,r23
+ 959 03ae 01F4      		brne .+2
+ 960 03b0 00C0      		rjmp .L103
+ 961 03b2 00C0      		rjmp .L98
+ 962               	.L85:
+ 963               		.stabn	68,0,351,.LM70-rprintf1RamRom
+ 964               	.LM70:
+ 965 03b4 E981      		ldd r30,Y+1
+ 966 03b6 FA81      		ldd r31,Y+2
+ 967 03b8 3296      		adiw r30,2
+ 968 03ba FA83      		std Y+2,r31
+ 969 03bc E983      		std Y+1,r30
+ 970 03be 1291      		ld r17,-Z
+ 971 03c0 0291      		ld r16,-Z
+ 972               		.stabn	68,0,354,.LM71-rprintf1RamRom
+ 973               	.LM71:
+ 974 03c2 1123      		tst r17
+ 975 03c4 04F4      		brge .L89
+ 976 03c6 00C0      		rjmp .L88
+ 977               	.L94:
+ 368:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 		}
+ 369:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	}
+ 370:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** 	va_end(ap);
+ 371:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c **** }
+ 978               		.stabn	68,0,371,.LM72-rprintf1RamRom
+ 979               	.LM72:
+ 980 03c8 80E0      		ldi r24,lo8(0)
+ 981 03ca 90E0      		ldi r25,hi8(0)
+ 982               	/* epilogue: frame size=2 */
+ 983 03cc 2296      		adiw r28,2
+ 984 03ce 0FB6      		in __tmp_reg__,__SREG__
+ 985 03d0 F894      		cli
+ 986 03d2 DEBF      		out __SP_H__,r29
+ 987 03d4 0FBE      		out __SREG__,__tmp_reg__
+ 988 03d6 CDBF      		out __SP_L__,r28
+ 989 03d8 DF91      		pop r29
+ 990 03da CF91      		pop r28
+ 991 03dc 1F91      		pop r17
+ 992 03de 0F91      		pop r16
+ 993 03e0 FF90      		pop r15
+ 994 03e2 EF90      		pop r14
+ 995 03e4 DF90      		pop r13
+ 996 03e6 CF90      		pop r12
+ 997 03e8 BF90      		pop r11
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 25
+
+
+ 998 03ea AF90      		pop r10
+ 999 03ec 9F90      		pop r9
+ 1000 03ee 0895      		ret
+ 1001               	/* epilogue end (size=18) */
+ 1002               	/* function rprintf1RamRom size 174 (137) */
+ 1003               		.size	rprintf1RamRom, .-rprintf1RamRom
+ 1004               		.stabs	"format_flag:r(0,2)",64,0,325,24
+ 1005               		.stabs	"u_val:r(0,4)",64,0,326,16
+ 1006               		.stabs	"div_val:r(0,4)",64,0,326,14
+ 1007               		.stabs	"base:r(0,4)",64,0,326,10
+ 1008               		.stabs	"ap:(5,3)",128,0,327,1
+ 1009               		.stabs	"stringInRom:r(0,11)",64,0,320,9
+ 1010               		.stabs	"format:r(0,23)",64,0,320,12
+ 1011               		.stabn	192,0,0,rprintf1RamRom-rprintf1RamRom
+ 1012               		.stabs	"__addr16:r(3,4)",64,0,332,30
+ 1013               		.stabn	192,0,0,.LBB6-rprintf1RamRom
+ 1014               		.stabn	224,0,0,.LBE6-rprintf1RamRom
+ 1015               		.stabs	"__addr16:r(3,4)",64,0,342,30
+ 1016               		.stabn	192,0,0,.LBB7-rprintf1RamRom
+ 1017               		.stabn	224,0,0,.LBE7-rprintf1RamRom
+ 1018               		.stabn	224,0,0,.Lscope11-rprintf1RamRom
+ 1019               	.Lscope11:
+ 1020               		.stabs	"",36,0,0,.Lscope11-rprintf1RamRom
+ 1021               		.stabd	78,0,0
+ 1022               		.section	.progmem.data,"a",@progbits
+ 1023               		.type	HexChars, @object
+ 1024               		.size	HexChars, 17
+ 1025               	HexChars:
+ 1026 0000 3031 3233 		.string	"0123456789ABCDEF"
+ 1026      3435 3637 
+ 1026      3839 4142 
+ 1026      4344 4546 
+ 1026      00
+ 1027               		.lcomm rputchar,2
+ 1028               		.stabs	"HexChars:S(0,25)=ar(0,22);0;16;(0,2)",38,0,45,HexChars
+ 1029               		.stabs	"rputchar:S(0,16)",40,0,51,rputchar
+ 1030               		.text
+ 1031               		.stabs	"",100,0,0,.Letext0
+ 1032               	.Letext0:
+ 1033               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.c": code  524 = 0x0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s 			page 26
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 rprintf.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:111    .text:00000000 rprintfInit
+                             .bss:00000000 rputchar
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:133    .text:0000000a rprintfChar
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:171    .text:0000002e rprintfStr
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:213    .text:0000004c rprintfStrLen
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:294    .text:0000009e rprintfProgStr
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:343    .text:000000be rprintfCRLF
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:365    .text:000000c6 rprintfu04
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:1025   .progmem.data:00000000 HexChars
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:402    .text:000000dc rprintfu08
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:432    .text:000000f2 rprintfu16
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:464    .text:0000010c rprintfu32
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:506    .text:00000132 rprintfNum
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//cckjZQoP.s:774    .text:000002a2 rprintf1RamRom
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__udivmodsi4
+__udivmodhi4

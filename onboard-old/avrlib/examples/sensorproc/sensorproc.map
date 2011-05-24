@@ -1,0 +1,1190 @@
+Archive member included because of file (symbol)
+
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o (__mulsi3)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o (__udivmodhi4)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o (__divmodhi4)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o (__udivmodsi4)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o (__divmodsi4)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o (__do_clear_bss)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (__addsf3)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (__mulsf3)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (__divsf3)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o) (__thenan_sf)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o) (__prologue_saves__)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o) (__pack_f)
+/usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o) (__unpack_f)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (atoi)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (strncmp)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o) (__mulhi_const_10)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (modf)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o (strtod)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o) (__fixsfsi)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o) (__floatunssisf)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o) (__fp_flashconst)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o) (__fp_merge)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o) (__fp_split1)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o) (__fp_zero)
+/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o) (__fp_nan)
+
+Allocating common symbols
+Common symbol       size              file
+
+uartReadyTx         0x2               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+GpsInfo             0x61              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+Timer0Reg0          0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+uartRxBuffer        0x10              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+Timer2Reg1          0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+TimerPauseReg       0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+headingL            0x1               sensorproc.o
+Timer2Reg0          0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+dpressure           0x2               sensorproc.o
+Timer0Reg1          0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+uartBufferedTx      0x2               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+gpsPacket           0x14              sensorproc.o
+ultrasound          0x1               sensorproc.o
+a2dCompleteFlag     0x1               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+spressure           0x2               sensorproc.o
+headingH            0x1               sensorproc.o
+NmeaPacket          0x50              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+uartTxBuffer        0x10              /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartRxOverflow      0x4               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+
+Discarded input sections
+
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+ .stabstr       0x00000000        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+ .stabstr       0x00000000        0x0 sensorproc.o
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+ .stabstr       0x00000000        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+LOAD /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+LOAD sensorproc.o
+LOAD /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a
+LOAD /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x33e0
+ *(.vectors)
+ .vectors       0x00000000       0x8c /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_fplib
+                0x0000008c       0x30 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+ *(.progmem*)
+ .progmem.data  0x000000bc       0x11 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+ .progmem.data  0x000000cd       0x1c /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                0x000000d9                TimerRTCPrescaleFactor
+                0x000000cd                TimerPrescaleFactor
+ .progmem.data  0x000000e9       0x25 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+ .progmem.data  0x0000010e       0x48 sensorproc.o
+                0x00000156                . = ALIGN (0x2)
+                0x00000156                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000156        0x0 linker stubs
+ *(.trampolines*)
+                0x00000156                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000156                __ctors_start = .
+ *(.ctors)
+                0x00000156                __ctors_end = .
+                0x00000156                __dtors_start = .
+ *(.dtors)
+                0x00000156                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000156        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+                0x00000156                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000156        0xc /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000162       0x1a /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+                0x00000162                __do_copy_data
+ .init4         0x0000017c       0x10 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000017c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000018c        0x4 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x00000190        0x4 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+                0x00000190                __vector_22
+                0x00000190                __vector_1
+                0x00000190                __vector_34
+                0x00000190                __bad_interrupt
+                0x00000190                __vector_6
+                0x00000190                __vector_31
+                0x00000190                __vector_3
+                0x00000190                __vector_23
+                0x00000190                __vector_17
+                0x00000190                __vector_19
+                0x00000190                __vector_7
+                0x00000190                __vector_5
+                0x00000190                __vector_4
+                0x00000190                __vector_2
+                0x00000190                __vector_8
+ .text          0x00000194      0x558 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+                0x000001d4                i2cInit
+                0x0000023a                i2cSendStart
+                0x00000256                i2cWaitForComplete
+                0x0000028e                i2cGetReceivedByte
+                0x00000392                i2cMasterSend
+                0x00000338                i2cMasterReceive
+                0x000002a8                i2cMasterSendNI
+                0x00000226                i2cSetSlaveReceiveHandler
+                0x0000029e                i2cGetState
+                0x000003e0                __vector_33
+                0x00000296                i2cGetStatus
+                0x00000260                i2cSendByte
+                0x00000230                i2cSetSlaveTransmitHandler
+                0x00000216                i2cSetLocalDeviceAddr
+                0x0000064a                i2cMasterReceiveNI
+                0x00000272                i2cReceiveByte
+                0x00000194                i2cSetBitrate
+                0x00000248                i2cSendStop
+ .text          0x000006ec      0x15a /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                0x00000822                bufferIsNotFull
+                0x00000706                bufferGetFromFront
+                0x000007a6                bufferGetAtIndex
+                0x00000762                bufferDumpFromFront
+                0x000006ec                bufferInit
+                0x000007d0                bufferAddToEnd
+                0x00000838                bufferFlush
+ .text          0x00000846       0xb2 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                0x0000087a                a2dIsComplete
+                0x000008ac                a2dConvert8bit
+                0x00000846                a2dOff
+                0x0000084c                a2dSetPrescaler
+                0x00000884                a2dConvert10bit
+                0x000008da                a2dInit
+                0x00000856                a2dSetReference
+                0x000008bc                __vector_21
+                0x00000868                a2dSetChannel
+                0x00000874                a2dStartConvert
+ .text          0x000008f8      0x500 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                0x000008f8                nmeaInit
+                0x00000a0c                nmeaProcessGPGGA
+                0x000008fa                nmeaGetPacketBuffer
+                0x00000cc2                nmeaProcess
+                0x00000900                nmeaProcessGPVTG
+ .text          0x00000df8        0xa /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                0x00000dfa                gpsGetInfo
+                0x00000df8                gpsInit
+                0x00000e00                gpsInfoPrint
+ .text          0x00000e02      0x558 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                0x0000119e                uartSendTxBuffer
+                0x0000110a                __vector_32
+                0x00000ee8                uartReceiveService
+                0x00000e8a                uartSendByte
+                0x000012fa                uart0InitBuffers
+                0x0000120c                uart1GetByte
+                0x000011cc                uartReceiveByte
+                0x00000fde                uartSendBuffer
+                0x00000f4a                __vector_30
+                0x0000124c                uart0GetByte
+                0x00001084                uartAddToTxBuffer
+                0x000010ae                uartTransmitService
+                0x00000e02                uartSetRxHandler
+                0x0000131c                uart0Init
+                0x000012c4                uart1Init
+                0x0000128c                uartFlushReceiveBuffer
+                0x00001350                uartInit
+                0x00000eae                uart0SendByte
+                0x00000ec2                uartReceiveBufferIsEmpty
+                0x00000e18                uartSetBaudRate
+                0x00000eb8                uart1SendByte
+                0x00000e78                uartGetTxBuffer
+                0x00000e66                uartGetRxBuffer
+                0x000012a2                uart1InitBuffers
+                0x000010a4                uart0AddToTxBuffer
+                0x00000f94                __vector_18
+                0x0000109a                uart1AddToTxBuffer
+                0x00001154                __vector_20
+ .text          0x0000135a      0x3f0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                0x000015fc                rprintf1RamRom
+                0x00001436                rprintfu08
+                0x00001466                rprintfu32
+                0x00001388                rprintfStr
+                0x000013a6                rprintfStrLen
+                0x000013f8                rprintfProgStr
+                0x0000144c                rprintfu16
+                0x0000135a                rprintfInit
+                0x00001364                rprintfChar
+                0x00001418                rprintfCRLF
+                0x00001420                rprintfu04
+                0x0000148c                rprintfNum
+ .text          0x0000174a      0xb22 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                0x000019e6                timer2GetOverflowCount
+                0x0000212a                __vector_28
+                0x00001880                timerDetach
+                0x000017ee                timer1SetPrescaler
+                0x00001b6e                timer3PWMAOn
+                0x00001f68                __vector_24
+                0x00001eb4                __vector_12
+                0x00001a9a                timer1PWMBOff
+                0x0000183c                timer2GetPrescaler
+                0x00002236                timer3PWMOff
+                0x0000174c                timer0Init
+                0x00001a8c                timer1PWMAOff
+                0x00001ac0                timer1PWMBSet
+                0x00001802                timer3SetPrescaler
+                0x00001a7e                timer1PWMCOn
+                0x00001b92                timer3PWMCOn
+                0x00002184                __vector_25
+                0x00001b80                timer3PWMBOn
+                0x00001fc2                __vector_11
+                0x00001a30                timer1PWMInitICR
+                0x00001f0e                __vector_13
+                0x000017c4                timer3Init
+                0x00001bb6                timer3PWMBOff
+                0x00001810                timer0GetPrescaler
+                0x00001852                timer3GetPrescaler
+                0x00001bda                timer3PWMASet
+                0x000020d0                __vector_27
+                0x000019b2                timer0GetOverflowCount
+                0x000021de                timerInit
+                0x00001be8                timer3PWMBSet
+                0x00001ba4                timer3PWMAOff
+                0x000017f8                timer2SetPrescaler
+                0x00001b28                timer3PWMInitICR
+                0x00001a62                timer1PWMAOn
+                0x000017e4                timer0SetPrescaler
+                0x0000174a                delay_us
+                0x00001aca                timer1PWMCSet
+                0x00001990                timer0ClearOverflowCount
+                0x0000201c                __vector_9
+                0x0000177e                timer1Init
+                0x00001e5a                __vector_15
+                0x00001e00                __vector_29
+                0x000019f8                timer1PWMInit
+                0x00001a70                timer1PWMBOn
+                0x00001792                timer2Init
+                0x00001bc8                timer3PWMCOff
+                0x00002076                __vector_26
+                0x00001ab6                timer1PWMASet
+                0x0000186a                timerAttach
+                0x00002204                timer1PWMOff
+                0x00001aa8                timer1PWMCOff
+                0x00001cc2                __vector_14
+                0x00001bf6                timer3PWMCSet
+                0x00001d1c                __vector_10
+                0x00001c04                __vector_16
+                0x00001826                timer1GetPrescaler
+                0x00001ad8                timer3PWMInit
+                0x000019c4                timer2ClearOverflowCount
+                0x00001896                timerPause
+ .text          0x0000226c       0x86 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                0x000022e8                vt100Init
+                0x000022bc                vt100SetAttr
+                0x0000229a                vt100SetCursorMode
+                0x0000226c                vt100SetCursorPos
+                0x000022de                vt100ClearScreen
+ .text          0x000022f2      0x1e0 sensorproc.o
+                0x000022f2                getCompassHeading
+                0x00002354                main
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x000024d2        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ .text          0x000024d2      0x316 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                0x0000272c                __subsf3
+                0x0000278e                __addsf3
+ .text          0x000027e8      0x23c /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                0x000027e8                __mulsf3
+ .text          0x00002a24      0x174 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                0x00002a24                __divsf3
+ .text          0x00002b98        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+ .text          0x00002b98        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .text          0x00002b98        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .text          0x00002b98      0x244 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                0x00002b98                __pack_f
+ .text          0x00002ddc      0x13e /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                0x00002ddc                __unpack_f
+ .text          0x00002f1a       0x5a /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+                0x00002f1a                atoi
+ .text          0x00002f74       0x1c /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                0x00002f74                strncmp
+ .text          0x00002f90       0x10 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+                0x00002f90                __mulhi_const_10
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+ .text          0x00002fa0        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+                0x00002fa0                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00002fa0       0x3e /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+                0x00002fa0                __mulsi3
+ .text.libgcc   0x00002fde       0x28 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x00002fde                __udivmodhi4
+ .text.libgcc   0x00003006       0x26 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+                0x00003006                __divmodhi4
+                0x00003006                _div
+ .text.libgcc   0x0000302c       0x44 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000302c                __udivmodsi4
+ .text.libgcc   0x00003070       0x36 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+                0x00003070                __divmodsi4
+ .text.libgcc   0x000030a6        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000030a6       0x38 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                0x000030a6                __prologue_saves__
+ .text.libgcc   0x000030de       0x36 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                0x000030de                __epilogue_restores__
+ .text.fplib    0x00003114       0x60 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+                0x00003114                modf
+ .text.fplib    0x00003174      0x178 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                0x00003178                strtod
+                0x00003174                atof
+ .text.fplib    0x000032ec       0x36 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                0x000032ec                __fixsfsi
+                0x00003312                __fp_lneg
+                0x000032ec                __fixunssfsi
+ .text.fplib    0x00003322       0x18 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                0x00003326                __floatsisf
+                0x00003322                __floatunssisf
+ .text.fplib    0x0000333a        0xa /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+                0x0000333a                __fp_flashconst
+ .text.fplib    0x00003344       0x3a /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+                0x0000334e                __fp_merge
+ .text.fplib    0x0000337e       0x52 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+                0x0000337e                __fp_split3
+                0x00003384                __fp_split2
+                0x00003396                __fp_split1
+                0x000033b2                __fp_split_a
+ .text.fplib    0x000033d0        0xa /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+                0x000033d0                __fp_zero
+                0x000033d6                __fp_zerox
+ .text.fplib    0x000033da        0x6 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+                0x000033da                __fp_nanERANGE
+                0x000033da                __fp_nan
+                0x000033da                __fp_nanEDOM
+                0x000033da                __fp_nanx
+                0x000033e0                . = ALIGN (0x2)
+ *(.fini9)
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ *(.fini0)
+                0x000033e0                _etext = .
+
+.data           0x00800100       0x14 load address 0x000033e0
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ .data          0x00800100        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+ .data          0x00800100        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+ .data          0x00800100        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+ .data          0x00800100        0xc /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+ .data          0x0080010c        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+ .data          0x0080010c        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+ .data          0x0080010c        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+ .data          0x0080010c        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+ .data          0x0080010c        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+ .data          0x0080010c        0x0 sensorproc.o
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+ .data          0x0080010c        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+ .data          0x0080010c        0x8 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                0x0080010c                __thenan_sf
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+ .data          0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800114                . = ALIGN (0x2)
+                0x00800114                _edata = .
+                0x00800114                PROVIDE (__data_end, .)
+
+.bss            0x00800114      0x296
+                0x00800114                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800114        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ .bss           0x00800114       0x4b /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+ .bss           0x0080015f        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+ .bss           0x0080015f        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+ .bss           0x0080015f        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+ .bss           0x0080015f        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+ .bss           0x0080015f      0x124 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+ .bss           0x00800283        0x2 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+ .bss           0x00800285       0x1c /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+ .bss           0x008002a1        0x0 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+ .bss           0x008002a1        0x0 sensorproc.o
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+ .bss           0x008002a1        0x0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008002a1        0x1 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                0x008002a1                a2dCompleteFlag
+ COMMON         0x008002a2       0x50 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                0x008002a2                NmeaPacket
+ COMMON         0x008002f2       0x61 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                0x008002f2                GpsInfo
+ COMMON         0x00800353       0x28 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                0x00800353                uartReadyTx
+                0x00800355                uartRxBuffer
+                0x00800365                uartBufferedTx
+                0x00800367                uartTxBuffer
+                0x00800377                uartRxOverflow
+ COMMON         0x0080037b       0x14 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                0x0080037b                Timer0Reg0
+                0x0080037f                Timer2Reg1
+                0x00800383                TimerPauseReg
+                0x00800387                Timer2Reg0
+                0x0080038b                Timer0Reg1
+ COMMON         0x0080038f       0x1b sensorproc.o
+                0x0080038f                headingL
+                0x00800390                dpressure
+                0x00800392                gpsPacket
+                0x008003a6                ultrasound
+                0x008003a7                spressure
+                0x008003a9                headingH
+                0x008003aa                PROVIDE (__bss_end, .)
+                0x000033e0                __data_load_start = LOADADDR (.data)
+                0x000033f4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003aa        0x0
+                0x008003aa                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008003aa                PROVIDE (__noinit_end, .)
+                0x008003aa                _end = .
+                0x008003aa                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab           0x00000000     0x9198
+ *(.stab)
+ .stab          0x00000000      0x408 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+ .stab          0x00000408     0x1104 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+                               0x1110 (size before relaxing)
+ .stab          0x0000150c      0x660 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                0x924 (size before relaxing)
+ .stab          0x00001b6c      0x510 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                0x7b0 (size before relaxing)
+ .stab          0x0000207c      0x75c /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                                0xac8 (size before relaxing)
+ .stab          0x000027d8      0x234 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                                0x654 (size before relaxing)
+ .stab          0x00002a0c      0xdf8 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                               0x10c8 (size before relaxing)
+ .stab          0x00003804      0x9b4 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                0xce4 (size before relaxing)
+ .stab          0x000041b8     0x1a58 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                               0x1da0 (size before relaxing)
+ .stab          0x00005c10      0x33c /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                                0x684 (size before relaxing)
+ .stab          0x00005f4c      0x468 sensorproc.o
+                                0x8a0 (size before relaxing)
+ .stab          0x000063b4      0x750 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                                0x75c (size before relaxing)
+ .stab          0x00006b04      0x54c /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                0x678 (size before relaxing)
+ .stab          0x00007050      0x3a8 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                0x4d4 (size before relaxing)
+ .stab          0x000073f8      0x12c /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                                0x258 (size before relaxing)
+ .stab          0x00007524      0x3b4 /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                                0x4e0 (size before relaxing)
+ .stab          0x000078d8      0x27c /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                                0x3a8 (size before relaxing)
+ .stab          0x00007b54      0x228 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+                                0x234 (size before relaxing)
+ .stab          0x00007d7c       0xc0 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                                 0xcc (size before relaxing)
+ .stab          0x00007e3c       0x78 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+                                 0x84 (size before relaxing)
+ .stab          0x00007eb4      0x27c /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+                                0x288 (size before relaxing)
+ .stab          0x00008130      0x8f4 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                0x900 (size before relaxing)
+ .stab          0x00008a24      0x180 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                                0x18c (size before relaxing)
+ .stab          0x00008ba4       0xcc /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                                 0xd8 (size before relaxing)
+ .stab          0x00008c70       0x78 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+                                 0x84 (size before relaxing)
+ .stab          0x00008ce8      0x198 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+                                0x1a4 (size before relaxing)
+ .stab          0x00008e80      0x240 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+                                0x24c (size before relaxing)
+ .stab          0x000090c0       0x78 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+                                 0x84 (size before relaxing)
+ .stab          0x00009138       0x60 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+                                 0x6c (size before relaxing)
+
+.stabstr        0x00000000     0x62f5
+ *(.stabstr)
+ .stabstr       0x00000000     0x62f5 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(sensorproc.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+GpsInfo                                           sensorproc.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+NmeaPacket                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+Timer0Reg0                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+Timer0Reg1                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+Timer2Reg0                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+Timer2Reg1                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+TimerPauseReg                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+TimerPrescaleFactor                               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+TimerRTCPrescaleFactor                            /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+__addsf3                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+__bad_interrupt                                   /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__bss_end                                         /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__data_load_start                                 /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__data_start                                      /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__divmodhi4                                       /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+__divmodsi4                                       /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+__divsf3                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+__do_clear_bss                                    /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                                                  sensorproc.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+__do_copy_data                                    /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+                                                  sensorproc.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+__epilogue_restores__                             /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__fixsfsi                                         /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+__fixunssfsi                                      /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+__floatsisf                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+__floatunssisf                                    /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+__fp_flashconst                                   /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_flashconst.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+__fp_lneg                                         /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+__fp_merge                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(floatsisf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+__fp_nan                                          /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+__fp_nanEDOM                                      /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+__fp_nanERANGE                                    /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+__fp_nanx                                         /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_nan.o)
+__fp_split1                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+__fp_split2                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+__fp_split3                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+__fp_split_a                                      /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_split.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+__fp_zero                                         /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_merge.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fixsfsi.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+__fp_zerox                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(fp_zero.o)
+__heap_end                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__init                                            /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__mulhi_const_10                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+__mulsf3                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+__mulsi3                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mulsi3.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+__pack_f                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__prologue_saves__                                /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_prologue.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__stack                                           /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__subsf3                                          /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__thenan_sf                                       /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__udivmodhi4                                      /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+__udivmodsi4                                      /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodsi4.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+__unpack_f                                        /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_addsub_sf.o)
+__vector_1                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_10                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_11                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_12                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_13                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_14                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_15                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_16                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_17                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_18                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_19                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_2                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_20                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_21                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_22                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_23                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_24                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_25                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_26                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_27                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_28                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_29                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_3                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_30                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_31                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_32                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_33                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_34                                       /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_4                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_5                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_6                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_7                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_8                                        /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_9                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vector_default                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+__vectors                                         /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+_div                                              /usr/local/bin/../lib/gcc/avr/4.1.1/avr5/libgcc.a(_divmodhi4.o)
+a2dCompleteFlag                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dConvert10bit                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  sensorproc.o
+a2dConvert8bit                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  sensorproc.o
+a2dInit                                           /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+                                                  sensorproc.o
+a2dIsComplete                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dOff                                            /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dSetChannel                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dSetPrescaler                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dSetReference                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+a2dStartConvert                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.o
+atof                                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+atoi                                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+bufferAddToEnd                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+bufferDumpFromFront                               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+bufferFlush                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+bufferGetAtIndex                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+bufferGetFromFront                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+bufferInit                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+bufferIsNotFull                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.o
+delay_us                                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+dpressure                                         sensorproc.o
+getCompassHeading                                 sensorproc.o
+gpsGetInfo                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+gpsInfoPrint                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+gpsInit                                           /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.o
+gpsPacket                                         sensorproc.o
+headingH                                          sensorproc.o
+headingL                                          sensorproc.o
+i2cGetReceivedByte                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cGetState                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cGetStatus                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cInit                                           /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cMasterReceive                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+                                                  sensorproc.o
+i2cMasterReceiveNI                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cMasterSend                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+                                                  sensorproc.o
+i2cMasterSendNI                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cReceiveByte                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSendByte                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSendStart                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSendStop                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSetBitrate                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSetLocalDeviceAddr                             /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSetSlaveReceiveHandler                         /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cSetSlaveTransmitHandler                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+i2cWaitForComplete                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.o
+main                                              sensorproc.o
+                                                  /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/crtm128.o
+modf                                              /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(modf.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+nmeaGetPacketBuffer                               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+nmeaInit                                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+nmeaProcess                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+                                                  sensorproc.o
+nmeaProcessGPGGA                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+nmeaProcessGPVTG                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+rprintf1RamRom                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  sensorproc.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+rprintfCRLF                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfChar                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfInit                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfNum                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfProgStr                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+rprintfStr                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfStrLen                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfu04                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfu08                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfu16                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+rprintfu32                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.o
+spressure                                         sensorproc.o
+strncmp                                           /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+strtod                                            /usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.o
+timer0ClearOverflowCount                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer0GetOverflowCount                            /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer0GetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer0Init                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer0SetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1GetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1Init                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMAOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMAOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMASet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMBOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMBOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMBSet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMCOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMCOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMCSet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMInit                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMInitICR                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1PWMOff                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer1SetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer2ClearOverflowCount                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer2GetOverflowCount                            /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer2GetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer2Init                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer2SetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3GetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3Init                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMAOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMAOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMASet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMBOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMBOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMBSet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMCOff                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMCOn                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMCSet                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMInit                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMInitICR                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3PWMOff                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timer3SetPrescaler                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timerAttach                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timerDetach                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+timerInit                                         /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+                                                  sensorproc.o
+timerPause                                        /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/timer128.o
+uart0AddToTxBuffer                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart0GetByte                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart0Init                                         /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart0InitBuffers                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart0SendByte                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart1AddToTxBuffer                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart1GetByte                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart1Init                                         /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart1InitBuffers                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uart1SendByte                                     /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartAddToTxBuffer                                 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartBufferedTx                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartFlushReceiveBuffer                            /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartGetRxBuffer                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  sensorproc.o
+uartGetTxBuffer                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartInit                                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  sensorproc.o
+uartReadyTx                                       /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartReceiveBufferIsEmpty                          /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartReceiveByte                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartReceiveService                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartRxBuffer                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartRxOverflow                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartSendBuffer                                    /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartSendByte                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  sensorproc.o
+uartSendTxBuffer                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartSetBaudRate                                   /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+                                                  sensorproc.o
+uartSetRxHandler                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartTransmitService                               /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+uartTxBuffer                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.o
+ultrasound                                        sensorproc.o
+vt100ClearScreen                                  /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                                                  sensorproc.o
+vt100Init                                         /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+                                                  sensorproc.o
+vt100SetAttr                                      /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+vt100SetCursorMode                                /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o
+vt100SetCursorPos                                 /Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/vt100.o

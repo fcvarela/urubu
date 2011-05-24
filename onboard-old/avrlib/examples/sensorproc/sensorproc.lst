@@ -1,0 +1,645 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 1
+
+
+   1               		.file	"sensorproc.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"sensorproc.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdlib.h",130,0,0,0
+  69               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/include/stddef.h",130,0,0,0
+  70               		.stabs	"size_t:t(6,1)=(0,4)",128,0,214,0
+  71               		.stabs	"wchar_t:t(6,2)=(0,1)",128,0,326,0
+  72               		.stabn	162,0,0,0
+  73               		.stabs	"div_t:t(5,1)=(5,2)=s4quot:(0,1),0,16;rem:(0,1),16,16;;",128,0,69,0
+  74               		.stabs	"ldiv_t:t(5,3)=(5,4)=s8quot:(0,3),0,32;rem:(0,3),32,32;;",128,0,75,0
+  75               		.stabs	"__compar_fn_t:t(5,5)=(5,6)=*(5,7)=f(0,1)",128,0,78,0
+  76               		.stabn	162,0,0,0
+  77               		.stabs	"global.h",130,0,0,0
+  78               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  79               		.stabs	"u08:t(8,1)=(0,11)",128,0,32,0
+  80               		.stabs	"s08:t(8,2)=(0,10)",128,0,33,0
+  81               		.stabs	"u16:t(8,3)=(0,9)",128,0,34,0
+  82               		.stabs	"s16:t(8,4)=(0,8)",128,0,35,0
+  83               		.stabs	"u32:t(8,5)=(0,5)",128,0,36,0
+  84               		.stabs	"s32:t(8,6)=(0,3)",128,0,37,0
+  85               		.stabs	"u64:t(8,7)=(0,7)",128,0,38,0
+  86               		.stabs	"s64:t(8,8)=(0,6)",128,0,39,0
+  87               		.stabs	"BOOL:t(8,9)=(0,11)",128,0,69,0
+  88               		.stabs	"BYTE:t(8,10)=(0,11)",128,0,70,0
+  89               		.stabs	"WORD:t(8,11)=(0,4)",128,0,71,0
+  90               		.stabs	"DWORD:t(8,12)=(0,5)",128,0,72,0
+  91               		.stabs	"UCHAR:t(8,13)=(0,11)",128,0,74,0
+  92               		.stabs	"UINT:t(8,14)=(0,4)",128,0,75,0
+  93               		.stabs	"USHORT:t(8,15)=(0,9)",128,0,76,0
+  94               		.stabs	"ULONG:t(8,16)=(0,5)",128,0,77,0
+  95               		.stabs	"CHAR:t(8,17)=(0,2)",128,0,79,0
+  96               		.stabs	"INT:t(8,18)=(0,1)",128,0,80,0
+  97               		.stabs	"LONG:t(8,19)=(0,3)",128,0,81,0
+  98               		.stabn	162,0,0,0
+  99               		.stabn	162,0,0,0
+ 100               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/nmea.h",130,0,0,0
+ 101               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.h",130,0,0,0
+ 102               		.stabs	"struct_cBuffer:T(10,1)=s8dataptr:(10,2)=*(0,11),0,16;size:(0,9),16,16;datalength:(0,9),32,
+ 103               		.stabs	"cBuffer:t(10,3)=(10,1)",128,0,47,0
+ 104               		.stabn	162,0,0,0
+ 105               		.stabn	162,0,0,0
+ 106               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/gps.h",130,0,0,0
+ 107               		.stabs	"union_float_u32:T(11,1)=u4f:(0,12),0,32;i:(0,5),0,32;b:(11,2)=ar(11,3)=r(11,3);0;0177777;;
+ 108               		.stabs	"float_u32:t(11,4)=(11,1)",128,0,46,0
+ 109               		.stabs	"union_double_u64:T(11,5)=u8f:(0,13),0,32;i:(0,7),0,64;b:(11,6)=ar(11,3);0;7;(0,11),0,64;;"
+ 110               		.stabs	"double_u64:t(11,7)=(11,5)",128,0,53,0
+ 111               		.stabs	"PositionLLA:T(11,8)=s18lat:(11,4),0,32;lon:(11,4),32,32;alt:(11,4),64,32;TimeOfFix:(11,4),
+ 112               		.stabs	"VelocityENU:T(11,9)=s18east:(11,4),0,32;north:(11,4),32,32;up:(11,4),64,32;TimeOfFix:(11,4
+ 113               		.stabs	"VelocityHS:T(11,10)=s14heading:(11,4),0,32;speed:(11,4),32,32;TimeOfFix:(11,4),64,32;updat
+ 114               		.stabs	"PositionECEF:T(11,11)=s18x:(11,4),0,32;y:(11,4),32,32;z:(11,4),64,32;TimeOfFix:(11,4),96,3
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 3
+
+
+ 115               		.stabs	"VelocityECEF:T(11,12)=s18x:(11,4),0,32;y:(11,4),32,32;z:(11,4),64,32;TimeOfFix:(11,4),96,3
+ 116               		.stabs	"struct_GpsInfo:T(11,13)=s97TimeOfWeek:(11,4),0,32;WeekNum:(8,3),32,16;UtcOffset:(11,4),48,
+ 117               		.stabs	"GpsInfoType:t(11,14)=(11,13)",128,0,112,0
+ 118               		.stabn	162,0,0,0
+ 119               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/rprintf.h",130,0,0,0
+ 120               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/pgmspace.h",130,0,0,0
+ 121               		.stabs	"prog_void:t(13,1)=(13,2)=(13,2)",128,0,203,0
+ 122               		.stabs	"prog_char:t(13,3)=(13,4)=@s8;r(13,4);-128;127;",128,0,204,0
+ 123               		.stabs	"prog_uchar:t(13,5)=(13,6)=@s8;r(13,6);0;255;",128,0,205,0
+ 124               		.stabs	"prog_int8_t:t(13,7)=(13,4)",128,0,207,0
+ 125               		.stabs	"prog_uint8_t:t(13,8)=(13,6)",128,0,208,0
+ 126               		.stabs	"prog_int16_t:t(13,9)=(13,10)=(0,1)",128,0,209,0
+ 127               		.stabs	"prog_uint16_t:t(13,11)=(13,12)=(0,4)",128,0,210,0
+ 128               		.stabs	"prog_int32_t:t(13,13)=(13,14)=(0,3)",128,0,211,0
+ 129               		.stabs	"prog_uint32_t:t(13,15)=(13,16)=(0,5)",128,0,212,0
+ 130               		.stabs	"prog_int64_t:t(13,17)=(13,18)=(0,6)",128,0,213,0
+ 131               		.stabs	"prog_uint64_t:t(13,19)=(13,20)=(0,7)",128,0,214,0
+ 132               		.stabn	162,0,0,0
+ 133               		.stabn	162,0,0,0
+ 134               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/i2c.h",130,0,0,0
+ 135               		.stabs	" :T(14,1)=eI2C_IDLE:0,I2C_BUSY:1,I2C_MASTER_TX:2,I2C_MASTER_RX:3,I2C_SLAVE_TX:4,I2C_SLAVE_
+ 136               		.stabs	"eI2cStateType:t(14,2)=(14,1)",128,0,124,0
+ 137               		.stabn	162,0,0,0
+ 138               		.stabs	"gpsPacketStruct:t(0,16)=(0,17)=s20time:(0,13),0,32;satelites:(0,3),32,32;latitude:(0,13),6
+ 139               		.stabs	"getCompassHeading:F(0,15)",36,0,112,getCompassHeading
+ 140               	.global	getCompassHeading
+ 141               		.type	getCompassHeading, @function
+ 142               	getCompassHeading:
+ 143               		.stabd	46,0,0
+   1:sensorproc.c  **** #include <avr/io.h>
+   2:sensorproc.c  **** #include <avr/interrupt.h>
+   3:sensorproc.c  **** #include <stdlib.h>
+   4:sensorproc.c  **** #include <string.h>
+   5:sensorproc.c  **** #include <math.h>
+   6:sensorproc.c  **** 
+   7:sensorproc.c  **** #include "global.h"
+   8:sensorproc.c  **** #include "nmea.h"
+   9:sensorproc.c  **** #include "gps.h"
+  10:sensorproc.c  **** #include "uart2.h"
+  11:sensorproc.c  **** #include "rprintf.h"
+  12:sensorproc.c  **** #include "buffer.h"
+  13:sensorproc.c  **** #include "timer128.h"
+  14:sensorproc.c  **** #include "vt100.h"
+  15:sensorproc.c  **** #include "a2d.h"
+  16:sensorproc.c  **** #include "i2c.h"
+  17:sensorproc.c  **** 
+  18:sensorproc.c  **** // ADC CHANNELS
+  19:sensorproc.c  **** #define ULTRASOUND_ADC_CHANNEL 1
+  20:sensorproc.c  **** #define STATICPRESS_ADC_CHANNEL 2
+  21:sensorproc.c  **** #define DYNAMICPRESS_ADC_CHANNEL 3
+  22:sensorproc.c  **** 
+  23:sensorproc.c  **** // GPS PACKET
+  24:sensorproc.c  **** typedef struct {
+  25:sensorproc.c  **** 	double time;
+  26:sensorproc.c  **** 	long satelites;
+  27:sensorproc.c  **** 	double latitude;
+  28:sensorproc.c  **** 	double longitude;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 4
+
+
+  29:sensorproc.c  **** 	double altitude;
+  30:sensorproc.c  **** } gpsPacketStruct;
+  31:sensorproc.c  **** 
+  32:sensorproc.c  **** extern GpsInfoType GpsInfo;
+  33:sensorproc.c  **** u08 headingH,headingL;
+  34:sensorproc.c  **** unsigned char ultrasound;
+  35:sensorproc.c  **** unsigned short spressure,dpressure;
+  36:sensorproc.c  **** gpsPacketStruct gpsPacket;
+  37:sensorproc.c  **** 
+  38:sensorproc.c  **** void getCompassHeading( void );
+  39:sensorproc.c  **** 
+  40:sensorproc.c  **** int main(void){
+  41:sensorproc.c  **** 	char				*gpsPacketPointer;
+  42:sensorproc.c  **** 	int					i;
+  43:sensorproc.c  **** 	
+  44:sensorproc.c  **** 	// INITIALIZE HARDWARE UARTS
+  45:sensorproc.c  **** 	uartInit();
+  46:sensorproc.c  **** 	
+  47:sensorproc.c  ****     // SET UART BAUD RATE
+  48:sensorproc.c  **** 	uartSetBaudRate(0,115200); //Main comm to gumstix
+  49:sensorproc.c  **** 	uartSetBaudRate(1,4800); //gps
+  50:sensorproc.c  ****     
+  51:sensorproc.c  **** 	// Init timer
+  52:sensorproc.c  ****     timerInit();
+  53:sensorproc.c  **** 		
+  54:sensorproc.c  **** 	// Init console
+  55:sensorproc.c  ****     vt100Init();
+  56:sensorproc.c  **** 	
+  57:sensorproc.c  **** 	// Init ADC
+  58:sensorproc.c  **** 	a2dInit();
+  59:sensorproc.c  **** 	
+  60:sensorproc.c  ****     // Print boot message
+  61:sensorproc.c  ****     vt100ClearScreen();
+  62:sensorproc.c  ****     rprintf("\r\nURUBU ACQUISITION AND CONTROL MODULE INIT\r\n");
+  63:sensorproc.c  ****     rprintf("\r\nWILL SAMPLE SENSORS\r\n\r\n");
+  64:sensorproc.c  ****     
+  65:sensorproc.c  ****     /* operation:
+  66:sensorproc.c  ****         sample gps buffer. got packet? send
+  67:sensorproc.c  ****         sample sensors. send
+  68:sensorproc.c  ****     */
+  69:sensorproc.c  **** 	
+  70:sensorproc.c  **** 	while(1) {
+  71:sensorproc.c  **** 		//check for gps packet. if true, update local variables
+  72:sensorproc.c  **** 		if (nmeaProcess(uartGetRxBuffer(1))) {
+  73:sensorproc.c  **** 			gpsPacket.time = GpsInfo.PosLLA.TimeOfFix.f;
+  74:sensorproc.c  **** 			gpsPacket.satelites = GpsInfo.numSVs;
+  75:sensorproc.c  **** 			gpsPacket.latitude = GpsInfo.PosLLA.lat.f;
+  76:sensorproc.c  **** 			gpsPacket.longitude = GpsInfo.PosLLA.lon.f;
+  77:sensorproc.c  **** 			gpsPacket.altitude = GpsInfo.PosLLA.alt.f;
+  78:sensorproc.c  ****         }
+  79:sensorproc.c  ****         
+  80:sensorproc.c  ****         // got a valid gps packet. write it out
+  81:sensorproc.c  ****         uartSendByte(0, 'B');
+  82:sensorproc.c  ****         gpsPacketPointer = (char *)&gpsPacket;
+  83:sensorproc.c  ****         for(i = sizeof(gpsPacket)-1; i >= 0; i--)
+  84:sensorproc.c  ****             uartSendByte(0, *(gpsPacketPointer+i));
+  85:sensorproc.c  **** 			
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 5
+
+
+  86:sensorproc.c  **** 		//check ultrasound altimeter (short range) data
+  87:sensorproc.c  ****         ultrasound = a2dConvert8bit(ULTRASOUND_ADC_CHANNEL);
+  88:sensorproc.c  **** 
+  89:sensorproc.c  ****         //check static pressure sensor
+  90:sensorproc.c  ****         spressure = a2dConvert10bit(STATICPRESS_ADC_CHANNEL);
+  91:sensorproc.c  **** 			
+  92:sensorproc.c  ****         //check dynamic pressure sensor
+  93:sensorproc.c  ****         dpressure = a2dConvert10bit(DYNAMICPRESS_ADC_CHANNEL);
+  94:sensorproc.c  **** 		
+  95:sensorproc.c  ****         //get compass heading
+  96:sensorproc.c  ****         getCompassHeading();
+  97:sensorproc.c  **** 			
+  98:sensorproc.c  ****         //write ultrasound value
+  99:sensorproc.c  ****         uartSendByte(0, ultrasound);
+ 100:sensorproc.c  **** 			
+ 101:sensorproc.c  ****         //write compass heading value
+ 102:sensorproc.c  ****         uartSendByte(0, headingL);
+ 103:sensorproc.c  ****         uartSendByte(0, headingH);
+ 104:sensorproc.c  ****         
+ 105:sensorproc.c  ****         //write footer
+ 106:sensorproc.c  ****         uartSendByte(0,'Y');
+ 107:sensorproc.c  **** 	}
+ 108:sensorproc.c  **** 	
+ 109:sensorproc.c  **** 	return 0;
+ 110:sensorproc.c  **** }
+ 111:sensorproc.c  **** 
+ 112:sensorproc.c  **** void getCompassHeading(){
+ 144               		.stabn	68,0,112,.LM0-getCompassHeading
+ 145               	.LM0:
+ 146               	/* prologue: frame size=2 */
+ 147 0000 CF93      		push r28
+ 148 0002 DF93      		push r29
+ 149 0004 CDB7      		in r28,__SP_L__
+ 150 0006 DEB7      		in r29,__SP_H__
+ 151 0008 2297      		sbiw r28,2
+ 152 000a 0FB6      		in __tmp_reg__,__SREG__
+ 153 000c F894      		cli
+ 154 000e DEBF      		out __SP_H__,r29
+ 155 0010 0FBE      		out __SREG__,__tmp_reg__
+ 156 0012 CDBF      		out __SP_L__,r28
+ 157               	/* prologue end (size=10) */
+ 113:sensorproc.c  **** 	u08 CMPS03_ADDR = 0xC0;
+ 114:sensorproc.c  **** 	//u08 CMPS03_SOFTWARE_REVISION = 0x0;
+ 115:sensorproc.c  **** 	//u08 CMPS03_BEARING_BYTE = 0x1;
+ 116:sensorproc.c  **** 	u08 CMPS03_BEARING_WORD_HIGH = 0x2;
+ 158               		.stabn	68,0,116,.LM1-getCompassHeading
+ 159               	.LM1:
+ 160 0014 82E0      		ldi r24,lo8(2)
+ 161 0016 8983      		std Y+1,r24
+ 117:sensorproc.c  **** 	u08 CMPS03_BEARING_WORD_LOW = 0x3;
+ 162               		.stabn	68,0,117,.LM2-getCompassHeading
+ 163               	.LM2:
+ 164 0018 83E0      		ldi r24,lo8(3)
+ 165 001a 8A83      		std Y+2,r24
+ 118:sensorproc.c  **** 	//u08 CMPS03_CALIBRATE_CMD = 0xF;
+ 119:sensorproc.c  **** 	
+ 120:sensorproc.c  **** 	i2cMasterSend(CMPS03_ADDR, 1, &CMPS03_BEARING_WORD_HIGH);
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 6
+
+
+ 166               		.stabn	68,0,120,.LM3-getCompassHeading
+ 167               	.LM3:
+ 168 001c AE01      		movw r20,r28
+ 169 001e 4F5F      		subi r20,lo8(-(1))
+ 170 0020 5F4F      		sbci r21,hi8(-(1))
+ 171 0022 61E0      		ldi r22,lo8(1)
+ 172 0024 80EC      		ldi r24,lo8(-64)
+ 173 0026 0E94 0000 		call i2cMasterSend
+ 121:sensorproc.c  **** 	i2cMasterReceive(CMPS03_ADDR, 1, &headingH);
+ 174               		.stabn	68,0,121,.LM4-getCompassHeading
+ 175               	.LM4:
+ 176 002a 40E0      		ldi r20,lo8(headingH)
+ 177 002c 50E0      		ldi r21,hi8(headingH)
+ 178 002e 61E0      		ldi r22,lo8(1)
+ 179 0030 80EC      		ldi r24,lo8(-64)
+ 180 0032 0E94 0000 		call i2cMasterReceive
+ 122:sensorproc.c  **** 	
+ 123:sensorproc.c  **** 	i2cMasterSend(CMPS03_ADDR, 1, &CMPS03_BEARING_WORD_LOW);
+ 181               		.stabn	68,0,123,.LM5-getCompassHeading
+ 182               	.LM5:
+ 183 0036 AE01      		movw r20,r28
+ 184 0038 4E5F      		subi r20,lo8(-(2))
+ 185 003a 5F4F      		sbci r21,hi8(-(2))
+ 186 003c 61E0      		ldi r22,lo8(1)
+ 187 003e 80EC      		ldi r24,lo8(-64)
+ 188 0040 0E94 0000 		call i2cMasterSend
+ 124:sensorproc.c  **** 	i2cMasterReceive(CMPS03_ADDR, 1, &headingL);
+ 189               		.stabn	68,0,124,.LM6-getCompassHeading
+ 190               	.LM6:
+ 191 0044 40E0      		ldi r20,lo8(headingL)
+ 192 0046 50E0      		ldi r21,hi8(headingL)
+ 193 0048 61E0      		ldi r22,lo8(1)
+ 194 004a 80EC      		ldi r24,lo8(-64)
+ 195 004c 0E94 0000 		call i2cMasterReceive
+ 196               	/* epilogue: frame size=2 */
+ 197 0050 2296      		adiw r28,2
+ 198 0052 0FB6      		in __tmp_reg__,__SREG__
+ 199 0054 F894      		cli
+ 200 0056 DEBF      		out __SP_H__,r29
+ 201 0058 0FBE      		out __SREG__,__tmp_reg__
+ 202 005a CDBF      		out __SP_L__,r28
+ 203 005c DF91      		pop r29
+ 204 005e CF91      		pop r28
+ 205 0060 0895      		ret
+ 206               	/* epilogue end (size=9) */
+ 207               	/* function getCompassHeading size 49 (30) */
+ 208               		.size	getCompassHeading, .-getCompassHeading
+ 209               		.stabs	"CMPS03_BEARING_WORD_HIGH:(8,1)",128,0,116,1
+ 210               		.stabs	"CMPS03_BEARING_WORD_LOW:(8,1)",128,0,117,2
+ 211               		.stabn	192,0,0,getCompassHeading-getCompassHeading
+ 212               		.stabn	224,0,0,.Lscope0-getCompassHeading
+ 213               	.Lscope0:
+ 214               		.stabs	"",36,0,0,.Lscope0-getCompassHeading
+ 215               		.stabd	78,0,0
+ 216               		.stabs	"main:F(0,1)",36,0,40,main
+ 217               	.global	main
+ 218               		.type	main, @function
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 7
+
+
+ 219               	main:
+ 220               		.stabd	46,0,0
+ 221               		.stabn	68,0,40,.LM7-main
+ 222               	.LM7:
+ 223               	/* prologue: frame size=0 */
+ 224 0062 1F93      		push r17
+ 225 0064 CF93      		push r28
+ 226 0066 DF93      		push r29
+ 227               	/* prologue end (size=3) */
+ 228               		.stabn	68,0,45,.LM8-main
+ 229               	.LM8:
+ 230 0068 0E94 0000 		call uartInit
+ 231               		.stabn	68,0,48,.LM9-main
+ 232               	.LM9:
+ 233 006c 40E0      		ldi r20,lo8(115200)
+ 234 006e 52EC      		ldi r21,hi8(115200)
+ 235 0070 61E0      		ldi r22,hlo8(115200)
+ 236 0072 70E0      		ldi r23,hhi8(115200)
+ 237 0074 80E0      		ldi r24,lo8(0)
+ 238 0076 0E94 0000 		call uartSetBaudRate
+ 239               		.stabn	68,0,49,.LM10-main
+ 240               	.LM10:
+ 241 007a 40EC      		ldi r20,lo8(4800)
+ 242 007c 52E1      		ldi r21,hi8(4800)
+ 243 007e 60E0      		ldi r22,hlo8(4800)
+ 244 0080 70E0      		ldi r23,hhi8(4800)
+ 245 0082 81E0      		ldi r24,lo8(1)
+ 246 0084 0E94 0000 		call uartSetBaudRate
+ 247               		.stabn	68,0,52,.LM11-main
+ 248               	.LM11:
+ 249 0088 0E94 0000 		call timerInit
+ 250               		.stabn	68,0,55,.LM12-main
+ 251               	.LM12:
+ 252 008c 0E94 0000 		call vt100Init
+ 253               		.stabn	68,0,58,.LM13-main
+ 254               	.LM13:
+ 255 0090 0E94 0000 		call a2dInit
+ 256               		.stabn	68,0,61,.LM14-main
+ 257               	.LM14:
+ 258 0094 0E94 0000 		call vt100ClearScreen
+ 259               		.stabn	68,0,62,.LM15-main
+ 260               	.LM15:
+ 261 0098 80E0      		ldi r24,lo8(__c.2007)
+ 262 009a 90E0      		ldi r25,hi8(__c.2007)
+ 263 009c 9F93      		push r25
+ 264 009e 8F93      		push r24
+ 265 00a0 11E0      		ldi r17,lo8(1)
+ 266 00a2 1F93      		push r17
+ 267 00a4 0E94 0000 		call rprintf1RamRom
+ 268               		.stabn	68,0,63,.LM16-main
+ 269               	.LM16:
+ 270 00a8 80E0      		ldi r24,lo8(__c.2009)
+ 271 00aa 90E0      		ldi r25,hi8(__c.2009)
+ 272 00ac 9F93      		push r25
+ 273 00ae 8F93      		push r24
+ 274 00b0 1F93      		push r17
+ 275 00b2 0E94 0000 		call rprintf1RamRom
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 8
+
+
+ 276 00b6 8DB7      		in r24,__SP_L__
+ 277 00b8 9EB7      		in r25,__SP_H__
+ 278 00ba 0696      		adiw r24,6
+ 279 00bc 0FB6      		in __tmp_reg__,__SREG__
+ 280 00be F894      		cli
+ 281 00c0 9EBF      		out __SP_H__,r25
+ 282 00c2 0FBE      		out __SREG__,__tmp_reg__
+ 283 00c4 8DBF      		out __SP_L__,r24
+ 284               	.L4:
+ 285               		.stabn	68,0,72,.LM17-main
+ 286               	.LM17:
+ 287 00c6 81E0      		ldi r24,lo8(1)
+ 288 00c8 0E94 0000 		call uartGetRxBuffer
+ 289 00cc 0E94 0000 		call nmeaProcess
+ 290 00d0 8823      		tst r24
+ 291 00d2 01F4      		brne .+2
+ 292 00d4 00C0      		rjmp .L5
+ 293               		.stabn	68,0,73,.LM18-main
+ 294               	.LM18:
+ 295 00d6 8091 0000 		lds r24,GpsInfo+23
+ 296 00da 9091 0000 		lds r25,(GpsInfo+23)+1
+ 297 00de A091 0000 		lds r26,(GpsInfo+23)+2
+ 298 00e2 B091 0000 		lds r27,(GpsInfo+23)+3
+ 299 00e6 8093 0000 		sts gpsPacket,r24
+ 300 00ea 9093 0000 		sts (gpsPacket)+1,r25
+ 301 00ee A093 0000 		sts (gpsPacket)+2,r26
+ 302 00f2 B093 0000 		sts (gpsPacket)+3,r27
+ 303               		.stabn	68,0,74,.LM19-main
+ 304               	.LM19:
+ 305 00f6 8091 0000 		lds r24,GpsInfo+10
+ 306 00fa 9927      		clr r25
+ 307 00fc AA27      		clr r26
+ 308 00fe BB27      		clr r27
+ 309 0100 8093 0000 		sts gpsPacket+4,r24
+ 310 0104 9093 0000 		sts (gpsPacket+4)+1,r25
+ 311 0108 A093 0000 		sts (gpsPacket+4)+2,r26
+ 312 010c B093 0000 		sts (gpsPacket+4)+3,r27
+ 313               		.stabn	68,0,75,.LM20-main
+ 314               	.LM20:
+ 315 0110 8091 0000 		lds r24,GpsInfo+11
+ 316 0114 9091 0000 		lds r25,(GpsInfo+11)+1
+ 317 0118 A091 0000 		lds r26,(GpsInfo+11)+2
+ 318 011c B091 0000 		lds r27,(GpsInfo+11)+3
+ 319 0120 8093 0000 		sts gpsPacket+8,r24
+ 320 0124 9093 0000 		sts (gpsPacket+8)+1,r25
+ 321 0128 A093 0000 		sts (gpsPacket+8)+2,r26
+ 322 012c B093 0000 		sts (gpsPacket+8)+3,r27
+ 323               		.stabn	68,0,76,.LM21-main
+ 324               	.LM21:
+ 325 0130 8091 0000 		lds r24,GpsInfo+15
+ 326 0134 9091 0000 		lds r25,(GpsInfo+15)+1
+ 327 0138 A091 0000 		lds r26,(GpsInfo+15)+2
+ 328 013c B091 0000 		lds r27,(GpsInfo+15)+3
+ 329 0140 8093 0000 		sts gpsPacket+12,r24
+ 330 0144 9093 0000 		sts (gpsPacket+12)+1,r25
+ 331 0148 A093 0000 		sts (gpsPacket+12)+2,r26
+ 332 014c B093 0000 		sts (gpsPacket+12)+3,r27
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 9
+
+
+ 333               		.stabn	68,0,77,.LM22-main
+ 334               	.LM22:
+ 335 0150 8091 0000 		lds r24,GpsInfo+19
+ 336 0154 9091 0000 		lds r25,(GpsInfo+19)+1
+ 337 0158 A091 0000 		lds r26,(GpsInfo+19)+2
+ 338 015c B091 0000 		lds r27,(GpsInfo+19)+3
+ 339 0160 8093 0000 		sts gpsPacket+16,r24
+ 340 0164 9093 0000 		sts (gpsPacket+16)+1,r25
+ 341 0168 A093 0000 		sts (gpsPacket+16)+2,r26
+ 342 016c B093 0000 		sts (gpsPacket+16)+3,r27
+ 343               	.L5:
+ 344               		.stabn	68,0,81,.LM23-main
+ 345               	.LM23:
+ 346 0170 62E4      		ldi r22,lo8(66)
+ 347 0172 80E0      		ldi r24,lo8(0)
+ 348 0174 0E94 0000 		call uartSendByte
+ 349               		.stabn	68,0,82,.LM24-main
+ 350               	.LM24:
+ 351 0178 C0E0      		ldi r28,lo8(gpsPacket)
+ 352 017a D0E0      		ldi r29,hi8(gpsPacket)
+ 353               	.L7:
+ 354               		.stabn	68,0,84,.LM25-main
+ 355               	.LM25:
+ 356 017c 6B89      		ldd r22,Y+19
+ 357 017e 80E0      		ldi r24,lo8(0)
+ 358 0180 0E94 0000 		call uartSendByte
+ 359 0184 2197      		sbiw r28,1
+ 360               		.stabn	68,0,83,.LM26-main
+ 361               	.LM26:
+ 362 0186 90E0      		ldi r25,hi8(gpsPacket-20)
+ 363 0188 C030      		cpi r28,lo8(gpsPacket-20)
+ 364 018a D907      		cpc r29,r25
+ 365 018c 01F4      		brne .L7
+ 366               		.stabn	68,0,87,.LM27-main
+ 367               	.LM27:
+ 368 018e 81E0      		ldi r24,lo8(1)
+ 369 0190 0E94 0000 		call a2dConvert8bit
+ 370 0194 8093 0000 		sts ultrasound,r24
+ 371               		.stabn	68,0,90,.LM28-main
+ 372               	.LM28:
+ 373 0198 82E0      		ldi r24,lo8(2)
+ 374 019a 0E94 0000 		call a2dConvert10bit
+ 375 019e 9093 0000 		sts (spressure)+1,r25
+ 376 01a2 8093 0000 		sts spressure,r24
+ 377               		.stabn	68,0,93,.LM29-main
+ 378               	.LM29:
+ 379 01a6 83E0      		ldi r24,lo8(3)
+ 380 01a8 0E94 0000 		call a2dConvert10bit
+ 381 01ac 9093 0000 		sts (dpressure)+1,r25
+ 382 01b0 8093 0000 		sts dpressure,r24
+ 383               		.stabn	68,0,96,.LM30-main
+ 384               	.LM30:
+ 385 01b4 0E94 0000 		call getCompassHeading
+ 386               		.stabn	68,0,99,.LM31-main
+ 387               	.LM31:
+ 388 01b8 6091 0000 		lds r22,ultrasound
+ 389 01bc 80E0      		ldi r24,lo8(0)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 10
+
+
+ 390 01be 0E94 0000 		call uartSendByte
+ 391               		.stabn	68,0,102,.LM32-main
+ 392               	.LM32:
+ 393 01c2 6091 0000 		lds r22,headingL
+ 394 01c6 80E0      		ldi r24,lo8(0)
+ 395 01c8 0E94 0000 		call uartSendByte
+ 396               		.stabn	68,0,103,.LM33-main
+ 397               	.LM33:
+ 398 01cc 6091 0000 		lds r22,headingH
+ 399 01d0 80E0      		ldi r24,lo8(0)
+ 400 01d2 0E94 0000 		call uartSendByte
+ 401               		.stabn	68,0,106,.LM34-main
+ 402               	.LM34:
+ 403 01d6 69E5      		ldi r22,lo8(89)
+ 404 01d8 80E0      		ldi r24,lo8(0)
+ 405 01da 0E94 0000 		call uartSendByte
+ 406 01de 00C0      		rjmp .L4
+ 407               	/* epilogue: frame size=0 */
+ 408               	/* epilogue: noreturn */
+ 409               	/* epilogue end (size=0) */
+ 410               	/* function main size 191 (188) */
+ 411               		.size	main, .-main
+ 412               	.Lscope1:
+ 413               		.stabs	"",36,0,0,.Lscope1-main
+ 414               		.stabd	78,0,0
+ 415               		.section	.progmem.data,"a",@progbits
+ 416               		.type	__c.2009, @object
+ 417               		.size	__c.2009, 26
+ 418               	__c.2009:
+ 419 0000 0D0A 5749 		.string	"\r\nWILL SAMPLE SENSORS\r\n\r\n"
+ 419      4C4C 2053 
+ 419      414D 504C 
+ 419      4520 5345 
+ 419      4E53 4F52 
+ 420               		.stabs	"__c:V(0,18)=ar(11,3);0;25;(0,2)",38,0,63,__c.2009
+ 421               		.type	__c.2007, @object
+ 422               		.size	__c.2007, 46
+ 423               	__c.2007:
+ 424 001a 0D0A 5552 		.string	"\r\nURUBU ACQUISITION AND CONTROL MODULE INIT\r\n"
+ 424      5542 5520 
+ 424      4143 5155 
+ 424      4953 4954 
+ 424      494F 4E20 
+ 425               		.stabs	"__c:V(0,19)=ar(11,3);0;45;(0,2)",38,0,62,__c.2007
+ 426               		.comm headingH,1,1
+ 427               		.comm headingL,1,1
+ 428               		.comm ultrasound,1,1
+ 429               		.comm spressure,2,1
+ 430               		.comm dpressure,2,1
+ 431               		.comm gpsPacket,20,1
+ 432               		.stabs	"headingH:G(8,1)",32,0,33,0
+ 433               		.stabs	"headingL:G(8,1)",32,0,33,0
+ 434               		.stabs	"ultrasound:G(0,11)",32,0,34,0
+ 435               		.stabs	"spressure:G(0,9)",32,0,35,0
+ 436               		.stabs	"dpressure:G(0,9)",32,0,35,0
+ 437               		.stabs	"gpsPacket:G(0,16)",32,0,36,0
+ 438               		.text
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 11
+
+
+ 439               		.stabs	"",100,0,0,.Letext0
+ 440               	.Letext0:
+ 441               	/* File "sensorproc.c": code  240 = 0x00f0 ( 218), prologues  13, epilogues   9 */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 sensorproc.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:142    .text:00000000 getCompassHeading
+                            *COM*:00000001 headingH
+                            *COM*:00000001 headingL
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:219    .text:00000062 main
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:423    .progmem.data:0000001a __c.2007
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccLv8UlB.s:418    .progmem.data:00000000 __c.2009
+                            *COM*:00000014 gpsPacket
+                            *COM*:00000001 ultrasound
+                            *COM*:00000002 spressure
+                            *COM*:00000002 dpressure
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+i2cMasterSend
+i2cMasterReceive
+uartInit
+uartSetBaudRate
+timerInit
+vt100Init
+a2dInit
+vt100ClearScreen
+rprintf1RamRom
+uartGetRxBuffer
+nmeaProcess
+GpsInfo
+uartSendByte
+a2dConvert8bit
+a2dConvert10bit

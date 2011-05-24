@@ -1,0 +1,573 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 1
+
+
+   1               		.file	"a2d.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"./global.h",130,0,0,0
+  69               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  70               		.stabs	"u08:t(6,1)=(0,11)",128,0,32,0
+  71               		.stabs	"s08:t(6,2)=(0,10)",128,0,33,0
+  72               		.stabs	"u16:t(6,3)=(0,9)",128,0,34,0
+  73               		.stabs	"s16:t(6,4)=(0,8)",128,0,35,0
+  74               		.stabs	"u32:t(6,5)=(0,5)",128,0,36,0
+  75               		.stabs	"s32:t(6,6)=(0,3)",128,0,37,0
+  76               		.stabs	"u64:t(6,7)=(0,7)",128,0,38,0
+  77               		.stabs	"s64:t(6,8)=(0,6)",128,0,39,0
+  78               		.stabs	"BOOL:t(6,9)=(0,11)",128,0,69,0
+  79               		.stabs	"BYTE:t(6,10)=(0,11)",128,0,70,0
+  80               		.stabs	"WORD:t(6,11)=(0,4)",128,0,71,0
+  81               		.stabs	"DWORD:t(6,12)=(0,5)",128,0,72,0
+  82               		.stabs	"UCHAR:t(6,13)=(0,11)",128,0,74,0
+  83               		.stabs	"UINT:t(6,14)=(0,4)",128,0,75,0
+  84               		.stabs	"USHORT:t(6,15)=(0,9)",128,0,76,0
+  85               		.stabs	"ULONG:t(6,16)=(0,5)",128,0,77,0
+  86               		.stabs	"CHAR:t(6,17)=(0,2)",128,0,79,0
+  87               		.stabs	"INT:t(6,18)=(0,1)",128,0,80,0
+  88               		.stabs	"LONG:t(6,19)=(0,3)",128,0,81,0
+  89               		.stabn	162,0,0,0
+  90               		.stabn	162,0,0,0
+  91               		.stabs	"a2dOff:F(0,15)",36,0,49,a2dOff
+  92               	.global	a2dOff
+  93               		.type	a2dOff, @function
+  94               	a2dOff:
+  95               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** /*! \file a2d.c \brief Analog-to-Digital converter function library. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // File Name	: 'a2d.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Title		: Analog-to-digital converter functions
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Author		: Pascal Stang - Copyright (C) 2002
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Created		: 2002-04-08
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Revised		: 2002-09-30
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Version		: 1.1
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Target MCU	: Atmel AVR series
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // This code is distributed under the GNU Public License
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //*****************************************************************************
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** #include <avr/io.h>
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** #include <avr/interrupt.h>
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 3
+
+
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** #include "global.h"
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** #include "a2d.h"
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // global variables
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //! Software flag used to indicate when
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** /// the a2d conversion is complete.
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** volatile unsigned char a2dCompleteFlag;
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // functions
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // initialize a2d converter
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dInit(void)
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADEN);				// enable ADC (turn on ADC power)
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	cbi(ADCSR, ADFR);				// default to single sample convert mode
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	a2dSetPrescaler(ADC_PRESCALE);	// set default prescaler
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	a2dSetReference(ADC_REFERENCE);	// set default reference
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	cbi(ADMUX, ADLAR);				// set to right-adjusted result
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADIE);				// enable ADC interrupts
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	a2dCompleteFlag = FALSE;		// clear conversion complete flag
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sei();							// turn on interrupts (if not already on)
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // turn off a2d converter
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dOff(void)
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+  96               		.stabn	68,0,49,.LM0-a2dOff
+  97               	.LM0:
+  98               	/* prologue: frame size=0 */
+  99               	/* prologue end (size=0) */
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	cbi(ADCSR, ADIE);				// disable ADC interrupts
+ 100               		.stabn	68,0,50,.LM1-a2dOff
+ 101               	.LM1:
+ 102 0000 3398      		cbi 38-0x20,3
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	cbi(ADCSR, ADEN);				// disable ADC (turn off ADC power)
+ 103               		.stabn	68,0,51,.LM2-a2dOff
+ 104               	.LM2:
+ 105 0002 3798      		cbi 38-0x20,7
+ 106               	/* epilogue: frame size=0 */
+ 107 0004 0895      		ret
+ 108               	/* epilogue end (size=1) */
+ 109               	/* function a2dOff size 3 (2) */
+ 110               		.size	a2dOff, .-a2dOff
+ 111               	.Lscope0:
+ 112               		.stabs	"",36,0,0,.Lscope0-a2dOff
+ 113               		.stabd	78,0,0
+ 114               		.stabs	"a2dSetPrescaler:F(0,15)",36,0,56,a2dSetPrescaler
+ 115               		.stabs	"prescale:P(0,11)",64,0,55,24
+ 116               	.global	a2dSetPrescaler
+ 117               		.type	a2dSetPrescaler, @function
+ 118               	a2dSetPrescaler:
+ 119               		.stabd	46,0,0
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 4
+
+
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // configure A2D converter clock division (prescaling)
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dSetPrescaler(unsigned char prescale)
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 120               		.stabn	68,0,56,.LM3-a2dSetPrescaler
+ 121               	.LM3:
+ 122               	/* prologue: frame size=0 */
+ 123               	/* prologue end (size=0) */
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	outb(ADCSR, ((inb(ADCSR) & ~ADC_PRESCALE_MASK) | prescale));
+ 124               		.stabn	68,0,57,.LM4-a2dSetPrescaler
+ 125               	.LM4:
+ 126 0006 96B1      		in r25,38-0x20
+ 127 0008 987F      		andi r25,lo8(-8)
+ 128 000a 982B      		or r25,r24
+ 129 000c 96B9      		out 38-0x20,r25
+ 130               	/* epilogue: frame size=0 */
+ 131 000e 0895      		ret
+ 132               	/* epilogue end (size=1) */
+ 133               	/* function a2dSetPrescaler size 5 (4) */
+ 134               		.size	a2dSetPrescaler, .-a2dSetPrescaler
+ 135               	.Lscope1:
+ 136               		.stabs	"",36,0,0,.Lscope1-a2dSetPrescaler
+ 137               		.stabd	78,0,0
+ 138               		.stabs	"a2dSetReference:F(0,15)",36,0,62,a2dSetReference
+ 139               		.stabs	"ref:P(0,11)",64,0,61,24
+ 140               	.global	a2dSetReference
+ 141               		.type	a2dSetReference, @function
+ 142               	a2dSetReference:
+ 143               		.stabd	46,0,0
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // configure A2D converter voltage reference
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dSetReference(unsigned char ref)
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 144               		.stabn	68,0,62,.LM5-a2dSetReference
+ 145               	.LM5:
+ 146               	/* prologue: frame size=0 */
+ 147               	/* prologue end (size=0) */
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	outb(ADMUX, ((inb(ADMUX) & ~ADC_REFERENCE_MASK) | (ref<<6)));
+ 148               		.stabn	68,0,63,.LM6-a2dSetReference
+ 149               	.LM6:
+ 150 0010 97B1      		in r25,39-0x20
+ 151 0012 9F73      		andi r25,lo8(63)
+ 152 0014 8295      		swap r24
+ 153 0016 880F      		lsl r24
+ 154 0018 880F      		lsl r24
+ 155 001a 807C      		andi r24,0xc0
+ 156 001c 982B      		or r25,r24
+ 157 001e 97B9      		out 39-0x20,r25
+ 158               	/* epilogue: frame size=0 */
+ 159 0020 0895      		ret
+ 160               	/* epilogue end (size=1) */
+ 161               	/* function a2dSetReference size 9 (8) */
+ 162               		.size	a2dSetReference, .-a2dSetReference
+ 163               	.Lscope2:
+ 164               		.stabs	"",36,0,0,.Lscope2-a2dSetReference
+ 165               		.stabd	78,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 5
+
+
+ 166               		.stabs	"a2dSetChannel:F(0,15)",36,0,68,a2dSetChannel
+ 167               		.stabs	"ch:P(0,11)",64,0,67,24
+ 168               	.global	a2dSetChannel
+ 169               		.type	a2dSetChannel, @function
+ 170               	a2dSetChannel:
+ 171               		.stabd	46,0,0
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // sets the a2d input channel
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dSetChannel(unsigned char ch)
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 172               		.stabn	68,0,68,.LM7-a2dSetChannel
+ 173               	.LM7:
+ 174               	/* prologue: frame size=0 */
+ 175               	/* prologue end (size=0) */
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	outb(ADMUX, (inb(ADMUX) & ~ADC_MUX_MASK) | (ch & ADC_MUX_MASK));	// set channel
+ 176               		.stabn	68,0,69,.LM8-a2dSetChannel
+ 177               	.LM8:
+ 178 0022 97B1      		in r25,39-0x20
+ 179 0024 907E      		andi r25,lo8(-32)
+ 180 0026 8F71      		andi r24,lo8(31)
+ 181 0028 982B      		or r25,r24
+ 182 002a 97B9      		out 39-0x20,r25
+ 183               	/* epilogue: frame size=0 */
+ 184 002c 0895      		ret
+ 185               	/* epilogue end (size=1) */
+ 186               	/* function a2dSetChannel size 6 (5) */
+ 187               		.size	a2dSetChannel, .-a2dSetChannel
+ 188               	.Lscope3:
+ 189               		.stabs	"",36,0,0,.Lscope3-a2dSetChannel
+ 190               		.stabd	78,0,0
+ 191               		.stabs	"a2dStartConvert:F(0,15)",36,0,74,a2dStartConvert
+ 192               	.global	a2dStartConvert
+ 193               		.type	a2dStartConvert, @function
+ 194               	a2dStartConvert:
+ 195               		.stabd	46,0,0
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // start a conversion on the current a2d input channel
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** void a2dStartConvert(void)
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 196               		.stabn	68,0,74,.LM9-a2dStartConvert
+ 197               	.LM9:
+ 198               	/* prologue: frame size=0 */
+ 199               	/* prologue end (size=0) */
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADIF);	// clear hardware "conversion complete" flag 
+ 200               		.stabn	68,0,75,.LM10-a2dStartConvert
+ 201               	.LM10:
+ 202 002e 349A      		sbi 38-0x20,4
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADSC);	// start conversion
+ 203               		.stabn	68,0,76,.LM11-a2dStartConvert
+ 204               	.LM11:
+ 205 0030 369A      		sbi 38-0x20,6
+ 206               	/* epilogue: frame size=0 */
+ 207 0032 0895      		ret
+ 208               	/* epilogue end (size=1) */
+ 209               	/* function a2dStartConvert size 3 (2) */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 6
+
+
+ 210               		.size	a2dStartConvert, .-a2dStartConvert
+ 211               	.Lscope4:
+ 212               		.stabs	"",36,0,0,.Lscope4-a2dStartConvert
+ 213               		.stabd	78,0,0
+ 214               		.stabs	"a2dIsComplete:F(6,1)",36,0,81,a2dIsComplete
+ 215               	.global	a2dIsComplete
+ 216               		.type	a2dIsComplete, @function
+ 217               	a2dIsComplete:
+ 218               		.stabd	46,0,0
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // return TRUE if conversion is complete
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** u08 a2dIsComplete(void)
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 219               		.stabn	68,0,81,.LM12-a2dIsComplete
+ 220               	.LM12:
+ 221               	/* prologue: frame size=0 */
+ 222               	/* prologue end (size=0) */
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	return bit_is_set(ADCSR, ADSC);
+ 223               		.stabn	68,0,82,.LM13-a2dIsComplete
+ 224               	.LM13:
+ 225 0034 86B1      		in r24,38-0x20
+ 226 0036 9927      		clr r25
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+ 227               		.stabn	68,0,83,.LM14-a2dIsComplete
+ 228               	.LM14:
+ 229 0038 8074      		andi r24,lo8(64)
+ 230 003a 9070      		andi r25,hi8(64)
+ 231               	/* epilogue: frame size=0 */
+ 232 003c 0895      		ret
+ 233               	/* epilogue end (size=1) */
+ 234               	/* function a2dIsComplete size 5 (4) */
+ 235               		.size	a2dIsComplete, .-a2dIsComplete
+ 236               	.Lscope5:
+ 237               		.stabs	"",36,0,0,.Lscope5-a2dIsComplete
+ 238               		.stabd	78,0,0
+ 239               		.stabs	"a2dConvert10bit:F(0,9)",36,0,88,a2dConvert10bit
+ 240               		.stabs	"ch:P(0,11)",64,0,87,24
+ 241               	.global	a2dConvert10bit
+ 242               		.type	a2dConvert10bit, @function
+ 243               	a2dConvert10bit:
+ 244               		.stabd	46,0,0
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Perform a 10-bit conversion
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // starts conversion, waits until conversion is done, and returns result
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** unsigned short a2dConvert10bit(unsigned char ch)
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 245               		.stabn	68,0,88,.LM15-a2dConvert10bit
+ 246               	.LM15:
+ 247               	/* prologue: frame size=0 */
+ 248               	/* prologue end (size=0) */
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	a2dCompleteFlag = FALSE;				// clear conversion complete flag
+ 249               		.stabn	68,0,89,.LM16-a2dConvert10bit
+ 250               	.LM16:
+ 251 003e 1092 0000 		sts a2dCompleteFlag,__zero_reg__
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	outb(ADMUX, (inb(ADMUX) & ~ADC_MUX_MASK) | (ch & ADC_MUX_MASK));	// set channel
+ 252               		.stabn	68,0,90,.LM17-a2dConvert10bit
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 7
+
+
+ 253               	.LM17:
+ 254 0042 97B1      		in r25,39-0x20
+ 255 0044 907E      		andi r25,lo8(-32)
+ 256 0046 8F71      		andi r24,lo8(31)
+ 257 0048 982B      		or r25,r24
+ 258 004a 97B9      		out 39-0x20,r25
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADIF);						// clear hardware "conversion complete" flag 
+ 259               		.stabn	68,0,91,.LM18-a2dConvert10bit
+ 260               	.LM18:
+ 261 004c 349A      		sbi 38-0x20,4
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	sbi(ADCSR, ADSC);						// start conversion
+ 262               		.stabn	68,0,92,.LM19-a2dConvert10bit
+ 263               	.LM19:
+ 264 004e 369A      		sbi 38-0x20,6
+ 265               	.L14:
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	//while(!a2dCompleteFlag);				// wait until conversion complete
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	//while( bit_is_clear(ADCSR, ADIF) );		// wait until conversion complete
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	while( bit_is_set(ADCSR, ADSC) );		// wait until conversion complete
+ 266               		.stabn	68,0,95,.LM20-a2dConvert10bit
+ 267               	.LM20:
+ 268 0050 3699      		sbic 38-0x20,6
+ 269 0052 00C0      		rjmp .L14
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	// CAUTION: MUST READ ADCL BEFORE ADCH!!!
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	return (inb(ADCL) | (inb(ADCH)<<8));	// read ADC (full 10 bits);
+ 270               		.stabn	68,0,98,.LM21-a2dConvert10bit
+ 271               	.LM21:
+ 272 0054 84B1      		in r24,36-0x20
+ 273 0056 25B1      		in r18,37-0x20
+ 274 0058 9927      		clr r25
+ 275 005a 3327      		clr r19
+ 276 005c 322F      		mov r19,r18
+ 277 005e 2227      		clr r18
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+ 278               		.stabn	68,0,99,.LM22-a2dConvert10bit
+ 279               	.LM22:
+ 280 0060 822B      		or r24,r18
+ 281 0062 932B      		or r25,r19
+ 282               	/* epilogue: frame size=0 */
+ 283 0064 0895      		ret
+ 284               	/* epilogue end (size=1) */
+ 285               	/* function a2dConvert10bit size 20 (19) */
+ 286               		.size	a2dConvert10bit, .-a2dConvert10bit
+ 287               	.Lscope6:
+ 288               		.stabs	"",36,0,0,.Lscope6-a2dConvert10bit
+ 289               		.stabd	78,0,0
+ 290               		.stabs	"a2dConvert8bit:F(0,11)",36,0,104,a2dConvert8bit
+ 291               		.stabs	"ch:P(0,11)",64,0,103,24
+ 292               	.global	a2dConvert8bit
+ 293               		.type	a2dConvert8bit, @function
+ 294               	a2dConvert8bit:
+ 295               		.stabd	46,0,0
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // Perform a 8-bit conversion.
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** // starts conversion, waits until conversion is done, and returns result
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** unsigned char a2dConvert8bit(unsigned char ch)
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 8
+
+
+ 296               		.stabn	68,0,104,.LM23-a2dConvert8bit
+ 297               	.LM23:
+ 298               	/* prologue: frame size=0 */
+ 299               	/* prologue end (size=0) */
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	// do 10-bit conversion and return highest 8 bits
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	return a2dConvert10bit(ch)>>2;			// return ADC MSB byte
+ 300               		.stabn	68,0,106,.LM24-a2dConvert8bit
+ 301               	.LM24:
+ 302 0066 0E94 0000 		call a2dConvert10bit
+ 303 006a 9695      		lsr r25
+ 304 006c 8795      		ror r24
+ 305 006e 9695      		lsr r25
+ 306 0070 8795      		ror r24
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** }
+ 307               		.stabn	68,0,107,.LM25-a2dConvert8bit
+ 308               	.LM25:
+ 309 0072 9927      		clr r25
+ 310               	/* epilogue: frame size=0 */
+ 311 0074 0895      		ret
+ 312               	/* epilogue end (size=1) */
+ 313               	/* function a2dConvert8bit size 8 (7) */
+ 314               		.size	a2dConvert8bit, .-a2dConvert8bit
+ 315               	.Lscope7:
+ 316               		.stabs	"",36,0,0,.Lscope7-a2dConvert8bit
+ 317               		.stabd	78,0,0
+ 318               		.stabs	"__vector_21:F(0,15)",36,0,111,__vector_21
+ 319               	.global	__vector_21
+ 320               		.type	__vector_21, @function
+ 321               	__vector_21:
+ 322               		.stabd	46,0,0
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** //! Interrupt handler for ADC complete interrupt.
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** SIGNAL(SIG_ADC)
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** {
+ 323               		.stabn	68,0,111,.LM26-__vector_21
+ 324               	.LM26:
+ 325               	/* prologue: frame size=0 */
+ 326 0076 1F92      		push __zero_reg__
+ 327 0078 0F92      		push __tmp_reg__
+ 328 007a 0FB6      		in __tmp_reg__,__SREG__
+ 329 007c 0F92      		push __tmp_reg__
+ 330 007e 1124      		clr __zero_reg__
+ 331 0080 8F93      		push r24
+ 332               	/* prologue end (size=6) */
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	// set the a2d conversion flag to indicate "complete"
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c **** 	a2dCompleteFlag = TRUE;
+ 333               		.stabn	68,0,113,.LM27-__vector_21
+ 334               	.LM27:
+ 335 0082 8FEF      		ldi r24,lo8(-1)
+ 336 0084 8093 0000 		sts a2dCompleteFlag,r24
+ 337               	/* epilogue: frame size=0 */
+ 338 0088 8F91      		pop r24
+ 339 008a 0F90      		pop __tmp_reg__
+ 340 008c 0FBE      		out __SREG__,__tmp_reg__
+ 341 008e 0F90      		pop __tmp_reg__
+ 342 0090 1F90      		pop __zero_reg__
+ 343 0092 1895      		reti
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 9
+
+
+ 344               	/* epilogue end (size=6) */
+ 345               	/* function __vector_21 size 15 (3) */
+ 346               		.size	__vector_21, .-__vector_21
+ 347               	.Lscope8:
+ 348               		.stabs	"",36,0,0,.Lscope8-__vector_21
+ 349               		.stabd	78,0,0
+ 350               		.stabs	"a2dInit:F(0,15)",36,0,34,a2dInit
+ 351               	.global	a2dInit
+ 352               		.type	a2dInit, @function
+ 353               	a2dInit:
+ 354               		.stabd	46,0,0
+ 355               		.stabn	68,0,34,.LM28-a2dInit
+ 356               	.LM28:
+ 357               	/* prologue: frame size=0 */
+ 358               	/* prologue end (size=0) */
+ 359               		.stabn	68,0,35,.LM29-a2dInit
+ 360               	.LM29:
+ 361 0094 379A      		sbi 38-0x20,7
+ 362               		.stabn	68,0,36,.LM30-a2dInit
+ 363               	.LM30:
+ 364 0096 3598      		cbi 38-0x20,5
+ 365               	.LBB4:
+ 366               	.LBB5:
+ 367               		.stabn	68,0,57,.LM31-a2dInit
+ 368               	.LM31:
+ 369 0098 86B1      		in r24,38-0x20
+ 370 009a 887F      		andi r24,lo8(-8)
+ 371 009c 8660      		ori r24,lo8(6)
+ 372 009e 86B9      		out 38-0x20,r24
+ 373               	.LBE5:
+ 374               	.LBE4:
+ 375               		.stabn	68,0,38,.LM32-a2dInit
+ 376               	.LM32:
+ 377 00a0 81E0      		ldi r24,lo8(1)
+ 378 00a2 0E94 0000 		call a2dSetReference
+ 379               		.stabn	68,0,39,.LM33-a2dInit
+ 380               	.LM33:
+ 381 00a6 3D98      		cbi 39-0x20,5
+ 382               		.stabn	68,0,41,.LM34-a2dInit
+ 383               	.LM34:
+ 384 00a8 339A      		sbi 38-0x20,3
+ 385               		.stabn	68,0,43,.LM35-a2dInit
+ 386               	.LM35:
+ 387 00aa 1092 0000 		sts a2dCompleteFlag,__zero_reg__
+ 388               		.stabn	68,0,44,.LM36-a2dInit
+ 389               	.LM36:
+ 390               	/* #APP */
+ 391 00ae 7894      		sei
+ 392               	/* #NOAPP */
+ 393               	/* epilogue: frame size=0 */
+ 394 00b0 0895      		ret
+ 395               	/* epilogue end (size=1) */
+ 396               	/* function a2dInit size 16 (15) */
+ 397               		.size	a2dInit, .-a2dInit
+ 398               	.Lscope9:
+ 399               		.stabs	"",36,0,0,.Lscope9-a2dInit
+ 400               		.stabd	78,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 10
+
+
+ 401               		.comm a2dCompleteFlag,1,1
+ 402               		.stabs	"a2dCompleteFlag:G(0,16)=B(0,11)",32,0,28,0
+ 403               		.stabs	"",100,0,0,.Letext0
+ 404               	.Letext0:
+ 405               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/a2d.c": code   90 = 0x005a 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 a2d.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:94     .text:00000000 a2dOff
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:118    .text:00000006 a2dSetPrescaler
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:142    .text:00000010 a2dSetReference
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:170    .text:00000022 a2dSetChannel
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:194    .text:0000002e a2dStartConvert
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:217    .text:00000034 a2dIsComplete
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:243    .text:0000003e a2dConvert10bit
+                            *COM*:00000001 a2dCompleteFlag
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:294    .text:00000066 a2dConvert8bit
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:321    .text:00000076 __vector_21
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccTWtK1B.s:353    .text:00000094 a2dInit
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss

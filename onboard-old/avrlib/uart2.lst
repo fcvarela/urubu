@@ -1,0 +1,1966 @@
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 1
+
+
+   1               		.file	"uart2.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/examples/sensorproc/",100,0
+  11               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c",100,0,2,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=r(0,2);0;127;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"void:t(0,15)=(0,15)",128,0,0,0
+  30               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/io.h",130,0,0,0
+  31               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/avr/sfr_defs.h",130,0,0,0
+  32               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/inttypes.h",130,0,0,0
+  33               		.stabs	"/usr/local/bin/../lib/gcc/avr/4.1.1/../../../../avr/include/stdint.h",130,0,0,0
+  34               		.stabs	"int8_t:t(4,1)=(0,10)",128,0,116,0
+  35               		.stabs	"uint8_t:t(4,2)=(0,11)",128,0,117,0
+  36               		.stabs	"int16_t:t(4,3)=(0,1)",128,0,118,0
+  37               		.stabs	"uint16_t:t(4,4)=(0,4)",128,0,119,0
+  38               		.stabs	"int32_t:t(4,5)=(0,3)",128,0,120,0
+  39               		.stabs	"uint32_t:t(4,6)=(0,5)",128,0,121,0
+  40               		.stabs	"int64_t:t(4,7)=(0,6)",128,0,122,0
+  41               		.stabs	"uint64_t:t(4,8)=(0,7)",128,0,123,0
+  42               		.stabs	"intptr_t:t(4,9)=(4,3)",128,0,135,0
+  43               		.stabs	"uintptr_t:t(4,10)=(4,4)",128,0,140,0
+  44               		.stabs	"int_least8_t:t(4,11)=(4,1)",128,0,152,0
+  45               		.stabs	"uint_least8_t:t(4,12)=(4,2)",128,0,157,0
+  46               		.stabs	"int_least16_t:t(4,13)=(4,3)",128,0,162,0
+  47               		.stabs	"uint_least16_t:t(4,14)=(4,4)",128,0,167,0
+  48               		.stabs	"int_least32_t:t(4,15)=(4,5)",128,0,172,0
+  49               		.stabs	"uint_least32_t:t(4,16)=(4,6)",128,0,177,0
+  50               		.stabs	"int_least64_t:t(4,17)=(4,7)",128,0,182,0
+  51               		.stabs	"uint_least64_t:t(4,18)=(4,8)",128,0,187,0
+  52               		.stabs	"int_fast8_t:t(4,19)=(4,1)",128,0,200,0
+  53               		.stabs	"uint_fast8_t:t(4,20)=(4,2)",128,0,205,0
+  54               		.stabs	"int_fast16_t:t(4,21)=(4,3)",128,0,210,0
+  55               		.stabs	"uint_fast16_t:t(4,22)=(4,4)",128,0,215,0
+  56               		.stabs	"int_fast32_t:t(4,23)=(4,5)",128,0,220,0
+  57               		.stabs	"uint_fast32_t:t(4,24)=(4,6)",128,0,225,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 2
+
+
+  58               		.stabs	"int_fast64_t:t(4,25)=(4,7)",128,0,230,0
+  59               		.stabs	"uint_fast64_t:t(4,26)=(4,8)",128,0,235,0
+  60               		.stabs	"intmax_t:t(4,27)=(4,7)",128,0,249,0
+  61               		.stabs	"uintmax_t:t(4,28)=(4,8)",128,0,254,0
+  62               		.stabn	162,0,0,0
+  63               		.stabs	"int_farptr_t:t(3,1)=(4,5)",128,0,76,0
+  64               		.stabs	"uint_farptr_t:t(3,2)=(4,6)",128,0,80,0
+  65               		.stabn	162,0,0,0
+  66               		.stabn	162,0,0,0
+  67               		.stabn	162,0,0,0
+  68               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/buffer.h",130,0,0,0
+  69               		.stabs	"struct_cBuffer:T(5,1)=s8dataptr:(5,2)=*(0,11),0,16;size:(0,9),16,16;datalength:(0,9),32,16
+  70               		.stabs	"cBuffer:t(5,3)=(5,1)",128,0,47,0
+  71               		.stabn	162,0,0,0
+  72               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.h",130,0,0,0
+  73               		.stabs	"./global.h",130,0,0,0
+  74               		.stabs	"/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/avrlibtypes.h",130,0,0,0
+  75               		.stabs	"u08:t(8,1)=(0,11)",128,0,32,0
+  76               		.stabs	"s08:t(8,2)=(0,10)",128,0,33,0
+  77               		.stabs	"u16:t(8,3)=(0,9)",128,0,34,0
+  78               		.stabs	"s16:t(8,4)=(0,8)",128,0,35,0
+  79               		.stabs	"u32:t(8,5)=(0,5)",128,0,36,0
+  80               		.stabs	"s32:t(8,6)=(0,3)",128,0,37,0
+  81               		.stabs	"u64:t(8,7)=(0,7)",128,0,38,0
+  82               		.stabs	"s64:t(8,8)=(0,6)",128,0,39,0
+  83               		.stabs	"BOOL:t(8,9)=(0,11)",128,0,69,0
+  84               		.stabs	"BYTE:t(8,10)=(0,11)",128,0,70,0
+  85               		.stabs	"WORD:t(8,11)=(0,4)",128,0,71,0
+  86               		.stabs	"DWORD:t(8,12)=(0,5)",128,0,72,0
+  87               		.stabs	"UCHAR:t(8,13)=(0,11)",128,0,74,0
+  88               		.stabs	"UINT:t(8,14)=(0,4)",128,0,75,0
+  89               		.stabs	"USHORT:t(8,15)=(0,9)",128,0,76,0
+  90               		.stabs	"ULONG:t(8,16)=(0,5)",128,0,77,0
+  91               		.stabs	"CHAR:t(8,17)=(0,2)",128,0,79,0
+  92               		.stabs	"INT:t(8,18)=(0,1)",128,0,80,0
+  93               		.stabs	"LONG:t(8,19)=(0,3)",128,0,81,0
+  94               		.stabn	162,0,0,0
+  95               		.stabn	162,0,0,0
+  96               		.stabn	162,0,0,0
+  97               		.stabs	"voidFuncPtru08:t(0,16)=(0,17)=*(0,18)=f(0,15)",128,0,44,0
+  98               		.stabs	"uartSetRxHandler:F(0,15)",36,0,119,uartSetRxHandler
+  99               		.stabs	"nUart:P(8,1)",64,0,118,24
+ 100               		.stabs	"rx_func:P(0,17)",64,0,118,22
+ 101               	.global	uartSetRxHandler
+ 102               		.type	uartSetRxHandler, @function
+ 103               	uartSetRxHandler:
+ 104               		.stabd	46,0,0
+   1:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** /*! \file uart2.c \brief Dual UART driver with buffer support. */
+   2:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //*****************************************************************************
+   3:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //
+   4:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // File Name	: 'uart2.c'
+   5:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Title		: Dual UART driver with buffer support
+   6:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Author		: Pascal Stang - Copyright (C) 2000-2004
+   7:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Created		: 11/20/2000
+   8:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Revised		: 07/04/2004
+   9:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Version		: 1.0
+  10:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Target MCU	: ATMEL AVR Series
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 3
+
+
+  11:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Editor Tabs	: 4
+  12:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //
+  13:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // Description	: This is a UART driver for AVR-series processors with two
+  14:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //		hardware UARTs such as the mega161 and mega128 
+  15:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //
+  16:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // This code is distributed under the GNU Public License
+  17:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //		which can be found at http://www.gnu.org/licenses/gpl.txt
+  18:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //
+  19:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //*****************************************************************************
+  20:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  21:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #include <avr/io.h>
+  22:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #include <avr/interrupt.h>
+  23:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  24:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #include "buffer.h"
+  25:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #include "uart2.h"
+  26:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  27:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // UART global variables
+  28:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // flag variables
+  29:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** volatile u08   uartReadyTx[2];
+  30:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** volatile u08   uartBufferedTx[2];
+  31:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // receive and transmit buffers
+  32:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** cBuffer uartRxBuffer[2];
+  33:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** cBuffer uartTxBuffer[2];
+  34:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** unsigned short uartRxOverflow[2];
+  35:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #ifndef UART_BUFFER_EXTERNAL_RAM
+  36:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// using internal ram,
+  37:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// automatically allocate space in ram for each buffer
+  38:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	static char uart0RxData[UART0_RX_BUFFER_SIZE];
+  39:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	static char uart0TxData[UART0_TX_BUFFER_SIZE];
+  40:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	static char uart1RxData[UART1_RX_BUFFER_SIZE];
+  41:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	static char uart1TxData[UART1_TX_BUFFER_SIZE];
+  42:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** #endif
+  43:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  44:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** typedef void (*voidFuncPtru08)(unsigned char);
+  45:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** volatile static voidFuncPtru08 UartRxFunc[2];
+  46:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  47:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartInit(void)
+  48:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+  49:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize both uarts
+  50:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uart0Init();
+  51:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uart1Init();
+  52:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+  53:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  54:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart0Init(void)
+  55:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+  56:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize the buffers
+  57:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uart0InitBuffers();
+  58:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize user receive handlers
+  59:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	UartRxFunc[0] = 0;
+  60:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// enable RxD/TxD and interrupts
+  61:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	outb(UCSR0B, BV(RXCIE)|BV(TXCIE)|BV(RXEN)|BV(TXEN));
+  62:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// set default baud rate
+  63:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartSetBaudRate(0, UART0_DEFAULT_BAUD_RATE); 
+  64:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize states
+  65:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartReadyTx[0] = TRUE;
+  66:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartBufferedTx[0] = FALSE;
+  67:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// clear overflow count
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 4
+
+
+  68:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartRxOverflow[0] = 0;
+  69:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// enable interrupts
+  70:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	sei();
+  71:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+  72:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  73:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart1Init(void)
+  74:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+  75:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize the buffers
+  76:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uart1InitBuffers();
+  77:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize user receive handlers
+  78:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	UartRxFunc[1] = 0;
+  79:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// enable RxD/TxD and interrupts
+  80:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	outb(UCSR1B, BV(RXCIE)|BV(TXCIE)|BV(RXEN)|BV(TXEN));
+  81:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// set default baud rate
+  82:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartSetBaudRate(1, UART1_DEFAULT_BAUD_RATE);
+  83:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// initialize states
+  84:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartReadyTx[1] = TRUE;
+  85:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartBufferedTx[1] = FALSE;
+  86:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// clear overflow count
+  87:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartRxOverflow[1] = 0;
+  88:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// enable interrupts
+  89:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	sei();
+  90:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+  91:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+  92:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart0InitBuffers(void)
+  93:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+  94:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#ifndef UART_BUFFER_EXTERNAL_RAM
+  95:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// initialize the UART0 buffers
+  96:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartRxBuffer[0], uart0RxData, UART0_RX_BUFFER_SIZE);
+  97:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartTxBuffer[0], uart0TxData, UART0_TX_BUFFER_SIZE);
+  98:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#else
+  99:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// initialize the UART0 buffers
+ 100:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartRxBuffer[0], (u08*) UART0_RX_BUFFER_ADDR, UART0_RX_BUFFER_SIZE);
+ 101:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartTxBuffer[0], (u08*) UART0_TX_BUFFER_ADDR, UART0_TX_BUFFER_SIZE);
+ 102:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#endif
+ 103:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 104:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 105:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart1InitBuffers(void)
+ 106:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 107:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#ifndef UART_BUFFER_EXTERNAL_RAM
+ 108:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// initialize the UART1 buffers
+ 109:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartRxBuffer[1], uart1RxData, UART1_RX_BUFFER_SIZE);
+ 110:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartTxBuffer[1], uart1TxData, UART1_TX_BUFFER_SIZE);
+ 111:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#else
+ 112:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// initialize the UART1 buffers
+ 113:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartRxBuffer[1], (u08*) UART1_RX_BUFFER_ADDR, UART1_RX_BUFFER_SIZE);
+ 114:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		bufferInit(&uartTxBuffer[1], (u08*) UART1_TX_BUFFER_ADDR, UART1_TX_BUFFER_SIZE);
+ 115:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	#endif
+ 116:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 117:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 118:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartSetRxHandler(u08 nUart, void (*rx_func)(unsigned char c))
+ 119:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 105               		.stabn	68,0,119,.LM0-uartSetRxHandler
+ 106               	.LM0:
+ 107               	/* prologue: frame size=0 */
+ 108               	/* prologue end (size=0) */
+ 120:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// make sure the uart number is within bounds
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 5
+
+
+ 121:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(nUart < 2)
+ 109               		.stabn	68,0,121,.LM1-uartSetRxHandler
+ 110               	.LM1:
+ 111 0000 8230      		cpi r24,lo8(2)
+ 112 0002 00F4      		brsh .L4
+ 122:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 123:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// set the receive interrupt to run the supplied user function
+ 124:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		UartRxFunc[nUart] = rx_func;
+ 113               		.stabn	68,0,124,.LM2-uartSetRxHandler
+ 114               	.LM2:
+ 115 0004 E82F      		mov r30,r24
+ 116 0006 FF27      		clr r31
+ 117 0008 EE0F      		lsl r30
+ 118 000a FF1F      		rol r31
+ 119 000c E050      		subi r30,lo8(-(UartRxFunc))
+ 120 000e F040      		sbci r31,hi8(-(UartRxFunc))
+ 121 0010 7183      		std Z+1,r23
+ 122 0012 6083      		st Z,r22
+ 123               	.L4:
+ 124 0014 0895      		ret
+ 125               	/* epilogue: frame size=0 */
+ 126               	/* epilogue: noreturn */
+ 127               	/* epilogue end (size=0) */
+ 128               	/* function uartSetRxHandler size 11 (11) */
+ 129               		.size	uartSetRxHandler, .-uartSetRxHandler
+ 130               	.Lscope0:
+ 131               		.stabs	"",36,0,0,.Lscope0-uartSetRxHandler
+ 132               		.stabd	78,0,0
+ 133               		.stabs	"uartSetBaudRate:F(0,15)",36,0,129,uartSetBaudRate
+ 134               		.stabs	"nUart:P(8,1)",64,0,128,17
+ 135               		.stabs	"baudrate:P(8,5)",64,0,128,22
+ 136               	.global	uartSetBaudRate
+ 137               		.type	uartSetBaudRate, @function
+ 138               	uartSetBaudRate:
+ 139               		.stabd	46,0,0
+ 125:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 126:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 127:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 128:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartSetBaudRate(u08 nUart, u32 baudrate)
+ 129:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 140               		.stabn	68,0,129,.LM3-uartSetBaudRate
+ 141               	.LM3:
+ 142               	/* prologue: frame size=0 */
+ 143 0016 1F93      		push r17
+ 144               	/* prologue end (size=1) */
+ 145 0018 182F      		mov r17,r24
+ 146 001a CB01      		movw r24,r22
+ 147 001c BA01      		movw r22,r20
+ 130:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// calculate division factor for requested baud rate, and set it
+ 131:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	u16 bauddiv = ((F_CPU+(baudrate*8L))/(baudrate*16L)-1);
+ 148               		.stabn	68,0,131,.LM4-uartSetBaudRate
+ 149               	.LM4:
+ 150 001e F3E0      		ldi r31,3
+ 151 0020 660F      	1:	lsl r22
+ 152 0022 771F      		rol r23
+ 153 0024 881F      		rol r24
+ 154 0026 991F      		rol r25
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 6
+
+
+ 155 0028 FA95      		dec r31
+ 156 002a 01F4      		brne 1b
+ 157 002c 9B01      		movw r18,r22
+ 158 002e AC01      		movw r20,r24
+ 159 0030 220F      		lsl r18
+ 160 0032 331F      		rol r19
+ 161 0034 441F      		rol r20
+ 162 0036 551F      		rol r21
+ 163 0038 6050      		subi r22,lo8(-(16000000))
+ 164 003a 7C4D      		sbci r23,hi8(-(16000000))
+ 165 003c 8B40      		sbci r24,hlo8(-(16000000))
+ 166 003e 9F4F      		sbci r25,hhi8(-(16000000))
+ 167 0040 0E94 0000 		call __udivmodsi4
+ 168 0044 2150      		subi r18,lo8(-(-1))
+ 169 0046 3040      		sbci r19,hi8(-(-1))
+ 170 0048 832F      		mov r24,r19
+ 171 004a 9927      		clr r25
+ 132:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(nUart)
+ 172               		.stabn	68,0,132,.LM5-uartSetBaudRate
+ 173               	.LM5:
+ 174 004c 1123      		tst r17
+ 175 004e 01F0      		breq .L6
+ 133:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 134:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UBRR1L, bauddiv);
+ 176               		.stabn	68,0,134,.LM6-uartSetBaudRate
+ 177               	.LM6:
+ 178 0050 2093 9900 		sts 153,r18
+ 135:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		#ifdef UBRR1H
+ 136:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UBRR1H, bauddiv>>8);
+ 179               		.stabn	68,0,136,.LM7-uartSetBaudRate
+ 180               	.LM7:
+ 181 0054 8093 9800 		sts 152,r24
+ 182 0058 00C0      		rjmp .L9
+ 183               	.L6:
+ 137:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		#endif
+ 138:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 139:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 140:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 141:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UBRR0L, bauddiv);
+ 184               		.stabn	68,0,141,.LM8-uartSetBaudRate
+ 185               	.LM8:
+ 186 005a 29B9      		out 41-0x20,r18
+ 142:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		#ifdef UBRR0H
+ 143:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UBRR0H, bauddiv>>8);
+ 187               		.stabn	68,0,143,.LM9-uartSetBaudRate
+ 188               	.LM9:
+ 189 005c 8093 9000 		sts 144,r24
+ 190               	.L9:
+ 191               	/* epilogue: frame size=0 */
+ 192 0060 1F91      		pop r17
+ 193 0062 0895      		ret
+ 194               	/* epilogue end (size=2) */
+ 195               	/* function uartSetBaudRate size 39 (36) */
+ 196               		.size	uartSetBaudRate, .-uartSetBaudRate
+ 197               		.stabs	"bauddiv:r(8,3)",64,0,131,18
+ 198               		.stabn	192,0,0,uartSetBaudRate-uartSetBaudRate
+ 199               		.stabn	224,0,0,.Lscope1-uartSetBaudRate
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 7
+
+
+ 200               	.Lscope1:
+ 201               		.stabs	"",36,0,0,.Lscope1-uartSetBaudRate
+ 202               		.stabd	78,0,0
+ 203               		.stabs	"uartGetRxBuffer:F(0,19)=*(5,3)",36,0,149,uartGetRxBuffer
+ 204               		.stabs	"nUart:P(8,1)",64,0,148,24
+ 205               	.global	uartGetRxBuffer
+ 206               		.type	uartGetRxBuffer, @function
+ 207               	uartGetRxBuffer:
+ 208               		.stabd	46,0,0
+ 144:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		#endif
+ 145:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 146:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 147:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 148:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** cBuffer* uartGetRxBuffer(u08 nUart)
+ 149:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 209               		.stabn	68,0,149,.LM10-uartGetRxBuffer
+ 210               	.LM10:
+ 211               	/* prologue: frame size=0 */
+ 212               	/* prologue end (size=0) */
+ 213 0064 9927      		clr r25
+ 214 0066 A3E0      		ldi r26,3
+ 215 0068 880F      	1:	lsl r24
+ 216 006a 991F      		rol r25
+ 217 006c AA95      		dec r26
+ 218 006e 01F4      		brne 1b
+ 150:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// return rx buffer pointer
+ 151:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	return &uartRxBuffer[nUart];
+ 152:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 219               		.stabn	68,0,152,.LM11-uartGetRxBuffer
+ 220               	.LM11:
+ 221 0070 8050      		subi r24,lo8(-(uartRxBuffer))
+ 222 0072 9040      		sbci r25,hi8(-(uartRxBuffer))
+ 223               	/* epilogue: frame size=0 */
+ 224 0074 0895      		ret
+ 225               	/* epilogue end (size=1) */
+ 226               	/* function uartGetRxBuffer size 9 (8) */
+ 227               		.size	uartGetRxBuffer, .-uartGetRxBuffer
+ 228               	.Lscope2:
+ 229               		.stabs	"",36,0,0,.Lscope2-uartGetRxBuffer
+ 230               		.stabd	78,0,0
+ 231               		.stabs	"uartGetTxBuffer:F(0,19)",36,0,155,uartGetTxBuffer
+ 232               		.stabs	"nUart:P(8,1)",64,0,154,24
+ 233               	.global	uartGetTxBuffer
+ 234               		.type	uartGetTxBuffer, @function
+ 235               	uartGetTxBuffer:
+ 236               		.stabd	46,0,0
+ 153:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 154:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** cBuffer* uartGetTxBuffer(u08 nUart)
+ 155:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 237               		.stabn	68,0,155,.LM12-uartGetTxBuffer
+ 238               	.LM12:
+ 239               	/* prologue: frame size=0 */
+ 240               	/* prologue end (size=0) */
+ 241 0076 9927      		clr r25
+ 242 0078 B3E0      		ldi r27,3
+ 243 007a 880F      	1:	lsl r24
+ 244 007c 991F      		rol r25
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 8
+
+
+ 245 007e BA95      		dec r27
+ 246 0080 01F4      		brne 1b
+ 156:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// return tx buffer pointer
+ 157:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	return &uartTxBuffer[nUart];
+ 158:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 247               		.stabn	68,0,158,.LM13-uartGetTxBuffer
+ 248               	.LM13:
+ 249 0082 8050      		subi r24,lo8(-(uartTxBuffer))
+ 250 0084 9040      		sbci r25,hi8(-(uartTxBuffer))
+ 251               	/* epilogue: frame size=0 */
+ 252 0086 0895      		ret
+ 253               	/* epilogue end (size=1) */
+ 254               	/* function uartGetTxBuffer size 9 (8) */
+ 255               		.size	uartGetTxBuffer, .-uartGetTxBuffer
+ 256               	.Lscope3:
+ 257               		.stabs	"",36,0,0,.Lscope3-uartGetTxBuffer
+ 258               		.stabd	78,0,0
+ 259               		.stabs	"uartSendByte:F(0,15)",36,0,161,uartSendByte
+ 260               		.stabs	"nUart:P(8,1)",64,0,160,30
+ 261               		.stabs	"txData:P(8,1)",64,0,160,22
+ 262               	.global	uartSendByte
+ 263               		.type	uartSendByte, @function
+ 264               	uartSendByte:
+ 265               		.stabd	46,0,0
+ 159:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 160:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartSendByte(u08 nUart, u08 txData)
+ 161:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 266               		.stabn	68,0,161,.LM14-uartSendByte
+ 267               	.LM14:
+ 268               	/* prologue: frame size=0 */
+ 269               	/* prologue end (size=0) */
+ 270 0088 E82F      		mov r30,r24
+ 162:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// wait for the transmitter to be ready
+ 163:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** //	while(!uartReadyTx[nUart]);
+ 164:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// send byte
+ 165:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(nUart)
+ 271               		.stabn	68,0,165,.LM15-uartSendByte
+ 272               	.LM15:
+ 273 008a 8823      		tst r24
+ 274 008c 01F0      		breq .L22
+ 275               	.L21:
+ 166:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 167:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		while(!(UCSR1A & (1<<UDRE)));
+ 276               		.stabn	68,0,167,.LM16-uartSendByte
+ 277               	.LM16:
+ 278 008e 8091 9B00 		lds r24,155
+ 279 0092 85FF      		sbrs r24,5
+ 280 0094 00C0      		rjmp .L21
+ 168:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UDR1, txData);
+ 281               		.stabn	68,0,168,.LM17-uartSendByte
+ 282               	.LM17:
+ 283 0096 6093 9C00 		sts 156,r22
+ 284 009a 00C0      		rjmp .L18
+ 285               	.L22:
+ 169:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 170:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 171:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 9
+
+
+ 172:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		while(!(UCSR0A & (1<<UDRE)));
+ 286               		.stabn	68,0,172,.LM18-uartSendByte
+ 287               	.LM18:
+ 288 009c 5D9B      		sbis 43-0x20,5
+ 289 009e 00C0      		rjmp .L22
+ 173:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		outb(UDR0, txData);
+ 290               		.stabn	68,0,173,.LM19-uartSendByte
+ 291               	.LM19:
+ 292 00a0 6CB9      		out 44-0x20,r22
+ 293               	.L18:
+ 174:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 175:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// set ready state to FALSE
+ 176:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartReadyTx[nUart] = FALSE;
+ 294               		.stabn	68,0,176,.LM20-uartSendByte
+ 295               	.LM20:
+ 296 00a2 FF27      		clr r31
+ 297 00a4 E050      		subi r30,lo8(-(uartReadyTx))
+ 298 00a6 F040      		sbci r31,hi8(-(uartReadyTx))
+ 299 00a8 1082      		st Z,__zero_reg__
+ 300               	/* epilogue: frame size=0 */
+ 301 00aa 0895      		ret
+ 302               	/* epilogue end (size=1) */
+ 303               	/* function uartSendByte size 18 (17) */
+ 304               		.size	uartSendByte, .-uartSendByte
+ 305               	.Lscope4:
+ 306               		.stabs	"",36,0,0,.Lscope4-uartSendByte
+ 307               		.stabd	78,0,0
+ 308               		.stabs	"uart0SendByte:F(0,15)",36,0,180,uart0SendByte
+ 309               		.stabs	"data:P(8,1)",64,0,179,24
+ 310               	.global	uart0SendByte
+ 311               		.type	uart0SendByte, @function
+ 312               	uart0SendByte:
+ 313               		.stabd	46,0,0
+ 177:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 178:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 179:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart0SendByte(u08 data)
+ 180:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 314               		.stabn	68,0,180,.LM21-uart0SendByte
+ 315               	.LM21:
+ 316               	/* prologue: frame size=0 */
+ 317               	/* prologue end (size=0) */
+ 181:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// send byte on UART0
+ 182:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartSendByte(0, data);
+ 318               		.stabn	68,0,182,.LM22-uart0SendByte
+ 319               	.LM22:
+ 320 00ac 682F      		mov r22,r24
+ 321 00ae 80E0      		ldi r24,lo8(0)
+ 322 00b0 0E94 0000 		call uartSendByte
+ 323               	/* epilogue: frame size=0 */
+ 324 00b4 0895      		ret
+ 325               	/* epilogue end (size=1) */
+ 326               	/* function uart0SendByte size 5 (4) */
+ 327               		.size	uart0SendByte, .-uart0SendByte
+ 328               	.Lscope5:
+ 329               		.stabs	"",36,0,0,.Lscope5-uart0SendByte
+ 330               		.stabd	78,0,0
+ 331               		.stabs	"uart1SendByte:F(0,15)",36,0,186,uart1SendByte
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 10
+
+
+ 332               		.stabs	"data:P(8,1)",64,0,185,24
+ 333               	.global	uart1SendByte
+ 334               		.type	uart1SendByte, @function
+ 335               	uart1SendByte:
+ 336               		.stabd	46,0,0
+ 183:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 184:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 185:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart1SendByte(u08 data)
+ 186:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 337               		.stabn	68,0,186,.LM23-uart1SendByte
+ 338               	.LM23:
+ 339               	/* prologue: frame size=0 */
+ 340               	/* prologue end (size=0) */
+ 187:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// send byte on UART1
+ 188:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartSendByte(1, data);
+ 341               		.stabn	68,0,188,.LM24-uart1SendByte
+ 342               	.LM24:
+ 343 00b6 682F      		mov r22,r24
+ 344 00b8 81E0      		ldi r24,lo8(1)
+ 345 00ba 0E94 0000 		call uartSendByte
+ 346               	/* epilogue: frame size=0 */
+ 347 00be 0895      		ret
+ 348               	/* epilogue end (size=1) */
+ 349               	/* function uart1SendByte size 5 (4) */
+ 350               		.size	uart1SendByte, .-uart1SendByte
+ 351               	.Lscope6:
+ 352               		.stabs	"",36,0,0,.Lscope6-uart1SendByte
+ 353               		.stabd	78,0,0
+ 354               		.stabs	"uartReceiveBufferIsEmpty:F(8,1)",36,0,238,uartReceiveBufferIsEmpty
+ 355               		.stabs	"nUart:P(8,1)",64,0,237,24
+ 356               	.global	uartReceiveBufferIsEmpty
+ 357               		.type	uartReceiveBufferIsEmpty, @function
+ 358               	uartReceiveBufferIsEmpty:
+ 359               		.stabd	46,0,0
+ 189:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 190:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 191:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** int uart0GetByte(void)
+ 192:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 193:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// get single byte from receive buffer (if available)
+ 194:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	u08 c;
+ 195:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(uartReceiveByte(0,&c))
+ 196:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return c;
+ 197:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 198:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return -1;
+ 199:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 200:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 201:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** int uart1GetByte(void)
+ 202:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 203:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// get single byte from receive buffer (if available)
+ 204:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	u08 c;
+ 205:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(uartReceiveByte(1,&c))
+ 206:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return c;
+ 207:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 208:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return -1;
+ 209:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 210:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 211:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 11
+
+
+ 212:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** u08 uartReceiveByte(u08 nUart, u08* rxData)
+ 213:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 214:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// make sure we have a receive buffer
+ 215:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(uartRxBuffer[nUart].size)
+ 216:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 217:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// make sure we have data
+ 218:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		if(uartRxBuffer[nUart].datalength)
+ 219:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		{
+ 220:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// get byte from beginning of buffer
+ 221:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			*rxData = bufferGetFromFront(&uartRxBuffer[nUart]);
+ 222:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			return TRUE;
+ 223:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		}
+ 224:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		else
+ 225:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			return FALSE;			// no data
+ 226:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 227:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 228:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return FALSE;				// no buffer
+ 229:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 230:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 231:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartFlushReceiveBuffer(u08 nUart)
+ 232:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 233:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// flush all data from receive buffer
+ 234:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	bufferFlush(&uartRxBuffer[nUart]);
+ 235:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 236:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 237:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** u08 uartReceiveBufferIsEmpty(u08 nUart)
+ 238:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 360               		.stabn	68,0,238,.LM25-uartReceiveBufferIsEmpty
+ 361               	.LM25:
+ 362               	/* prologue: frame size=0 */
+ 363               	/* prologue end (size=0) */
+ 364 00c0 20E0      		ldi r18,lo8(0)
+ 365 00c2 30E0      		ldi r19,hi8(0)
+ 366 00c4 E82F      		mov r30,r24
+ 367 00c6 FF27      		clr r31
+ 368 00c8 83E0      		ldi r24,3
+ 369 00ca EE0F      	1:	lsl r30
+ 370 00cc FF1F      		rol r31
+ 371 00ce 8A95      		dec r24
+ 372 00d0 01F4      		brne 1b
+ 373 00d2 E050      		subi r30,lo8(-(uartRxBuffer))
+ 374 00d4 F040      		sbci r31,hi8(-(uartRxBuffer))
+ 375 00d6 8481      		ldd r24,Z+4
+ 376 00d8 9581      		ldd r25,Z+5
+ 377 00da 892B      		or r24,r25
+ 378 00dc 01F4      		brne .L32
+ 379               		.stabn	68,0,238,.LM26-uartReceiveBufferIsEmpty
+ 380               	.LM26:
+ 381 00de 21E0      		ldi r18,lo8(1)
+ 382 00e0 30E0      		ldi r19,hi8(1)
+ 383               	.L32:
+ 239:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	return (uartRxBuffer[nUart].datalength == 0);
+ 240:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 384               		.stabn	68,0,240,.LM27-uartReceiveBufferIsEmpty
+ 385               	.LM27:
+ 386 00e2 C901      		movw r24,r18
+ 387               	/* epilogue: frame size=0 */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 12
+
+
+ 388 00e4 0895      		ret
+ 389               	/* epilogue end (size=1) */
+ 390               	/* function uartReceiveBufferIsEmpty size 19 (18) */
+ 391               		.size	uartReceiveBufferIsEmpty, .-uartReceiveBufferIsEmpty
+ 392               	.Lscope7:
+ 393               		.stabs	"",36,0,0,.Lscope7-uartReceiveBufferIsEmpty
+ 394               		.stabd	78,0,0
+ 395               		.stabs	"uartReceiveService:F(0,15)",36,0,329,uartReceiveService
+ 396               		.stabs	"nUart:P(8,1)",64,0,328,24
+ 397               	.global	uartReceiveService
+ 398               		.type	uartReceiveService, @function
+ 399               	uartReceiveService:
+ 400               		.stabd	46,0,0
+ 241:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 242:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartAddToTxBuffer(u08 nUart, u08 data)
+ 243:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 244:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// add data byte to the end of the tx buffer
+ 245:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	bufferAddToEnd(&uartTxBuffer[nUart], data);
+ 246:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 247:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 248:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart0AddToTxBuffer(u08 data)
+ 249:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 250:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartAddToTxBuffer(0,data);
+ 251:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 252:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 253:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uart1AddToTxBuffer(u08 data)
+ 254:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 255:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartAddToTxBuffer(1,data);
+ 256:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 257:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 258:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartSendTxBuffer(u08 nUart)
+ 259:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 260:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// turn on buffered transmit
+ 261:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartBufferedTx[nUart] = TRUE;
+ 262:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// send the first byte to get things going by interrupts
+ 263:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartSendByte(nUart, bufferGetFromFront(&uartTxBuffer[nUart]));
+ 264:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 265:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 266:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** u08 uartSendBuffer(u08 nUart, char *buffer, u16 nBytes)
+ 267:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 268:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	register u08 first;
+ 269:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	register u16 i;
+ 270:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 271:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// check if there's space (and that we have any bytes to send at all)
+ 272:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if((uartTxBuffer[nUart].datalength + nBytes < uartTxBuffer[nUart].size) && nBytes)
+ 273:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 274:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// grab first character
+ 275:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		first = *buffer++;
+ 276:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// copy user buffer to uart transmit buffer
+ 277:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		for(i = 0; i < nBytes-1; i++)
+ 278:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		{
+ 279:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// put data bytes at end of buffer
+ 280:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			bufferAddToEnd(&uartTxBuffer[nUart], *buffer++);
+ 281:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		}
+ 282:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 283:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// send the first byte to get things going by interrupts
+ 284:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		uartBufferedTx[nUart] = TRUE;
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 13
+
+
+ 285:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		uartSendByte(nUart, first);
+ 286:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// return success
+ 287:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return TRUE;
+ 288:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 289:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 290:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 291:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// return failure
+ 292:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		return FALSE;
+ 293:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 294:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 295:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 296:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // UART Transmit Complete Interrupt Function
+ 297:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartTransmitService(u08 nUart)
+ 298:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 299:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// check if buffered tx is enabled
+ 300:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(uartBufferedTx[nUart])
+ 301:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 302:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// check if there's data left in the buffer
+ 303:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		if(uartTxBuffer[nUart].datalength)
+ 304:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		{
+ 305:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// send byte from top of buffer
+ 306:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			if(nUart)
+ 307:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 				outb(UDR1,  bufferGetFromFront(&uartTxBuffer[1]) );
+ 308:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			else
+ 309:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 				outb(UDR0,  bufferGetFromFront(&uartTxBuffer[0]) );
+ 310:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		}
+ 311:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		else
+ 312:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		{
+ 313:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// no data left
+ 314:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			uartBufferedTx[nUart] = FALSE;
+ 315:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// return to ready state
+ 316:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			uartReadyTx[nUart] = TRUE;
+ 317:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		}
+ 318:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 319:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 320:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 321:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// we're using single-byte tx mode
+ 322:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// indicate transmit complete, back to ready
+ 323:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		uartReadyTx[nUart] = TRUE;
+ 324:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 325:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 326:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 327:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** // UART Receive Complete Interrupt Function
+ 328:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** void uartReceiveService(u08 nUart)
+ 329:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 401               		.stabn	68,0,329,.LM28-uartReceiveService
+ 402               	.LM28:
+ 403               	/* prologue: frame size=0 */
+ 404 00e6 CF93      		push r28
+ 405 00e8 DF93      		push r29
+ 406               	/* prologue end (size=2) */
+ 330:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	u08 c;
+ 331:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// get received char
+ 332:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(nUart)
+ 407               		.stabn	68,0,332,.LM29-uartReceiveService
+ 408               	.LM29:
+ 409 00ea 8823      		tst r24
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 14
+
+
+ 410 00ec 01F0      		breq .L35
+ 333:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		c = inb(UDR1);
+ 411               		.stabn	68,0,333,.LM30-uartReceiveService
+ 412               	.LM30:
+ 413 00ee 6091 9C00 		lds r22,156
+ 414 00f2 00C0      		rjmp .L37
+ 415               	.L35:
+ 334:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 335:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		c = inb(UDR0);
+ 416               		.stabn	68,0,335,.LM31-uartReceiveService
+ 417               	.LM31:
+ 418 00f4 6CB1      		in r22,44-0x20
+ 419               	.L37:
+ 336:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 337:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// if there's a user function to handle this receive event
+ 338:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	if(UartRxFunc[nUart])
+ 420               		.stabn	68,0,338,.LM32-uartReceiveService
+ 421               	.LM32:
+ 422 00f6 282F      		mov r18,r24
+ 423 00f8 3327      		clr r19
+ 424 00fa E901      		movw r28,r18
+ 425 00fc CC0F      		lsl r28
+ 426 00fe DD1F      		rol r29
+ 427 0100 FE01      		movw r30,r28
+ 428 0102 E050      		subi r30,lo8(-(UartRxFunc))
+ 429 0104 F040      		sbci r31,hi8(-(UartRxFunc))
+ 430 0106 8081      		ld r24,Z
+ 431 0108 9181      		ldd r25,Z+1
+ 432 010a 892B      		or r24,r25
+ 433 010c 01F0      		breq .L38
+ 339:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 340:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// call it and pass the received data
+ 341:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		UartRxFunc[nUart](c);
+ 434               		.stabn	68,0,341,.LM33-uartReceiveService
+ 435               	.LM33:
+ 436 010e 0190      		ld __tmp_reg__,Z+
+ 437 0110 F081      		ld r31,Z
+ 438 0112 E02D      		mov r30,__tmp_reg__
+ 439 0114 862F      		mov r24,r22
+ 440 0116 0995      		icall
+ 441 0118 00C0      		rjmp .L42
+ 442               	.L38:
+ 342:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 343:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	else
+ 344:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	{
+ 345:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// otherwise do default processing
+ 346:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// put received char in buffer
+ 347:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		// check if there's space
+ 348:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		if( !bufferAddToEnd(&uartRxBuffer[nUart], c) )
+ 443               		.stabn	68,0,348,.LM34-uartReceiveService
+ 444               	.LM34:
+ 445 011a 93E0      		ldi r25,3
+ 446 011c 220F      	1:	lsl r18
+ 447 011e 331F      		rol r19
+ 448 0120 9A95      		dec r25
+ 449 0122 01F4      		brne 1b
+ 450 0124 C901      		movw r24,r18
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 15
+
+
+ 451 0126 8050      		subi r24,lo8(-(uartRxBuffer))
+ 452 0128 9040      		sbci r25,hi8(-(uartRxBuffer))
+ 453 012a 0E94 0000 		call bufferAddToEnd
+ 454 012e 8823      		tst r24
+ 455 0130 01F4      		brne .L42
+ 349:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		{
+ 350:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// no space in buffer
+ 351:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			// count overflow
+ 352:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 			uartRxOverflow[nUart]++;
+ 456               		.stabn	68,0,352,.LM35-uartReceiveService
+ 457               	.LM35:
+ 458 0132 FE01      		movw r30,r28
+ 459 0134 E050      		subi r30,lo8(-(uartRxOverflow))
+ 460 0136 F040      		sbci r31,hi8(-(uartRxOverflow))
+ 461 0138 8081      		ld r24,Z
+ 462 013a 9181      		ldd r25,Z+1
+ 463 013c 0196      		adiw r24,1
+ 464 013e 9183      		std Z+1,r25
+ 465 0140 8083      		st Z,r24
+ 466               	.L42:
+ 467               	/* epilogue: frame size=0 */
+ 468 0142 DF91      		pop r29
+ 469 0144 CF91      		pop r28
+ 470 0146 0895      		ret
+ 471               	/* epilogue end (size=3) */
+ 472               	/* function uartReceiveService size 49 (44) */
+ 473               		.size	uartReceiveService, .-uartReceiveService
+ 474               		.stabs	"c:r(8,1)",64,0,330,22
+ 475               		.stabn	192,0,0,uartReceiveService-uartReceiveService
+ 476               		.stabn	224,0,0,.Lscope8-uartReceiveService
+ 477               	.Lscope8:
+ 478               		.stabs	"",36,0,0,.Lscope8-uartReceiveService
+ 479               		.stabd	78,0,0
+ 480               		.stabs	"__vector_30:F(0,15)",36,0,376,__vector_30
+ 481               	.global	__vector_30
+ 482               		.type	__vector_30, @function
+ 483               	__vector_30:
+ 484               		.stabd	46,0,0
+ 353:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 		}
+ 354:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	}
+ 355:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 356:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 357:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** UART_INTERRUPT_HANDLER(SIG_UART0_TRANS)      
+ 358:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 359:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// service UART0 transmit interrupt
+ 360:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartTransmitService(0);
+ 361:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 362:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 363:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** UART_INTERRUPT_HANDLER(SIG_UART1_TRANS)      
+ 364:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 365:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// service UART1 transmit interrupt
+ 366:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartTransmitService(1);
+ 367:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 368:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 369:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** UART_INTERRUPT_HANDLER(SIG_UART0_RECV)      
+ 370:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 371:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// service UART0 receive interrupt
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 16
+
+
+ 372:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartReceiveService(0);
+ 373:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** }
+ 374:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 
+ 375:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** UART_INTERRUPT_HANDLER(SIG_UART1_RECV)      
+ 376:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** {
+ 485               		.stabn	68,0,376,.LM36-__vector_30
+ 486               	.LM36:
+ 487               	/* prologue: frame size=0 */
+ 488 0148 1F92      		push __zero_reg__
+ 489 014a 0F92      		push __tmp_reg__
+ 490 014c 0FB6      		in __tmp_reg__,__SREG__
+ 491 014e 0F92      		push __tmp_reg__
+ 492 0150 1124      		clr __zero_reg__
+ 493 0152 2F93      		push r18
+ 494 0154 3F93      		push r19
+ 495 0156 4F93      		push r20
+ 496 0158 5F93      		push r21
+ 497 015a 6F93      		push r22
+ 498 015c 7F93      		push r23
+ 499 015e 8F93      		push r24
+ 500 0160 9F93      		push r25
+ 501 0162 AF93      		push r26
+ 502 0164 BF93      		push r27
+ 503 0166 EF93      		push r30
+ 504 0168 FF93      		push r31
+ 505               	/* prologue end (size=17) */
+ 377:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	// service UART1 receive interrupt
+ 378:/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c **** 	uartReceiveService(1);
+ 506               		.stabn	68,0,378,.LM37-__vector_30
+ 507               	.LM37:
+ 508 016a 81E0      		ldi r24,lo8(1)
+ 509 016c 0E94 0000 		call uartReceiveService
+ 510               	/* epilogue: frame size=0 */
+ 511 0170 FF91      		pop r31
+ 512 0172 EF91      		pop r30
+ 513 0174 BF91      		pop r27
+ 514 0176 AF91      		pop r26
+ 515 0178 9F91      		pop r25
+ 516 017a 8F91      		pop r24
+ 517 017c 7F91      		pop r23
+ 518 017e 6F91      		pop r22
+ 519 0180 5F91      		pop r21
+ 520 0182 4F91      		pop r20
+ 521 0184 3F91      		pop r19
+ 522 0186 2F91      		pop r18
+ 523 0188 0F90      		pop __tmp_reg__
+ 524 018a 0FBE      		out __SREG__,__tmp_reg__
+ 525 018c 0F90      		pop __tmp_reg__
+ 526 018e 1F90      		pop __zero_reg__
+ 527 0190 1895      		reti
+ 528               	/* epilogue end (size=17) */
+ 529               	/* function __vector_30 size 37 (3) */
+ 530               		.size	__vector_30, .-__vector_30
+ 531               	.Lscope9:
+ 532               		.stabs	"",36,0,0,.Lscope9-__vector_30
+ 533               		.stabd	78,0,0
+ 534               		.stabs	"__vector_18:F(0,15)",36,0,370,__vector_18
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 17
+
+
+ 535               	.global	__vector_18
+ 536               		.type	__vector_18, @function
+ 537               	__vector_18:
+ 538               		.stabd	46,0,0
+ 539               		.stabn	68,0,370,.LM38-__vector_18
+ 540               	.LM38:
+ 541               	/* prologue: frame size=0 */
+ 542 0192 1F92      		push __zero_reg__
+ 543 0194 0F92      		push __tmp_reg__
+ 544 0196 0FB6      		in __tmp_reg__,__SREG__
+ 545 0198 0F92      		push __tmp_reg__
+ 546 019a 1124      		clr __zero_reg__
+ 547 019c 2F93      		push r18
+ 548 019e 3F93      		push r19
+ 549 01a0 4F93      		push r20
+ 550 01a2 5F93      		push r21
+ 551 01a4 6F93      		push r22
+ 552 01a6 7F93      		push r23
+ 553 01a8 8F93      		push r24
+ 554 01aa 9F93      		push r25
+ 555 01ac AF93      		push r26
+ 556 01ae BF93      		push r27
+ 557 01b0 EF93      		push r30
+ 558 01b2 FF93      		push r31
+ 559               	/* prologue end (size=17) */
+ 560               		.stabn	68,0,372,.LM39-__vector_18
+ 561               	.LM39:
+ 562 01b4 80E0      		ldi r24,lo8(0)
+ 563 01b6 0E94 0000 		call uartReceiveService
+ 564               	/* epilogue: frame size=0 */
+ 565 01ba FF91      		pop r31
+ 566 01bc EF91      		pop r30
+ 567 01be BF91      		pop r27
+ 568 01c0 AF91      		pop r26
+ 569 01c2 9F91      		pop r25
+ 570 01c4 8F91      		pop r24
+ 571 01c6 7F91      		pop r23
+ 572 01c8 6F91      		pop r22
+ 573 01ca 5F91      		pop r21
+ 574 01cc 4F91      		pop r20
+ 575 01ce 3F91      		pop r19
+ 576 01d0 2F91      		pop r18
+ 577 01d2 0F90      		pop __tmp_reg__
+ 578 01d4 0FBE      		out __SREG__,__tmp_reg__
+ 579 01d6 0F90      		pop __tmp_reg__
+ 580 01d8 1F90      		pop __zero_reg__
+ 581 01da 1895      		reti
+ 582               	/* epilogue end (size=17) */
+ 583               	/* function __vector_18 size 37 (3) */
+ 584               		.size	__vector_18, .-__vector_18
+ 585               	.Lscope10:
+ 586               		.stabs	"",36,0,0,.Lscope10-__vector_18
+ 587               		.stabd	78,0,0
+ 588               		.stabs	"uartSendBuffer:F(8,1)",36,0,267,uartSendBuffer
+ 589               		.stabs	"nUart:P(8,1)",64,0,266,8
+ 590               		.stabs	"buffer:P(0,20)=*(0,2)",64,0,266,30
+ 591               		.stabs	"nBytes:P(8,3)",64,0,266,10
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 18
+
+
+ 592               	.global	uartSendBuffer
+ 593               		.type	uartSendBuffer, @function
+ 594               	uartSendBuffer:
+ 595               		.stabd	46,0,0
+ 596               		.stabn	68,0,267,.LM40-uartSendBuffer
+ 597               	.LM40:
+ 598               	/* prologue: frame size=0 */
+ 599 01dc 8F92      		push r8
+ 600 01de 9F92      		push r9
+ 601 01e0 AF92      		push r10
+ 602 01e2 BF92      		push r11
+ 603 01e4 CF92      		push r12
+ 604 01e6 DF92      		push r13
+ 605 01e8 EF92      		push r14
+ 606 01ea FF92      		push r15
+ 607 01ec 0F93      		push r16
+ 608 01ee 1F93      		push r17
+ 609 01f0 CF93      		push r28
+ 610 01f2 DF93      		push r29
+ 611               	/* prologue end (size=12) */
+ 612 01f4 882E      		mov r8,r24
+ 613 01f6 FB01      		movw r30,r22
+ 614 01f8 5A01      		movw r10,r20
+ 615               		.stabn	68,0,272,.LM41-uartSendBuffer
+ 616               	.LM41:
+ 617 01fa E82E      		mov r14,r24
+ 618 01fc FF24      		clr r15
+ 619 01fe 8701      		movw r16,r14
+ 620 0200 53E0      		ldi r21,3
+ 621 0202 000F      	1:	lsl r16
+ 622 0204 111F      		rol r17
+ 623 0206 5A95      		dec r21
+ 624 0208 01F4      		brne 1b
+ 625 020a 0050      		subi r16,lo8(-(uartTxBuffer))
+ 626 020c 1040      		sbci r17,hi8(-(uartTxBuffer))
+ 627 020e E801      		movw r28,r16
+ 628 0210 8C81      		ldd r24,Y+4
+ 629 0212 9D81      		ldd r25,Y+5
+ 630 0214 8A0D      		add r24,r10
+ 631 0216 9B1D      		adc r25,r11
+ 632 0218 2A81      		ldd r18,Y+2
+ 633 021a 3B81      		ldd r19,Y+3
+ 634 021c 8217      		cp r24,r18
+ 635 021e 9307      		cpc r25,r19
+ 636 0220 00F4      		brsh .L48
+ 637               		.stabn	68,0,272,.LM42-uartSendBuffer
+ 638               	.LM42:
+ 639 0222 A114      		cp r10,__zero_reg__
+ 640 0224 B104      		cpc r11,__zero_reg__
+ 641 0226 01F0      		breq .L48
+ 642               		.stabn	68,0,275,.LM43-uartSendBuffer
+ 643               	.LM43:
+ 644 0228 9080      		ld r9,Z
+ 645               		.stabn	68,0,280,.LM44-uartSendBuffer
+ 646               	.LM44:
+ 647 022a CC24      		clr r12
+ 648 022c DD24      		clr r13
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 19
+
+
+ 649 022e EB01      		movw r28,r22
+ 650 0230 00C0      		rjmp .L51
+ 651               	.L52:
+ 652 0232 6881      		ld r22,Y
+ 653 0234 C801      		movw r24,r16
+ 654 0236 0E94 0000 		call bufferAddToEnd
+ 655               	.L51:
+ 656 023a 0894      		sec
+ 657 023c C11C      		adc r12,__zero_reg__
+ 658 023e D11C      		adc r13,__zero_reg__
+ 659 0240 2196      		adiw r28,1
+ 660               		.stabn	68,0,277,.LM45-uartSendBuffer
+ 661               	.LM45:
+ 662 0242 CA14      		cp r12,r10
+ 663 0244 DB04      		cpc r13,r11
+ 664 0246 01F4      		brne .L52
+ 665               		.stabn	68,0,284,.LM46-uartSendBuffer
+ 666               	.LM46:
+ 667 0248 E0E0      		ldi r30,lo8(uartBufferedTx)
+ 668 024a F0E0      		ldi r31,hi8(uartBufferedTx)
+ 669 024c EE0E      		add r14,r30
+ 670 024e FF1E      		adc r15,r31
+ 671 0250 8FEF      		ldi r24,lo8(-1)
+ 672 0252 E701      		movw r28,r14
+ 673 0254 8883      		st Y,r24
+ 674               		.stabn	68,0,285,.LM47-uartSendBuffer
+ 675               	.LM47:
+ 676 0256 692D      		mov r22,r9
+ 677 0258 882D      		mov r24,r8
+ 678 025a 0E94 0000 		call uartSendByte
+ 679 025e 8FEF      		ldi r24,lo8(255)
+ 680 0260 90E0      		ldi r25,hi8(255)
+ 681 0262 00C0      		rjmp .L54
+ 682               	.L48:
+ 683               		.stabn	68,0,287,.LM48-uartSendBuffer
+ 684               	.LM48:
+ 685 0264 80E0      		ldi r24,lo8(0)
+ 686 0266 90E0      		ldi r25,hi8(0)
+ 687               	.L54:
+ 688               	/* epilogue: frame size=0 */
+ 689 0268 DF91      		pop r29
+ 690 026a CF91      		pop r28
+ 691 026c 1F91      		pop r17
+ 692 026e 0F91      		pop r16
+ 693 0270 FF90      		pop r15
+ 694 0272 EF90      		pop r14
+ 695 0274 DF90      		pop r13
+ 696 0276 CF90      		pop r12
+ 697 0278 BF90      		pop r11
+ 698 027a AF90      		pop r10
+ 699 027c 9F90      		pop r9
+ 700 027e 8F90      		pop r8
+ 701 0280 0895      		ret
+ 702               	/* epilogue end (size=13) */
+ 703               	/* function uartSendBuffer size 83 (58) */
+ 704               		.size	uartSendBuffer, .-uartSendBuffer
+ 705               	.Lscope11:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 20
+
+
+ 706               		.stabs	"",36,0,0,.Lscope11-uartSendBuffer
+ 707               		.stabd	78,0,0
+ 708               		.stabs	"uartAddToTxBuffer:F(0,15)",36,0,243,uartAddToTxBuffer
+ 709               		.stabs	"nUart:P(8,1)",64,0,242,24
+ 710               		.stabs	"data:P(8,1)",64,0,242,22
+ 711               	.global	uartAddToTxBuffer
+ 712               		.type	uartAddToTxBuffer, @function
+ 713               	uartAddToTxBuffer:
+ 714               		.stabd	46,0,0
+ 715               		.stabn	68,0,243,.LM49-uartAddToTxBuffer
+ 716               	.LM49:
+ 717               	/* prologue: frame size=0 */
+ 718               	/* prologue end (size=0) */
+ 719               		.stabn	68,0,245,.LM50-uartAddToTxBuffer
+ 720               	.LM50:
+ 721 0282 9927      		clr r25
+ 722 0284 73E0      		ldi r23,3
+ 723 0286 880F      	1:	lsl r24
+ 724 0288 991F      		rol r25
+ 725 028a 7A95      		dec r23
+ 726 028c 01F4      		brne 1b
+ 727 028e 8050      		subi r24,lo8(-(uartTxBuffer))
+ 728 0290 9040      		sbci r25,hi8(-(uartTxBuffer))
+ 729 0292 0E94 0000 		call bufferAddToEnd
+ 730               	/* epilogue: frame size=0 */
+ 731 0296 0895      		ret
+ 732               	/* epilogue end (size=1) */
+ 733               	/* function uartAddToTxBuffer size 11 (10) */
+ 734               		.size	uartAddToTxBuffer, .-uartAddToTxBuffer
+ 735               	.Lscope12:
+ 736               		.stabs	"",36,0,0,.Lscope12-uartAddToTxBuffer
+ 737               		.stabd	78,0,0
+ 738               		.stabs	"uart1AddToTxBuffer:F(0,15)",36,0,254,uart1AddToTxBuffer
+ 739               		.stabs	"data:P(8,1)",64,0,253,24
+ 740               	.global	uart1AddToTxBuffer
+ 741               		.type	uart1AddToTxBuffer, @function
+ 742               	uart1AddToTxBuffer:
+ 743               		.stabd	46,0,0
+ 744               		.stabn	68,0,254,.LM51-uart1AddToTxBuffer
+ 745               	.LM51:
+ 746               	/* prologue: frame size=0 */
+ 747               	/* prologue end (size=0) */
+ 748               		.stabn	68,0,255,.LM52-uart1AddToTxBuffer
+ 749               	.LM52:
+ 750 0298 682F      		mov r22,r24
+ 751 029a 81E0      		ldi r24,lo8(1)
+ 752 029c 0E94 0000 		call uartAddToTxBuffer
+ 753               	/* epilogue: frame size=0 */
+ 754 02a0 0895      		ret
+ 755               	/* epilogue end (size=1) */
+ 756               	/* function uart1AddToTxBuffer size 5 (4) */
+ 757               		.size	uart1AddToTxBuffer, .-uart1AddToTxBuffer
+ 758               	.Lscope13:
+ 759               		.stabs	"",36,0,0,.Lscope13-uart1AddToTxBuffer
+ 760               		.stabd	78,0,0
+ 761               		.stabs	"uart0AddToTxBuffer:F(0,15)",36,0,249,uart0AddToTxBuffer
+ 762               		.stabs	"data:P(8,1)",64,0,248,24
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 21
+
+
+ 763               	.global	uart0AddToTxBuffer
+ 764               		.type	uart0AddToTxBuffer, @function
+ 765               	uart0AddToTxBuffer:
+ 766               		.stabd	46,0,0
+ 767               		.stabn	68,0,249,.LM53-uart0AddToTxBuffer
+ 768               	.LM53:
+ 769               	/* prologue: frame size=0 */
+ 770               	/* prologue end (size=0) */
+ 771               		.stabn	68,0,250,.LM54-uart0AddToTxBuffer
+ 772               	.LM54:
+ 773 02a2 682F      		mov r22,r24
+ 774 02a4 80E0      		ldi r24,lo8(0)
+ 775 02a6 0E94 0000 		call uartAddToTxBuffer
+ 776               	/* epilogue: frame size=0 */
+ 777 02aa 0895      		ret
+ 778               	/* epilogue end (size=1) */
+ 779               	/* function uart0AddToTxBuffer size 5 (4) */
+ 780               		.size	uart0AddToTxBuffer, .-uart0AddToTxBuffer
+ 781               	.Lscope14:
+ 782               		.stabs	"",36,0,0,.Lscope14-uart0AddToTxBuffer
+ 783               		.stabd	78,0,0
+ 784               		.stabs	"uartTransmitService:F(0,15)",36,0,298,uartTransmitService
+ 785               		.stabs	"nUart:P(8,1)",64,0,297,18
+ 786               	.global	uartTransmitService
+ 787               		.type	uartTransmitService, @function
+ 788               	uartTransmitService:
+ 789               		.stabd	46,0,0
+ 790               		.stabn	68,0,298,.LM55-uartTransmitService
+ 791               	.LM55:
+ 792               	/* prologue: frame size=0 */
+ 793 02ac CF93      		push r28
+ 794 02ae DF93      		push r29
+ 795               	/* prologue end (size=2) */
+ 796 02b0 282F      		mov r18,r24
+ 797               		.stabn	68,0,300,.LM56-uartTransmitService
+ 798               	.LM56:
+ 799 02b2 A82F      		mov r26,r24
+ 800 02b4 BB27      		clr r27
+ 801 02b6 ED01      		movw r28,r26
+ 802 02b8 C050      		subi r28,lo8(-(uartBufferedTx))
+ 803 02ba D040      		sbci r29,hi8(-(uartBufferedTx))
+ 804 02bc 8881      		ld r24,Y
+ 805 02be 8823      		tst r24
+ 806 02c0 01F0      		breq .L63
+ 807               		.stabn	68,0,303,.LM57-uartTransmitService
+ 808               	.LM57:
+ 809 02c2 FD01      		movw r30,r26
+ 810 02c4 83E0      		ldi r24,3
+ 811 02c6 EE0F      	1:	lsl r30
+ 812 02c8 FF1F      		rol r31
+ 813 02ca 8A95      		dec r24
+ 814 02cc 01F4      		brne 1b
+ 815 02ce E050      		subi r30,lo8(-(uartTxBuffer))
+ 816 02d0 F040      		sbci r31,hi8(-(uartTxBuffer))
+ 817 02d2 8481      		ldd r24,Z+4
+ 818 02d4 9581      		ldd r25,Z+5
+ 819 02d6 892B      		or r24,r25
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 22
+
+
+ 820 02d8 01F0      		breq .L65
+ 821               		.stabn	68,0,306,.LM58-uartTransmitService
+ 822               	.LM58:
+ 823 02da 2223      		tst r18
+ 824 02dc 01F0      		breq .L67
+ 825               		.stabn	68,0,307,.LM59-uartTransmitService
+ 826               	.LM59:
+ 827 02de 80E0      		ldi r24,lo8(uartTxBuffer+8)
+ 828 02e0 90E0      		ldi r25,hi8(uartTxBuffer+8)
+ 829 02e2 0E94 0000 		call bufferGetFromFront
+ 830 02e6 8093 9C00 		sts 156,r24
+ 831 02ea 00C0      		rjmp .L70
+ 832               	.L67:
+ 833               		.stabn	68,0,309,.LM60-uartTransmitService
+ 834               	.LM60:
+ 835 02ec 80E0      		ldi r24,lo8(uartTxBuffer)
+ 836 02ee 90E0      		ldi r25,hi8(uartTxBuffer)
+ 837 02f0 0E94 0000 		call bufferGetFromFront
+ 838 02f4 8CB9      		out 44-0x20,r24
+ 839 02f6 00C0      		rjmp .L70
+ 840               	.L65:
+ 841               		.stabn	68,0,314,.LM61-uartTransmitService
+ 842               	.LM61:
+ 843 02f8 1882      		st Y,__zero_reg__
+ 844               	.L63:
+ 845               		.stabn	68,0,323,.LM62-uartTransmitService
+ 846               	.LM62:
+ 847 02fa A050      		subi r26,lo8(-(uartReadyTx))
+ 848 02fc B040      		sbci r27,hi8(-(uartReadyTx))
+ 849 02fe 8FEF      		ldi r24,lo8(-1)
+ 850 0300 8C93      		st X,r24
+ 851               	.L70:
+ 852               	/* epilogue: frame size=0 */
+ 853 0302 DF91      		pop r29
+ 854 0304 CF91      		pop r28
+ 855 0306 0895      		ret
+ 856               	/* epilogue end (size=3) */
+ 857               	/* function uartTransmitService size 46 (41) */
+ 858               		.size	uartTransmitService, .-uartTransmitService
+ 859               	.Lscope15:
+ 860               		.stabs	"",36,0,0,.Lscope15-uartTransmitService
+ 861               		.stabd	78,0,0
+ 862               		.stabs	"__vector_32:F(0,15)",36,0,364,__vector_32
+ 863               	.global	__vector_32
+ 864               		.type	__vector_32, @function
+ 865               	__vector_32:
+ 866               		.stabd	46,0,0
+ 867               		.stabn	68,0,364,.LM63-__vector_32
+ 868               	.LM63:
+ 869               	/* prologue: frame size=0 */
+ 870 0308 1F92      		push __zero_reg__
+ 871 030a 0F92      		push __tmp_reg__
+ 872 030c 0FB6      		in __tmp_reg__,__SREG__
+ 873 030e 0F92      		push __tmp_reg__
+ 874 0310 1124      		clr __zero_reg__
+ 875 0312 2F93      		push r18
+ 876 0314 3F93      		push r19
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 23
+
+
+ 877 0316 4F93      		push r20
+ 878 0318 5F93      		push r21
+ 879 031a 6F93      		push r22
+ 880 031c 7F93      		push r23
+ 881 031e 8F93      		push r24
+ 882 0320 9F93      		push r25
+ 883 0322 AF93      		push r26
+ 884 0324 BF93      		push r27
+ 885 0326 EF93      		push r30
+ 886 0328 FF93      		push r31
+ 887               	/* prologue end (size=17) */
+ 888               		.stabn	68,0,366,.LM64-__vector_32
+ 889               	.LM64:
+ 890 032a 81E0      		ldi r24,lo8(1)
+ 891 032c 0E94 0000 		call uartTransmitService
+ 892               	/* epilogue: frame size=0 */
+ 893 0330 FF91      		pop r31
+ 894 0332 EF91      		pop r30
+ 895 0334 BF91      		pop r27
+ 896 0336 AF91      		pop r26
+ 897 0338 9F91      		pop r25
+ 898 033a 8F91      		pop r24
+ 899 033c 7F91      		pop r23
+ 900 033e 6F91      		pop r22
+ 901 0340 5F91      		pop r21
+ 902 0342 4F91      		pop r20
+ 903 0344 3F91      		pop r19
+ 904 0346 2F91      		pop r18
+ 905 0348 0F90      		pop __tmp_reg__
+ 906 034a 0FBE      		out __SREG__,__tmp_reg__
+ 907 034c 0F90      		pop __tmp_reg__
+ 908 034e 1F90      		pop __zero_reg__
+ 909 0350 1895      		reti
+ 910               	/* epilogue end (size=17) */
+ 911               	/* function __vector_32 size 37 (3) */
+ 912               		.size	__vector_32, .-__vector_32
+ 913               	.Lscope16:
+ 914               		.stabs	"",36,0,0,.Lscope16-__vector_32
+ 915               		.stabd	78,0,0
+ 916               		.stabs	"__vector_20:F(0,15)",36,0,358,__vector_20
+ 917               	.global	__vector_20
+ 918               		.type	__vector_20, @function
+ 919               	__vector_20:
+ 920               		.stabd	46,0,0
+ 921               		.stabn	68,0,358,.LM65-__vector_20
+ 922               	.LM65:
+ 923               	/* prologue: frame size=0 */
+ 924 0352 1F92      		push __zero_reg__
+ 925 0354 0F92      		push __tmp_reg__
+ 926 0356 0FB6      		in __tmp_reg__,__SREG__
+ 927 0358 0F92      		push __tmp_reg__
+ 928 035a 1124      		clr __zero_reg__
+ 929 035c 2F93      		push r18
+ 930 035e 3F93      		push r19
+ 931 0360 4F93      		push r20
+ 932 0362 5F93      		push r21
+ 933 0364 6F93      		push r22
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 24
+
+
+ 934 0366 7F93      		push r23
+ 935 0368 8F93      		push r24
+ 936 036a 9F93      		push r25
+ 937 036c AF93      		push r26
+ 938 036e BF93      		push r27
+ 939 0370 EF93      		push r30
+ 940 0372 FF93      		push r31
+ 941               	/* prologue end (size=17) */
+ 942               		.stabn	68,0,360,.LM66-__vector_20
+ 943               	.LM66:
+ 944 0374 80E0      		ldi r24,lo8(0)
+ 945 0376 0E94 0000 		call uartTransmitService
+ 946               	/* epilogue: frame size=0 */
+ 947 037a FF91      		pop r31
+ 948 037c EF91      		pop r30
+ 949 037e BF91      		pop r27
+ 950 0380 AF91      		pop r26
+ 951 0382 9F91      		pop r25
+ 952 0384 8F91      		pop r24
+ 953 0386 7F91      		pop r23
+ 954 0388 6F91      		pop r22
+ 955 038a 5F91      		pop r21
+ 956 038c 4F91      		pop r20
+ 957 038e 3F91      		pop r19
+ 958 0390 2F91      		pop r18
+ 959 0392 0F90      		pop __tmp_reg__
+ 960 0394 0FBE      		out __SREG__,__tmp_reg__
+ 961 0396 0F90      		pop __tmp_reg__
+ 962 0398 1F90      		pop __zero_reg__
+ 963 039a 1895      		reti
+ 964               	/* epilogue end (size=17) */
+ 965               	/* function __vector_20 size 37 (3) */
+ 966               		.size	__vector_20, .-__vector_20
+ 967               	.Lscope17:
+ 968               		.stabs	"",36,0,0,.Lscope17-__vector_20
+ 969               		.stabd	78,0,0
+ 970               		.stabs	"uartSendTxBuffer:F(0,15)",36,0,259,uartSendTxBuffer
+ 971               		.stabs	"nUart:P(8,1)",64,0,258,17
+ 972               	.global	uartSendTxBuffer
+ 973               		.type	uartSendTxBuffer, @function
+ 974               	uartSendTxBuffer:
+ 975               		.stabd	46,0,0
+ 976               		.stabn	68,0,259,.LM67-uartSendTxBuffer
+ 977               	.LM67:
+ 978               	/* prologue: frame size=0 */
+ 979 039c 1F93      		push r17
+ 980               	/* prologue end (size=1) */
+ 981 039e 182F      		mov r17,r24
+ 982               		.stabn	68,0,261,.LM68-uartSendTxBuffer
+ 983               	.LM68:
+ 984 03a0 9927      		clr r25
+ 985 03a2 FC01      		movw r30,r24
+ 986 03a4 E050      		subi r30,lo8(-(uartBufferedTx))
+ 987 03a6 F040      		sbci r31,hi8(-(uartBufferedTx))
+ 988 03a8 2FEF      		ldi r18,lo8(-1)
+ 989 03aa 2083      		st Z,r18
+ 990               		.stabn	68,0,263,.LM69-uartSendTxBuffer
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 25
+
+
+ 991               	.LM69:
+ 992 03ac 23E0      		ldi r18,3
+ 993 03ae 880F      	1:	lsl r24
+ 994 03b0 991F      		rol r25
+ 995 03b2 2A95      		dec r18
+ 996 03b4 01F4      		brne 1b
+ 997 03b6 8050      		subi r24,lo8(-(uartTxBuffer))
+ 998 03b8 9040      		sbci r25,hi8(-(uartTxBuffer))
+ 999 03ba 0E94 0000 		call bufferGetFromFront
+ 1000 03be 682F      		mov r22,r24
+ 1001 03c0 812F      		mov r24,r17
+ 1002 03c2 0E94 0000 		call uartSendByte
+ 1003               	/* epilogue: frame size=0 */
+ 1004 03c6 1F91      		pop r17
+ 1005 03c8 0895      		ret
+ 1006               	/* epilogue end (size=2) */
+ 1007               	/* function uartSendTxBuffer size 23 (20) */
+ 1008               		.size	uartSendTxBuffer, .-uartSendTxBuffer
+ 1009               	.Lscope18:
+ 1010               		.stabs	"",36,0,0,.Lscope18-uartSendTxBuffer
+ 1011               		.stabd	78,0,0
+ 1012               		.stabs	"uartReceiveByte:F(8,1)",36,0,213,uartReceiveByte
+ 1013               		.stabs	"nUart:P(8,1)",64,0,212,24
+ 1014               		.stabs	"rxData:P(0,21)=*(8,1)",64,0,212,28
+ 1015               	.global	uartReceiveByte
+ 1016               		.type	uartReceiveByte, @function
+ 1017               	uartReceiveByte:
+ 1018               		.stabd	46,0,0
+ 1019               		.stabn	68,0,213,.LM70-uartReceiveByte
+ 1020               	.LM70:
+ 1021               	/* prologue: frame size=0 */
+ 1022 03ca CF93      		push r28
+ 1023 03cc DF93      		push r29
+ 1024               	/* prologue end (size=2) */
+ 1025 03ce EB01      		movw r28,r22
+ 1026               		.stabn	68,0,215,.LM71-uartReceiveByte
+ 1027               	.LM71:
+ 1028 03d0 E82F      		mov r30,r24
+ 1029 03d2 FF27      		clr r31
+ 1030 03d4 33E0      		ldi r19,3
+ 1031 03d6 EE0F      	1:	lsl r30
+ 1032 03d8 FF1F      		rol r31
+ 1033 03da 3A95      		dec r19
+ 1034 03dc 01F4      		brne 1b
+ 1035 03de E050      		subi r30,lo8(-(uartRxBuffer))
+ 1036 03e0 F040      		sbci r31,hi8(-(uartRxBuffer))
+ 1037 03e2 8281      		ldd r24,Z+2
+ 1038 03e4 9381      		ldd r25,Z+3
+ 1039 03e6 892B      		or r24,r25
+ 1040 03e8 01F0      		breq .L78
+ 1041               		.stabn	68,0,218,.LM72-uartReceiveByte
+ 1042               	.LM72:
+ 1043 03ea 8481      		ldd r24,Z+4
+ 1044 03ec 9581      		ldd r25,Z+5
+ 1045 03ee 892B      		or r24,r25
+ 1046 03f0 01F0      		breq .L78
+ 1047               		.stabn	68,0,221,.LM73-uartReceiveByte
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 26
+
+
+ 1048               	.LM73:
+ 1049 03f2 CF01      		movw r24,r30
+ 1050 03f4 0E94 0000 		call bufferGetFromFront
+ 1051 03f8 8883      		st Y,r24
+ 1052 03fa 8FEF      		ldi r24,lo8(255)
+ 1053 03fc 90E0      		ldi r25,hi8(255)
+ 1054 03fe 00C0      		rjmp .L81
+ 1055               	.L78:
+ 1056               		.stabn	68,0,222,.LM74-uartReceiveByte
+ 1057               	.LM74:
+ 1058 0400 80E0      		ldi r24,lo8(0)
+ 1059 0402 90E0      		ldi r25,hi8(0)
+ 1060               	.L81:
+ 1061               	/* epilogue: frame size=0 */
+ 1062 0404 DF91      		pop r29
+ 1063 0406 CF91      		pop r28
+ 1064 0408 0895      		ret
+ 1065               	/* epilogue end (size=3) */
+ 1066               	/* function uartReceiveByte size 32 (27) */
+ 1067               		.size	uartReceiveByte, .-uartReceiveByte
+ 1068               	.Lscope19:
+ 1069               		.stabs	"",36,0,0,.Lscope19-uartReceiveByte
+ 1070               		.stabd	78,0,0
+ 1071               		.stabs	"uart1GetByte:F(0,1)",36,0,202,uart1GetByte
+ 1072               	.global	uart1GetByte
+ 1073               		.type	uart1GetByte, @function
+ 1074               	uart1GetByte:
+ 1075               		.stabd	46,0,0
+ 1076               		.stabn	68,0,202,.LM75-uart1GetByte
+ 1077               	.LM75:
+ 1078               	/* prologue: frame size=1 */
+ 1079 040a CF93      		push r28
+ 1080 040c DF93      		push r29
+ 1081 040e CDB7      		in r28,__SP_L__
+ 1082 0410 DEB7      		in r29,__SP_H__
+ 1083 0412 2197      		sbiw r28,1
+ 1084 0414 0FB6      		in __tmp_reg__,__SREG__
+ 1085 0416 F894      		cli
+ 1086 0418 DEBF      		out __SP_H__,r29
+ 1087 041a 0FBE      		out __SREG__,__tmp_reg__
+ 1088 041c CDBF      		out __SP_L__,r28
+ 1089               	/* prologue end (size=10) */
+ 1090               		.stabn	68,0,205,.LM76-uart1GetByte
+ 1091               	.LM76:
+ 1092 041e BE01      		movw r22,r28
+ 1093 0420 6F5F      		subi r22,lo8(-(1))
+ 1094 0422 7F4F      		sbci r23,hi8(-(1))
+ 1095 0424 81E0      		ldi r24,lo8(1)
+ 1096 0426 0E94 0000 		call uartReceiveByte
+ 1097 042a 8823      		tst r24
+ 1098 042c 01F4      		brne .L84
+ 1099               		.stabn	68,0,205,.LM77-uart1GetByte
+ 1100               	.LM77:
+ 1101 042e 8FEF      		ldi r24,lo8(-1)
+ 1102 0430 9FEF      		ldi r25,hi8(-1)
+ 1103 0432 00C0      		rjmp .L86
+ 1104               	.L84:
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 27
+
+
+ 1105               		.stabn	68,0,206,.LM78-uart1GetByte
+ 1106               	.LM78:
+ 1107 0434 8981      		ldd r24,Y+1
+ 1108 0436 9927      		clr r25
+ 1109               	.L86:
+ 1110               	/* epilogue: frame size=1 */
+ 1111 0438 2196      		adiw r28,1
+ 1112 043a 0FB6      		in __tmp_reg__,__SREG__
+ 1113 043c F894      		cli
+ 1114 043e DEBF      		out __SP_H__,r29
+ 1115 0440 0FBE      		out __SREG__,__tmp_reg__
+ 1116 0442 CDBF      		out __SP_L__,r28
+ 1117 0444 DF91      		pop r29
+ 1118 0446 CF91      		pop r28
+ 1119 0448 0895      		ret
+ 1120               	/* epilogue end (size=9) */
+ 1121               	/* function uart1GetByte size 32 (13) */
+ 1122               		.size	uart1GetByte, .-uart1GetByte
+ 1123               		.stabs	"c:(8,1)",128,0,204,1
+ 1124               		.stabn	192,0,0,uart1GetByte-uart1GetByte
+ 1125               		.stabn	224,0,0,.Lscope20-uart1GetByte
+ 1126               	.Lscope20:
+ 1127               		.stabs	"",36,0,0,.Lscope20-uart1GetByte
+ 1128               		.stabd	78,0,0
+ 1129               		.stabs	"uart0GetByte:F(0,1)",36,0,192,uart0GetByte
+ 1130               	.global	uart0GetByte
+ 1131               		.type	uart0GetByte, @function
+ 1132               	uart0GetByte:
+ 1133               		.stabd	46,0,0
+ 1134               		.stabn	68,0,192,.LM79-uart0GetByte
+ 1135               	.LM79:
+ 1136               	/* prologue: frame size=1 */
+ 1137 044a CF93      		push r28
+ 1138 044c DF93      		push r29
+ 1139 044e CDB7      		in r28,__SP_L__
+ 1140 0450 DEB7      		in r29,__SP_H__
+ 1141 0452 2197      		sbiw r28,1
+ 1142 0454 0FB6      		in __tmp_reg__,__SREG__
+ 1143 0456 F894      		cli
+ 1144 0458 DEBF      		out __SP_H__,r29
+ 1145 045a 0FBE      		out __SREG__,__tmp_reg__
+ 1146 045c CDBF      		out __SP_L__,r28
+ 1147               	/* prologue end (size=10) */
+ 1148               		.stabn	68,0,195,.LM80-uart0GetByte
+ 1149               	.LM80:
+ 1150 045e BE01      		movw r22,r28
+ 1151 0460 6F5F      		subi r22,lo8(-(1))
+ 1152 0462 7F4F      		sbci r23,hi8(-(1))
+ 1153 0464 80E0      		ldi r24,lo8(0)
+ 1154 0466 0E94 0000 		call uartReceiveByte
+ 1155 046a 8823      		tst r24
+ 1156 046c 01F4      		brne .L89
+ 1157               		.stabn	68,0,195,.LM81-uart0GetByte
+ 1158               	.LM81:
+ 1159 046e 8FEF      		ldi r24,lo8(-1)
+ 1160 0470 9FEF      		ldi r25,hi8(-1)
+ 1161 0472 00C0      		rjmp .L91
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 28
+
+
+ 1162               	.L89:
+ 1163               		.stabn	68,0,196,.LM82-uart0GetByte
+ 1164               	.LM82:
+ 1165 0474 8981      		ldd r24,Y+1
+ 1166 0476 9927      		clr r25
+ 1167               	.L91:
+ 1168               	/* epilogue: frame size=1 */
+ 1169 0478 2196      		adiw r28,1
+ 1170 047a 0FB6      		in __tmp_reg__,__SREG__
+ 1171 047c F894      		cli
+ 1172 047e DEBF      		out __SP_H__,r29
+ 1173 0480 0FBE      		out __SREG__,__tmp_reg__
+ 1174 0482 CDBF      		out __SP_L__,r28
+ 1175 0484 DF91      		pop r29
+ 1176 0486 CF91      		pop r28
+ 1177 0488 0895      		ret
+ 1178               	/* epilogue end (size=9) */
+ 1179               	/* function uart0GetByte size 32 (13) */
+ 1180               		.size	uart0GetByte, .-uart0GetByte
+ 1181               		.stabs	"c:(8,1)",128,0,194,1
+ 1182               		.stabn	192,0,0,uart0GetByte-uart0GetByte
+ 1183               		.stabn	224,0,0,.Lscope21-uart0GetByte
+ 1184               	.Lscope21:
+ 1185               		.stabs	"",36,0,0,.Lscope21-uart0GetByte
+ 1186               		.stabd	78,0,0
+ 1187               		.stabs	"uartFlushReceiveBuffer:F(0,15)",36,0,232,uartFlushReceiveBuffer
+ 1188               		.stabs	"nUart:P(8,1)",64,0,231,24
+ 1189               	.global	uartFlushReceiveBuffer
+ 1190               		.type	uartFlushReceiveBuffer, @function
+ 1191               	uartFlushReceiveBuffer:
+ 1192               		.stabd	46,0,0
+ 1193               		.stabn	68,0,232,.LM83-uartFlushReceiveBuffer
+ 1194               	.LM83:
+ 1195               	/* prologue: frame size=0 */
+ 1196               	/* prologue end (size=0) */
+ 1197               		.stabn	68,0,234,.LM84-uartFlushReceiveBuffer
+ 1198               	.LM84:
+ 1199 048a 9927      		clr r25
+ 1200 048c 43E0      		ldi r20,3
+ 1201 048e 880F      	1:	lsl r24
+ 1202 0490 991F      		rol r25
+ 1203 0492 4A95      		dec r20
+ 1204 0494 01F4      		brne 1b
+ 1205 0496 8050      		subi r24,lo8(-(uartRxBuffer))
+ 1206 0498 9040      		sbci r25,hi8(-(uartRxBuffer))
+ 1207 049a 0E94 0000 		call bufferFlush
+ 1208               	/* epilogue: frame size=0 */
+ 1209 049e 0895      		ret
+ 1210               	/* epilogue end (size=1) */
+ 1211               	/* function uartFlushReceiveBuffer size 11 (10) */
+ 1212               		.size	uartFlushReceiveBuffer, .-uartFlushReceiveBuffer
+ 1213               	.Lscope22:
+ 1214               		.stabs	"",36,0,0,.Lscope22-uartFlushReceiveBuffer
+ 1215               		.stabd	78,0,0
+ 1216               		.stabs	"uart1InitBuffers:F(0,15)",36,0,106,uart1InitBuffers
+ 1217               	.global	uart1InitBuffers
+ 1218               		.type	uart1InitBuffers, @function
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 29
+
+
+ 1219               	uart1InitBuffers:
+ 1220               		.stabd	46,0,0
+ 1221               		.stabn	68,0,106,.LM85-uart1InitBuffers
+ 1222               	.LM85:
+ 1223               	/* prologue: frame size=0 */
+ 1224               	/* prologue end (size=0) */
+ 1225               		.stabn	68,0,109,.LM86-uart1InitBuffers
+ 1226               	.LM86:
+ 1227 04a0 40E8      		ldi r20,lo8(128)
+ 1228 04a2 50E0      		ldi r21,hi8(128)
+ 1229 04a4 60E0      		ldi r22,lo8(uart1RxData)
+ 1230 04a6 70E0      		ldi r23,hi8(uart1RxData)
+ 1231 04a8 80E0      		ldi r24,lo8(uartRxBuffer+8)
+ 1232 04aa 90E0      		ldi r25,hi8(uartRxBuffer+8)
+ 1233 04ac 0E94 0000 		call bufferInit
+ 1234               		.stabn	68,0,110,.LM87-uart1InitBuffers
+ 1235               	.LM87:
+ 1236 04b0 40E1      		ldi r20,lo8(16)
+ 1237 04b2 50E0      		ldi r21,hi8(16)
+ 1238 04b4 60E0      		ldi r22,lo8(uart1TxData)
+ 1239 04b6 70E0      		ldi r23,hi8(uart1TxData)
+ 1240 04b8 80E0      		ldi r24,lo8(uartTxBuffer+8)
+ 1241 04ba 90E0      		ldi r25,hi8(uartTxBuffer+8)
+ 1242 04bc 0E94 0000 		call bufferInit
+ 1243               	/* epilogue: frame size=0 */
+ 1244 04c0 0895      		ret
+ 1245               	/* epilogue end (size=1) */
+ 1246               	/* function uart1InitBuffers size 17 (16) */
+ 1247               		.size	uart1InitBuffers, .-uart1InitBuffers
+ 1248               	.Lscope23:
+ 1249               		.stabs	"",36,0,0,.Lscope23-uart1InitBuffers
+ 1250               		.stabd	78,0,0
+ 1251               		.stabs	"uart1Init:F(0,15)",36,0,74,uart1Init
+ 1252               	.global	uart1Init
+ 1253               		.type	uart1Init, @function
+ 1254               	uart1Init:
+ 1255               		.stabd	46,0,0
+ 1256               		.stabn	68,0,74,.LM88-uart1Init
+ 1257               	.LM88:
+ 1258               	/* prologue: frame size=0 */
+ 1259               	/* prologue end (size=0) */
+ 1260               		.stabn	68,0,76,.LM89-uart1Init
+ 1261               	.LM89:
+ 1262 04c2 0E94 0000 		call uart1InitBuffers
+ 1263               		.stabn	68,0,78,.LM90-uart1Init
+ 1264               	.LM90:
+ 1265 04c6 1092 0000 		sts (UartRxFunc+2)+1,__zero_reg__
+ 1266 04ca 1092 0000 		sts UartRxFunc+2,__zero_reg__
+ 1267               		.stabn	68,0,80,.LM91-uart1Init
+ 1268               	.LM91:
+ 1269 04ce 88ED      		ldi r24,lo8(-40)
+ 1270 04d0 8093 9A00 		sts 154,r24
+ 1271               		.stabn	68,0,82,.LM92-uart1Init
+ 1272               	.LM92:
+ 1273 04d4 40E8      		ldi r20,lo8(9600)
+ 1274 04d6 55E2      		ldi r21,hi8(9600)
+ 1275 04d8 60E0      		ldi r22,hlo8(9600)
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 30
+
+
+ 1276 04da 70E0      		ldi r23,hhi8(9600)
+ 1277 04dc 81E0      		ldi r24,lo8(1)
+ 1278 04de 0E94 0000 		call uartSetBaudRate
+ 1279               		.stabn	68,0,84,.LM93-uart1Init
+ 1280               	.LM93:
+ 1281 04e2 8FEF      		ldi r24,lo8(-1)
+ 1282 04e4 8093 0000 		sts uartReadyTx+1,r24
+ 1283               		.stabn	68,0,85,.LM94-uart1Init
+ 1284               	.LM94:
+ 1285 04e8 1092 0000 		sts uartBufferedTx+1,__zero_reg__
+ 1286               		.stabn	68,0,87,.LM95-uart1Init
+ 1287               	.LM95:
+ 1288 04ec 1092 0000 		sts (uartRxOverflow+2)+1,__zero_reg__
+ 1289 04f0 1092 0000 		sts uartRxOverflow+2,__zero_reg__
+ 1290               		.stabn	68,0,89,.LM96-uart1Init
+ 1291               	.LM96:
+ 1292               	/* #APP */
+ 1293 04f4 7894      		sei
+ 1294               	/* #NOAPP */
+ 1295               	/* epilogue: frame size=0 */
+ 1296 04f6 0895      		ret
+ 1297               	/* epilogue end (size=1) */
+ 1298               	/* function uart1Init size 28 (27) */
+ 1299               		.size	uart1Init, .-uart1Init
+ 1300               	.Lscope24:
+ 1301               		.stabs	"",36,0,0,.Lscope24-uart1Init
+ 1302               		.stabd	78,0,0
+ 1303               		.stabs	"uart0InitBuffers:F(0,15)",36,0,93,uart0InitBuffers
+ 1304               	.global	uart0InitBuffers
+ 1305               		.type	uart0InitBuffers, @function
+ 1306               	uart0InitBuffers:
+ 1307               		.stabd	46,0,0
+ 1308               		.stabn	68,0,93,.LM97-uart0InitBuffers
+ 1309               	.LM97:
+ 1310               	/* prologue: frame size=0 */
+ 1311               	/* prologue end (size=0) */
+ 1312               		.stabn	68,0,96,.LM98-uart0InitBuffers
+ 1313               	.LM98:
+ 1314 04f8 40E8      		ldi r20,lo8(128)
+ 1315 04fa 50E0      		ldi r21,hi8(128)
+ 1316 04fc 60E0      		ldi r22,lo8(uart0RxData)
+ 1317 04fe 70E0      		ldi r23,hi8(uart0RxData)
+ 1318 0500 80E0      		ldi r24,lo8(uartRxBuffer)
+ 1319 0502 90E0      		ldi r25,hi8(uartRxBuffer)
+ 1320 0504 0E94 0000 		call bufferInit
+ 1321               		.stabn	68,0,97,.LM99-uart0InitBuffers
+ 1322               	.LM99:
+ 1323 0508 40E1      		ldi r20,lo8(16)
+ 1324 050a 50E0      		ldi r21,hi8(16)
+ 1325 050c 60E0      		ldi r22,lo8(uart0TxData)
+ 1326 050e 70E0      		ldi r23,hi8(uart0TxData)
+ 1327 0510 80E0      		ldi r24,lo8(uartTxBuffer)
+ 1328 0512 90E0      		ldi r25,hi8(uartTxBuffer)
+ 1329 0514 0E94 0000 		call bufferInit
+ 1330               	/* epilogue: frame size=0 */
+ 1331 0518 0895      		ret
+ 1332               	/* epilogue end (size=1) */
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 31
+
+
+ 1333               	/* function uart0InitBuffers size 17 (16) */
+ 1334               		.size	uart0InitBuffers, .-uart0InitBuffers
+ 1335               	.Lscope25:
+ 1336               		.stabs	"",36,0,0,.Lscope25-uart0InitBuffers
+ 1337               		.stabd	78,0,0
+ 1338               		.stabs	"uart0Init:F(0,15)",36,0,55,uart0Init
+ 1339               	.global	uart0Init
+ 1340               		.type	uart0Init, @function
+ 1341               	uart0Init:
+ 1342               		.stabd	46,0,0
+ 1343               		.stabn	68,0,55,.LM100-uart0Init
+ 1344               	.LM100:
+ 1345               	/* prologue: frame size=0 */
+ 1346               	/* prologue end (size=0) */
+ 1347               		.stabn	68,0,57,.LM101-uart0Init
+ 1348               	.LM101:
+ 1349 051a 0E94 0000 		call uart0InitBuffers
+ 1350               		.stabn	68,0,59,.LM102-uart0Init
+ 1351               	.LM102:
+ 1352 051e 1092 0000 		sts (UartRxFunc)+1,__zero_reg__
+ 1353 0522 1092 0000 		sts UartRxFunc,__zero_reg__
+ 1354               		.stabn	68,0,61,.LM103-uart0Init
+ 1355               	.LM103:
+ 1356 0526 88ED      		ldi r24,lo8(-40)
+ 1357 0528 8AB9      		out 42-0x20,r24
+ 1358               		.stabn	68,0,63,.LM104-uart0Init
+ 1359               	.LM104:
+ 1360 052a 40E8      		ldi r20,lo8(9600)
+ 1361 052c 55E2      		ldi r21,hi8(9600)
+ 1362 052e 60E0      		ldi r22,hlo8(9600)
+ 1363 0530 70E0      		ldi r23,hhi8(9600)
+ 1364 0532 80E0      		ldi r24,lo8(0)
+ 1365 0534 0E94 0000 		call uartSetBaudRate
+ 1366               		.stabn	68,0,65,.LM105-uart0Init
+ 1367               	.LM105:
+ 1368 0538 8FEF      		ldi r24,lo8(-1)
+ 1369 053a 8093 0000 		sts uartReadyTx,r24
+ 1370               		.stabn	68,0,66,.LM106-uart0Init
+ 1371               	.LM106:
+ 1372 053e 1092 0000 		sts uartBufferedTx,__zero_reg__
+ 1373               		.stabn	68,0,68,.LM107-uart0Init
+ 1374               	.LM107:
+ 1375 0542 1092 0000 		sts (uartRxOverflow)+1,__zero_reg__
+ 1376 0546 1092 0000 		sts uartRxOverflow,__zero_reg__
+ 1377               		.stabn	68,0,70,.LM108-uart0Init
+ 1378               	.LM108:
+ 1379               	/* #APP */
+ 1380 054a 7894      		sei
+ 1381               	/* #NOAPP */
+ 1382               	/* epilogue: frame size=0 */
+ 1383 054c 0895      		ret
+ 1384               	/* epilogue end (size=1) */
+ 1385               	/* function uart0Init size 27 (26) */
+ 1386               		.size	uart0Init, .-uart0Init
+ 1387               	.Lscope26:
+ 1388               		.stabs	"",36,0,0,.Lscope26-uart0Init
+ 1389               		.stabd	78,0,0
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 32
+
+
+ 1390               		.stabs	"uartInit:F(0,15)",36,0,48,uartInit
+ 1391               	.global	uartInit
+ 1392               		.type	uartInit, @function
+ 1393               	uartInit:
+ 1394               		.stabd	46,0,0
+ 1395               		.stabn	68,0,48,.LM109-uartInit
+ 1396               	.LM109:
+ 1397               	/* prologue: frame size=0 */
+ 1398               	/* prologue end (size=0) */
+ 1399               		.stabn	68,0,50,.LM110-uartInit
+ 1400               	.LM110:
+ 1401 054e 0E94 0000 		call uart0Init
+ 1402               		.stabn	68,0,51,.LM111-uartInit
+ 1403               	.LM111:
+ 1404 0552 0E94 0000 		call uart1Init
+ 1405               	/* epilogue: frame size=0 */
+ 1406 0556 0895      		ret
+ 1407               	/* epilogue end (size=1) */
+ 1408               	/* function uartInit size 5 (4) */
+ 1409               		.size	uartInit, .-uartInit
+ 1410               	.Lscope27:
+ 1411               		.stabs	"",36,0,0,.Lscope27-uartInit
+ 1412               		.stabd	78,0,0
+ 1413               		.lcomm uart0RxData,128
+ 1414               		.lcomm uart0TxData,16
+ 1415               		.lcomm uart1RxData,128
+ 1416               		.lcomm uart1TxData,16
+ 1417               		.lcomm UartRxFunc,4
+ 1418               		.comm uartReadyTx,2,1
+ 1419               		.comm uartBufferedTx,2,1
+ 1420               		.comm uartRxBuffer,16,1
+ 1421               		.comm uartTxBuffer,16,1
+ 1422               		.comm uartRxOverflow,4,1
+ 1423               		.stabs	"uart0RxData:S(0,22)=ar(0,23)=r(0,23);0;0177777;;0;127;(0,2)",40,0,38,uart0RxData
+ 1424               		.stabs	"uart0TxData:S(0,24)=ar(0,23);0;15;(0,2)",40,0,39,uart0TxData
+ 1425               		.stabs	"uart1RxData:S(0,22)",40,0,40,uart1RxData
+ 1426               		.stabs	"uart1TxData:S(0,24)",40,0,41,uart1TxData
+ 1427               		.stabs	"UartRxFunc:S(0,25)=ar(0,23);0;1;(0,26)=B(0,16)",40,0,45,UartRxFunc
+ 1428               		.stabs	"uartReadyTx:G(0,27)=ar(0,23);0;1;(0,28)=B(8,1)",32,0,29,0
+ 1429               		.stabs	"uartBufferedTx:G(0,27)",32,0,30,0
+ 1430               		.stabs	"uartRxBuffer:G(0,29)=ar(0,23);0;1;(5,3)",32,0,32,0
+ 1431               		.stabs	"uartTxBuffer:G(0,29)",32,0,33,0
+ 1432               		.stabs	"uartRxOverflow:G(0,30)=ar(0,23);0;1;(0,9)",32,0,34,0
+ 1433               		.stabs	"",100,0,0,.Letext0
+ 1434               	.Letext0:
+ 1435               	/* File "/Users/fcv/Documents/Projectos/urubu/ob-sensormux/trunk/avrlib/uart2.c": code  686 = 0x02a
+GAS LISTING /var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s 			page 33
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 uart2.c
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:3      *ABS*:0000003f __SREG__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:4      *ABS*:0000003e __SP_H__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:5      *ABS*:0000003d __SP_L__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:6      *ABS*:00000000 __tmp_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:7      *ABS*:00000001 __zero_reg__
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:103    .text:00000000 uartSetRxHandler
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1416   .bss:00000120 UartRxFunc
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:138    .text:00000016 uartSetBaudRate
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:207    .text:00000064 uartGetRxBuffer
+                            *COM*:00000010 uartRxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:235    .text:00000076 uartGetTxBuffer
+                            *COM*:00000010 uartTxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:264    .text:00000088 uartSendByte
+                            *COM*:00000002 uartReadyTx
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:312    .text:000000ac uart0SendByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:335    .text:000000b6 uart1SendByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:358    .text:000000c0 uartReceiveBufferIsEmpty
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:399    .text:000000e6 uartReceiveService
+                            *COM*:00000004 uartRxOverflow
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:483    .text:00000148 __vector_30
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:537    .text:00000192 __vector_18
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:594    .text:000001dc uartSendBuffer
+                            *COM*:00000002 uartBufferedTx
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:713    .text:00000282 uartAddToTxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:742    .text:00000298 uart1AddToTxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:765    .text:000002a2 uart0AddToTxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:788    .text:000002ac uartTransmitService
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:865    .text:00000308 __vector_32
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:919    .text:00000352 __vector_20
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:974    .text:0000039c uartSendTxBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1017   .text:000003ca uartReceiveByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1074   .text:0000040a uart1GetByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1132   .text:0000044a uart0GetByte
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1191   .text:0000048a uartFlushReceiveBuffer
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1219   .text:000004a0 uart1InitBuffers
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1414   .bss:00000090 uart1RxData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1415   .bss:00000110 uart1TxData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1254   .text:000004c2 uart1Init
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1306   .text:000004f8 uart0InitBuffers
+                             .bss:00000000 uart0RxData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1413   .bss:00000080 uart0TxData
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1341   .text:0000051a uart0Init
+/var/folders/5W/5WIB4qn7FN4di7ug7p2grE+++TI/-Tmp-//ccpIeJbV.s:1393   .text:0000054e uartInit
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__udivmodsi4
+bufferAddToEnd
+bufferGetFromFront
+bufferFlush
+bufferInit
