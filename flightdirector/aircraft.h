@@ -1,6 +1,6 @@
 /*
  *  aircraft.h
- *  
+ *
  *
  *  Created by Filipe Varela on 06/12/19.
  *  Copyright 2006 Filipe Varela. All rights reserved.
@@ -14,10 +14,10 @@
 #define AIRCRAFT_H
 
 /* suppose your servos do 90 degrees (-45 to 45) and you want them to only to
-    40 (-20 to 20) to respect the surface model you simulated in x-plane,
-    set the scale factor to 90 / 40;
-    
-    ie: pt60 model in x-plane is -20 to 20 all surfaces, but my servos do -45 to 45...
+   40 (-20 to 20) to respect the surface model you simulated in x-plane,
+   set the scale factor to 90 / 40;
+
+ie: pt60 model in x-plane is -20 to 20 all surfaces, but my servos do -45 to 45...
 */
 
 typedef struct{
@@ -40,10 +40,10 @@ typedef struct{
 
 /* moving surface global_deflections */
 typedef struct{
-	float aileron;
-	float elevator;
-	float rudder;
-	float throttle;
+    float aileron;
+    float elevator;
+    float rudder;
+    float throttle;
 } deflection_t;
 
 #define RC_CHANNEL_AILERON 0

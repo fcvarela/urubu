@@ -1,6 +1,6 @@
 /*
  *  pid_controller.h
- *  
+ *
  *
  *  Created by Filipe Varela on 08/03/17.
  *  Copyright 2008 Filipe Varela. All rights reserved.
@@ -19,7 +19,7 @@ struct _pid_controller
     float td,ti,dt,tf; /* time weights */
     float error, eP, ePp;
     float eD, eDf, eDfp, eDfpp; /* error deriv prev, prev prev */
-    
+
     float p_component, i_component, d_component;
     float output;
 };

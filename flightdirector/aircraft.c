@@ -1,6 +1,6 @@
- /*
+/*
  *  aircraft.c
- *  
+ *
  *
  *  Created by Filipe Varela on 06/12/19.
  *  Copyright 2006 Filipe Varela. All rights reserved.
@@ -25,7 +25,7 @@ void aircraft_init(aircraft_values_t *aircraft_values) {
     aircraft_values->pid_gain_aileron = 0.3;
     aircraft_values->pid_derivative_time_aileron = 0.002;
     aircraft_values->pid_integrator_time_aileron = 80.0;
-    
+
     aircraft_values->pid_gain_rudder = 0.3;
     aircraft_values->pid_derivative_time_rudder = 0.002;
     aircraft_values->pid_integrator_time_rudder = 80.0;
@@ -34,5 +34,5 @@ void aircraft_init(aircraft_values_t *aircraft_values) {
     aircraft_values->pid_derivative_time_throttle = 0.1;
     aircraft_values->pid_integrator_time_throttle = 10.0;
 
-    #endif
+#endif
 }
