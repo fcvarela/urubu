@@ -25,16 +25,16 @@
 int open_serial_port(char port[], int baud) {
     int fd;
     struct termios newtio;
-    
+
     fd = open(port, O_RDWR | O_NOCTTY);
     if (fd == -1) {
         perror("opening serial port");
         return -1;
     }
-    
+
     // save current settings
     tcgetattr(fd, &newtio);
-    
+
     // apply our settings
     cfsetspeed(&newtio, baud);
     newtio.c_cflag |= (CLOCAL | CREAD);
@@ -46,10 +46,10 @@ int open_serial_port(char port[], int baud) {
     newtio.c_oflag = 0;
     newtio.c_iflag &= ~(IXON | IXOFF | IXANY);
     newtio.c_lflag = 0;
-    
+
     tcflush(fd, TCIOFLUSH);
     tcsetattr(fd, TCSANOW, &newtio);
-    
+
     return(fd);
 }
 
